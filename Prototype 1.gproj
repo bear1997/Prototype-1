@@ -1,0 +1,36 @@
+<project>
+ <properties android_template="0" app_icon="" autorotation="0" windowHeight="0" osx_org="GiderosMobile" logicalWidth="320" packageName="com.yourdomain.yourapp" osx_domain="giderosmobile.com" html5_host="" app_icon_noexport="0" retinaDisplay="0" mouseToTouch="1" scaleMode="3" logicalHeight="480" win_org="GiderosMobile" fps="60" win_domain="giderosmobile.com" architecture="0" assetsOnly="0" orientation="0" iosDevice="0" touchToMouse="1" version="1.0" version_code="1" osx_category="5" winrt_org="GiderosMobile" encryptAssets="0" mouseTouchOrder="0" ios_bundle="com.yourdomain." encryptCode="0" winrt_package="com.yourdomain.yourapp" osx_bundle="com.yourdomain." windowWidth="0" html5_mem="256">
+  <imageScales/>
+  <plugins/>
+  <exports/>
+ </properties>
+ <file source="cloud.lua"/>
+ <file source="dirt.lua"/>
+ <file source="magician.lua"/>
+ <file source="monster.lua"/>
+ <file source="summon circle.lua"/>
+ <file source="grass.lua"/>
+ <folder name="enemy">
+  <file source="graphics/enemy/monster.png"/>
+ </folder>
+ <folder name="magician">
+  <folder name="female">
+   <file source="graphics/magician/female/spritesheet/walkingfemalemagi.txt"/>
+   <file source="graphics/magician/female/spritesheet/walkingfemalemagi.png"/>
+  </folder>
+ </folder>
+ <folder name="summon circle"/>
+ <file source="main.lua"/>
+ <folder name="background">
+  <file source="graphics/cloud3.png"/>
+  <file source="graphics/cloud2.png"/>
+  <file source="graphics/cloud1.png"/>
+  <file source="graphics/grass4.png"/>
+  <file source="graphics/grass3.png"/>
+  <file source="graphics/grass2.png"/>
+  <file source="graphics/grass1.png"/>
+  <file source="graphics/tile_grass.png"/>
+  <file source="graphics/tile_dirt.png"/>
+  <file source="graphics/bg_grass.png"/>
+ </folder>
+</project>

@@ -1,0 +1,8 @@
+<library>
+ <properties showUnusedAreas="0" padding="1" forceSquare="0" extrude="0" removeAlphaBorder="0" alphaThreshold="0"/>
+ <file file="../wave5.png"/>
+ <file file="../wave4.png"/>
+ <file file="../wave3.png"/>
+ <file file="../wave2.png"/>
+ <file file="../wave1.png"/>
+</library>

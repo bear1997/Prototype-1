@@ -1,0 +1,15 @@
+<library>
+ <properties extrude="0" alphaThreshold="0" showUnusedAreas="0" padding="1" forceSquare="0" removeAlphaBorder="1"/>
+ <file file="../anim12.png"/>
+ <file file="../anim11.png"/>
+ <file file="../anim10.png"/>
+ <file file="../anim9.png"/>
+ <file file="../anim8.png"/>
+ <file file="../anim7.png"/>
+ <file file="../anim6.png"/>
+ <file file="../anim5.png"/>
+ <file file="../anim4.png"/>
+ <file file="../anim3.png"/>
+ <file file="../anim2.png"/>
+ <file file="../anim1.png"/>
+</library>
