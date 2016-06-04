@@ -1,7 +1,7 @@
 --[magician female start]--
-walkingclass = Core.class(Sprite)
+walkingClass = Core.class(Sprite)
 
-function walkingclass:init()
+function walkingClass:init()
 	local pack = TexturePack.new("magician/female/walkingfemalemagi.txt","magician/female/walkingfemalemagi.png")
 	
 	self.anim = {
@@ -29,7 +29,7 @@ function walkingclass:init()
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
 
-function walkingclass:onEnterFrame()
+function walkingClass:onEnterFrame()
 	self.subframe = self.subframe + 1
 	
 	if self.subframe > 2 then

@@ -1,25 +1,18 @@
 --[cloud start]--
-cloudclass = Core.class(Sprite)
+cloudClass = Core.class(Sprite)
 
-local cloud = {}
- 
-
-function cloudclass:init()	
-	cloud = Bitmap.new(Texture.new("background/cloud" .. tostring(math.random(3)) .. ".png"))	
-	cloud:setY(10)
-	cloud:setX(320)
-	stage:addChild(cloud)
-	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
+function cloudClass:init()	
+	self.cloud = Bitmap.new(Texture.new("background/cloud" .. tostring(math.random(3)) .. ".png"))	
+	self.cloud:setY(10)
+	self.cloud:setX(320)
+	stage:addChild(self.cloud)
+	return self
 end
 
-function cloudclass:onEnterFrame(event)
-	local cloudspeed = 30
-	local x = cloud:getX() - cloudspeed * event.deltaTime
-	cloud:setX(x)
-	if cloud:getX() < 0-cloud:getWidth() then
-		cloud:setX(320)
-	end
+function cloudClass:update(dt)	
+	local cloudSpeed = 30
+	local x = self.cloud:getX() - cloudSpeed * dt
+	self.cloud:setX(x)
 end
-
 
 --[cloud end]--
