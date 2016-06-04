@@ -1,9 +1,13 @@
 <project>
- <properties iosDevice="0" version_code="1" version="1.0" scaleMode="3" autorotation="0" windowWidth="0" encryptAssets="0" osx_org="GiderosMobile" html5_host="" encryptCode="0" retinaDisplay="0" win_org="GiderosMobile" orientation="0" packageName="com.yourdomain.yourapp" app_icon_noexport="0" mouseTouchOrder="0" assetsOnly="0" fps="60" app_icon="" html5_mem="256" touchToMouse="1" winrt_package="com.yourdomain.yourapp" architecture="0" winrt_org="GiderosMobile" android_template="0" mouseToTouch="1" win_domain="giderosmobile.com" logicalHeight="480" ios_bundle="com.yourdomain." osx_domain="giderosmobile.com" osx_bundle="com.yourdomain." osx_category="5" windowHeight="0" logicalWidth="320">
+ <properties logicalWidth="320" retinaDisplay="0" scaleMode="3" windowWidth="0" ios_bundle="com.yourdomain." html5_mem="256" windowHeight="0" app_icon="" app_icon_noexport="0" packageName="com.yourdomain.yourapp" orientation="0" winrt_org="GiderosMobile" html5_host="" iosDevice="0" mouseToTouch="1" win_domain="giderosmobile.com" architecture="0" touchToMouse="1" logicalHeight="480" fps="60" mouseTouchOrder="0" version="1.0" osx_category="5" android_template="0" osx_bundle="com.yourdomain." encryptCode="0" version_code="1" win_org="GiderosMobile" osx_org="GiderosMobile" osx_domain="giderosmobile.com" encryptAssets="0" assetsOnly="0" autorotation="0" winrt_package="com.yourdomain.yourapp">
   <imageScales/>
   <plugins/>
   <exports/>
  </properties>
+ <folder name="button">
+  <file source="graphics/button/battle start.png"/>
+  <file source="graphics/button/battle started.png"/>
+ </folder>
  <folder name="helper">
   <file source="misc.lua"/>
  </folder>

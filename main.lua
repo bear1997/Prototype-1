@@ -14,7 +14,6 @@ stage:setOrientation(Stage.PORTRAIT)
 local magician = walkingClass.new()
 stage:addChild(magician)
 
-stage:setOrientation(Stage.PORTRAIT)
 local sakuorb = sakuClass.new()
 stage:addChild(sakuorb)
 

@@ -1,57 +1,53 @@
 --[puzzle start]--
 sakuClass = Core.class(Sprite)
 
-saku = {}
-local i = 1
-local index
+local saku = {}
+local OrbId = {}
 
-timer = Timer.new(500,9)
-
---[calling function]--
 function sakuClass:init(event)
-	sakuClass:orbrespwan()
-	stage:addEventListener(Event.MOUSE_DOWN,sakuClass.onTouches)
-end
-
-function sakuClass:onTouches(event)
-	print("DONE")
-	stage:addEventListener(Event.ENTER_FRAME, sakuClass.onEnterFrame, self)
-end
-
-function sakuClass:respawntimer(event)
-	sakuClass:orbrespwan()
-	stage:addEventListener(Event.ENTER_FRAME, sakuClass.onEnterFrame, self)
-end
-
-timer:addEventListener(Event.TIMER,sakuClass.respawntimer, self)
---[end of call]--
-
-
---[function]--
-function sakuClass:orbrespwan()
-	local initialX = 300
-	local initialY = 210
+	local initialX = 230
+	local initialY = 140
 	
-	for row = 0,3 do
-		saku[i] = Bitmap.new(Texture.new("SakuOrb/"..tostring(math.random(4))..".png"))
-		stage:addChild(saku[i])
-		if row == 0 then	
-			saku[i]:setX(initialX)
-			saku[i]:setY(initialY)
-		else
-			saku[i]:setX(initialX)
-			saku[i]:setY(initialY + row * 70)
+	for row = 1,4 do
+		saku[row] = {}
+		OrbId[row] = {}
+		for col = 1,20 do
+			local index = math.random(4)
+			saku[row][col] = Bitmap.new(Texture.new("SakuOrb/"..tostring(index)..".png"))
+			stage:addChild(saku[row][col])
+			saku[row][col]:setX(initialX + col * 70)
+			saku[row][col]:setY(initialY + row * 70)
+			
+			if index == 1 then
+				OrbId[row][col] = 1
+			elseif index == 2 then
+				OrbId[row][col] = 2
+			elseif index == 3 then
+				OrbId[row][col] = 3
+			else
+				OrbId[row][col] = 4
+			end
 		end
-		i = i + 1
 	end
+	
+	self:addEventListener(Event.MOUSE_UP, sakuClass.onTouches, self)
 end
 
-function sakuClass:onEnterFrame(event)	
-	local orbspeed = 300
-	for i = 1,4,1 do
-		local x = saku[i]:getX() - orbspeed * event.deltaTime
-		saku[i]:setX(x)
-	end
-	timer:start()
+function sakuClass:onTouches()
+	stage:addEventListener(Event.ENTER_FRAME, sakuClass.onEnterFrame, self)
+	--[[if saku[4][20]:getX() < 0 - saku[4][20]:getWidth() then
+		stage:removeEventListener(Event.REMOVE_FROM_STAGE, sakuClass.onEnterFrame, self)
+	end]]--
 end
---[function end]--
+
+function sakuClass:onEnterFrame(event)
+	local orbspeed = 300
+	for row = 1,4 do
+		for col = 1,20 do
+			local x = saku[row][col]:getX() - orbspeed * event.deltaTime
+			saku[row][col]:setX(x)
+		end
+		print(saku[1][1]:getX())
+		print(saku[4][20]:getX())
+	end
+end
