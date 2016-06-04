@@ -1,18 +1,32 @@
 --[cloud start]--
 cloudClass = Core.class(Sprite)
 
+local Misc = require("helper/misc")
+
 function cloudClass:init()	
-	self.cloud = Bitmap.new(Texture.new("background/cloud" .. tostring(math.random(3)) .. ".png"))	
-	self.cloud:setY(10)
-	self.cloud:setX(320)
-	stage:addChild(self.cloud)
-	return self
+	self:addChild(Bitmap.new(Texture.new("background/cloud" .. tostring(math.random(3)) .. ".png")))
+	self:setY(math.random(10, 100))
+	self:setX(320)
+	self.isCleaned = false
+	
+	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
+	self:addEventListener(Event.REMOVED_FROM_STAGE, self.onRemovedFromStage, self)
 end
 
-function cloudClass:update(dt)	
+function cloudClass:onEnterFrame(event)	
 	local cloudSpeed = 30
-	local x = self.cloud:getX() - cloudSpeed * dt
-	self.cloud:setX(x)
+	self:setX(self:getX() - cloudSpeed * event.deltaTime)
+	
+	if Misc.isOverbound(self) then
+		local removeEvent = Event.new("REMOVE_CHILD")
+		removeEvent.obj = self
+	    stage:dispatchEvent(removeEvent)
+	end
+end
+
+function cloudClass:onRemovedFromStage(event)
+	print("clean up cloud")
+	self:removeEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
 
 --[cloud end]--

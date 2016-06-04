@@ -1,18 +1,32 @@
 --[grass start]--
 grassClass = Core.class(Sprite)
 
-function grassClass:init(event)
-	self.grass = Bitmap.new(Texture.new("background/grass" .. tostring(math.random(4)) .. ".png"))	
-	self.grass:setY(155)
-	self.grass:setX(320)
-	stage:addChild(self.grass)
-	return self
+local Misc = require("helper/misc")
+
+function grassClass:init()
+	self:addChild(Bitmap.new(Texture.new("background/grass" .. tostring(math.random(4)) .. ".png")))
+	self:setY(155)
+	self:setX(320)
+	self.isCleaned = false
+	
+	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
+	self:addEventListener(Event.REMOVED_FROM_STAGE, self.onRemovedFromStage, self)
 end
 
-function grassClass:update(dt)	
+function grassClass:onEnterFrame(event)	
 	local grassSpeed = 120
-	local x = self.grass:getX() - grassSpeed * dt
-	self.grass:setX(x)
+	self:setX(self:getX() - grassSpeed * event.deltaTime)
+	
+	if Misc.isOverbound(self) then
+		local removeEvent = Event.new("REMOVE_CHILD")
+		removeEvent.obj = self
+	    stage:dispatchEvent(removeEvent)
+	end
+end
+
+function grassClass:onRemovedFromStage(event)
+	print("clean up grass")
+	self:removeEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
 	
 --[grass end]--
