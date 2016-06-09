@@ -1,15 +1,16 @@
 --[puzzle start]--
 sakuClass = Core.class(Sprite)
 
-
 local orbLayer = {}
 local orbId = {}
+local orbBoolean = {}
 
 local blueOrb = 0
 local greenOrb = 0
 local yellowOrb = 0
 local redOrb = 0
 
+local colmax = 6
 -------------------------------------------------------------------------------------------
 function sakuClass:init(event)
 	local initialX = 230
@@ -37,20 +38,19 @@ function sakuClass:init(event)
 		end
 	end--]]
 	
-	
-	for row = 1,6,1 do
+	for row = 1,4,1 do
 		orbLayer[row] = {}
 		orbId[row] = {}
-		for col = 1,6,1 do
-			local color = math.random(4)
-			
+		orbBoolean[row] = {}
+		for col = 1,colmax,1 do
+			local color = math.random(4)	
 			orbLayer[row][col] = Bitmap.new(Texture.new("g_saku_orb/"..tostring(color)..".png"))
 			stage:addChild(orbLayer[row][col])
 			--orbLayer[row][col]:setX(initialX + col * 70)
 			--dirtLayer[i][j]:setX((j - 1) * dirtLayer[i][j]:getWidth() -50)
 			orbLayer[row][col]:setX((col - 1) * orbLayer[row][col]:getWidth() - 50)
 			orbLayer[row][col]:setY(initialY + row * 70)
-			
+				
 			if color == 1 then
 				orbId[row][col] = 1
 			elseif color == 2 then
@@ -60,12 +60,17 @@ function sakuClass:init(event)
 			else
 				orbId[row][col] = 4
 			end
+			orbBoolean[row][col] = false
 		end
 	end
 	
 	self:addEventListener(Event.MOUSE_UP, sakuClass.onTouches, self)
-	self:addEventListener(Event.MOUSE_DOWN, sakuClass.onHit, self)
-	
+	self:addEventListener(Event.TOUCHES_MOVE, sakuClass.onHit, self)
+	self:addEventListener(Event.TOUCHES_END, sakuClass.orbCount, self)
+	blueOrb = 0
+	greenOrb = 0
+	yellowOrb = 0
+	redOrb = 0
 end
 -----------------------------------------------------------------------------------------------------
 function sakuClass:onTouches()
@@ -78,7 +83,7 @@ end
 function sakuClass:onEnterFrame(event)
 	local orbSpeed = 300
 	for row = 1,4 do
-		for col = 1,6 do
+		for col = 1,colmax do
 			local x = orbLayer[row][col]:getX() - orbSpeed * event.deltaTime
 			orbLayer[row][col]:setX(x)
 		end
@@ -87,17 +92,32 @@ end
 -------------------------------------------------------------------------------------------------------------
 function sakuClass:onHit(event)
 	for row = 1,4 do
-		for col = 1,6 do
-			if orbLayer[row][col]:hitTestPoint(event.x,event.y) then
+		for col = 1,colmax do
+			if orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) then
+				orbBoolean[row][col]= true
+			end
+		end
+	end
+end
+
+function sakuClass:orbCount(event)
+	for row = 1,4 do
+		for col = 1,colmax do
+			if orbBoolean[row][col] == true then
 				if orbId[row][col] == 1 then
 					blueOrb = blueOrb + 1
+					print("blue = "..blueOrb)
 				elseif orbId[row][col] == 2 then
 					greenOrb = greenOrb + 1
+					print("green = "..greenOrb)
 				elseif orbId[row][col] == 3 then
 					yellowOrb = yellowOrb + 1
-				else
+					print("yellow = "..yellowOrb)
+				elseif orbId[row][col] == 4 then
 					redOrb = redOrb + 1
+					print("red = "..redOrb)
 				end
+				orbBoolean[row][col] = false 
 			end
 		end
 	end
