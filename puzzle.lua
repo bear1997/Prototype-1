@@ -1,8 +1,13 @@
 --[puzzle start]--
 sakuClass = Core.class(Sprite)
 
+<<<<<<< HEAD
 local orbLayer = {}
 local orbId = {}
+=======
+local saku = {}
+local OrbId = {}
+>>>>>>> origin/master
 local blueOrb = 0
 local greenOrb = 0
 local yellowOrb = 0
@@ -11,6 +16,7 @@ local redOrb = 0
 -------------------------------------------------------------------------------------------
 function sakuClass:init(event)
 	local initialX = 230
+<<<<<<< HEAD
 	local initialY = 130
 	--[[
 	for row = 1,4 do
@@ -57,6 +63,28 @@ function sakuClass:init(event)
 				orbId[row][col] = 3
 			else
 				orbId[row][col] = 4
+=======
+	local initialY = 140
+	
+	for row = 1,4 do
+		saku[row] = {}
+		OrbId[row] = {}
+		for col = 1,20 do
+			local index = math.random(4)
+			saku[row][col] = Bitmap.new(Texture.new("SakuOrb/"..tostring(index)..".png"))
+			stage:addChild(saku[row][col])
+			saku[row][col]:setX(initialX + col * 70)
+			saku[row][col]:setY(initialY + row * 70)
+			
+			if index == 1 then
+				OrbId[row][col] = 1
+			elseif index == 2 then
+				OrbId[row][col] = 2
+			elseif index == 3 then
+				OrbId[row][col] = 3
+			else
+				OrbId[row][col] = 4
+>>>>>>> origin/master
 			end
 		end
 	end
@@ -67,24 +95,37 @@ function sakuClass:init(event)
 end
 -----------------------------------------------------------------------------------------------------
 function sakuClass:onTouches()
+<<<<<<< HEAD
 	--stage:addEventListener(Event.ENTER_FRAME, sakuClass.onEnterFrame, self)
+=======
+	stage:addEventListener(Event.ENTER_FRAME, sakuClass.onEnterFrame, self)
+>>>>>>> origin/master
 	--[[if saku[4][20]:getX() < 0 - saku[4][20]:getWidth() then
 		stage:removeEventListener(Event.REMOVE_FROM_STAGE, sakuClass.onEnterFrame, self)
 	end]]--
 end
 --------------------------------------------------------------------------------------------------------
 function sakuClass:onEnterFrame(event)
+<<<<<<< HEAD
 	local orbSpeed = 300
 	for row = 1,4 do
 		for col = 1,6 do
 			local x = orbLayer[row][col]:getX() - orbSpeed * event.deltaTime
 			orbLayer[row][col]:setX(x)
+=======
+	local orbspeed = 300
+	for row = 1,4 do
+		for col = 1,20 do
+			local x = saku[row][col]:getX() - orbspeed * event.deltaTime
+			saku[row][col]:setX(x)
+>>>>>>> origin/master
 		end
 	end
 end
 -------------------------------------------------------------------------------------------------------------
 function sakuClass:onHit(event)
 	for row = 1,4 do
+<<<<<<< HEAD
 		for col = 1,6 do
 			if orbLayer[row][col]:hitTestPoint(event.x,event.y) then
 				if orbId[row][col] == 1 then
@@ -92,6 +133,15 @@ function sakuClass:onHit(event)
 				elseif orbId[row][col] == 2 then
 					greenOrb = greenOrb + 1
 				elseif orbId[row][col] == 3 then
+=======
+		for col = 1,20 do
+			if saku[row][col]:hitTestPoint(event.x,event.y) then
+				if OrbId[row][col] == 1 then
+					blueOrb = blueOrb + 1
+				elseif OrbId[row][col] == 2 then
+					greenOrb = greenOrb + 1
+				elseif OrbId[row][col] == 3 then
+>>>>>>> origin/master
 					yellowOrb = yellowOrb + 1
 				else
 					redOrb = redOrb + 1

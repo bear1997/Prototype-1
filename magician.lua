@@ -2,7 +2,11 @@
 magicianClass = Core.class(Sprite)
 
 ------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 local pack = TexturePack.new("g_magician/female/walkingfemalemagi.txt","g_magician/female/walkingfemalemagi.png")
+=======
+local pack = TexturePack.new("magician/female/walkingfemalemagi.txt","magician/female/walkingfemalemagi.png")
+>>>>>>> origin/master
 function magicianClass:init()
 	self.anim = {
 		Bitmap.new(pack:getTextureRegion("anim1.png")),

@@ -2,18 +2,6 @@
 local dirtClass = {}
 
 function dirtClass.createDirt()
-	--[[
-	grasslayer = {}
-	for i = 1,6,1 do
-		grasslayer[i] = {}
-		for j = 1,6,1 do	
-			grasslayer[i][j] = Bitmap.new(Texture.new("background/tile_grass.png"))
-			grasslayer[i][j]:setX((j - 1) * grasslayer[i][j]:getWidth() - 50)
-			grasslayer[i][j]:setY(210)
-			stage:addChild(grasslayer[i][j])
-		end
-	end]]
-
 	dirtLayer={}
 	for i = 1,6,1 do
 		dirtLayer[i] = {}
