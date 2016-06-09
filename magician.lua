@@ -1,9 +1,9 @@
 --[magician female start]--
-walkingClass = Core.class(Sprite)
+magicianClass = Core.class(Sprite)
 
-function walkingClass:init()
-	local pack = TexturePack.new("magician/female/walkingfemalemagi.txt","magician/female/walkingfemalemagi.png")
-	
+------------------------------------------------------------------------------------------------------------------
+local pack = TexturePack.new("magician/female/walkingfemalemagi.txt","magician/female/walkingfemalemagi.png")
+function magicianClass:init()
 	self.anim = {
 		Bitmap.new(pack:getTextureRegion("anim1.png")),
 		Bitmap.new(pack:getTextureRegion("anim2.png")),
@@ -17,19 +17,15 @@ function walkingClass:init()
 		Bitmap.new(pack:getTextureRegion("anim10.png")),
 		Bitmap.new(pack:getTextureRegion("anim11.png")),
 		Bitmap.new(pack:getTextureRegion("anim12.png"))
-	}
-	
+	}	
 	self.frame = 1
 	self:addChild(self.anim[1])
-	
 	self.nframes = #self.anim
-	
 	self.subframe = 0
-	
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
-
-function walkingClass:onEnterFrame()
+----------------------------------------------------------------------------------------------------------------------
+function magicianClass:onEnterFrame()
 	self.subframe = self.subframe + 1
 	
 	if self.subframe > 2 then

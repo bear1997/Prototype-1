@@ -1,6 +1,8 @@
 --[dirt start]--
-local dirtclass = {}
-function dirtclass.dirt()
+local dirtClass = {}
+
+function dirtClass.createDirt()
+	--[[
 	grasslayer = {}
 	for i = 1,6,1 do
 		grasslayer[i] = {}
@@ -10,19 +12,26 @@ function dirtclass.dirt()
 			grasslayer[i][j]:setY(210)
 			stage:addChild(grasslayer[i][j])
 		end
-	end
+	end]]
 
-	lowerlayer={}
+	lowerLayer={}
 	for i = 1,6,1 do
-		lowerlayer[i] = {}
-		for j = 1,6,1 do	
-			lowerlayer[i][j] = Bitmap.new(Texture.new("background/tile_dirt.png"))
-			lowerlayer[i][j]:setX((j - 1) * lowerlayer[i][j]:getWidth() -50)
-			lowerlayer[i][j]:setY(210 + i * 70)
-			stage : addChild(lowerlayer[i][j])
+		lowerLayer[i] = {}
+		for j = 1,6,1 do
+			if i == 1 then
+				lowerLayer[i][j] = Bitmap.new(Texture.new("background/tile_grass.png"))
+				lowerLayer[i][j]:setX((j - 1) * lowerLayer[i][j]:getWidth() - 50)
+				lowerLayer[i][j]:setY(210)
+				stage:addChild(lowerLayer[i][j])
+			end
+		
+			lowerLayer[i][j] = Bitmap.new(Texture.new("background/tile_dirt.png"))
+			lowerLayer[i][j]:setX((j - 1) * lowerLayer[i][j]:getWidth() -50)
+			lowerLayer[i][j]:setY(210 + i * 70)
+			stage : addChild(lowerLayer[i][j])
 		end
 	end
 end
 
-return dirtclass
+return dirtClass
 --[dirt end]--

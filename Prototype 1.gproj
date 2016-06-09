@@ -1,5 +1,5 @@
 <project>
- <properties logicalWidth="320" retinaDisplay="0" scaleMode="3" windowWidth="0" ios_bundle="com.yourdomain." html5_mem="256" windowHeight="0" app_icon="" app_icon_noexport="0" packageName="com.yourdomain.yourapp" orientation="0" winrt_org="GiderosMobile" html5_host="" iosDevice="0" mouseToTouch="1" win_domain="giderosmobile.com" architecture="0" touchToMouse="1" logicalHeight="480" fps="60" mouseTouchOrder="0" version="1.0" osx_category="5" android_template="0" osx_bundle="com.yourdomain." encryptCode="0" version_code="1" win_org="GiderosMobile" osx_org="GiderosMobile" osx_domain="giderosmobile.com" encryptAssets="0" assetsOnly="0" autorotation="0" winrt_package="com.yourdomain.yourapp">
+ <properties mouseTouchOrder="0" html5_host="" logicalHeight="480" iosDevice="0" touchToMouse="1" osx_org="GiderosMobile" autorotation="0" win_domain="giderosmobile.com" version_code="1" encryptAssets="0" retinaDisplay="0" version="1.0" windowHeight="0" winrt_org="GiderosMobile" android_template="0" logicalWidth="320" osx_domain="giderosmobile.com" app_icon="" windowWidth="0" scaleMode="5" architecture="0" assetsOnly="0" osx_category="5" win_org="GiderosMobile" packageName="com.yourdomain.yourapp" mouseToTouch="1" osx_bundle="com.yourdomain." winrt_package="com.yourdomain.yourapp" encryptCode="0" fps="60" app_icon_noexport="0" orientation="0" ios_bundle="com.yourdomain." html5_mem="256">
   <imageScales/>
   <plugins/>
   <exports/>
@@ -28,6 +28,10 @@
   <file source="graphics/enemy/monster.png"/>
  </folder>
  <folder name="magician">
+  <folder name="effect">
+   <file source="graphics/magician/effect/wave1/wave.txt"/>
+   <file source="graphics/magician/effect/wave1/wave.png"/>
+  </folder>
   <folder name="female">
    <file source="graphics/magician/female/spritesheet/walkingfemalemagi.txt"/>
    <file source="graphics/magician/female/spritesheet/walkingfemalemagi.png"/>
@@ -36,6 +40,8 @@
  <folder name="summon circle"/>
  <file source="main.lua"/>
  <folder name="background">
+  <file source="graphics/tile_grass.png"/>
+  <file source="graphics/tile_dirt.png"/>
   <file source="graphics/cloud3.png"/>
   <file source="graphics/cloud2.png"/>
   <file source="graphics/cloud1.png"/>
@@ -43,8 +49,6 @@
   <file source="graphics/grass3.png"/>
   <file source="graphics/grass2.png"/>
   <file source="graphics/grass1.png"/>
-  <file source="graphics/tile_grass.png"/>
-  <file source="graphics/tile_dirt.png"/>
   <file source="graphics/bg_grass.png"/>
  </folder>
 </project>

@@ -5,13 +5,13 @@ stage : addChild(background)
 --[background end]--
 
 local dirt = require("dirt")
-dirt.dirt()
+dirt.createDirt()
 
 local Misc = require("helper/misc")
 
 stage:setOrientation(Stage.PORTRAIT)
 
-local magician = walkingClass.new()
+local magician = magicianClass.new()
 stage:addChild(magician)
 
 local sakuorb = sakuClass.new()
