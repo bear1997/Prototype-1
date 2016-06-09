@@ -4,8 +4,8 @@ grassClass = Core.class(Sprite)
 local Misc = require("helper/misc")
 
 function grassClass:init()
-	self:addChild(Bitmap.new(Texture.new("background/grass" .. tostring(math.random(4)) .. ".png")))
-	self:setY(155)
+	self:addChild(Bitmap.new(Texture.new("g_background/grass" .. tostring(math.random(4)) .. ".png")))
+	self:setY(200 - self:getHeight())
 	self:setX(320)
 	self.isCleaned = false
 	

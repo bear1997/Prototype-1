@@ -1,26 +1,25 @@
 --[background start]--
 
-local background = Bitmap.new(Texture.new("background/bg_grass.png"))
+local background = Bitmap.new(Texture.new("g_background/bg_grass.png"))
 stage : addChild(background)
 --[background end]--
 
 local dirt = require("dirt")
-dirt.dirt()
+dirt.createDirt()
 
 local Misc = require("helper/misc")
 
 stage:setOrientation(Stage.PORTRAIT)
 
-local magician = walkingClass.new()
+local magician = magicianClass.new()
 stage:addChild(magician)
 
-stage:setOrientation(Stage.PORTRAIT)
 local sakuorb = sakuClass.new()
 stage:addChild(sakuorb)
 
 -----------------------------------------------------------------------------------------------------------------
 
--- Experimental functions start
+-- Grass and cloud spawn start
 
 local grassTimer = Timer.new(math.random(1, 2) * 1000, 0)
 local cloudTimer = Timer.new(math.random(2, 3) * 1000, 0)
@@ -50,4 +49,4 @@ cloudTimer:start()
 
 stage:addEventListener("REMOVE_CHILD", cleanUp)
 
--- Experimental functions end
+-- Grass and cloud spawn end
