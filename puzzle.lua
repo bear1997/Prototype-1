@@ -115,7 +115,7 @@ function sakuClass:orbCount(event)
 		for col = 1,colmax do
 			if orbId[row][col] ~= orbId[last_row][last_col] then
 				orbBoolean[row][col] = false
-				orbBoolean[last_row][last_col] = false
+				--orbBoolean[last_row][last_col] = false
 			end
 			if orbBoolean[row][col] == true then
 				if orbId[row][col] == 1 then
