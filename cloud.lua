@@ -25,7 +25,7 @@ function cloudClass:onEnterFrame(event)
 end
 
 function cloudClass:onRemovedFromStage(event)
-	print("clean up cloud")
+	--print("clean up cloud")
 	self:removeEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
 
