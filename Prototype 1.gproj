@@ -1,9 +1,28 @@
 <project>
- <properties logicalWidth="360" mouseTouchOrder="0" osx_org="GiderosMobile" scaleMode="5" version="1.0" assetsOnly="0" fps="60" windowHeight="0" html5_host="" version_code="1" windowWidth="0" autorotation="0" iosDevice="0" retinaDisplay="0" touchToMouse="1" ios_bundle="com.yourdomain." architecture="0" logicalHeight="640" win_org="GiderosMobile" mouseToTouch="1" orientation="0" winrt_org="GiderosMobile" osx_category="5" osx_bundle="com.yourdomain." html5_mem="256" encryptCode="0" packageName="com.yourdomain.yourapp" winrt_package="com.yourdomain.yourapp" app_icon="" app_icon_noexport="0" win_domain="giderosmobile.com" android_template="0" encryptAssets="0" osx_domain="giderosmobile.com">
+ <properties logicalWidth="360" osx_category="5" mouseToTouch="1" assetsOnly="0" html5_mem="256" iosDevice="0" encryptAssets="1" packageName="com.yourdomain.yourapp" osx_org="GiderosMobile" logicalHeight="640" osx_domain="giderosmobile.com" osx_bundle="com.yourdomain." winrt_org="GiderosMobile" app_icon="" windowWidth="0" winrt_package="com.yourdomain.yourapp" html5_host="" touchToMouse="1" win_domain="giderosmobile.com" win_org="GiderosMobile" encryptCode="1" version="1.0" windowHeight="0" scaleMode="3" retinaDisplay="0" fps="60" mouseTouchOrder="0" app_icon_noexport="0" autorotation="0" architecture="7" version_code="1" ios_bundle="com.yourdomain." android_template="0" orientation="0">
   <imageScales/>
   <plugins/>
-  <exports/>
+  <exports>
+   <export name="APK">
+    <property value="" name="androidPath"/>
+    <property value="19" name="androidTarget"/>
+    <property value="" name="antPath"/>
+    <property value="" name="javaPath"/>
+    <property value="" name="keyAlias"/>
+    <property value="" name="keyAliasPass"/>
+    <property value="" name="keyStore"/>
+    <property value="" name="keyStorePass"/>
+    <property value="com.yourdomain.yourapp" name="packageName"/>
+   </export>
+  </exports>
  </properties>
+ <folder name="c_magician">
+  <folder name="female">
+   <file source="bubble.lua"/>
+   <file source="magician.lua"/>
+   <file source="book.lua"/>
+  </folder>
+ </folder>
  <folder name="g_button">
   <file source="graphics/button/battle start.png"/>
   <file source="graphics/button/battle started.png"/>
@@ -20,7 +39,6 @@
  </folder>
  <file source="cloud.lua"/>
  <file source="dirt.lua"/>
- <file source="magician.lua"/>
  <file source="monster.lua"/>
  <file source="summon circle.lua"/>
  <file source="grass.lua"/>
@@ -33,8 +51,18 @@
    <file source="graphics/magician/effect/wave1/wave.png"/>
   </folder>
   <folder name="female">
-   <file source="graphics/magician/female/walking/walking.txt"/>
-   <file source="graphics/magician/female/walking/walking.png"/>
+   <folder name="bubble">
+    <file source="graphics/magician/female/bubble/bubble.txt"/>
+    <file source="graphics/magician/female/bubble/bubble.png"/>
+   </folder>
+   <folder name="book">
+    <file source="graphics/magician/female/book/book.txt"/>
+    <file source="graphics/magician/female/book/book.png"/>
+   </folder>
+   <folder name="walking">
+    <file source="graphics/magician/female/walking/walking.png"/>
+    <file source="graphics/magician/female/walking/walking.txt"/>
+   </folder>
   </folder>
  </folder>
  <folder name="g_summon_circle"/>
