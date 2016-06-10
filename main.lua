@@ -50,3 +50,9 @@ cloudTimer:start()
 stage:addEventListener("REMOVE_CHILD", cleanUp)
 
 -- Grass and cloud spawn end
+
+function update(event)
+	Misc.bringToFront(magician)
+end
+
+stage:addEventListener(Event.ENTER_FRAME, update)

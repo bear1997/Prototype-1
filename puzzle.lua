@@ -13,7 +13,7 @@ local redOrb = 0
 -------------------------------------------------------------------------------------------
 function sakuClass:init(event)
 	local initialX = 230
-	local initialY = 130
+	local initialY = 320
 	--[[
 	for row = 1,4 do
 		saku[row] = {}
@@ -38,18 +38,18 @@ function sakuClass:init(event)
 	end--]]
 	
 	
-	for row = 1,6,1 do
+	for row = 1,5,1 do
 		orbLayer[row] = {}
 		orbId[row] = {}
-		for col = 1,6,1 do
+		for col = 1,7,1 do
 			local color = math.random(4)
 			
 			orbLayer[row][col] = Bitmap.new(Texture.new("g_saku_orb/"..tostring(color)..".png"))
 			stage:addChild(orbLayer[row][col])
 			--orbLayer[row][col]:setX(initialX + col * 70)
 			--dirtLayer[i][j]:setX((j - 1) * dirtLayer[i][j]:getWidth() -50)
-			orbLayer[row][col]:setX((col - 1) * orbLayer[row][col]:getWidth() - 50)
-			orbLayer[row][col]:setY(initialY + row * 70)
+			orbLayer[row][col]:setX((col - 1) * orbLayer[row][col]:getWidth() - 44)
+			orbLayer[row][col]:setY(initialY + (row - 1) * 64)
 			
 			if color == 1 then
 				orbId[row][col] = 1

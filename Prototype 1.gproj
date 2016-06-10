@@ -1,5 +1,5 @@
 <project>
- <properties win_domain="giderosmobile.com" scaleMode="5" mouseTouchOrder="0" encryptAssets="0" touchToMouse="1" app_icon="" version="1.0" architecture="0" osx_org="GiderosMobile" windowWidth="0" html5_mem="256" iosDevice="0" winrt_org="GiderosMobile" osx_domain="giderosmobile.com" fps="60" win_org="GiderosMobile" version_code="1" windowHeight="0" orientation="0" ios_bundle="com.yourdomain." encryptCode="0" osx_category="5" winrt_package="com.yourdomain.yourapp" html5_host="" logicalWidth="320" android_template="0" logicalHeight="480" retinaDisplay="0" packageName="com.yourdomain.yourapp" mouseToTouch="1" autorotation="0" assetsOnly="0" osx_bundle="com.yourdomain." app_icon_noexport="0">
+ <properties logicalWidth="360" mouseTouchOrder="0" osx_org="GiderosMobile" scaleMode="5" version="1.0" assetsOnly="0" fps="60" windowHeight="0" html5_host="" version_code="1" windowWidth="0" autorotation="0" iosDevice="0" retinaDisplay="0" touchToMouse="1" ios_bundle="com.yourdomain." architecture="0" logicalHeight="640" win_org="GiderosMobile" mouseToTouch="1" orientation="0" winrt_org="GiderosMobile" osx_category="5" osx_bundle="com.yourdomain." html5_mem="256" encryptCode="0" packageName="com.yourdomain.yourapp" winrt_package="com.yourdomain.yourapp" app_icon="" app_icon_noexport="0" win_domain="giderosmobile.com" android_template="0" encryptAssets="0" osx_domain="giderosmobile.com">
   <imageScales/>
   <plugins/>
   <exports/>
@@ -33,19 +33,19 @@
    <file source="graphics/magician/effect/wave1/wave.png"/>
   </folder>
   <folder name="female">
-   <file source="graphics/magician/female/spritesheet/walkingfemalemagi.txt"/>
-   <file source="graphics/magician/female/spritesheet/walkingfemalemagi.png"/>
+   <file source="graphics/magician/female/walking/walking.txt"/>
+   <file source="graphics/magician/female/walking/walking.png"/>
   </folder>
  </folder>
  <folder name="g_summon_circle"/>
  <file source="main.lua"/>
  <folder name="g_background">
+  <file source="graphics/tile_grass.png"/>
+  <file source="graphics/tile_dirt.png"/>
   <file source="graphics/grass4.png"/>
   <file source="graphics/grass3.png"/>
   <file source="graphics/grass2.png"/>
   <file source="graphics/grass1.png"/>
-  <file source="graphics/tile_grass.png"/>
-  <file source="graphics/tile_dirt.png"/>
   <file source="graphics/cloud3.png"/>
   <file source="graphics/cloud2.png"/>
   <file source="graphics/cloud1.png"/>
