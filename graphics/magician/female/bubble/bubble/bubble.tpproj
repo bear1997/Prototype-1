@@ -1,0 +1,8 @@
+<library>
+ <properties showUnusedAreas="0" alphaThreshold="0" removeAlphaBorder="0" padding="1" extrude="0" forceSquare="0"/>
+ <file file="../frame5.png"/>
+ <file file="../frame4.png"/>
+ <file file="../frame3.png"/>
+ <file file="../frame2.png"/>
+ <file file="../frame1.png"/>
+</library>

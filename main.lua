@@ -1,7 +1,7 @@
 --[background start]--
 
 local background = Bitmap.new(Texture.new("g_background/bg_grass.png"))
-stage : addChild(background)
+stage:addChild(background)
 --[background end]--
 
 local dirt = require("dirt")
@@ -11,8 +11,20 @@ local Misc = require("helper/misc")
 
 stage:setOrientation(Stage.PORTRAIT)
 
-local magician = magicianClass.new()
+local magician = magicianFClass.new()
+magician:setY(320 - magician:getHeight())
 stage:addChild(magician)
+
+--[[
+local magicianBook = magicianFBookClass.new()
+magicianBook:setX(magician:getX() + magician:getWidth() - 10)
+magicianBook:setY(magician:getY() + magician:getHeight() / 2)
+stage:addChild(magicianBook)]]
+
+local magicianBubble = magicianFBubbleClass.new()
+magicianBubble:setX(magician:getX())
+magicianBubble:setY(magician:getY())
+stage:addChild(magicianBubble)
 
 local sakuorb = sakuClass.new()
 stage:addChild(sakuorb)
@@ -53,6 +65,8 @@ stage:addEventListener("REMOVE_CHILD", cleanUp)
 
 function update(event)
 	Misc.bringToFront(magician)
+	--Misc.bringToFront(magicianBook)
+	Misc.bringToFront(magicianBubble)
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)

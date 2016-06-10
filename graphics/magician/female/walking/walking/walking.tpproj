@@ -1,5 +1,5 @@
 <library>
- <properties extrude="0" showUnusedAreas="0" alphaThreshold="0" padding="1" removeAlphaBorder="1" forceSquare="0"/>
+ <properties extrude="0" removeAlphaBorder="0" forceSquare="0" alphaThreshold="0" showUnusedAreas="0" padding="1"/>
  <file file="../frame3.png"/>
  <file file="../frame2.png"/>
  <file file="../frame1.png"/>
