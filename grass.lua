@@ -25,7 +25,7 @@ function grassClass:onEnterFrame(event)
 end
 
 function grassClass:onRemovedFromStage(event)
-	print("clean up grass")
+	--print("clean up grass")
 	self:removeEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
 	

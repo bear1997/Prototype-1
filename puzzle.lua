@@ -5,6 +5,9 @@ local orbLayer = {}
 local orbId = {}
 local orbBoolean = {}
 
+local last_row = 0
+local last_col = 0
+
 local blueOrb = 0
 local greenOrb = 0
 local yellowOrb = 0
@@ -90,11 +93,18 @@ function sakuClass:onEnterFrame(event)
 	end
 end
 -------------------------------------------------------------------------------------------------------------
+
 function sakuClass:onHit(event)
+
+	old_x, old_y = new_x, new_y
+	new_x, new_y = event.touch.x, event.touch.y
+	
 	for row = 1,4 do
-		for col = 1,colmax do
+		for col = 2,colmax - 1 do
 			if orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) then
 				orbBoolean[row][col]= true
+				last_row = row
+				last_col = col
 			end
 		end
 	end
@@ -103,6 +113,10 @@ end
 function sakuClass:orbCount(event)
 	for row = 1,4 do
 		for col = 1,colmax do
+			if orbId[row][col] ~= orbId[last_row][last_col] then
+				orbBoolean[row][col] = false
+				orbBoolean[last_row][last_col] = false
+			end
 			if orbBoolean[row][col] == true then
 				if orbId[row][col] == 1 then
 					blueOrb = blueOrb + 1
