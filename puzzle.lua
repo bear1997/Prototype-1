@@ -13,7 +13,7 @@ local greenOrb = 0
 local yellowOrb = 0
 local redOrb = 0
 
-local colmax = 6
+local colmax = 7
 -------------------------------------------------------------------------------------------
 function sakuClass:init(event)
 	local initialX = 230
@@ -41,7 +41,7 @@ function sakuClass:init(event)
 		end
 	end--]]
 
-	for row = 1,4,1 do
+	for row = 1,5,1 do
 		orbLayer[row] = {}
 		orbId[row] = {}
 		orbBoolean[row] = {}
@@ -85,7 +85,7 @@ end
 --------------------------------------------------------------------------------------------------------
 function sakuClass:onEnterFrame(event)
 	local orbSpeed = 300
-	for row = 1,4 do
+	for row = 1,5 do
 		for col = 1,colmax do
 			local x = orbLayer[row][col]:getX() - orbSpeed * event.deltaTime
 			orbLayer[row][col]:setX(x)
@@ -99,7 +99,7 @@ function sakuClass:onHit(event)
 	old_x, old_y = new_x, new_y
 	new_x, new_y = event.touch.x, event.touch.y
 	
-	for row = 1,4 do
+	for row = 1,5 do
 		for col = 2,colmax - 1 do
 			if orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) then
 				orbBoolean[row][col]= true
@@ -111,7 +111,7 @@ function sakuClass:onHit(event)
 end
 
 function sakuClass:orbCount(event)
-	for row = 1,4 do
+	for row = 1,5 do
 		for col = 1,colmax do
 			if orbId[row][col] ~= orbId[last_row][last_col] then
 				orbBoolean[row][col] = false
