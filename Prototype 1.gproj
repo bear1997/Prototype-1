@@ -1,5 +1,5 @@
 <project>
- <properties logicalWidth="360" osx_category="5" mouseToTouch="1" assetsOnly="0" html5_mem="256" iosDevice="0" encryptAssets="0" packageName="com.yourdomain.yourapp" osx_org="GiderosMobile" logicalHeight="640" osx_domain="giderosmobile.com" osx_bundle="com.yourdomain." winrt_org="GiderosMobile" app_icon="" windowWidth="0" winrt_package="com.yourdomain.yourapp" html5_host="" touchToMouse="1" win_domain="giderosmobile.com" win_org="GiderosMobile" encryptCode="0" version="1.0" windowHeight="0" scaleMode="3" retinaDisplay="0" fps="60" mouseTouchOrder="0" app_icon_noexport="0" autorotation="0" architecture="7" version_code="1" ios_bundle="com.yourdomain." android_template="0" orientation="0">
+ <properties win_org="GiderosMobile" encryptAssets="0" assetsOnly="0" iosDevice="0" packageName="com.yourdomain.yourapp" scaleMode="3" logicalWidth="360" windowHeight="0" logicalHeight="640" retinaDisplay="0" architecture="7" win_domain="giderosmobile.com" winrt_package="com.yourdomain.yourapp" encryptCode="0" orientation="0" windowWidth="0" mouseTouchOrder="0" html5_host="" android_template="0" version="1.0" ios_bundle="com.yourdomain." mouseToTouch="1" html5_mem="256" osx_org="GiderosMobile" osx_bundle="com.yourdomain." osx_category="5" app_icon="" app_icon_noexport="0" fps="60" touchToMouse="1" winrt_org="GiderosMobile" autorotation="0" version_code="1" osx_domain="giderosmobile.com">
   <imageScales/>
   <plugins/>
   <exports>
@@ -16,11 +16,18 @@
    </export>
   </exports>
  </properties>
+ <file source="GrassClass.lua"/>
+ <file source="DirtClass.lua"/>
+ <file source="CloudClass.lua"/>
+ <folder name="c_puzzle">
+  <file source="OrbClass.lua"/>
+  <file source="PuzzleClass.lua"/>
+ </folder>
  <folder name="c_magician">
   <folder name="female">
-   <file source="bubble.lua"/>
-   <file source="magician.lua"/>
-   <file source="book.lua"/>
+   <file source="MagicianFClass.lua"/>
+   <file source="MagicianFBubbleClass.lua"/>
+   <file source="MagicianFBookClass.lua"/>
   </folder>
  </folder>
  <folder name="g_button">
@@ -28,20 +35,17 @@
   <file source="graphics/button/battle started.png"/>
  </folder>
  <folder name="helper">
-  <file source="misc.lua"/>
+  <file source="MiscClass.lua"/>
+  <file source="easing.lua"/>
+  <file source="gtween.lua"/>
  </folder>
- <file source="puzzle.lua"/>
  <folder name="g_saku_orb">
   <file source="graphics/saku orb/4.png"/>
   <file source="graphics/saku orb/3.png"/>
   <file source="graphics/saku orb/2.png"/>
   <file source="graphics/saku orb/1.png"/>
  </folder>
- <file source="cloud.lua"/>
- <file source="dirt.lua"/>
  <file source="monster.lua"/>
- <file source="summon circle.lua"/>
- <file source="grass.lua"/>
  <folder name="g_enemy">
   <file source="graphics/enemy/monster.png"/>
  </folder>

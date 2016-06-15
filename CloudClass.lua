@@ -1,9 +1,8 @@
---[cloud start]--
-cloudClass = Core.class(Sprite)
+CloudClass = Core.class(Sprite)
 
-local Misc = require("helper/misc")
+local Misc = require("helper/MiscClass")
 
-function cloudClass:init()	
+function CloudClass:init()	
 	self:addChild(Bitmap.new(Texture.new("g_background/cloud" .. tostring(math.random(3)) .. ".png")))
 	self:setY(math.random(10, 320 - self:getHeight()))
 	self:setX(320)
@@ -13,7 +12,7 @@ function cloudClass:init()
 	self:addEventListener(Event.REMOVED_FROM_STAGE, self.onRemovedFromStage, self)
 end
 
-function cloudClass:onEnterFrame(event)	
+function CloudClass:onEnterFrame(event)	
 	local cloudSpeed = 30
 	self:setX(self:getX() - cloudSpeed * event.deltaTime)
 	
@@ -24,9 +23,6 @@ function cloudClass:onEnterFrame(event)
 	end
 end
 
-function cloudClass:onRemovedFromStage(event)
-	--print("clean up cloud")
+function CloudClass:onRemovedFromStage(event)
 	self:removeEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
-
---[cloud end]--

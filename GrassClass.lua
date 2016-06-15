@@ -1,9 +1,8 @@
---[grass start]--
-grassClass = Core.class(Sprite)
+GrassClass = Core.class(Sprite)
 
-local Misc = require("helper/misc")
+local Misc = require("helper/MiscClass")
 
-function grassClass:init()
+function GrassClass:init()
 	self:addChild(Bitmap.new(Texture.new("g_background/grass" .. tostring(math.random(4)) .. ".png")))
 	self:setY(320 - self:getHeight())
 	self:setX(320)
@@ -13,7 +12,7 @@ function grassClass:init()
 	self:addEventListener(Event.REMOVED_FROM_STAGE, self.onRemovedFromStage, self)
 end
 
-function grassClass:onEnterFrame(event)	
+function GrassClass:onEnterFrame(event)	
 	local grassSpeed = 120
 	self:setX(self:getX() - grassSpeed * event.deltaTime)
 	
@@ -24,9 +23,7 @@ function grassClass:onEnterFrame(event)
 	end
 end
 
-function grassClass:onRemovedFromStage(event)
-	--print("clean up grass")
+function GrassClass:onRemovedFromStage(event)	
 	self:removeEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 end
 	
---[grass end]--

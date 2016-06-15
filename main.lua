@@ -1,17 +1,14 @@
---[background start]--
-
 local background = Bitmap.new(Texture.new("g_background/bg_grass.png"))
 stage:addChild(background)
---[background end]--
 
-local dirt = require("dirt")
+local dirt = require("DirtClass")
 dirt.createDirt()
 
-local Misc = require("helper/misc")
+local Misc = require("helper/MiscClass")
 
 stage:setOrientation(Stage.PORTRAIT)
 
-local magician = magicianFClass.new()
+local magician = MagicianFClass.new()
 magician:setY(320 - magician:getHeight())
 stage:addChild(magician)
 
@@ -20,13 +17,13 @@ local magicianBook = magicianFBookClass.new()
 magicianBook:setX(magician:getX() + magician:getWidth() - 10)
 magicianBook:setY(magician:getY() + magician:getHeight() / 2)
 stage:addChild(magicianBook)]]
-
+--[[
 local magicianBubble = magicianFBubbleClass.new()
 magicianBubble:setX(magician:getX())
 magicianBubble:setY(magician:getY())
-stage:addChild(magicianBubble)
+stage:addChild(magicianBubble)]]
 
-local sakuorb = sakuClass.new()
+local sakuorb = PuzzleClass.new()
 stage:addChild(sakuorb)
 
 -----------------------------------------------------------------------------------------------------------------
@@ -37,12 +34,12 @@ local grassTimer = Timer.new(math.random(1, 2) * 1000, 0)
 local cloudTimer = Timer.new(math.random(2, 3) * 1000, 0)
 
 function spawnGrass(event)
-	stage:addChild(grassClass.new())
+	stage:addChild(GrassClass.new())
 	grassTimer:setDelay(math.random(3, 5) * 1000)
 end
 
 function spawnCloud(event)
-	stage:addChild(cloudClass.new())
+	stage:addChild(CloudClass.new())
 	cloudTimer:setDelay(math.random(5, 7) * 1000)
 end
 
@@ -66,7 +63,7 @@ stage:addEventListener("REMOVE_CHILD", cleanUp)
 function update(event)
 	Misc.bringToFront(magician)
 	--Misc.bringToFront(magicianBook)
-	Misc.bringToFront(magicianBubble)
+	--Misc.bringToFront(magicianBubble)
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)

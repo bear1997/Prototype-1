@@ -1,15 +1,11 @@
---[magician female book start]--
-magicianFBookClass = Core.class(Sprite)
+MagicianFClass = Core.class(Sprite)
 
-------------------------------------------------------------------------------------------------------------------
-local pack = TexturePack.new("g_magician/female/book/book.txt","g_magician/female/book/book.png")
-function magicianFBookClass:init()
+local pack = TexturePack.new("g_magician/female/walking/walking.txt","g_magician/female/walking/walking.png")
+function MagicianFClass:init()
 	self.anim = {
 		Bitmap.new(pack:getTextureRegion("frame1.png")),
 		Bitmap.new(pack:getTextureRegion("frame2.png")),
-		Bitmap.new(pack:getTextureRegion("frame3.png")),
-		Bitmap.new(pack:getTextureRegion("frame4.png")),
-		Bitmap.new(pack:getTextureRegion("frame5.png")),
+		Bitmap.new(pack:getTextureRegion("frame3.png"))
 	}
 	self.frame = 1
 	self:addChild(self.anim[1])
@@ -19,11 +15,10 @@ function magicianFBookClass:init()
 	
 	return self
 end
-----------------------------------------------------------------------------------------------------------------------
 
 local skipFrame = 5
 
-function magicianFBookClass:onEnterFrame()
+function MagicianFClass:onEnterFrame()
 	if skipFrame == 0 then
 		self.subframe = self.subframe + 1
 		
@@ -43,4 +38,3 @@ function magicianFBookClass:onEnterFrame()
 	end
 	skipFrame = skipFrame - 1
 end
---[magician female end]--

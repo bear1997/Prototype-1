@@ -1,7 +1,6 @@
---[dirt start]--
-local dirtClass = {}
+local DirtClass = {}
 
-function dirtClass.createDirt()
+function DirtClass.createDirt()
 	dirtLayer={}
 	for i = 1,5,1 do
 		dirtLayer[i] = {}
@@ -21,5 +20,4 @@ function dirtClass.createDirt()
 	end
 end
 
-return dirtClass
---[dirt end]--
+return DirtClass
