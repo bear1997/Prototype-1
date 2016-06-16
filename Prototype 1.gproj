@@ -17,6 +17,9 @@
   </exports>
  </properties>
  <folder name="src">
+  <folder name="enemy">
+   <file source="src/enemy/monster.lua"/>
+  </folder>
   <folder name="background">
    <file source="CloudClass.lua"/>
    <file source="DirtClass.lua"/>
@@ -40,7 +43,6 @@
    <file source="easing.lua"/>
    <file source="gtween.lua"/>
   </folder>
-  <file source="monster.lua"/>
   <file source="main.lua"/>
  </folder>
  <folder name="graphics">
