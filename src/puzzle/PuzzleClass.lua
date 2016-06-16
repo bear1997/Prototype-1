@@ -214,6 +214,11 @@ function PuzzleClass:onMoveEnd()
 				is_moving = true
 				move_counter = 0
 				self.hideOrb()
+			else
+				last_row, last_col = 0, 0
+				is_moving = false
+				move_counter = 0
+				self.resetLink()
 			end
 		end
 	end
