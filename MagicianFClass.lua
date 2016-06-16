@@ -1,6 +1,6 @@
 MagicianFClass = Core.class(Sprite)
 
-local pack = TexturePack.new("g_magician/female/walking/walking.txt","g_magician/female/walking/walking.png")
+local pack = TexturePack.new("graphics/magician/female/walking/walking.txt","graphics/magician/female/walking/walking.png")
 function MagicianFClass:init()
 	self.anim = {
 		Bitmap.new(pack:getTextureRegion("frame1.png")),

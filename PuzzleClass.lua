@@ -1,6 +1,6 @@
 PuzzleClass = Core.class(Sprite)
 
-local Misc = require("helper/MiscClass")
+local Misc = require("src/helper/MiscClass")
 
 local orbLayer = {}
 local orbTable = {}
@@ -193,6 +193,12 @@ function PuzzleClass:onMove(event)
 					else
 						last_row, last_col = 0, 0
 					end
+				elseif orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) and move_counter > 0
+					and (orbLayer[row][col].col <= 1 or orbLayer[row][col].col >= colmax) then
+					print("forbidden column")
+					is_ended = true
+					move_counter = 0
+					self.resetLink()
 				end
 			end
 		end

@@ -1,6 +1,6 @@
 MagicianFBubbleClass = Core.class(Sprite)
 
-local pack = TexturePack.new("g_magician/female/bubble/bubble.txt","g_magician/female/bubble/bubble.png")
+local pack = TexturePack.new("graphics/magician/female/bubble/bubble.txt","graphics/magician/female/bubble/bubble.png")
 function MagicianFBubbleClass:init()
 	self.anim = {
 		Bitmap.new(pack:getTextureRegion("frame1.png")),

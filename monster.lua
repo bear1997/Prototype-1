@@ -1,5 +1,5 @@
 --[monster start]--
-local enemy = Bitmap.new(Texture.new("g_enemy/monster.png"))
+local enemy = Bitmap.new(Texture.new("graphics/enemy/monster.png"))
 stage:addChild(enemy)
 
 enemy:setY(138)

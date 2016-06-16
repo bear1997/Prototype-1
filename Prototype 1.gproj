@@ -1,86 +1,94 @@
 <project>
- <properties win_org="GiderosMobile" encryptAssets="0" assetsOnly="0" iosDevice="0" packageName="com.yourdomain.yourapp" scaleMode="3" logicalWidth="360" windowHeight="0" logicalHeight="640" retinaDisplay="0" architecture="7" win_domain="giderosmobile.com" winrt_package="com.yourdomain.yourapp" encryptCode="0" orientation="0" windowWidth="0" mouseTouchOrder="0" html5_host="" android_template="0" version="1.0" ios_bundle="com.yourdomain." mouseToTouch="1" html5_mem="256" osx_org="GiderosMobile" osx_bundle="com.yourdomain." osx_category="5" app_icon="" app_icon_noexport="0" fps="60" touchToMouse="1" winrt_org="GiderosMobile" autorotation="0" version_code="1" osx_domain="giderosmobile.com">
+ <properties windowHeight="0" autorotation="0" android_template="0" winrt_package="com.yourdomain.yourapp" app_icon="" orientation="0" scaleMode="3" osx_category="5" winrt_org="GiderosMobile" osx_bundle="com.yourdomain." encryptCode="0" osx_org="GiderosMobile" html5_mem="256" windowWidth="0" touchToMouse="1" version="1.0" html5_host="" win_org="GiderosMobile" logicalWidth="360" encryptAssets="0" mouseToTouch="1" packageName="com.yourdomain.yourapp" ios_bundle="com.yourdomain." assetsOnly="0" iosDevice="0" logicalHeight="640" architecture="7" osx_domain="giderosmobile.com" retinaDisplay="0" mouseTouchOrder="0" app_icon_noexport="0" win_domain="giderosmobile.com" version_code="1" fps="60">
   <imageScales/>
   <plugins/>
   <exports>
    <export name="APK">
-    <property value="" name="androidPath"/>
-    <property value="19" name="androidTarget"/>
-    <property value="" name="antPath"/>
-    <property value="" name="javaPath"/>
-    <property value="" name="keyAlias"/>
-    <property value="" name="keyAliasPass"/>
-    <property value="" name="keyStore"/>
-    <property value="" name="keyStorePass"/>
-    <property value="com.yourdomain.yourapp" name="packageName"/>
+    <property name="androidPath" value=""/>
+    <property name="androidTarget" value="19"/>
+    <property name="antPath" value=""/>
+    <property name="javaPath" value=""/>
+    <property name="keyAlias" value=""/>
+    <property name="keyAliasPass" value=""/>
+    <property name="keyStore" value=""/>
+    <property name="keyStorePass" value=""/>
+    <property name="packageName" value="com.yourdomain.yourapp"/>
    </export>
   </exports>
  </properties>
- <file source="GrassClass.lua"/>
- <file source="DirtClass.lua"/>
- <file source="CloudClass.lua"/>
- <folder name="c_puzzle">
-  <file source="OrbClass.lua"/>
-  <file source="PuzzleClass.lua"/>
- </folder>
- <folder name="c_magician">
-  <folder name="female">
-   <file source="MagicianFClass.lua"/>
-   <file source="MagicianFBubbleClass.lua"/>
-   <file source="MagicianFBookClass.lua"/>
+ <folder name="src">
+  <folder name="background">
+   <file source="CloudClass.lua"/>
+   <file source="DirtClass.lua"/>
+   <file source="GrassClass.lua"/>
   </folder>
- </folder>
- <folder name="g_button">
-  <file source="graphics/button/battle start.png"/>
-  <file source="graphics/button/battle started.png"/>
- </folder>
- <folder name="helper">
-  <file source="MiscClass.lua"/>
-  <file source="easing.lua"/>
-  <file source="gtween.lua"/>
- </folder>
- <folder name="g_saku_orb">
-  <file source="graphics/saku orb/4.png"/>
-  <file source="graphics/saku orb/3.png"/>
-  <file source="graphics/saku orb/2.png"/>
-  <file source="graphics/saku orb/1.png"/>
- </folder>
- <file source="monster.lua"/>
- <folder name="g_enemy">
-  <file source="graphics/enemy/monster.png"/>
- </folder>
- <folder name="g_magician">
-  <folder name="effect">
-   <file source="graphics/magician/effect/wave1/wave.txt"/>
-   <file source="graphics/magician/effect/wave1/wave.png"/>
-  </folder>
-  <folder name="female">
-   <folder name="bubble">
-    <file source="graphics/magician/female/bubble/bubble.txt"/>
-    <file source="graphics/magician/female/bubble/bubble.png"/>
-   </folder>
-   <folder name="book">
-    <file source="graphics/magician/female/book/book.txt"/>
-    <file source="graphics/magician/female/book/book.png"/>
-   </folder>
-   <folder name="walking">
-    <file source="graphics/magician/female/walking/walking.png"/>
-    <file source="graphics/magician/female/walking/walking.txt"/>
+  <folder name="char">
+   <folder name="magician">
+    <folder name="female">
+     <file source="MagicianFClass.lua"/>
+     <file source="MagicianFBubbleClass.lua"/>
+     <file source="MagicianFBookClass.lua"/>
+    </folder>
    </folder>
   </folder>
+  <folder name="puzzle">
+   <file source="OrbClass.lua"/>
+   <file source="PuzzleClass.lua"/>
+  </folder>
+  <folder name="helper">
+   <file source="MiscClass.lua"/>
+   <file source="easing.lua"/>
+   <file source="gtween.lua"/>
+  </folder>
+  <file source="monster.lua"/>
+  <file source="main.lua"/>
  </folder>
- <folder name="g_summon_circle"/>
- <file source="main.lua"/>
- <folder name="g_background">
-  <file source="graphics/tile_grass.png"/>
-  <file source="graphics/tile_dirt.png"/>
-  <file source="graphics/grass4.png"/>
-  <file source="graphics/grass3.png"/>
-  <file source="graphics/grass2.png"/>
-  <file source="graphics/grass1.png"/>
-  <file source="graphics/cloud3.png"/>
-  <file source="graphics/cloud2.png"/>
-  <file source="graphics/cloud1.png"/>
-  <file source="graphics/bg_grass.png"/>
+ <folder name="graphics">
+  <folder name="button">
+   <file source="graphics/button/battle start.png"/>
+   <file source="graphics/button/battle started.png"/>
+  </folder>
+  <folder name="saku_orb">
+   <file source="graphics/saku orb/4.png"/>
+   <file source="graphics/saku orb/3.png"/>
+   <file source="graphics/saku orb/2.png"/>
+   <file source="graphics/saku orb/1.png"/>
+  </folder>
+  <folder name="enemy">
+   <file source="graphics/enemy/monster.png"/>
+  </folder>
+  <folder name="magician">
+   <folder name="effect">
+    <file source="graphics/magician/effect/wave1/wave.txt"/>
+    <file source="graphics/magician/effect/wave1/wave.png"/>
+   </folder>
+   <folder name="female">
+    <folder name="bubble">
+     <file source="graphics/magician/female/bubble/bubble.txt"/>
+     <file source="graphics/magician/female/bubble/bubble.png"/>
+    </folder>
+    <folder name="book">
+     <file source="graphics/magician/female/book/book.txt"/>
+     <file source="graphics/magician/female/book/book.png"/>
+    </folder>
+    <folder name="walking">
+     <file source="graphics/magician/female/walking/walking.png"/>
+     <file source="graphics/magician/female/walking/walking.txt"/>
+    </folder>
+   </folder>
+  </folder>
+  <folder name="summon_circle"/>
+  <folder name="background">
+   <file source="graphics/tile_grass.png"/>
+   <file source="graphics/tile_dirt.png"/>
+   <file source="graphics/grass4.png"/>
+   <file source="graphics/grass3.png"/>
+   <file source="graphics/grass2.png"/>
+   <file source="graphics/grass1.png"/>
+   <file source="graphics/cloud3.png"/>
+   <file source="graphics/cloud2.png"/>
+   <file source="graphics/cloud1.png"/>
+   <file source="graphics/bg_grass.png"/>
+  </folder>
  </folder>
 </project>

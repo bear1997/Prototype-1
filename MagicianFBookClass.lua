@@ -1,6 +1,6 @@
 MagicianFBookClass = Core.class(Sprite)
 
-local pack = TexturePack.new("g_magician/female/book/book.txt","g_magician/female/book/book.png")
+local pack = TexturePack.new("graphics/magician/female/book/book.txt","graphics/magician/female/book/book.png")
 function MagicianFBookClass:init()
 	self.anim = {
 		Bitmap.new(pack:getTextureRegion("frame1.png")),

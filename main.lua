@@ -1,10 +1,10 @@
-local background = Bitmap.new(Texture.new("g_background/bg_grass.png"))
+local background = Bitmap.new(Texture.new("graphics/background/bg_grass.png"))
 stage:addChild(background)
 
-local dirt = require("DirtClass")
+local dirt = require("src/background/DirtClass")
 dirt.createDirt()
 
-local Misc = require("helper/MiscClass")
+local Misc = require("src/helper/MiscClass")
 
 stage:setOrientation(Stage.PORTRAIT)
 
