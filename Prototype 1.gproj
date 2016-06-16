@@ -17,38 +17,65 @@
   </exports>
  </properties>
  <folder name="src">
+  <folder name="core">
+   <file source="src/core/BaseAnimClass.lua"/>
+  </folder>
   <folder name="enemy">
-   <file source="src/enemy/monster.lua"/>
+   <file source="src/enemy/SlimeClass.lua"/>
   </folder>
   <folder name="background">
-   <file source="CloudClass.lua"/>
-   <file source="DirtClass.lua"/>
-   <file source="GrassClass.lua"/>
+   <file source="src/background/GrassClass.lua"/>
+   <file source="src/background/DirtClass.lua"/>
+   <file source="src/background/CloudClass.lua"/>
   </folder>
   <folder name="char">
    <folder name="magician">
     <folder name="female">
-     <file source="MagicianFClass.lua"/>
-     <file source="MagicianFBubbleClass.lua"/>
-     <file source="MagicianFBookClass.lua"/>
+     <file source="src/char/magician/female/MagicianFClass.lua"/>
+     <file source="src/char/magician/female/MagicianFBubbleClass.lua"/>
+     <file source="src/char/magician/female/MagicianFBookClass.lua"/>
     </folder>
    </folder>
   </folder>
   <folder name="puzzle">
-   <file source="OrbClass.lua"/>
-   <file source="PuzzleClass.lua"/>
+   <file source="src/puzzle/PuzzleClass.lua"/>
+   <file source="src/puzzle/OrbClass.lua"/>
   </folder>
   <folder name="helper">
-   <file source="MiscClass.lua"/>
-   <file source="easing.lua"/>
-   <file source="gtween.lua"/>
+   <file source="src/helper/MiscClass.lua"/>
+   <file source="src/helper/gtween.lua"/>
+   <file source="src/helper/easing.lua"/>
   </folder>
   <file source="main.lua"/>
  </folder>
  <folder name="graphics">
-  <folder name="button">
-   <file source="graphics/button/battle start.png"/>
-   <file source="graphics/button/battle started.png"/>
+  <folder name="ui">
+   <folder name="button">
+    <file source="graphics/ui/button/battle started.png"/>
+    <file source="graphics/ui/button/battle start.png"/>
+   </folder>
+  </folder>
+  <folder name="char">
+   <folder name="magician">
+    <folder name="effect">
+     <file source="graphics/char/magician/effect/wave1/wave.txt"/>
+     <file source="graphics/char/magician/effect/wave1/wave.png"/>
+    </folder>
+    <folder name="female">
+     <folder name="bubble">
+      <file source="graphics/char/magician/female/bubble/bubble.txt"/>
+      <file source="graphics/char/magician/female/bubble/bubble.png"/>
+     </folder>
+     <folder name="book">
+      <file source="graphics/char/magician/female/book/book.txt"/>
+      <file source="graphics/char/magician/female/book/book.png"/>
+     </folder>
+     <folder name="walking">
+      <file source="graphics/char/magician/female/walking/walking.txt"/>
+      <file source="graphics/char/magician/female/walking/walking.png"/>
+     </folder>
+    </folder>
+   </folder>
   </folder>
   <folder name="saku_orb">
    <file source="graphics/saku orb/4.png"/>
@@ -58,26 +85,6 @@
   </folder>
   <folder name="enemy">
    <file source="graphics/enemy/monster.png"/>
-  </folder>
-  <folder name="magician">
-   <folder name="effect">
-    <file source="graphics/magician/effect/wave1/wave.txt"/>
-    <file source="graphics/magician/effect/wave1/wave.png"/>
-   </folder>
-   <folder name="female">
-    <folder name="bubble">
-     <file source="graphics/magician/female/bubble/bubble.txt"/>
-     <file source="graphics/magician/female/bubble/bubble.png"/>
-    </folder>
-    <folder name="book">
-     <file source="graphics/magician/female/book/book.txt"/>
-     <file source="graphics/magician/female/book/book.png"/>
-    </folder>
-    <folder name="walking">
-     <file source="graphics/magician/female/walking/walking.png"/>
-     <file source="graphics/magician/female/walking/walking.txt"/>
-    </folder>
-   </folder>
   </folder>
   <folder name="summon_circle"/>
   <folder name="background">
