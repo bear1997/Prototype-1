@@ -84,7 +84,7 @@
    <file source="graphics/saku orb/1.png"/>
   </folder>
   <folder name="enemy">
-   <file source="graphics/enemy/monster.png"/>
+   <file source="graphics/enemy/slime.png"/>
   </folder>
   <folder name="summon_circle"/>
   <folder name="background">
