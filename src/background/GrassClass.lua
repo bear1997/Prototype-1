@@ -5,7 +5,7 @@ local Misc = require("src/helper/MiscClass")
 function GrassClass:init()
 	self:addChild(Bitmap.new(Texture.new("graphics/background/grass" .. tostring(math.random(4)) .. ".png")))
 	self:setY(320 - self:getHeight())
-	self:setX(320)
+	self:setX(360)
 	self.isCleaned = false
 	
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)

@@ -1,24 +1,26 @@
 <project>
- <properties windowHeight="0" autorotation="0" android_template="0" winrt_package="com.yourdomain.yourapp" app_icon="" orientation="0" scaleMode="3" osx_category="5" winrt_org="GiderosMobile" osx_bundle="com.yourdomain." encryptCode="0" osx_org="GiderosMobile" html5_mem="256" windowWidth="0" touchToMouse="1" version="1.0" html5_host="" win_org="GiderosMobile" logicalWidth="360" encryptAssets="0" mouseToTouch="1" packageName="com.yourdomain.yourapp" ios_bundle="com.yourdomain." assetsOnly="0" iosDevice="0" logicalHeight="640" architecture="7" osx_domain="giderosmobile.com" retinaDisplay="0" mouseTouchOrder="0" app_icon_noexport="0" win_domain="giderosmobile.com" version_code="1" fps="60">
+ <properties android_template="0" winrt_org="GiderosMobile" windowHeight="0" fps="60" win_org="GiderosMobile" osx_category="5" version="1.0" assetsOnly="0" iosDevice="0" osx_domain="giderosmobile.com" packageName="com.yourdomain.yourapp" app_icon="" ios_bundle="com.yourdomain." osx_bundle="com.yourdomain." app_icon_noexport="0" win_domain="giderosmobile.com" retinaDisplay="0" mouseToTouch="1" logicalWidth="360" logicalHeight="640" encryptCode="0" scaleMode="3" windowWidth="0" osx_org="GiderosMobile" encryptAssets="0" winrt_package="com.yourdomain.yourapp" touchToMouse="1" version_code="1" mouseTouchOrder="0" autorotation="0" architecture="7" orientation="0" html5_host="" html5_mem="256">
   <imageScales/>
   <plugins/>
   <exports>
    <export name="APK">
-    <property name="androidPath" value=""/>
-    <property name="androidTarget" value="19"/>
-    <property name="antPath" value=""/>
-    <property name="javaPath" value=""/>
-    <property name="keyAlias" value=""/>
-    <property name="keyAliasPass" value=""/>
-    <property name="keyStore" value=""/>
-    <property name="keyStorePass" value=""/>
-    <property name="packageName" value="com.yourdomain.yourapp"/>
+    <property value="" name="androidPath"/>
+    <property value="19" name="androidTarget"/>
+    <property value="" name="antPath"/>
+    <property value="" name="javaPath"/>
+    <property value="" name="keyAlias"/>
+    <property value="" name="keyAliasPass"/>
+    <property value="" name="keyStore"/>
+    <property value="" name="keyStorePass"/>
+    <property value="com.yourdomain.yourapp" name="packageName"/>
    </export>
   </exports>
  </properties>
  <folder name="src">
   <folder name="core">
-   <file source="src/core/BaseAnimClass.lua"/>
+   <file source="src/core/BattleEngineClass.lua"/>
+   <file source="src/core/BasePlayerClass.lua"/>
+   <file source="src/core/BaseEnemyClass.lua"/>
   </folder>
   <folder name="enemy">
    <file source="src/enemy/SlimeClass.lua"/>
@@ -42,6 +44,7 @@
    <file source="src/puzzle/OrbClass.lua"/>
   </folder>
   <folder name="helper">
+   <file source="src/helper/constants.lua"/>
    <file source="src/helper/MiscClass.lua"/>
    <file source="src/helper/gtween.lua"/>
    <file source="src/helper/easing.lua"/>
@@ -77,11 +80,11 @@
     </folder>
    </folder>
   </folder>
-  <folder name="saku_orb">
-   <file source="graphics/saku orb/4.png"/>
-   <file source="graphics/saku orb/3.png"/>
-   <file source="graphics/saku orb/2.png"/>
-   <file source="graphics/saku orb/1.png"/>
+  <folder name="sakuOrb">
+   <file source="graphics/sakuOrb/4.png"/>
+   <file source="graphics/sakuOrb/3.png"/>
+   <file source="graphics/sakuOrb/2.png"/>
+   <file source="graphics/sakuOrb/1.png"/>
   </folder>
   <folder name="enemy">
    <file source="graphics/enemy/slime.png"/>

@@ -1,14 +1,14 @@
 PuzzleClass = Core.class(Sprite)
 
 local Misc = require("src/helper/MiscClass")
+local CONST = require("src/helper/constants")
+
+local BattleEngineClass = require("src/core/BattleEngineClass")
 
 local orbLayer = {}
 local orbTable = {}
 
-local blueOrb = 0
-local greenOrb = 0
-local yellowOrb = 0
-local redOrb = 0
+local orbColor = {}
 
 local colmax = 7
 -------------------------------------------------------------------------------------------
@@ -59,6 +59,7 @@ function PuzzleClass:resetLink()
 			orbLayer[row][col].isLinked = false
 		end
 	end
+	orbColor = 0
 end
 
 function PuzzleClass:setMoving()
@@ -140,7 +141,7 @@ function PuzzleClass:hideOrb()
 			end				
 		end
 	end
-	
+	self:setColorAction()
 	removeTimer:start()
 end
 
@@ -161,7 +162,7 @@ function PuzzleClass:onMove(event)
 					if diff_row == 1 and diff_col == 1 then
 						is_ended = true
 						move_counter = 0
-						self.resetLink()
+						self:resetLink()
 					end					
 					
 					if diff_row == 1 or diff_col == 1 then						
@@ -170,15 +171,15 @@ function PuzzleClass:onMove(event)
 							is_ended = true
 							is_moving = true
 							move_counter = 0
-							self.hideOrb()						
+							self:hideOrb()			
 						elseif orbLayer[last_row][last_col].color ~= orbLayer[row][col].color then
 							print("color end")
 							is_ended = true
 							if move_counter > 1 then
 								is_moving = true
-								self.hideOrb()
+								self:hideOrb()
 							else
-								self.resetLink()
+								self:resetLink()
 							end
 							move_counter = 0
 						end	
@@ -186,6 +187,8 @@ function PuzzleClass:onMove(event)
 					
 					if is_ended ~= true then
 						if orbLayer[row][col].isLinked ~= true then
+							orbColor = orbLayer[row][col].color
+							
 							move_counter = move_counter + 1
 							orbLayer[row][col].isLinked = true
 							last_row, last_col = row, col
@@ -195,10 +198,9 @@ function PuzzleClass:onMove(event)
 					end
 				elseif orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) and move_counter > 0
 					and (orbLayer[row][col].col <= 1 or orbLayer[row][col].col >= colmax) then
-					print("forbidden column")
 					is_ended = true
 					move_counter = 0
-					self.resetLink()
+					self:resetLink()
 				end
 			end
 		end
@@ -213,16 +215,22 @@ function PuzzleClass:onMoveEnd()
 				last_row, last_col = 0, 0
 				is_moving = true
 				move_counter = 0
-				self.hideOrb()
+				self:hideOrb()
 			else
 				last_row, last_col = 0, 0
 				is_moving = false
 				move_counter = 0
-				self.resetLink()
+				self:resetLink()
 			end
 		end
 	end
 	is_ended = false
+end
+
+function PuzzleClass:setColorAction()
+	if orbColor == CONST.ORB_RED then
+		BattleEngineClass.damageEnemy(math.random(3, 5), BattleEngineClass.player)
+	end
 end
 
 movedTimer:addEventListener(Event.TIMER, PuzzleClass.setMoving)

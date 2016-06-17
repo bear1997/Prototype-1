@@ -8,6 +8,8 @@ local SlimeClass = require("src/enemy/SlimeClass")
 
 local Misc = require("src/helper/MiscClass")
 
+local BattleEngineClass = require("src/core/BattleEngineClass")
+
 local background = Bitmap.new(Texture.new("graphics/background/bg_grass.png"))
 stage:addChild(background)
 
@@ -17,6 +19,7 @@ stage:setOrientation(Stage.PORTRAIT)
 
 local magician = MagicianFClass.new()
 magician:setY(320 - magician:getHeight())
+magician:updateHUD()
 stage:addChild(magician)
 
 --[[
@@ -33,10 +36,13 @@ stage:addChild(magicianBubble)]]
 local slime = SlimeClass.new()
 slime:setX(360 - (slime:getWidth() * 2))
 slime:setY(320 - slime:getHeight())
+slime:updateHUD()
 stage:addChild(slime)
 
 local sakuOrb = PuzzleClass.new()
 stage:addChild(sakuOrb)
+
+BattleEngineClass.init(magician, slime)
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -77,6 +83,8 @@ function update(event)
 	--Misc.bringToFront(magicianBook)
 	--Misc.bringToFront(magicianBubble)
 	Misc.bringToFront(slime)
+	Misc.bringToFront(magician.textHp)
+	Misc.bringToFront(slime.textHp)
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)

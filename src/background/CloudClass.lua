@@ -5,7 +5,7 @@ local Misc = require("src/helper/MiscClass")
 function CloudClass:init()	
 	self:addChild(Bitmap.new(Texture.new("graphics/background/cloud" .. tostring(math.random(3)) .. ".png")))
 	self:setY(math.random(10, 320 - self:getHeight()))
-	self:setX(320)
+	self:setX(360)
 	self.isCleaned = false
 	
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)

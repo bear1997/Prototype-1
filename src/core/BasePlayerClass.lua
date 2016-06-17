@@ -1,6 +1,6 @@
-BaseAnimClass = Core.class(Sprite)
+BasePlayerClass = Core.class(Sprite)
 
-function BaseAnimClass:init(pack, len)
+function BasePlayerClass:init(pack, len, stats)
 	self.anim = {}
 	for i = 1, len, 1 do
 		self.anim[i] = Bitmap.new(pack:getTextureRegion("frame" .. i .. ".png"))
@@ -12,12 +12,19 @@ function BaseAnimClass:init(pack, len)
 	self.subframe = 0
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 	
+	self.hp = stats.hp
+	
+	self.textHp = TextField.new(nil, self.hp)
+	self.textHp:setTextColor(0xff0000)
+	self.textHp:setScale(3)
+	stage:addChild(self.textHp)
+	
 	return self
 end
 
 local skipFrame = 5
 
-function BaseAnimClass:onEnterFrame()
+function BasePlayerClass:onEnterFrame()
 	if skipFrame == 0 then
 		self.subframe = self.subframe + 1
 		
@@ -36,4 +43,12 @@ function BaseAnimClass:onEnterFrame()
 		skipFrame = 5
 	end
 	skipFrame = skipFrame - 1
+end
+
+function BasePlayerClass:updateHUD()
+	self.textHp:setX(self:getX() + self:getWidth() / 2 - self.textHp:getWidth() / 2)	
+	self.textHp:setY(self:getY() - self.textHp:getHeight())
+end
+
+function BasePlayerClass:attack()
 end

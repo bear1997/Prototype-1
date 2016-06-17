@@ -1,7 +1,10 @@
 local SlimeClass = {}
 
 function SlimeClass.new()
-	return Bitmap.new(Texture.new("graphics/enemy/slime.png"))
+	local stats = {}
+	stats.hp = 10
+
+	return BaseEnemyClass.new("graphics/enemy/slime.png", stats)
 end
 
 return SlimeClass

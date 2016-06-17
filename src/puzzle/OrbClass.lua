@@ -3,7 +3,7 @@ OrbClass = Core.class(Sprite)
 local Misc = require("src/helper/MiscClass")
 
 function OrbClass:init(color, row, col)
-	self:addChild(Bitmap.new(Texture.new("graphics/saku_orb/" .. tostring(color) .. ".png")))
+	self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. tostring(color) .. ".png")))
 	
 	self.color = color
 	self.row = row
@@ -19,7 +19,7 @@ function OrbClass:changeColor()
 	self:removeChildAt(1)
 	
 	self.color = math.random(4)
-	self:addChild(Bitmap.new(Texture.new("graphics/saku_orb/" .. self.color .. ".png")))
+	self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. self.color .. ".png")))
 end
 
 function OrbClass:onMoveOrb(event)
