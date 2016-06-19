@@ -55,7 +55,7 @@ function TextWrap:setText(text)
 	
 	--add new line breaks
 	iters = iters + replaces
-	print(iters)
+	
 	--split string in lines
 	local height = 0
 	local last = 1

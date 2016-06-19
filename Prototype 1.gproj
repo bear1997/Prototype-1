@@ -1,18 +1,18 @@
 <project>
- <properties scaleMode="3" osx_category="5" logicalHeight="640" packageName="com.yourdomain.yourapp" orientation="0" android_template="0" retinaDisplay="0" fps="60" assetsOnly="0" winrt_package="com.yourdomain.yourapp" html5_host="" windowWidth="0" app_icon_noexport="0" architecture="7" app_icon="" version_code="1" encryptCode="0" osx_bundle="com.yourdomain." version="1.0" autorotation="0" windowHeight="0" osx_domain="giderosmobile.com" winrt_org="GiderosMobile" encryptAssets="0" win_domain="giderosmobile.com" logicalWidth="360" mouseTouchOrder="0" osx_org="GiderosMobile" html5_mem="256" win_org="GiderosMobile" iosDevice="0" ios_bundle="com.yourdomain." mouseToTouch="1" touchToMouse="1">
+ <properties version="1.0" encryptCode="0" iosDevice="0" scaleMode="3" architecture="7" autorotation="0" mouseTouchOrder="0" osx_org="GiderosMobile" app_icon_noexport="0" packageName="com.yourdomain.yourapp" osx_bundle="com.yourdomain." osx_category="5" windowHeight="0" retinaDisplay="0" winrt_org="GiderosMobile" logicalWidth="360" touchToMouse="1" html5_mem="256" app_icon="" orientation="0" html5_host="" android_template="0" winrt_package="com.yourdomain.yourapp" logicalHeight="640" win_domain="giderosmobile.com" mouseToTouch="1" fps="60" version_code="1" osx_domain="giderosmobile.com" windowWidth="0" win_org="GiderosMobile" ios_bundle="com.yourdomain." assetsOnly="0" encryptAssets="0">
   <imageScales/>
   <plugins/>
   <exports>
    <export name="APK">
-    <property value="" name="androidPath"/>
-    <property value="19" name="androidTarget"/>
-    <property value="" name="antPath"/>
-    <property value="" name="javaPath"/>
-    <property value="" name="keyAlias"/>
-    <property value="" name="keyAliasPass"/>
-    <property value="" name="keyStore"/>
-    <property value="" name="keyStorePass"/>
-    <property value="com.yourdomain.yourapp" name="packageName"/>
+    <property name="androidPath" value=""/>
+    <property name="androidTarget" value="19"/>
+    <property name="antPath" value=""/>
+    <property name="javaPath" value=""/>
+    <property name="keyAlias" value=""/>
+    <property name="keyAliasPass" value=""/>
+    <property name="keyStore" value=""/>
+    <property name="keyStorePass" value=""/>
+    <property name="packageName" value="com.yourdomain.yourapp"/>
    </export>
   </exports>
  </properties>
