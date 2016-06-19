@@ -1,5 +1,5 @@
 <project>
- <properties android_template="0" winrt_org="GiderosMobile" windowHeight="0" fps="60" win_org="GiderosMobile" osx_category="5" version="1.0" assetsOnly="0" iosDevice="0" osx_domain="giderosmobile.com" packageName="com.yourdomain.yourapp" app_icon="" ios_bundle="com.yourdomain." osx_bundle="com.yourdomain." app_icon_noexport="0" win_domain="giderosmobile.com" retinaDisplay="0" mouseToTouch="1" logicalWidth="360" logicalHeight="640" encryptCode="0" scaleMode="3" windowWidth="0" osx_org="GiderosMobile" encryptAssets="0" winrt_package="com.yourdomain.yourapp" touchToMouse="1" version_code="1" mouseTouchOrder="0" autorotation="0" architecture="7" orientation="0" html5_host="" html5_mem="256">
+ <properties scaleMode="3" osx_category="5" logicalHeight="640" packageName="com.yourdomain.yourapp" orientation="0" android_template="0" retinaDisplay="0" fps="60" assetsOnly="0" winrt_package="com.yourdomain.yourapp" html5_host="" windowWidth="0" app_icon_noexport="0" architecture="7" app_icon="" version_code="1" encryptCode="0" osx_bundle="com.yourdomain." version="1.0" autorotation="0" windowHeight="0" osx_domain="giderosmobile.com" winrt_org="GiderosMobile" encryptAssets="0" win_domain="giderosmobile.com" logicalWidth="360" mouseTouchOrder="0" osx_org="GiderosMobile" html5_mem="256" win_org="GiderosMobile" iosDevice="0" ios_bundle="com.yourdomain." mouseToTouch="1" touchToMouse="1">
   <imageScales/>
   <plugins/>
   <exports>
@@ -16,6 +16,27 @@
    </export>
   </exports>
  </properties>
+ <folder name="lib">
+  <folder name="textwrap">
+   <file source="lib/textwrap/TextWrap.lua"/>
+  </folder>
+  <folder name="slaxml">
+   <file source="lib/slaxml/slaxml.lua"/>
+   <file source="lib/slaxml/slaxdom.lua"/>
+  </folder>
+  <folder name="gtween">
+   <file source="lib/gtween/gtween.lua"/>
+   <file source="lib/gtween/easing.lua"/>
+  </folder>
+ </folder>
+ <folder name="fonts">
+  <file source="fonts/Kai_Ti_GB2312.ttf"/>
+ </folder>
+ <folder name="lang">
+  <folder name="zh_CN">
+   <file source="lang/zh_CN/prologue.xml"/>
+  </folder>
+ </folder>
  <folder name="src">
   <folder name="core">
    <file source="src/core/BattleEngineClass.lua"/>
@@ -44,10 +65,9 @@
    <file source="src/puzzle/OrbClass.lua"/>
   </folder>
   <folder name="helper">
+   <file source="src/helper/ScriptClass.lua"/>
    <file source="src/helper/constants.lua"/>
    <file source="src/helper/MiscClass.lua"/>
-   <file source="src/helper/gtween.lua"/>
-   <file source="src/helper/easing.lua"/>
   </folder>
   <file source="main.lua"/>
  </folder>

@@ -1,6 +1,7 @@
 local BattleEngineClass = {}
 
-local player, enemy = nil, nil
+BattleEngineClass.player, BattleEngineClass.enemy = nil, nil
+--local player, enemy = nil, nil
 
 function BattleEngineClass.init(obj1, obj2)
 	player = obj1

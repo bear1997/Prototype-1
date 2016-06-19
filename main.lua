@@ -7,6 +7,7 @@ local MagicianFBookClass = require("src/char/magician/female/MagicianFBookClass"
 local SlimeClass = require("src/enemy/SlimeClass")
 
 local Misc = require("src/helper/MiscClass")
+local ScriptClass = require("src/helper/ScriptClass")
 
 local BattleEngineClass = require("src/core/BattleEngineClass")
 
@@ -43,6 +44,8 @@ local sakuOrb = PuzzleClass.new()
 stage:addChild(sakuOrb)
 
 BattleEngineClass.init(magician, slime)
+
+ScriptClass.readFile("lang/zh_CN/prologue.xml")
 
 -----------------------------------------------------------------------------------------------------------------
 
