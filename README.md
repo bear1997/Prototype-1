@@ -1,0 +1,1 @@
+Any clone or modification of this project outside of owners permissions is prohibited.

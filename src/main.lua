@@ -1,50 +1,30 @@
-local DirtClass = require("src/background/DirtClass")
-
-local MagicianFClass = require("src/char/magician/female/MagicianFClass")
-local MagicianFBubbleClass = require("src/char/magician/female/MagicianFBubbleClass")
-local MagicianFBookClass = require("src/char/magician/female/MagicianFBookClass")
-
-local SlimeClass = require("src/enemy/SlimeClass")
-
-local Misc = require("src/helper/MiscClass")
-local ScriptClass = require("src/helper/ScriptClass")
-
-local BattleEngineClass = require("src/core/BattleEngineClass")
-
 local background = Bitmap.new(Texture.new("graphics/background/bg_grass.png"))
 stage:addChild(background)
 
-DirtClass.createDirt()
+local dirt = require("src/background/DirtClass")
+dirt.createDirt()
+
+local Misc = require("src/helper/MiscClass")
 
 stage:setOrientation(Stage.PORTRAIT)
 
 local magician = MagicianFClass.new()
 magician:setY(320 - magician:getHeight())
-magician:updateHUD()
 stage:addChild(magician)
 
 --[[
-local magicianBook = MagicianFBookClass.new()
+local magicianBook = magicianFBookClass.new()
 magicianBook:setX(magician:getX() + magician:getWidth() - 10)
 magicianBook:setY(magician:getY() + magician:getHeight() / 2)
-stage:addChild(magicianBook)
-
-local magicianBubble = MagicianFBubbleClass.new()
+stage:addChild(magicianBook)]]
+--[[
+local magicianBubble = magicianFBubbleClass.new()
 magicianBubble:setX(magician:getX())
 magicianBubble:setY(magician:getY())
 stage:addChild(magicianBubble)]]
 
-local slime = SlimeClass.new()
-slime:setX(360 - (slime:getWidth() * 2))
-slime:setY(320 - slime:getHeight())
-slime:updateHUD()
-stage:addChild(slime)
-
-local sakuOrb = PuzzleClass.new()
-stage:addChild(sakuOrb)
-
-BattleEngineClass.init(magician, slime)
-ScriptClass.readFile("lang/zh_CN/prologue.xml")
+local sakuorb = PuzzleClass.new()
+stage:addChild(sakuorb)
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -81,12 +61,9 @@ stage:addEventListener("REMOVE_CHILD", cleanUp)
 -- Grass and cloud spawn end
 
 function update(event)
-	Misc.bringToFront(magician)	
+	Misc.bringToFront(magician)
 	--Misc.bringToFront(magicianBook)
 	--Misc.bringToFront(magicianBubble)
-	Misc.bringToFront(slime)
-	Misc.bringToFront(magician.textHp)
-	Misc.bringToFront(slime.textHp)
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)
