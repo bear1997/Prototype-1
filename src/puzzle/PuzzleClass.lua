@@ -50,7 +50,7 @@ end
 local movedTimer = Timer.new(510, 1)
 local removeTimer = Timer.new(510, 1)
 
-local last_row, last_col, is_ended, is_moving, move_counter, diff_row, diff_col = 0, 0, false, false, 0, 0, 0
+local lastRow, lastCol, isEnded, isMoving, moveCounter, diffRow, diffCol = 0, 0, false, false, 0, 0, 0
 local orbStack = {}
 
 function PuzzleClass:resetLink()
@@ -63,7 +63,7 @@ function PuzzleClass:resetLink()
 end
 
 function PuzzleClass:setMoving()
-	is_moving = false
+	isMoving = false
 end
 
 function PuzzleClass:fillSlot()
@@ -146,60 +146,60 @@ function PuzzleClass:hideOrb()
 end
 
 function PuzzleClass:onMove(event)
-	if is_moving == false then
+	if isMoving == false then
 		for row = 1,5 do
 			for col = 1,colmax do
 				if orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) and orbLayer[row][col].col > 1
 				and orbLayer[row][col].col < colmax then
 					
-					if last_row == 0 and last_col == 0 then
-						last_row, last_col = row, col
+					if lastRow == 0 and lastCol == 0 then
+						lastRow, lastCol = row, col
 					end
 					
-					diff_row, diff_col = math.abs(orbLayer[row][col].row - orbLayer[last_row][last_col].row),
-										math.abs(orbLayer[row][col].col - orbLayer[last_row][last_col].col)
+					diffRow, diffCol = math.abs(orbLayer[row][col].row - orbLayer[lastRow][lastCol].row),
+										math.abs(orbLayer[row][col].col - orbLayer[lastRow][lastCol].col)
 					
-					if diff_row == 1 and diff_col == 1 then
-						is_ended = true
-						move_counter = 0
+					if diffRow == 1 and diffCol == 1 then
+						isEnded = true
+						moveCounter = 0
 						self:resetLink()
 					end					
 					
-					if diff_row == 1 or diff_col == 1 then						
+					if diffRow == 1 or diffCol == 1 then						
 						if orbLayer[row][col].isLinked ~= false then
 							print("link end")
-							is_ended = true
-							is_moving = true
-							move_counter = 0
+							isEnded = true
+							isMoving = true
+							moveCounter = 0
 							self:hideOrb()			
-						elseif orbLayer[last_row][last_col].color ~= orbLayer[row][col].color then
+						elseif orbLayer[lastRow][lastCol].color ~= orbLayer[row][col].color then
 							print("color end")
-							is_ended = true
-							if move_counter > 1 then
-								is_moving = true
+							isEnded = true
+							if moveCounter > 1 then
+								isMoving = true
 								self:hideOrb()
 							else
 								self:resetLink()
 							end
-							move_counter = 0
+							moveCounter = 0
 						end	
 					end
 					
-					if is_ended ~= true then
+					if isEnded ~= true then
 						if orbLayer[row][col].isLinked ~= true then
 							orbColor = orbLayer[row][col].color
 							
-							move_counter = move_counter + 1
+							moveCounter = moveCounter + 1
 							orbLayer[row][col].isLinked = true
-							last_row, last_col = row, col
+							lastRow, lastCol = row, col
 						end
 					else
-						last_row, last_col = 0, 0
+						lastRow, lastCol = 0, 0
 					end
-				elseif orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) and move_counter > 0
+				elseif orbLayer[row][col]:hitTestPoint(event.touch.x, event.touch.y) and moveCounter > 0
 					and (orbLayer[row][col].col <= 1 or orbLayer[row][col].col >= colmax) then
-					is_ended = true
-					move_counter = 0
+					isEnded = true
+					moveCounter = 0
 					self:resetLink()
 				end
 			end
@@ -208,28 +208,28 @@ function PuzzleClass:onMove(event)
 end
 
 function PuzzleClass:onMoveEnd()
-	if is_moving == false then
-		if is_ended == false then
-			if move_counter > 1 then
+	if isMoving == false then
+		if isEnded == false then
+			if moveCounter > 1 then
 				print("manual end")
-				last_row, last_col = 0, 0
-				is_moving = true
-				move_counter = 0
+				lastRow, lastCol = 0, 0
+				isMoving = true				
 				self:hideOrb()
+				moveCounter = 0
 			else
-				last_row, last_col = 0, 0
-				is_moving = false
-				move_counter = 0
+				lastRow, lastCol = 0, 0
+				isMoving = false
+				moveCounter = 0
 				self:resetLink()
 			end
 		end
 	end
-	is_ended = false
+	isEnded = false
 end
 
 function PuzzleClass:setColorAction()
 	if orbColor == CONST.ORB_RED then
-		BattleEngineClass.attackEnemy(BattleEngineClass.player)
+		BattleEngineClass.attackEnemy(BattleEngineClass.player, moveCounter)
 	end
 end
 
