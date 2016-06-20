@@ -21,7 +21,7 @@ function BaseEnemyClass:init(img, stats)
 	self.stats = {}
 	LevelClass.setStats(self.stats, stats)
 	
-	self.textHp = TextField.new(nil, self.hp)
+	self.textHp = TextField.new(nil, self.stats.hp)
 	self.textHp:setTextColor(0xff0000)
 	self.textHp:setScale(3)
 	stage:addChild(self.textHp)

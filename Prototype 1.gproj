@@ -74,6 +74,9 @@
  </folder>
  <folder name="graphics">
   <folder name="ui">
+   <folder name="dialogue">
+    <file source="graphics/ui/dialogue/paper-dialog_test.png"/>
+   </folder>
    <folder name="button">
     <file source="graphics/ui/button/battle started.png"/>
     <file source="graphics/ui/button/battle start.png"/>
@@ -86,6 +89,9 @@
      <file source="graphics/char/magician/effect/wave1/wave.png"/>
     </folder>
     <folder name="female">
+     <folder name="face">
+      <file source="graphics/char/magician/female/face/magigirl_face_normal.png"/>
+     </folder>
      <folder name="bubble">
       <file source="graphics/char/magician/female/bubble/bubble.txt"/>
       <file source="graphics/char/magician/female/bubble/bubble.png"/>

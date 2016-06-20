@@ -10,6 +10,7 @@ NodeList = {}
 local tempTable, currName = {}, ""
 
 local textField, texta = nil, nil
+local box, face = nil, nil
 
 function ScriptClass.testTable(obj)
 	--print(obj.id)
@@ -58,15 +59,22 @@ function ScriptClass.closeElement(name, nsURI)
 end
 
 function ScriptClass.readFile(path)
-	--textField = TextWrap.new("a", 200)
-	textField = TextWrap.new("我我我我我我我我我我我。\n我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我", 300, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19))
+	box = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
+	box:setPosition(132, 340)
+	MiscClass.bringToFront(box)
+	
+	face = Bitmap.new(Texture.new("graphics/char/magician/female/face/magigirl_face_normal.png"))
+	face:setPosition(20, 350)
+	MiscClass.bringToFront(face)
+	
+	textField = TextWrap.new("我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我", 400, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19))
 	textField:setScale(1)
 	textField:setTextColor(0xff0000)
-	textField:setPosition(128, 360)
+	textField:setPosition(138, 365)
 	MiscClass.bringToFront(textField)
 	
 	ScriptClass.xml = io.open(path):read("*all")
-	
+	SakuOrb:hideAllOrb()
 	ScriptClass.parser = Slaxml:parser {
 		attribute = ScriptClass.attribute,
 		closeElement = ScriptClass.closeElement

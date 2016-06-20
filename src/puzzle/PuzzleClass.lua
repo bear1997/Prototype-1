@@ -133,6 +133,14 @@ function PuzzleClass:supplyOrb()
 	PuzzleClass:fillSlot()
 end
 
+function PuzzleClass:hideAllOrb()
+	for row = 1,5 do
+		for col = 1,colmax do			
+				GTween.new(orbLayer[row][col], 0.5, {alpha = 0}, { ease = easing.inBack })
+		end
+	end
+end
+
 function PuzzleClass:hideOrb()
 	for row = 1,5 do
 		for col = 1,colmax do

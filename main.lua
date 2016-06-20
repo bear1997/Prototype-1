@@ -40,8 +40,8 @@ slime:setY(320 - slime:getHeight())
 slime:updateHUD()
 stage:addChild(slime)
 
-local sakuOrb = PuzzleClass.new()
-stage:addChild(sakuOrb)
+SakuOrb = PuzzleClass.new()
+stage:addChild(SakuOrb)
 
 BattleEngineClass.init(magician, slime)
 ScriptClass.readFile("lang/zh_CN/prologue.xml")
