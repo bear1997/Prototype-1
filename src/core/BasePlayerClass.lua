@@ -1,3 +1,7 @@
+local LevelClass = require("src/core/LevelClass")
+
+local BattleEngineClass = require("src/core/BattleEngineClass")
+
 BasePlayerClass = Core.class(Sprite)
 
 function BasePlayerClass:init(pack, len, stats)
@@ -12,9 +16,10 @@ function BasePlayerClass:init(pack, len, stats)
 	self.subframe = 0
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 	
-	self.hp = stats.hp
+	self.stats = {}
+	LevelClass.setStats(self.stats, stats)	
 	
-	self.textHp = TextField.new(nil, self.hp)
+	self.textHp = TextField.new(nil, self.stats.hp)
 	self.textHp:setTextColor(0xff0000)
 	self.textHp:setScale(3)
 	stage:addChild(self.textHp)
@@ -51,4 +56,5 @@ function BasePlayerClass:updateHUD()
 end
 
 function BasePlayerClass:attack()
+	BattleEngineClass.attackEnemy(self)
 end

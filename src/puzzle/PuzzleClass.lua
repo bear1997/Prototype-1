@@ -229,7 +229,7 @@ end
 
 function PuzzleClass:setColorAction()
 	if orbColor == CONST.ORB_RED then
-		BattleEngineClass.damageEnemy(math.random(3, 5), BattleEngineClass.player)
+		BattleEngineClass.attackEnemy(BattleEngineClass.player)
 	end
 end
 

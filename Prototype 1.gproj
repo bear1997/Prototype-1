@@ -1,18 +1,18 @@
 <project>
- <properties version="1.0" encryptCode="0" iosDevice="0" scaleMode="3" architecture="7" autorotation="0" mouseTouchOrder="0" osx_org="GiderosMobile" app_icon_noexport="0" packageName="com.yourdomain.yourapp" osx_bundle="com.yourdomain." osx_category="5" windowHeight="0" retinaDisplay="0" winrt_org="GiderosMobile" logicalWidth="360" touchToMouse="1" html5_mem="256" app_icon="" orientation="0" html5_host="" android_template="0" winrt_package="com.yourdomain.yourapp" logicalHeight="640" win_domain="giderosmobile.com" mouseToTouch="1" fps="60" version_code="1" osx_domain="giderosmobile.com" windowWidth="0" win_org="GiderosMobile" ios_bundle="com.yourdomain." assetsOnly="0" encryptAssets="0">
+ <properties windowHeight="0" logicalWidth="360" ios_bundle="com.yourdomain." windowWidth="0" winrt_package="com.yourdomain.yourapp" logicalHeight="640" orientation="0" autorotation="0" html5_mem="256" retinaDisplay="0" app_icon="" osx_category="5" architecture="7" fps="60" encryptCode="0" encryptAssets="0" app_icon_noexport="0" osx_bundle="com.yourdomain." android_template="0" touchToMouse="1" mouseToTouch="1" packageName="com.yourdomain.yourapp" winrt_org="GiderosMobile" version="1.0" mouseTouchOrder="0" version_code="1" osx_domain="giderosmobile.com" win_org="GiderosMobile" assetsOnly="0" iosDevice="0" osx_org="GiderosMobile" scaleMode="3" win_domain="giderosmobile.com" html5_host="">
   <imageScales/>
   <plugins/>
   <exports>
    <export name="APK">
-    <property name="androidPath" value=""/>
-    <property name="androidTarget" value="19"/>
-    <property name="antPath" value=""/>
-    <property name="javaPath" value=""/>
-    <property name="keyAlias" value=""/>
-    <property name="keyAliasPass" value=""/>
-    <property name="keyStore" value=""/>
-    <property name="keyStorePass" value=""/>
-    <property name="packageName" value="com.yourdomain.yourapp"/>
+    <property value="" name="androidPath"/>
+    <property value="19" name="androidTarget"/>
+    <property value="" name="antPath"/>
+    <property value="" name="javaPath"/>
+    <property value="" name="keyAlias"/>
+    <property value="" name="keyAliasPass"/>
+    <property value="" name="keyStore"/>
+    <property value="" name="keyStorePass"/>
+    <property value="com.yourdomain.yourapp" name="packageName"/>
    </export>
   </exports>
  </properties>
@@ -39,6 +39,7 @@
  </folder>
  <folder name="src">
   <folder name="core">
+   <file source="src/core/LevelClass.lua"/>
    <file source="src/core/BattleEngineClass.lua"/>
    <file source="src/core/BasePlayerClass.lua"/>
    <file source="src/core/BaseEnemyClass.lua"/>

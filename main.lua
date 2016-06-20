@@ -44,7 +44,6 @@ local sakuOrb = PuzzleClass.new()
 stage:addChild(sakuOrb)
 
 BattleEngineClass.init(magician, slime)
-
 ScriptClass.readFile("lang/zh_CN/prologue.xml")
 
 -----------------------------------------------------------------------------------------------------------------

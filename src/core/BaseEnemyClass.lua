@@ -1,6 +1,8 @@
-BaseEnemyClass = Core.class(Sprite)
+local LevelClass = require("src/core/LevelClass")
 
 local BattleEngineClass = require("src/core/BattleEngineClass")
+
+BaseEnemyClass = Core.class(Sprite)
 
 function BaseEnemyClass:init(img, stats)
 	self:addChild(Bitmap.new(Texture.new(img)))
@@ -16,7 +18,8 @@ function BaseEnemyClass:init(img, stats)
 	self.subframe = 0
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)]]
 	
-	self.hp = stats.hp	
+	self.stats = {}
+	LevelClass.setStats(self.stats, stats)
 	
 	self.textHp = TextField.new(nil, self.hp)
 	self.textHp:setTextColor(0xff0000)
@@ -24,7 +27,7 @@ function BaseEnemyClass:init(img, stats)
 	stage:addChild(self.textHp)
 	
 	self.attackTimer = Timer.new(math.random(2, 4) * 1000, 0)
-	self.attackTimer:addEventListener(Event.TIMER, self.attack)
+	self.attackTimer:addEventListener(Event.TIMER, BaseEnemyClass.attack, self)
 	self.attackTimer:start()
 	
 	return self
@@ -59,5 +62,5 @@ function BaseEnemyClass:updateHUD()
 end
 
 function BaseEnemyClass:attack()
-	BattleEngineClass.damagePlayer(math.random(2, 4), self)
+	BattleEngineClass.attackPlayer(self)
 end
