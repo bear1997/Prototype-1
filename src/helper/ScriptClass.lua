@@ -1,4 +1,6 @@
 local Slaxml = require "lib/slaxml/slaxml"
+require "lib/luautf8/utf8"
+--package.loadlib("lib/luautf8/lua-utf8.dll", "len")
 
 local MiscClass = require "src/helper/MiscClass"
 
@@ -9,8 +11,20 @@ ScriptClass.xml, ScriptClass.parser, ScriptClass.doc = nil, nil, nil
 NodeList = {}
 local tempTable, currName = {}, ""
 
-local textField, texta = nil, nil
-local box, face = nil, nil
+BgFade, TextFade = nil, nil
+local textField, textField2 = nil, nil
+local box, face, box2, face2 = nil, nil, nil, nil
+local boxNum = 1
+
+function ScriptClass.startStory()
+	if boxNum == 1 then
+		textField:setText(NodeList)
+	
+		boxNum = 2
+	else
+		boxNum = 1
+	end
+end
 
 function ScriptClass.testTable(obj)
 	--print(obj.id)
@@ -25,7 +39,7 @@ function ScriptClass.testTable(obj)
 end
 
 function ScriptClass.addNode(obj)
-	print(obj.text)
+	--print(obj.text)
 	NodeList[obj.id] = obj
 end
 
@@ -59,6 +73,7 @@ function ScriptClass.closeElement(name, nsURI)
 end
 
 function ScriptClass.readFile(path)
+	--[[
 	box = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
 	box:setPosition(132, 340)
 	MiscClass.bringToFront(box)
@@ -72,6 +87,30 @@ function ScriptClass.readFile(path)
 	textField:setTextColor(0xff0000)
 	textField:setPosition(138, 365)
 	MiscClass.bringToFront(textField)
+	
+	box2 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
+	box2:setScaleX(-1)
+	box2:setPosition(230, 490)
+	MiscClass.bringToFront(box2)
+	
+	face2 = Bitmap.new(Texture.new("graphics/char/magician/female/face/magigirl_face_normal.png"))	
+	face2:setScaleX(-1)
+	face2:setPosition(340, 500)
+	MiscClass.bringToFront(face2)
+	
+	textField = TextWrap.new("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19))
+	textField:setScale(1)
+	textField:setTextColor(0xff0000)
+	textField:setPosition(13, 515)
+	MiscClass.bringToFront(textField)]]
+	
+	BgFade = Bitmap.new(Texture.new("graphics/background/bg_fade.png"))
+	MiscClass.bringToFront(BgFade)
+	
+	TextFade = TextWrap.new("我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)	
+	TextFade:setTextColor(0xff0000)
+	TextFade:setPosition(20, 40)
+	MiscClass.bringToFront(TextFade)
 	
 	ScriptClass.xml = io.open(path):read("*all")
 	SakuOrb:hideAllOrb()

@@ -87,6 +87,8 @@ function update(event)
 	Misc.bringToFront(slime)
 	Misc.bringToFront(magician.textHp)
 	Misc.bringToFront(slime.textHp)
+	Misc.bringToFront(BgFade)
+	Misc.bringToFront(TextFade)
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)

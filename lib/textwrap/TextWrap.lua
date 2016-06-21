@@ -14,7 +14,7 @@
 
 TextWrap = gideros.class(Sprite)
 
-function TextWrap:init(text, width, align, linespace, font)
+function TextWrap:init(text, width, align, linespace, font, fontSize)
 	--argument check
 	if not align then align = "left" end
 	if not linespace then linespace = 2 end
@@ -28,6 +28,7 @@ function TextWrap:init(text, width, align, linespace, font)
 	self.width = width
 	self.lineSpacing = linespace
 	self.font = font
+	self.fontSize = fontSize
 	
 	self:setText(text)
 	
@@ -45,13 +46,16 @@ function TextWrap:setText(text)
 	end
 	
 	--some calculations
+	
 	local test = TextField.new(self.font, self.text)
-	test:setLetterSpacing(self.letterSpacing)
-	local textWidth = test:getWidth() -- TextWidth: Number of characters times font size minus one 207
-	local letterCount = text:len() -- LetterCount: 1 chinese character represents 3 english characters 24
-	local letterChunks = math.floor(letterCount/(textWidth/self.width)) -- 23
-	local iters = math.ceil(letterCount/letterChunks) -- 2
-	local newstr, replaces = text:gsub("\n", "\n")
+	test:setLetterSpacing(self.letterSpacing) print("self.width: "..self.width)
+	local textWidth = test:getWidth() print("textWidth: "..textWidth)
+	local letterCount = text:len() print("letterCount: "..letterCount)	
+	--local letterChunks = math.floor(letterCount/(textWidth/self.width)) print("letterChunks: "..letterChunks)
+	--local iters = math.ceil(letterCount/letterChunks) print("iters: "..iters)
+	local letterChunks = math.floor(self.width / self.fontSize) print("letterChunks: "..letterChunks)
+	local iters = math.ceil(textWidth/self.width) print("iters: "..iters)
+	local newstr, replaces = text:gsub("\n", "\n") print("replaces: "..replaces)
 	
 	--add new line breaks
 	iters = iters + replaces
@@ -60,10 +64,12 @@ function TextWrap:setText(text)
 	local height = 0
 	local last = 1
 	for i = 1, iters do
-		local part = text:sub(last, last+letterChunks-1)
+		--local part = text:sub(last, last+letterChunks-1) print("part: "..part)
+		local part = text:utf8sub(last, last+letterChunks-1) print("part: "..part)
 		local lastSpace = 0
 		local newLine = false
-		local len = part:len()
+		--local len = part:len()
+		local len = part:utf8len()
 		local startStr, endStr = part:find("\n")
 		if startStr ~= nil then
 			lastSpace = startStr - 1
@@ -81,7 +87,8 @@ function TextWrap:setText(text)
 		end
 		if lastSpace > 0 and i ~= iters then
 			last = last + lastSpace
-			part = part:sub(1, lastSpace)
+			--part = part:sub(1, lastSpace)
+			part = part:utf8sub(1, lastSpace)
 		else
 			last = last + letterChunks
 		end

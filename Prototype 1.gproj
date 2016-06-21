@@ -1,22 +1,25 @@
 <project>
- <properties windowHeight="0" logicalWidth="360" ios_bundle="com.yourdomain." windowWidth="0" winrt_package="com.yourdomain.yourapp" logicalHeight="640" orientation="0" autorotation="0" html5_mem="256" retinaDisplay="0" app_icon="" osx_category="5" architecture="7" fps="60" encryptCode="0" encryptAssets="0" app_icon_noexport="0" osx_bundle="com.yourdomain." android_template="0" touchToMouse="1" mouseToTouch="1" packageName="com.yourdomain.yourapp" winrt_org="GiderosMobile" version="1.0" mouseTouchOrder="0" version_code="1" osx_domain="giderosmobile.com" win_org="GiderosMobile" assetsOnly="0" iosDevice="0" osx_org="GiderosMobile" scaleMode="3" win_domain="giderosmobile.com" html5_host="">
+ <properties osx_domain="giderosmobile.com" windowWidth="0" osx_bundle="com.yourdomain." html5_mem="256" fps="60" osx_org="GiderosMobile" iosDevice="0" version="1.0" touchToMouse="1" logicalWidth="360" autorotation="0" logicalHeight="640" assetsOnly="0" winrt_org="GiderosMobile" app_icon="" orientation="0" version_code="1" winrt_package="com.yourdomain.yourapp" app_icon_noexport="0" win_domain="giderosmobile.com" scaleMode="3" android_template="0" retinaDisplay="0" osx_category="5" mouseToTouch="1" windowHeight="0" packageName="com.yourdomain.yourapp" encryptCode="0" win_org="GiderosMobile" ios_bundle="com.yourdomain." html5_host="" encryptAssets="0" mouseTouchOrder="0" architecture="7">
   <imageScales/>
   <plugins/>
   <exports>
    <export name="APK">
-    <property value="" name="androidPath"/>
-    <property value="19" name="androidTarget"/>
-    <property value="" name="antPath"/>
-    <property value="" name="javaPath"/>
-    <property value="" name="keyAlias"/>
-    <property value="" name="keyAliasPass"/>
-    <property value="" name="keyStore"/>
-    <property value="" name="keyStorePass"/>
-    <property value="com.yourdomain.yourapp" name="packageName"/>
+    <property name="androidPath" value=""/>
+    <property name="androidTarget" value="19"/>
+    <property name="antPath" value=""/>
+    <property name="javaPath" value=""/>
+    <property name="keyAlias" value=""/>
+    <property name="keyAliasPass" value=""/>
+    <property name="keyStore" value=""/>
+    <property name="keyStorePass" value=""/>
+    <property name="packageName" value="com.yourdomain.yourapp"/>
    </export>
   </exports>
  </properties>
  <folder name="lib">
+  <folder name="luautf8">
+   <file source="lib/luautf8/utf8.lua"/>
+  </folder>
   <folder name="textwrap">
    <file source="lib/textwrap/TextWrap.lua"/>
   </folder>
@@ -118,6 +121,8 @@
   </folder>
   <folder name="summon_circle"/>
   <folder name="background">
+   <file source="graphics/background/bg_fade.png"/>
+   <file source="graphics/background/bg_grass.png"/>
    <file source="graphics/tile_grass.png"/>
    <file source="graphics/tile_dirt.png"/>
    <file source="graphics/grass4.png"/>
@@ -127,7 +132,6 @@
    <file source="graphics/cloud3.png"/>
    <file source="graphics/cloud2.png"/>
    <file source="graphics/cloud1.png"/>
-   <file source="graphics/bg_grass.png"/>
   </folder>
  </folder>
 </project>
