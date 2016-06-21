@@ -14,15 +14,52 @@ local tempTable, currName = {}, ""
 BgFade, TextFade = nil, nil
 local textField, textField2 = nil, nil
 local box, face, box2, face2 = nil, nil, nil, nil
-local boxNum = 1
+local boxNum = 3
 
-function ScriptClass.startStory()
-	if boxNum == 1 then
-		textField:setText(NodeList)
-	
+local currId = nil
+local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame = 5, nil, nil, "", 1, false, 4
+
+function ScriptClass.updateText()
+	if toUpdateText == true	then
+		if skipFrame == 0 then
+			currBox:setText(currText .. currNode.text:utf8sub(1, currLen))
+			--currText[currIndex] = currNode.text:utf8sub(1, currLen)
+			--currBox:setText(currText)
+			--print(currText..currNode.text:utf8sub(1, currLen))
+			currLen = currLen + 1
+			skipFrame = 5
+		end
+		
+		if currLen == currNode.text:utf8len() then
+			--table.insert(currText, currNode.text)
+			currText = currText .. currNode.text .. "\n\n"
+			currIndex = currIndex + 1
+			currLen = 1
+			toUpdateText = false
+			
+			if currNode.nextId ~= nil then
+				ScriptClass.continueScript()
+			end			
+		end
+		skipFrame = skipFrame - 1
+	end
+end
+
+function ScriptClass.continueScript()
+	--local test = "\n我喔"
+	--print(test:find("\n"))
+	if boxNum == 1 then	
 		boxNum = 2
-	else
+	elseif boxNum == 2 then
 		boxNum = 1
+	end
+	
+	if boxNum == 3 then
+		currId = NodeList[currId].nextId[1]
+		currBox = TextFade
+		currNode = NodeList[currId]
+		--currText[currIndex] = currNode.text
+		toUpdateText = true
 	end
 end
 
@@ -53,6 +90,9 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 		tempTable = {}
 		tempTable.text = value
 	elseif name == "ID" then
+		if currId == nil then
+			currId = value
+		end
 		tempTable.id = value
 	elseif name == "NAME" then
 		if value == "nextId" then
@@ -60,7 +100,7 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 		end
 	elseif name == "VALUE" then
 		if currName == "nextId" then
-			tempTable.nextId = value
+			tempTable.nextId = MiscClass.split(value, ",")
 			currName = ""
 		end
 	end
@@ -69,6 +109,10 @@ end
 function ScriptClass.closeElement(name, nsURI)
 	if name == "map" then
 		ScriptClass.addNode(tempTable)
+		
+		stage:addEventListener(Event.ENTER_FRAME, ScriptClass.updateText)
+		
+		ScriptClass.continueScript()
 	end
 end
 
@@ -107,7 +151,7 @@ function ScriptClass.readFile(path)
 	BgFade = Bitmap.new(Texture.new("graphics/background/bg_fade.png"))
 	MiscClass.bringToFront(BgFade)
 	
-	TextFade = TextWrap.new("我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)	
+	TextFade = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)	
 	TextFade:setTextColor(0xff0000)
 	TextFade:setPosition(20, 40)
 	MiscClass.bringToFront(TextFade)

@@ -31,7 +31,6 @@ function TextWrap:init(text, width, align, linespace, font, fontSize)
 	self.fontSize = fontSize
 	
 	self:setText(text)
-	
 end
 
 function TextWrap:setText(text)
@@ -48,34 +47,58 @@ function TextWrap:setText(text)
 	--some calculations
 	
 	local test = TextField.new(self.font, self.text)
-	test:setLetterSpacing(self.letterSpacing) print("self.width: "..self.width)
-	local textWidth = test:getWidth() print("textWidth: "..textWidth)
-	local letterCount = text:len() print("letterCount: "..letterCount)	
+	test:setLetterSpacing(self.letterSpacing) --print("self.width: "..self.width)
+	local textWidth = test:getWidth() --print("textWidth: "..textWidth)
+	local letterCount = text:len() --print("letterCount: "..letterCount)	
 	--local letterChunks = math.floor(letterCount/(textWidth/self.width)) print("letterChunks: "..letterChunks)
 	--local iters = math.ceil(letterCount/letterChunks) print("iters: "..iters)
-	local letterChunks = math.floor(self.width / self.fontSize) print("letterChunks: "..letterChunks)
-	local iters = math.ceil(textWidth/self.width) print("iters: "..iters)
-	local newstr, replaces = text:gsub("\n", "\n") print("replaces: "..replaces)
+	local letterChunks = math.floor(self.width / self.fontSize) --print("letterChunks: "..letterChunks)
+	--local iters = math.ceil(textWidth/self.width) --print("iters: "..iters)
+	local iters = math.ceil(self.text:utf8len() * self.fontSize / self.width) --print("iters: "..iters)
+	--local newstr, replaces = text:gsub("\n", "\n") --print("replaces: "..replaces)
 	
 	--add new line breaks
-	iters = iters + replaces
+	--iters = iters + replaces
 	
+	print(iters)
 	--split string in lines
+	--local height = 0
 	local height = 0
 	local last = 1
 	for i = 1, iters do
-		--local part = text:sub(last, last+letterChunks-1) print("part: "..part)
-		local part = text:utf8sub(last, last+letterChunks-1) print("part: "..part)
+		--local part = text:sub(last, last+letterChunks-1) print("part: "..part)		
+		local part = text:utf8sub(last, last+letterChunks-1) --print("part: "..part)
+		
+		local breakLine = TextField.new(self.font, part)
+		if breakLine.enableBaseLine then --GiderosCodingEasy hack
+			breakLine:enableBaseLine()
+		end
+		breakLine:setLetterSpacing(self.letterSpacing)
+		
+		local breakPos, breakNum = 0, 0
+		for j = 1, part:utf8len() do
+			if part:utf8sub(j, j) == "\n" then
+				--print(j .. " " .. breakNum)
+				breakPos = j
+				breakNum = breakNum + 1
+				--height = height + breakLine:getHeight() + self.lineSpacing
+			end
+		end
+		
+		if breakPos ~= 0 then part = text:utf8sub(last, last+breakPos-1) end		
+		
 		local lastSpace = 0
 		local newLine = false
 		--local len = part:len()
 		local len = part:utf8len()
+		--print(text:utf8sub(i, i))
+		--[[
 		local startStr, endStr = part:find("\n")
 		if startStr ~= nil then
 			lastSpace = startStr - 1
 			last = last + 1
 			newLine = true
-		end
+		end]]
 		if lastSpace == 0 then
 			--finding last space
 			for i = 1, len do
@@ -91,13 +114,21 @@ function TextWrap:setText(text)
 			part = part:utf8sub(1, lastSpace)
 		else
 			last = last + letterChunks
-		end
+			--[[
+			if breakNum > 0 then
+				last = breakPos
+			else
+				last = last + letterChunks
+			end]]
+		end		
+		
 		local line = TextField.new(self.font, part)
 		if line.enableBaseLine then --GiderosCodingEasy hack
 			line:enableBaseLine()
 		end
 		line:setLetterSpacing(self.letterSpacing)
 		line:setTextColor(self.textColor)
+		
 		if self.align == "left" or (newLine and self.align == "justify") then
 			self:addChild(line)
 			line:setPosition(0, height)
@@ -134,6 +165,10 @@ function TextWrap:setText(text)
 			end
 		end
 		height = height + line:getHeight() + self.lineSpacing
+		
+		for k = 1, breakNum do
+			height = height + line:getHeight() + self.lineSpacing
+		end
 	end
 end
 
