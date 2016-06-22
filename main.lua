@@ -88,7 +88,12 @@ function update(event)
 	Misc.bringToFront(magician.textHp)
 	Misc.bringToFront(slime.textHp)
 	Misc.bringToFront(BgFade)
-	Misc.bringToFront(TextFade)
+	--Misc.bringToFront(TextFade)
+	for i = 1, #TextList do
+		if TextList[i] ~= nil then
+			Misc.bringToFront(TextList[i])
+		end
+	end
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)

@@ -18,21 +18,37 @@ local boxNum = 3
 
 local currId = nil
 local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame = 5, nil, nil, "", 1, false, 4
+local textIndex, totalHeight = 1, 40
+TextList = {}
 
 function ScriptClass.updateText()
 	if toUpdateText == true	then
+		if TextList[textIndex] == nil then
+			TextList[textIndex] = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
+			
+			TextList[textIndex]:setTextColor(0xff0000)
+			if textIndex == 0 then
+				TextList[textIndex]:setPosition(20, totalHeight)
+				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+			else
+				TextList[textIndex]:setPosition(20, totalHeight)
+				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+			end			
+		end
+	
 		if skipFrame == 0 then
-			currBox:setText(currText .. currNode.text:utf8sub(1, currLen))
+			TextList[textIndex]:setText(currNode.text:utf8sub(1, currLen))
 			--currText[currIndex] = currNode.text:utf8sub(1, currLen)
 			--currBox:setText(currText)
-			--print(currText..currNode.text:utf8sub(1, currLen))
+			print(currText..currNode.text:utf8sub(1, currLen))
 			currLen = currLen + 1
 			skipFrame = 5
 		end
 		
-		if currLen == currNode.text:utf8len() then
+		if currLen == currNode.text:utf8len() + 1 then
 			--table.insert(currText, currNode.text)
-			currText = currText .. currNode.text .. "\n\n"
+			--currText = currText .. currNode.text
+			textIndex = textIndex + 1
 			currIndex = currIndex + 1
 			currLen = 1
 			toUpdateText = false

@@ -93,12 +93,12 @@
 <edge STYLE="bezier" COLOR="#ff0000" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1748409383,ID_1677767113"/>
-<node TEXT="南部大国“亚罗”——（克劳德/蕾碧卡）视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1748409383" CREATED="1466163180560" MODIFIED="1466163397494">
+<node TEXT="南部大国“亚罗”——（克劳德/蕾碧卡)视点。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1748409383" CREATED="1466163180560" MODIFIED="1466163397494">
 <edge STYLE="bezier" COLOR="#ff0000" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="char" VALUE="wm"/>
 </node>
-<node TEXT="西部“柯西斯大平原”——（雷欧/ 娜娜利）视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1677767113" CREATED="1466163196377" MODIFIED="1466163412071" VSHIFT="20">
+<node TEXT="西部“柯西斯大平原”——（雷欧/娜娜利）视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1677767113" CREATED="1466163196377" MODIFIED="1466163412071" VSHIFT="20">
 <edge STYLE="bezier" COLOR="#ff0000" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="char" VALUE="wf"/>
