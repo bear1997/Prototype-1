@@ -3,6 +3,7 @@ require "lib/luautf8/utf8"
 --package.loadlib("lib/luautf8/lua-utf8.dll", "len")
 
 local MiscClass = require "src/helper/MiscClass"
+local CONST = require "src/helper/constants"
 
 local ScriptClass = {}
 
@@ -17,40 +18,66 @@ local box, face, box2, face2 = nil, nil, nil, nil
 local boxNum = 3
 
 local currId = nil
-local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame = 5, nil, nil, "", 1, false, 4
-local textIndex, totalHeight = 1, 40
+local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame = 1, nil, nil, "", 1, false, 1
+local textIndex, totalHeight, isRefresh = 1, 40, false
 TextList = {}
+
+function ScriptClass.refreshText()
+	for i = 1, #TextList do
+		if TextList[i] ~= nil then
+			TextList[i]:setText("")
+		end
+	end
+	totalHeight = 40
+	isRefresh = false
+	textIndex = 1
+	toUpdateText = true
+end
 
 function ScriptClass.updateText()
 	if toUpdateText == true	then
+		if TextList[textIndex] ~= nil then
+			
+		end		
+		
 		if TextList[textIndex] == nil then
+			print(totalHeight.." nil")
 			TextList[textIndex] = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 			
-			TextList[textIndex]:setTextColor(0xff0000)
-			if textIndex == 0 then
-				TextList[textIndex]:setPosition(20, totalHeight)
-				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+			if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
+				isRefresh = true
 			else
+				currText = currNode.text
+				
+				TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
 				TextList[textIndex]:setPosition(20, totalHeight)
+				
 				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
-			end			
+			end
+		elseif currText == "" then
+			if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
+				isRefresh = true
+			else
+				currText = currNode.text
+				
+				TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
+				TextList[textIndex]:setPosition(20, totalHeight)
+			
+				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+			end
 		end
-	
-		if skipFrame == 0 then
+		
+		if isRefresh == false and skipFrame <= 0 then
 			TextList[textIndex]:setText(currNode.text:utf8sub(1, currLen))
-			--currText[currIndex] = currNode.text:utf8sub(1, currLen)
-			--currBox:setText(currText)
-			print(currText..currNode.text:utf8sub(1, currLen))
 			currLen = currLen + 1
-			skipFrame = 5
+			skipFrame = 1
 		end
 		
 		if currLen == currNode.text:utf8len() + 1 then
-			--table.insert(currText, currNode.text)
-			--currText = currText .. currNode.text
 			textIndex = textIndex + 1
 			currIndex = currIndex + 1
 			currLen = 1
+			currText = ""
 			toUpdateText = false
 			
 			if currNode.nextId ~= nil then
@@ -58,12 +85,14 @@ function ScriptClass.updateText()
 			end			
 		end
 		skipFrame = skipFrame - 1
+		
+		if isRefresh == true then
+			ScriptClass.refreshText()
+		end
 	end
 end
 
 function ScriptClass.continueScript()
-	--local test = "\n我喔"
-	--print(test:find("\n"))
 	if boxNum == 1 then	
 		boxNum = 2
 	elseif boxNum == 2 then
