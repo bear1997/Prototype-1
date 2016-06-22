@@ -41,7 +41,6 @@ function ScriptClass.updateText()
 		end		
 		
 		if TextList[textIndex] == nil then
-			print(totalHeight.." nil")
 			TextList[textIndex] = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 			
 			if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
@@ -132,8 +131,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			ScriptClass.addNode(tempTable)
 			--ScriptClass.testTable(tempTable)
 		end
-		tempTable = {}
-		tempTable.text = value
+		tempTable = {}		
+		tempTable.text = value:gsub("\n", "")
 	elseif name == "ID" then
 		if currId == nil then
 			currId = value
@@ -195,11 +194,6 @@ function ScriptClass.readFile(path)
 	
 	BgFade = Bitmap.new(Texture.new("graphics/background/bg_fade.png"))
 	MiscClass.bringToFront(BgFade)
-	
-	TextFade = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)	
-	TextFade:setTextColor(0xff0000)
-	TextFade:setPosition(20, 40)
-	MiscClass.bringToFront(TextFade)
 	
 	ScriptClass.xml = io.open(path):read("*all")
 	SakuOrb:hideAllOrb()

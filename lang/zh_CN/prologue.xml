@@ -81,11 +81,11 @@
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="2"/>
 <attribute NAME="nextId" VALUE="ID_421027007"/>
-<node TEXT="索雅大陆，这是一片人类居住的世界，被多个国家所区分，这里是一片剑与魔&#10;法的大地。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" POSITION="right" ID="ID_421027007" CREATED="1466570436172" MODIFIED="1466570682040">
+<node TEXT="索雅大陆，这是一片人类居住的&#10;世界，被多个国家所区分，这里是一&#10;片剑与魔&#10;法的大地。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" POSITION="right" ID="ID_421027007" CREATED="1466570436172" MODIFIED="1466570682040">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1618409521"/>
-<node TEXT="在这片大地上，人们时而一同欢笑，时而战乱不断，时而互相帮助，时而互相背板。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1618409521" CREATED="1466570556044" MODIFIED="1466570693506">
+<node TEXT="在这片大地上，人&#10;们时而一同欢笑，时而战乱&#10;不断，时而互相帮助，时而互相背板。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1618409521" CREATED="1466570556044" MODIFIED="1466570693506">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1354500379"/>
