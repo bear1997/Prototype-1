@@ -92,15 +92,10 @@
 <node TEXT="不过最接近现代的战乱已是几百年前&#10;的事了，现在的索雅非常地和平。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466686278495">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<<<<<<< HEAD
 <attribute_layout NAME_WIDTH="40" VALUE_WIDTH="271"/>
 <attribute NAME="branch" VALUE="knight,acher,theif,caster"/>
 <attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440"/>
 <node TEXT="南部大国“亚罗”克劳德视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466603825366" VSHIFT="-80">
-=======
-<attribute NAME="nextId" VALUE="ID_1042948440,ID_1873482944,ID_295482963"/>ID_295482963
-<node TEXT="南部大国“亚罗”克劳德视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466571600061" VSHIFT="-80">
->>>>>>> origin/master
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="char" VALUE="knightM"/>
@@ -109,11 +104,7 @@
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1713307361"/>
-<<<<<<< HEAD
 <node TEXT="克劳德.士比亚出生于南部大国“亚罗”的骑士家族里，&#10;从小就遭受着管理政治的贵族们的白眼和侮辱。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1713307361" CREATED="1466570900260" MODIFIED="1466602984310">
-=======
-<node TEXT="克劳德.士比亚出生于南部大国“亚罗”的骑士家族里，从小就遭受着管理政治的贵族们的白眼和侮辱。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1713307361" CREATED="1466570900260" MODIFIED="1466570906601">
->>>>>>> origin/master
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1761161028"/>
@@ -1242,7 +1233,6 @@
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_6714052"/>
-<<<<<<< HEAD
 <node TEXT="鲁迪是咬着“银汤匙”出生的人，&#10;鲁迪.巴布罗身为东部的贸易大国&#10;“巴布罗王国”的第7位皇位继承人。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_6714052" CREATED="1466571128053" MODIFIED="1466571741063">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
@@ -1256,21 +1246,6 @@
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1598202106"/>
 <node TEXT="这样的想法让鲁迪的言行举止与其他皇族不同，&#10;使得有人认为鲁迪跟皇太子的立场应该对调，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_1598202106" CREATED="1466571203270" MODIFIED="1466571728382">
-=======
-<node TEXT="鲁迪是咬着“银汤匙”出生的人，鲁迪.巴布罗身为东部的贸易大国“巴布罗王国”的第7位皇位继承人。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_6714052" CREATED="1466571128053" MODIFIED="1466571741063">
-<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute NAME="nextId" VALUE="ID_1118751300"/>
-<node TEXT="虽然鲁迪从小就开始接受正统的皇族教育，但他认为现在的贵族和皇家已腐烂到极点，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1118751300" CREATED="1466571163597" MODIFIED="1466571737871">
-<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute NAME="nextId" VALUE="ID_1497056206"/>
-<node TEXT="吃着的，睡着的，都是百姓的辛劳，而自己却只会指手画脚，纸上谈兵，然后做享其成。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1497056206" CREATED="1466571188446" MODIFIED="1466571732983">
-<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
-<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute NAME="nextId" VALUE="ID_1598202106"/>
-<node TEXT="这样的想法让鲁迪的言行举止与其他皇族不同，使得有人认为鲁迪跟皇太子的立场应该对调，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1598202106" CREATED="1466571203270" MODIFIED="1466571728382">
->>>>>>> origin/master
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_385650992"/>
