@@ -18,9 +18,26 @@ local box, face, box2, face2 = nil, nil, nil, nil
 local boxNum = 3
 
 local currId = nil
-local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame = 1, nil, nil, "", 1, false, 1
-local textIndex, totalHeight, isRefresh = 1, 40, false
+local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, nil, "", 1, false, 5, 5, 5
+local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
 TextList = {}
+
+function ScriptClass.setup()
+	skipFrameNumOld = skipFrameNum
+	stage:addEventListener(Event.TOUCHES_END, ScriptClass.onTouchesEnd)
+end
+
+function ScriptClass.onTouchesEnd(event)	
+	if toUpdateText == true then
+		skipFrameNum = 1	
+	else
+		skipFrameNum = skipFrameNumOld
+		
+		if currNode.nextId ~= nil then
+			ScriptClass.continueScript()
+		end
+	end	
+end
 
 function ScriptClass.refreshText()
 	for i = 1, #TextList do
@@ -44,7 +61,7 @@ function ScriptClass.updateText()
 			TextList[textIndex] = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 			
 			if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
-				isRefresh = true
+				isRefresh = true				
 			else
 				currText = currNode.text
 				
@@ -69,19 +86,15 @@ function ScriptClass.updateText()
 		if isRefresh == false and skipFrame <= 0 then
 			TextList[textIndex]:setText(currNode.text:utf8sub(1, currLen))
 			currLen = currLen + 1
-			skipFrame = 1
+			skipFrame = skipFrameNum
 		end
 		
-		if currLen == currNode.text:utf8len() + 1 then
+		if currLen >= currNode.text:utf8len() + 1 then
 			textIndex = textIndex + 1
 			currIndex = currIndex + 1
 			currLen = 1
 			currText = ""
-			toUpdateText = false
-			
-			if currNode.nextId ~= nil then
-				ScriptClass.continueScript()
-			end			
+			toUpdateText = false			
 		end
 		skipFrame = skipFrame - 1
 		
