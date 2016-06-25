@@ -57,11 +57,11 @@
 <attribute NAME="nextId" VALUE="ID_1618409521"/>
 <node TEXT="&#x5728;&#x8fd9;&#x7247;&#x5927;&#x5730;&#x4e0a;&#xff0c;&#x4eba;&#x4eec;&#x65f6;&#x800c;&#x4e00;&#x540c;&#x6b22;&#x7b11;&#xff0c;&#xa;&#x65f6;&#x800c;&#x6218;&#x4e71;&#x4e0d;&#x65ad;&#xff0c;&#x65f6;&#x800c;&#x4e92;&#x76f8;&#x5e2e;&#x52a9;&#xff0c;&#x65f6;&#x800c;&#xa;&#x4e92;&#x76f8;&#x80cc;&#x677f;&#x3002;" ID="ID_1618409521" CREATED="1466570556044" MODIFIED="1466570693506">
 <attribute NAME="nextId" VALUE="ID_1354500379"/>
-<node TEXT="&#x4e0d;&#x8fc7;&#x6700;&#x63a5;&#x8fd1;&#x73b0;&#x4ee3;&#x7684;&#x6218;&#x4e71;&#x5df2;&#x662f;&#x51e0;&#x767e;&#x5e74;&#x524d;&#xa;&#x7684;&#x4e8b;&#x4e86;&#xff0c;&#x73b0;&#x5728;&#x7684;&#x7d22;&#x96c5;&#x975e;&#x5e38;&#x5730;&#x548c;&#x5e73;&#x3002;" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466686278495">
-<attribute_layout NAME_WIDTH="40" VALUE_WIDTH="271"/>
-<attribute NAME="branch" VALUE="knight,acher,theif,caster"/>
-<attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440"/>
-<node TEXT="&#x5357;&#x90e8;&#x5927;&#x56fd;&#x201c;&#x4e9a;&#x7f57;&#x201d;&#x514b;&#x52b3;&#x5fb7;&#x89c6;&#x70b9;" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466603825366" VSHIFT="-80">
+<node TEXT="&#x4e0d;&#x8fc7;&#x6700;&#x63a5;&#x8fd1;&#x73b0;&#x4ee3;&#x7684;&#x6218;&#x4e71;&#x5df2;&#x662f;&#x51e0;&#x767e;&#x5e74;&#x524d;&#xa;&#x7684;&#x4e8b;&#x4e86;&#xff0c;&#x73b0;&#x5728;&#x7684;&#x7d22;&#x96c5;&#x975e;&#x5e38;&#x5730;&#x548c;&#x5e73;&#x3002;" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466836018256">
+<attribute_layout NAME_WIDTH="40" VALUE_WIDTH="364"/>
+<attribute NAME="branch" VALUE="knight,archer,thief,caster"/>
+<attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440,ID_1244564882"/>
+<node TEXT="&#x5357;&#x90e8;&#x5927;&#x56fd;&#x201c;&#x4e9a;&#x7f57;&#x201d;&#x514b;&#x52b3;&#x5fb7;&#x89c6;&#x70b9;" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466832083820" HGAP="33" VSHIFT="171">
 <attribute NAME="char" VALUE="knightM"/>
 <attribute NAME="nextId" VALUE="ID_182252182"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;4&#x6708;13&#x65e5;&#xff08;&#x5f02;&#x53d8;&#x4e4b;&#x65e5;&#xff09;" ID="ID_182252182" CREATED="1466570857020" MODIFIED="1466571598212">
@@ -259,8 +259,8 @@
 <attribute NAME="name" VALUE="&#xff1f;&#xff1f;&#xff1f;"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_135290484"/>
-<node TEXT="&#x8fd9;&#x6c89;&#x7a33;&#x7684;&#x58f0;&#x97f3;&#x9a6c;&#x4e0a;&#x8ba9;&#x514b;&#x52b3;&#x5fb7;&#x53d1;&#x73b0;&#x5bf9;&#x65b9;&#x662f;&#x8c01;&#xff0c;&#xa;&#x4ed6;&#x5c31;&#x662f;&#x514b;&#x52b3;&#x5fb7;&#x7684;&#x5251;&#x672f;&#x5e08;&#x5085;&#x2014;&#x2014;&#x98ce;&#x5203;&#x7684;&#x201c;&#x5409;&#x65af;&#x201d;&#x3002;" ID="ID_135290484" CREATED="1466763801761" MODIFIED="1466764961953">
-<attribute NAME="nextId" VALUE="ID_135290484"/>
+<node TEXT="&#x8fd9;&#x6c89;&#x7a33;&#x7684;&#x58f0;&#x97f3;&#x9a6c;&#x4e0a;&#x8ba9;&#x514b;&#x52b3;&#x5fb7;&#x53d1;&#x73b0;&#x5bf9;&#x65b9;&#x662f;&#x8c01;&#xff0c;&#xa;&#x4ed6;&#x5c31;&#x662f;&#x514b;&#x52b3;&#x5fb7;&#x7684;&#x5251;&#x672f;&#x5e08;&#x5085;&#x2014;&#x2014;&#x98ce;&#x5203;&#x7684;&#x201c;&#x5409;&#x65af;&#x201d;&#x3002;" ID="ID_135290484" CREATED="1466763801761" MODIFIED="1466827501050">
+<attribute NAME="nextId" VALUE="ID_1435928569"/>
 <node TEXT="&#x4f60;&#x73b0;&#x5728;&#x4ec0;&#x4e48;&#x4e5f;&#x4e0d;&#x8981;&#x8bf4;&#xff0c;&#x542c;&#x6211;&#x8bf4;&#x5c31;&#x597d;" ID="ID_1435928569" CREATED="1466763818009" MODIFIED="1466764956961">
 <attribute_layout NAME_WIDTH="54" VALUE_WIDTH="54"/>
 <attribute NAME="char" VALUE="others"/>
@@ -524,7 +524,7 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x897f;&#x90e8;&#x201c;&#x67ef;&#x897f;&#x65af;&#x5927;&#x5e73;&#x539f;&#x201d;&#x5a1c;&#x5a1c;&#x5229;&#x89c6;&#x70b9;" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1466766944066" HGAP="40" VSHIFT="-10">
+<node TEXT="&#x897f;&#x90e8;&#x201c;&#x67ef;&#x897f;&#x65af;&#x5927;&#x5e73;&#x539f;&#x201d;&#x5a1c;&#x5a1c;&#x5229;&#x89c6;&#x70b9;" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1466832065669" HGAP="43" VSHIFT="214">
 <attribute NAME="char" VALUE="archer"/>
 <attribute NAME="nextId" VALUE="ID_1681982774"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;4&#x6708;15&#x65e5;" ID="ID_1681982774" CREATED="1466570943180" MODIFIED="1466571713140">
@@ -868,8 +868,8 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x4e1c;&#x90e8;&#x8d38;&#x6613;&#x5927;&#x56fd;&#x2014;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x738b;&#x56fd;&#x201d;&#x9c81;&#x8fea;&#x89c6;&#x70b9;" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1466603494989" VSHIFT="70">
-<attribute NAME="char" VALUE="theif"/>
+<node TEXT="&#x4e1c;&#x90e8;&#x8d38;&#x6613;&#x5927;&#x56fd;&#x2014;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x738b;&#x56fd;&#x201d;&#x9c81;&#x8fea;&#x89c6;&#x70b9;" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1466832072884" HGAP="39" VSHIFT="-9">
+<attribute NAME="char" VALUE="thief"/>
 <attribute NAME="nextId" VALUE="ID_416213409"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;4&#x6708;15&#x65e5;" ID="ID_416213409" CREATED="1466571123478" MODIFIED="1466571744924">
 <attribute NAME="nextId" VALUE="ID_6714052"/>
@@ -881,7 +881,748 @@
 <attribute NAME="nextId" VALUE="ID_1598202106"/>
 <node TEXT="&#x8fd9;&#x6837;&#x7684;&#x60f3;&#x6cd5;&#x8ba9;&#x9c81;&#x8fea;&#x7684;&#x8a00;&#x884c;&#x4e3e;&#x6b62;&#x4e0e;&#x5176;&#x4ed6;&#x7687;&#x65cf;&#x4e0d;&#x540c;&#xff0c;&#xa;&#x4f7f;&#x5f97;&#x6709;&#x4eba;&#x8ba4;&#x4e3a;&#x9c81;&#x8fea;&#x8ddf;&#x7687;&#x592a;&#x5b50;&#x7684;&#x7acb;&#x573a;&#x5e94;&#x8be5;&#x5bf9;&#x8c03;&#xff0c;" ID="ID_1598202106" CREATED="1466571203270" MODIFIED="1466571728382">
 <attribute NAME="nextId" VALUE="ID_385650992"/>
-<node TEXT="&#x5f53;&#x7136;&#x7ee7;&#x627f;&#x7687;&#x4f4d;&#x8fd9;&#x4ef6;&#x4e8b;&#x5bf9;&#x53ea;&#x62e5;&#x6709;&#x7b2c;7&#x7ee7;&#x627f;&#x6743;&#x7684;&#xa;&#x9c81;&#x8fea;&#x6765;&#x8bf4;&#xff0c;&#x9664;&#x975e;&#x4e0a;&#x6f14;&#x4e00;&#x573a;&#x620f;&#x5267;&#x6027;&#x7684;&#x7687;&#x65cf;&#x5927;&#xa;&#x60e8;&#x6848;&#xff0c;&#x6839;&#x672c;&#x5c31;&#x8fde;&#x60f3;&#x90fd;&#x4e0d;&#x7528;&#x60f3;" ID="ID_385650992" CREATED="1466571217654" MODIFIED="1466571239194"/>
+<node TEXT="&#x5f53;&#x7136;&#x7ee7;&#x627f;&#x7687;&#x4f4d;&#x8fd9;&#x4ef6;&#x4e8b;&#x5bf9;&#x53ea;&#x62e5;&#x6709;&#x7b2c;7&#x7ee7;&#x627f;&#x6743;&#x7684;&#xa;&#x9c81;&#x8fea;&#x6765;&#x8bf4;&#xff0c;&#x9664;&#x975e;&#x4e0a;&#x6f14;&#x4e00;&#x573a;&#x620f;&#x5267;&#x6027;&#x7684;&#x7687;&#x65cf;&#x5927;&#xa;&#x60e8;&#x6848;&#xff0c;&#x6839;&#x672c;&#x5c31;&#x8fde;&#x60f3;&#x90fd;&#x4e0d;&#x7528;&#x60f3;" ID="ID_385650992" CREATED="1466571217654" MODIFIED="1466829985927">
+<attribute NAME="nextId" VALUE="ID_1132880712"/>
+<node TEXT="&#x62b1;&#x6b49;&#x554a;&#xff0c;&#x603b;&#x662f;&#x8ba9;&#x4f60;&#x5192;&#x9669;&#x3002;" ID="ID_1132880712" CREATED="1466827568936" MODIFIED="1466829981214">
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_417490387"/>
+<node TEXT="&#x6ca1;&#x4e8b;&#x6ca1;&#x4e8b;&#xff0c;&#x6bbf;&#x4e0b;&#x96be;&#x5f97;&#x4efb;&#x6027;&#x4e00;&#x56de;&#x5417;&#xff0c;&#xa;&#x8fde;&#x8fd9;&#x90fd;&#x505a;&#x4e0d;&#x5230;&#x7684;&#x8bdd;&#xff0c;&#x5988;&#x3002;&#x3002;&#x3002;&#x5973;&#x4ec6;&#xa;&#x957f;&#x4f1a;&#x8d23;&#x602a;&#x6211;&#x7684;&#xff01;" ID="ID_417490387" CREATED="1466827580880" MODIFIED="1466829976191">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x51ef;&#x4e50;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_537058095"/>
+<node TEXT="&#x8c22;&#x8c22;&#x4f60;,&#x660e;&#x660e;&#x5982;&#x679c;&#x5728;&#x5077;&#x8fd0;&#x94e0;&#x7532;&#x548c;&#x6b66;&#x5668;&#x88ab;&#x6293;&#x5230;&#x7684;&#x8bdd;&#xff0c;&#xa;&#x4f1a;&#x6beb;&#x65e0;&#x72e1;&#x8fa9;&#x4e4b;&#x9645;&#x76f4;&#x63a5;&#x88ab;&#x5224;&#x4e3a;&#x4f01;&#x56fe;&#x53db;&#x53d8;&#x4e4b;&#x7f6a;&#x3002;" ID="ID_537058095" CREATED="1466827589048" MODIFIED="1466829972478">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1674450687"/>
+<node TEXT="&#x9c81;&#x8fea;&#x5411;&#x81ea;&#x5df1;&#x7684;&#x4e13;&#x5c5e;&#x4e66;&#x7ae5;&#x2014;&#x2014;&#x201c;&#x51ef;&#x4e50;&#x201d;&#x73cd;&#x91cd;&#x7684;&#x4e3e;&#x4e86;&#x4e2a;&#x8eac;&#x4ee5;&#x8868;&#x8c22;&#x610f;&#xff0c;&#xa;&#x9c81;&#x8fea;&#x8ba4;&#x4e3a;&#x4ed6;&#x4e8f;&#x6b20;&#x51ef;&#x4e50;&#x592a;&#x591a;&#x4e86;&#xff0c;&#x6bd5;&#x7adf;&#x57ce;&#x5821;&#x5185;&#x662f;&#x4e0d;&#x51c6;&#x8bb8;&#x8fd1;&#x536b;&#x961f;&#x4ee5;&#x5916;&#xa;&#x7684;&#x4eba;&#x5458;&#x643a;&#x5e26;&#x6b66;&#x5668;&#x7684;&#xff0c;&#x6240;&#x4ee5;&#x53ea;&#x597d;&#x62dc;&#x6258;&#x51ef;&#x4e50;&#x5077;&#x5077;&#x4e70;&#x56de;&#x6765;&#x4e86;&#x3002;" ID="ID_1674450687" CREATED="1466827626609" MODIFIED="1466829968728">
+<attribute NAME="nextId" VALUE="ID_678955546"/>
+<node TEXT="&#x8bf7;&#x4e0d;&#x8981;&#x8fd9;&#x6837;&#x6bbf;&#x4e0b;&#xff01;&#x6211;&#x6839;&#x672c;&#x6ca1;&#x505a;&#x4ec0;&#x4e48;&#xff01;" ID="ID_678955546" CREATED="1466827668472" MODIFIED="1466829961937">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x51ef;&#x4e50;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_167687077"/>
+<node TEXT="&#x4f60;&#x5c31;&#x662f;&#x8fd9;&#x6837;&#x8001;&#x662f;&#x8c26;&#x865a;&#x624d;&#x4f1a;&#x53ea;&#x6321;&#x6211;&#x8fd9;&#x4e2a;&#x8fde;&#x7687;&#x5ea7;&#x90fd;&#x6ca1;&#x673a;&#x4f1a;&#x78b0;&#x7684;&#x7b2c;7&#x987a;&#x4f4d;&#x7684;&#x4e66;&#x7ae5;&#xff0c;&#xa;&#x82e5;&#x4f60;&#x5728;&#x5927;&#x80c6;&#x70b9;&#xff0c;&#x5728;&#x5bab;&#x5ef7;&#x91cc;&#x5f97;&#x5230;&#x4e00;&#x5b98;&#x534a;&#x804c;&#x6839;&#x672c;&#x5c31;&#x6ca1;&#x95ee;&#x9898;&#x7684;" ID="ID_167687077" CREATED="1466827677128" MODIFIED="1466829958702">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1710259586"/>
+<node TEXT="&#x53c8;&#x8bf4;&#x90a3;&#x6837;&#x7684;&#x8bdd;&#x3002;&#x3002;&#x3002;&#x4e0d;&#x8fc7;&#x4e3a;&#x4ec0;&#x4e48;&#x6bbf;&#x4e0b;&#x60f3;&#x8981;&#x8fd9;&#x4e9b;&#x4e1c;&#x897f;&#x554a;&#xff1f;&#xa;&#x867d;&#x7136;&#x7406;&#x89e3;&#x6bbf;&#x4e0b;&#x4e00;&#x76f4;&#x7edf;&#x666f;&#x62e5;&#x6709;&#x4e00;&#x5957;&#x6b66;&#x88c5;&#xff0c;&#x4f46;&#x8fd9;&#x76d4;&#x7532;&#x53c8;&#x8f7b;&#x53c8;&#xa;&#x8584;&#xff0c;&#x6b66;&#x5668;&#x867d;&#x7136;&#x591a;&#x4f46;&#x90fd;&#x53c8;&#x77ed;&#x53c8;&#x5c0f;&#x7684;&#x3002;" ID="ID_1710259586" CREATED="1466827686848" MODIFIED="1466829953311">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x51ef;&#x4e50;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_207381647"/>
+<node TEXT="&#x867d;&#x7136;&#x54e5;&#x54e5;&#x4eec;&#x7684;&#x6b66;&#x88c5;&#x90fd;&#x5f88;&#x5e05;&#xff0c;&#x4f46;&#x4e0d;&#x9002;&#x5408;&#x6211;&#xa;&#xff0c;&#x6211;&#x6bd4;&#x8f83;&#x559c;&#x6b22;&#x8f7b;&#x4fbf;&#x7075;&#x6d3b;&#x7684;&#x5462;&#xff0c;&#x5475;&#x5475;~" ID="ID_207381647" CREATED="1466827713856" MODIFIED="1466829951967">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_544733497"/>
+<node TEXT="&#x770b;&#x7740;&#x4e00;&#x8fb9;&#x8bd5;&#x7a7f;&#x94e0;&#x7532;&#x4e00;&#x8fb9;&#x54fc;&#x7740;&#x5c0f;&#x6b4c;&#x7684;&#x9c81;&#x8fea;&#xff0c;&#x51ef;&#x4e50;&#x4e0d;&#x7ecf;&#x5634;&#x89d2;&#x4e0a;&#x626c;&#xff0c;&#xa;&#x4ed6;&#x77e5;&#x9053;&#x9c81;&#x8fea;&#x4ece;&#x5c0f;&#x5c31;&#x60f3;&#x6210;&#x4e3a;&#x771f;&#x6b63;&#x7684;&#x9a91;&#x58eb;&#xff0c;" ID="ID_544733497" CREATED="1466827729040" MODIFIED="1466829946615">
+<attribute NAME="nextId" VALUE="ID_1233075522"/>
+<node TEXT="&#x65a9;&#x5978;&#x9664;&#x6076;&#xff0c;&#x66ff;&#x5929;&#x884c;&#x9053;&#xff0c;&#x6210;&#x4e3a;&#x4eba;&#x6c11;&#x7684;&#x76fe;&#xff0c;&#xa;&#x4eba;&#x6c11;&#x7684;&#x77db;&#xff0c;&#x751a;&#x81f3;&#x60f3;&#x5e26;&#x9886;&#x4eba;&#x6c11;&#x53cd;&#x6297;&#x7687;&#x5bb6;&#x4e16;&#x88ad;&#x4f53;&#x7cfb;&#x3002;" ID="ID_1233075522" CREATED="1466827746624" MODIFIED="1466829942055">
+<attribute NAME="nextId" VALUE="ID_766211612"/>
+<node TEXT="&#x660e;&#x660e;&#x81ea;&#x5df1;&#x4e5f;&#x662f;&#x7687;&#x65cf;&#xff0c;&#x5374;&#x8bf4;&#x53cd;&#x6297;&#x7687;&#x5bb6;&#x4e16;&#x88ad;&#x4ec0;&#x4e48;&#x7684;&#xff0c;&#xa;&#x9c81;&#x8fea;&#x4e5f;&#x65f6;&#x4e0d;&#x65f6;&#x5e2e;&#x52a9;&#x57ce;&#x5185;&#x7684;&#x4f63;&#x4eba;&#xff0c;&#x5927;&#x6982;&#x8ddf;&#x6211;&#x4e00;&#x6837;&#x57ce;&#xa;&#x5185;&#x7684;&#x4f63;&#x4eba;&#x90fd;&#x5bf9;&#x9c81;&#x8fea;&#x6ca1;&#x529e;&#x6cd5;&#x6210;&#x7687;&#x5e1d;&#x8fd9;&#x4ef6;&#x4e8b;&#x611f;&#x5230;&#x60cb;&#x60dc;&#x3002;" ID="ID_766211612" CREATED="1466827746851" MODIFIED="1466829937799">
+<attribute NAME="nextId" VALUE="ID_1492485331"/>
+<node TEXT="&#x90a3;&#x4e48;&#x6211;&#x5148;&#x53bb;&#x5fd9;&#x4e86;&#xff0c;&#x5c0f;&#x5fc3;&#x4e0d;&#x8981;&#x4f24;&#x5230;&#x81ea;&#x5df1;&#x554a;" ID="ID_1492485331" CREATED="1466827782825" MODIFIED="1466829934038">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x51ef;&#x4e50;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_419382619"/>
+<node TEXT="&#x86e4;&#xff1f;&#x4f60;&#x8bf4;&#x4ec0;&#x4e48;&#xff1f;" ID="ID_419382619" CREATED="1466827790880" MODIFIED="1466829927254">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_56669584"/>
+<node TEXT="&#x6211;&#x53bb;&#x5de5;&#x4f5c;&#x4e86;" ID="ID_56669584" CREATED="1466827797096" MODIFIED="1466829923438">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x51ef;&#x4e50;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_501057366"/>
+<node TEXT="&#x54e6;&#x54e6;&#xff0c;&#x597d;&#x7684;&#x597d;&#x7684;&#xff0c;&#x53bb;&#x5427;&#x53bb;&#x5427;" ID="ID_501057366" CREATED="1466827805224" MODIFIED="1466829920158">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_430581123"/>
+<node TEXT="&#x51ef;&#x4e50;&#x5f88;&#x6e05;&#x695a;&#xff0c;&#x4e00;&#x65e6;&#x8fdb;&#x5165;&#x8fd9;&#x4e2a;&#x6027;&#x60c5;&#x7684;&#x9c81;&#x8fea;&#x8981;&#xa;&#x5f88;&#x4e45;&#x624d;&#x4f1a;&#x6062;&#x590d;&#x4e3a;&#x53ef;&#x4ee5;&#x6b63;&#x5e38;&#x5bf9;&#x8bdd;&#x7684;&#x9636;&#x6bb5;&#xff0c;&#x6240;&#x4ee5;&#x4fbf;&#x79bb;&#x5f00;&#x4e86;&#x3002;" ID="ID_430581123" CREATED="1466827812704" MODIFIED="1466829917103">
+<attribute NAME="nextId" VALUE="ID_1423941296"/>
+<node TEXT="&#x4e0d;&#x77e5;&#x4e0d;&#x89c9;&#x9ec4;&#x660f;&#x4e86;&#xff0c;&#x51ef;&#x4e50;&#x771f;&#x662f;&#x7684;&#xff0c;&#x600e;&#x4e48;&#x90fd;&#x4e0d;&#x8bf4;&#x58f0;&#x5c31;&#x8d70;&#x554a;&#xa;&#x3002;&#x3002;&#x3002;&#x3002;&#x55ef;&#xff1f;&#x597d;&#x60f3;&#x6709;&#x8bf4;&#x4ec0;&#x4e48;&#x6765;&#x7740;&#x3002;&#x3002;&#x3002;&#x3002;" ID="ID_1423941296" CREATED="1466827828328" MODIFIED="1466829912207">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_930801826"/>
+<node TEXT="&#x4e00;&#x9762;&#x56de;&#x60f3;&#x6570;&#x4e2a;&#x5c0f;&#x65f6;&#x524d;&#x7684;&#x4e8b;&#xff0c;&#x9c81;&#x8fea;&#x6765;&#x5230;&#x4e86;&#x57ce;&#x5821;&#x7684;&#x6700;&#x9ad8;&#x5904;&#xff0c;&#xa;&#x773a;&#x671b;&#x9996;&#x90fd;&#x5168;&#x666f;&#x662f;&#x6bcf;&#x65e5;&#x884c;&#x7a0b;&#xff0c;&#x662f;&#x9c81;&#x8fea;&#x7528;&#x6765;&#x544a;&#x8beb;&#x81ea;&#x5df1;&#xff0c;&#x6211;&#x8be5;&#xa;&#x5b88;&#x62a4;&#x7684;&#x5bf9;&#x8c61;&#x5c31;&#x5728;&#x8fd9;&#x91cc;&#x3002;" ID="ID_930801826" CREATED="1466827843816" MODIFIED="1466829909128">
+<attribute NAME="nextId" VALUE="ID_244855429"/>
+<node TEXT="&#x55ef;&#xff1f;&#x90a3;&#x662f;&#x4ec0;&#x4e48;&#xff1f;" ID="ID_244855429" CREATED="1466827894960" MODIFIED="1466829904126">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_799299369"/>
+<node TEXT="&#x9c81;&#x8fea;&#x671b;&#x5411;&#x57ce;&#x5899;&#x5916;&#x9762;&#xff0c;&#x770b;&#x5230;&#x4e86;&#x57ce;&#x95e8;&#x65b9;&#x5411;&#x6709;&#x4e00;&#x7fa4;&#x4e0d;&#x660e;&#x7684;&#x9ed1;&#x8272;&#x5f71;&#x5b50;&#x3002;&#xa;&#x53ee;!&#x53ee;!&#x53ee;!" ID="ID_799299369" CREATED="1466827932672" MODIFIED="1466829900575">
+<attribute NAME="nextId" VALUE="ID_801958270"/>
+<node TEXT="&#x8b66;&#x949f;&#x54cd;&#x8d77;&#xff0c;&#x867d;&#x7136;&#x8001;&#x65e7;&#x4f46;&#x4f9d;&#x7136;&#x53d1;&#x51fa;&#x6e05;&#x8106;&#x7684;&#x949f;&#x58f0;&#xff0c;&#xa;&#x53ef;&#x662f;&#x9c81;&#x8fea;&#x6839;&#x672c;&#x6ca1;&#x90a3;&#x95f2;&#x60c5;&#x8046;&#x542c;&#xff0c;&#x4ed6;&#x53ea;&#x77e5;&#x9053;&#xff0c;&#x654c;&#x4eba;&#xa;&#x6765;&#x88ad;&#x4e86;&#x3002;&#x9c81;&#x8fea;&#x6025;&#x5fd9;&#x5730;&#x51b2;&#x5411;&#x4e86;&#x5e7f;&#x573a;&#x4e00;&#x63a2;&#x7a76;&#x7adf;&#x3002;" ID="ID_801958270" CREATED="1466827940720" MODIFIED="1466829897359">
+<attribute NAME="nextId" VALUE="ID_236219106"/>
+<node TEXT="&#x4e0d;&#x4e45;&#x540e;&#xff0c;&#x9c81;&#x8fea;&#x5e26;&#x7740;&#x8ba4;&#x771f;&#x61ca;&#x607c;&#x7684;&#x8868;&#x60c5;&#x56de;&#x5230;&#x4e86;&#x57ce;&#x5821;&#x3002;" ID="ID_236219106" CREATED="1466827957416" MODIFIED="1466829891846">
+<attribute NAME="nextId" VALUE="ID_493129904"/>
+<node TEXT="&#x9c81;&#x8fea;&#x5230;&#x5e95;&#x53d1;&#x751f;&#x4e86;&#x4ec0;&#x4e48;&#x4e8b;&#xff1f;&#xff01;" ID="ID_493129904" CREATED="1466827964257" MODIFIED="1466829886111">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x7687;&#x5e1d;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1065246559"/>
+<node TEXT="&#x7236;&#x7687;&#xff0c;&#x8bf7;&#x60a8;&#x51b7;&#x9759;&#x70b9;&#xff0c;&#x5c31;&#x7b97;&#x60a8;&#x77e5;&#x9053;&#x4e86;&#x53c8;&#x80fd;&#x600e;&#x4e48;&#x6837;&#xff1f;" ID="ID_1065246559" CREATED="1466827971872" MODIFIED="1466829882102">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1266069809"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;" ID="ID_1266069809" CREATED="1466827978545" MODIFIED="1466829877169">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x7687;&#x5e1d;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1957433042"/>
+<node TEXT="&#x4e5f;&#x7f62;&#xff0c;&#x654c;&#x4eba;&#x662f;&#x4e00;&#x7fa4;&#x7eff;&#x8272;&#x7684;&#x4eba;&#xff0c;&#xa;&#x548c;&#x957f;&#x6709;&#x7fc5;&#x8180;&#x4f1a;&#x98de;&#x7684;&#x4eba;" ID="ID_1957433042" CREATED="1466827984832" MODIFIED="1466829873294">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1840102622"/>
+<node TEXT="&#xff1f;&#xff1f;&#xff1f;&#x86e4;&#xff1f;&#x90a3;&#x662f;&#x4ec0;&#x4e48;&#x554a;&#xff1f;&#x7136;&#x540e;&#x5462;&#xff0c;&#x90fd;&#x4e00;&#x4e2a;&#x5c0f;&#x65f6;&#x4e86;&#xff0c;&#x6218;&#x51b5;&#x5982;&#x4f55;&#xff1f;" ID="ID_1840102622" CREATED="1466828000072" MODIFIED="1466829869990">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x7687;&#x5e1d;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_464221365"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;&#x8fd9;&#x91cc;&#x6ca6;&#x9677;&#x7684;&#x53ef;&#x80fd;&#x6027;&#x5f88;&#x9ad8;&#xff0c;&#x654c;&#x4eba;&#x7684;&#xa;&#x6bcf;&#x4e2a;&#x5404;&#x4f53;&#x90fd;&#x6709;&#x4e00;&#x5b9a;&#x7684;&#x5f3a;&#x5ea6;&#xff0c;&#x5c31;&#x8fde;&#x6570;&#x91cf;&#x4e5f;&#xa;&#x662f;&#x538b;&#x5012;&#x6027;&#x7684;" ID="ID_464221365" CREATED="1466828005456" MODIFIED="1466829865575">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1877020202"/>
+<node TEXT="&#x4ec0;&#x4e48;&#xff01;" ID="ID_1877020202" CREATED="1466828037881" MODIFIED="1466829862613">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x7687;&#x5e1d;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1618062926"/>
+<node TEXT="&#x8fd8;&#x6ca1;&#x7b49;&#x9c81;&#x8fea;&#x8bf4;&#x5b8c;&#xff0c;&#x7687;&#x5e1d;&#x5c31;&#x79bb;&#x53bb;&#x4e86;&#xff0c;&#xa;&#x9c81;&#x8fea;&#x4e5f;&#x653e;&#x5f03;&#x62b1;&#x6028;&#x7687;&#x5e1d;&#x4e3a;&#x4e86;&#x81ea;&#x4fdd;&#x800c;&#x820d;&#xa;&#x5f03;&#x4e86;&#x4eba;&#x6c11;&#x4e0d;&#x7ba1;&#x3002;" ID="ID_1618062926" CREATED="1466828046825" MODIFIED="1466829858425">
+<attribute NAME="nextId" VALUE="ID_1690514325"/>
+<node TEXT="&#x56de;&#x5230;&#x623f;&#x95f4;&#xff0c;&#x7a7f;&#x4e0a;&#x4eca;&#x5929;&#x521a;&#x5230;&#x624b;&#x7684;&#x8f7b;&#x94e0;&#x7532;&#xff0c;&#xa;&#x5e26;&#x4e0a;&#x77ed;&#x5200;&#x548c;&#x82e6;&#x65e0;&#xff0c;&#x524d;&#x5f80;&#x4e0e;&#x8f66;&#x623f;&#x622a;&#x7136;&#x76f8;&#x53cd;&#xa;&#x7684;&#x65b9;&#x5411;&#x3002;" ID="ID_1690514325" CREATED="1466828058441" MODIFIED="1466829852327">
+<attribute NAME="nextId" VALUE="ID_1640587588"/>
+<node TEXT="&#x5230;&#x8fbe;&#x4e86;&#x6240;&#x8c13;&#x7684;&#x6700;&#x540e;&#x9632;&#x7ebf;&#xff0c;&#x7b80;&#x76f4;&#x63ba;&#x4e0d;&#x5fcd;&#x7779;&#xff0c;&#xa;&#x6b7b;&#x4f24;&#x65e0;&#x6570;&#xff0c;&#x58eb;&#x5175;&#x4eec;&#x58eb;&#x6c14;&#x4f4e;&#x843d;&#xff0c;&#x4e2a;&#x4e2a;&#x7c7b;&#x4f3c;&#x7b49;&#xa;&#x6b7b;&#x822c;&#x7684;&#x795e;&#x60c5;&#x3002;&#x53d1;&#x73b0;&#x4e86;&#x9c81;&#x8fea;&#x7684;&#x4eba;&#x4eec;&#xff0c;&#x90fd;&#x6295;&#x4ee5;&#xa;&#x5947;&#x602a;&#x7684;&#x89c6;&#x7ebf;&#x3002;" ID="ID_1640587588" CREATED="1466828069328" MODIFIED="1466829848033">
+<attribute NAME="nextId" VALUE="ID_1481055434"/>
+<node TEXT="&#x9664;&#x4e86;&#x6211;&#x4ee5;&#x5916;&#x7684;&#x7687;&#x65cf;&#x4eec;&#x90fd;&#x9003;&#x4e86;" ID="ID_1481055434" CREATED="1466828103336" MODIFIED="1466829843998">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1959339592"/>
+<node TEXT="&#x542c;&#x5230;&#x4e86;&#x8fd9;&#x53e5;&#x8bdd;&#x7684;&#x4eba;&#x4eec;&#x4e0d;&#x611f;&#x5230;&#x60ca;&#x8bb6;&#x4f46;&#x90fd;&#x9732;&#x51fa;&#x4e86;&#x679c;&#x7136;&#x4f1a;&#x8fd9;&#x6837;&#x7684;&#x8868;&#x60c5;&#x3002;&#xa;&#x7136;&#x540e;&#x611f;&#x89c9;&#x5230;&#x4e86;&#x5f7b;&#x5e95;&#x653e;&#x5f03;&#x7684;&#x6c14;&#x6c1b;&#x5f00;&#x59cb;&#x6563;&#x5f00;&#x3002;" ID="ID_1959339592" CREATED="1466828113577" MODIFIED="1466829839139">
+<attribute NAME="nextId" VALUE="ID_530399943"/>
+<node TEXT="&#x5c31;&#x8fde;&#x654c;&#x4eba;&#x6765;&#x4e86;&#x4e5f;&#x4e0d;&#x51c6;&#x5907;&#x62b5;&#x6297;&#xff0c;&#x4ed6;&#x4eec;&#x5b9b;&#x5982;&#x5f85;&#x5bb0;&#x7684;&#x7f94;&#x7f8a;&#xff0c;&#xa;&#x9c81;&#x8fea;&#x4e0d;&#x7406;&#x4f1a;&#x4ed6;&#x4eec;&#xff0c;&#x9ed8;&#x9ed8;&#x62d4;&#x51fa;&#x77ed;&#x5251;&#x3002;" ID="ID_530399943" CREATED="1466828135128" MODIFIED="1466829833039">
+<attribute NAME="nextId" VALUE="ID_581916653"/>
+<node TEXT="Battle Start" ID="ID_581916653" CREATED="1466828156985" MODIFIED="1466829827350">
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branch" VALUE="option1,option2"/>
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_730774924,ID_1641700190"/>
+<node TEXT="&#x4e0d;&#x8981;&#x653e;&#x5f03;&#xff01;" ID="ID_730774924" CREATED="1466828198720" MODIFIED="1466829808462" VSHIFT="-43">
+<attribute NAME="branch" VALUE="option1"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_1728113379"/>
+<node TEXT="&#x4e0d;&#x8981;&#x653e;&#x5f03;&#xff01;" ID="ID_1728113379" CREATED="1466828235201" MODIFIED="1466829812582">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_156295430"/>
+<node TEXT="&#x6218;&#x6597;&#x5b8c;&#x4e86;&#x7684;&#x9c81;&#x8fea;&#x628a;&#x77ed;&#x5251;&#x6307;&#x5411;&#x5915;&#x9633;&#xff0c;&#x4eba;&#x4eec;&#x7eb7;&#x7eb7;&#x770b;&#x5411;&#x4ed6;&#xa;&#xff0c;&#x6709;&#x4e00;&#x90e8;&#x5206;&#x4eba;&#x65e9;&#x5df2;&#x88ab;&#x4ed6;&#x90a3;&#x6218;&#x59ff;&#x6240;&#x5438;&#x5f15;&#x3002;" ID="ID_156295430" CREATED="1466828244121" MODIFIED="1466829796975">
+<attribute NAME="nextId" VALUE="ID_321111259"/>
+<node TEXT="&#x7687;&#x65cf;&#x4ec0;&#x4e48;&#x7684;&#x6253;&#x4ece;&#x4e00;&#x5f00;&#x59cb;&#x5c31;&#x4e0d;&#x503c;&#x5f97;&#x6307;&#x671b;&#xff01;&#xa;&#x6211;&#x4eec;&#x8981;&#x9760;&#x7684;&#x624d;&#x4e0d;&#x662f;&#x90a3;&#x4e9b;&#x8150;&#x70c2;&#x7684;&#x5bb6;&#x4f19;&#x4eec;&#xff01;&#xa;&#x6211;&#x4eec;&#x5e94;&#x8be5;&#x4f9d;&#x9760;&#x7684;&#x662f;&#x6211;&#x4eec;&#x7684;&#x5251;&#x548c;&#x8eab;&#x65c1;&#x7684;&#x6218;&#x53cb;&#xff01;" ID="ID_321111259" CREATED="1466828256920" MODIFIED="1466829787326">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1891025287"/>
+<node TEXT="&#x9c81;&#x8fea;&#x6df1;&#x6df1;&#x5730;&#x5438;&#x4e86;&#x4e00;&#x53e3;&#x6c14;&#x5e76;&#x5927;&#x58f0;&#x53eb;&#x9053;" ID="ID_1891025287" CREATED="1466828269648" MODIFIED="1466829778046">
+<attribute NAME="nextId" VALUE="ID_1116139479"/>
+<node TEXT="&#x6218;&#x6597;&#x5427;&#xff01;&#x4e3a;&#x4e86;&#x6211;&#x4eec;&#xff01;&#xa;&#x4e3a;&#x4e86;&#x6240;&#x7231;&#x4e4b;&#x4eba;&#xff01;&#x4e3a;&#x4e86;&#x660e;&#x5929;&#xff01;&#xa;&#x4e3a;&#x4e86;&#x80dc;&#x5229;&#xff01;&#x628a;&#x529b;&#x91cf;&#x501f;&#x7ed9;&#x6211;&#x5427;&#xff01;" ID="ID_1116139479" CREATED="1466828277913" MODIFIED="1466829764329">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1883785546"/>
+<node TEXT="&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#x5662;&#xa;&#x5662;&#x5662;&#x54e6;&#x54e6;&#x54e6;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;" ID="ID_1883785546" CREATED="1466828299488" MODIFIED="1466829762624">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x58eb;&#x5175;&#x4eec;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_500864941"/>
+<node TEXT="&#x4f17;&#x4eba;&#x88ab;&#x9c81;&#x8fea;&#x90a3;&#x8eab;&#x59ff;&#x6240;&#x5438;&#x5f15;&#x7eb7;&#x7eb7;&#x62ff;&#x8d77;&#x4e86;&#x6b66;&#x5668;&#x5c55;&#x5f00;&#x4e86;&#x6700;&#x540e;&#x7684;&#x6b7b;&#x6218;&#xff0c;&#xa;&#x7136;&#x540e;&#x8fd9;&#x573a;&#x6218;&#x6295;&#x5c06;&#x88ab;&#x4e16;&#x4eba;&#x79f0;&#x4e3a;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x9996;&#x90fd;&#x9632;&#x5fa1;&#x6218;&#x201d;&#x800c;&#x95fb;&#x540d;&#xff0c;&#x4e0d;&#x8fc7;&#xa;&#x8fd9;&#x53c8;&#x662f;&#x53e6;&#x5916;&#x4e00;&#x4e2a;&#x6545;&#x4e8b;&#x4e86;&#x3002;" ID="ID_500864941" CREATED="1466828318688" MODIFIED="1466829750742">
+<attribute NAME="nextId" VALUE="ID_82665508"/>
+<node TEXT="&#x4e1c;&#x90e8;&#x8d38;&#x6613;&#x5927;&#x56fd;&#x2014;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x738b;&#x56fd;&#x201d;&#x2014;&#x2014;&#x9c81;&#x8fea;&#x89c6;&#x70b9;&#x2014;&#x2014;&#x5b8c;" ID="ID_82665508" CREATED="1466828587281" MODIFIED="1466829703847">
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="&#x3002;&#x3002;&#x3002;" ID="ID_1641700190" CREATED="1466828230400" MODIFIED="1466829805049" VSHIFT="28">
+<attribute NAME="branch" VALUE="option2"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_72756078"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;" ID="ID_72756078" CREATED="1466828369080" MODIFIED="1466829802423">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1617511374"/>
+<node TEXT="&#x770b;&#x7740;&#x795e;&#x60c5;&#x604d;&#x7136;&#x7684;&#x58eb;&#x5175;&#x4eec;&#xff0c;&#x9c81;&#x8fea;&#x79bb;&#x5f00;&#x4e86;&#x4ed6;&#x4eec;&#x524d;&#x5f80;&#x57ce;&#x95e8;&#x3002;" ID="ID_1617511374" CREATED="1466828379305" MODIFIED="1466829792046">
+<attribute NAME="nextId" VALUE="ID_1629944247"/>
+<node TEXT="&#x8981;&#x60f3;&#x529e;&#x6cd5;&#x963b;&#x6b62;&#x66f4;&#x591a;&#x7684;&#x654c;&#x4eba;&#x5165;&#x4fb5;&#xff0c;&#x5e0c;&#x671b;&#x57ce;&#x95e8;&#x8fd8;&#x80fd;&#x5173;&#x4e0a;&#x554a;" ID="ID_1629944247" CREATED="1466828391288" MODIFIED="1466829782239">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_955272597"/>
+<node TEXT="&#x4e0d;&#x65ad;&#x51fb;&#x5012;&#x654c;&#x4eba;&#x7684;&#x9c81;&#x8fea;&#x5230;&#x8fbe;&#x4e86;&#x57ce;&#x95e8;&#x540e;&#xa;&#x53d1;&#x73b0;&#x95e8;&#x5916;&#x6709;&#x4e9b;&#x654c;&#x519b;&#x90e8;&#x961f;&#x53bb;&#x5f80;&#x4e86;&#x5947;&#x602a;&#x7684;&#x65b9;&#x5411;&#x3002;" ID="ID_955272597" CREATED="1466828401544" MODIFIED="1466829770951">
+<attribute NAME="nextId" VALUE="ID_627087041"/>
+<node TEXT="&#x54ea;&#x91cc;&#x662f;&#x3002;&#x3002;&#x3002;&#x524d;&#x5f80;&#x7b2c;&#x4e8c;&#x9996;&#x90fd;&#x7684;&#x65b9;&#x5411;&#x3002;&#x3002;&#x3002;&#xa;&#xff01;&#xff01;&#x4ed6;&#x4eec;&#x7684;&#x76ee;&#x6807;&#x662f;&#x7236;&#x7687;&#xff01;" ID="ID_627087041" CREATED="1466828411113" MODIFIED="1466829756119">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_225710327"/>
+<node TEXT="&#x7075;&#x5149;&#x4e00;&#x95ea;&#x7684;&#x9c81;&#x8fea;&#x98de;&#x901f;&#x5730;&#x8ffd;&#x60f3;&#x654c;&#x4eba;&#x3002;" ID="ID_225710327" CREATED="1466828515016" MODIFIED="1466829236488">
+<attribute NAME="nextId" VALUE=""/>
+<node TEXT="&#x592a;&#x8fdf;&#x4e86;&#x5417;&#xff01;&#xff1f;" ID="ID_1134183844" CREATED="1466828525985" MODIFIED="1466829746703">
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="&#x9c81;&#x8fea;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1391762352"/>
+<node TEXT="&#x9c81;&#x8fea;&#x8d76;&#x5230;&#x4e4b;&#x65f6;&#xff0c;&#x62a4;&#x536b;&#x548c;&#x654c;&#x4eba;&#x4eec;&#x5df2;&#x7ecf;&#x5f00;&#x59cb;&#x6218;&#x6597;&#x4e86;&#x3002;&#xa;&#x9c81;&#x8fea;&#x4ee5;&#x7075;&#x5de7;&#x7684;&#x52a8;&#x4f5c;&#x95ef;&#x5165;&#x6218;&#x5708;&#x3002;" ID="ID_1391762352" CREATED="1466828532216" MODIFIED="1466829738903">
+<attribute NAME="nextId" VALUE="ID_1529835482"/>
+<node TEXT="Battle Start" ID="ID_1529835482" CREATED="1466828540969" MODIFIED="1466829734703">
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_1435992738"/>
+<node TEXT="&#x9c81;&#x8fea;&#x54df;&#xff01;&#x505a;&#x5f97;&#x597d;&#xff01;&#x4e0d;&#x6127;&#x662f;&#x6211;&#x7684;&#x3002;&#x3002;&#x3002;&#xa;&#x989d;&#xff1f;&#x4f60;&#x53bb;&#x54ea;&#xff1f;&#x56de;&#x6765;&#x554a;&#xff01;" ID="ID_1435992738" CREATED="1466828553424" MODIFIED="1466829715023">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x7687;&#x5e1d;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1030478401"/>
+<node TEXT="&#x4e0d;&#x7406;&#x4f1a;&#x7236;&#x7687;&#xff0c;&#x9c81;&#x8fea;&#x518d;&#x6b21;&#x56de;&#x5230;&#x9996;&#x90fd;&#xff0c;&#x6f2b;&#x957f;&#x7684;&#x6218;&#x4e8b;&#x8fd8;&#x5728;&#x6301;&#x7eed;&#x4e2d;&#x3002;" ID="ID_1030478401" CREATED="1466828566272" MODIFIED="1466829709566">
+<attribute NAME="nextId" VALUE="ID_1716258721"/>
+<node TEXT="&#x4e1c;&#x90e8;&#x8d38;&#x6613;&#x5927;&#x56fd;&#x2014;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x738b;&#x56fd;&#x201d;&#x2014;&#x2014;&#x9c81;&#x8fea;&#x89c6;&#x70b9;&#x2014;&#x2014;&#x5b8c;" ID="ID_1716258721" CREATED="1466828570560" MODIFIED="1466829701944">
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="&#x5317;&#x90e8;&#x7fa4;&#x5c71;&#x5904;&#x2014;&#x201c;&#x5362;&#x65af;&#x4e39;&#x7fa4;&#x5c71;&#x201d;&#x2014;&#x2014;&#x8299;&#x84c9;&#x62c9;&#x89c6;&#x70b9;" ID="ID_1244564882" CREATED="1466830124458" MODIFIED="1466835992430" HGAP="10">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="nextId" VALUE="ID_1256597100"/>
+<node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;5&#x6708;9&#x65e5;" ID="ID_1256597100" CREATED="1466830171688" MODIFIED="1466835987812">
+<attribute NAME="nextId" VALUE="ID_1213290782"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x662f;&#x5deb;&#x5e08;&#x7684;&#x5f92;&#x5f1f;&#xff0c;&#x81ea;&#x5c0f;&#x4fbf;&#x88ab;&#x5deb;&#x5e08;&#x6536;&#x517b;&#xff0c;&#xa;&#x5e08;&#x5f92;&#x4fe9;&#x5728;&#x6df1;&#x5c71;&#x91cc;&#x4e0d;&#x5206;&#x65e9;&#x665a;&#x5730;&#x4e13;&#x7814;&#x9b54;&#x6cd5;&#x7684;&#x6df1;&#x6e0a;&#xff0c;" ID="ID_1213290782" CREATED="1466830187208" MODIFIED="1466835984574">
+<attribute NAME="nextId" VALUE="ID_358509535"/>
+<node TEXT="&#x7531;&#x4e8e;&#x8299;&#x84c9;&#x62c9;&#x8ddf;&#x4ed6;&#x7684;&#x5e08;&#x5085;&#x80fd;&#x591f;&#x8fde;&#x7eed;&#x51e0;&#x4e2a;&#x6708;&#x4e0d;&#x8bf4;&#x4e00;&#x53e5;&#x8bdd;&#x53ea;&#x57cb;&#x5934;&#x4e13;&#x7814;&#x9b54;&#x6cd5;&#xff0c;&#xa;&#x8299;&#x84c9;&#x62c9;&#x517b;&#x6210;&#x4e86;&#x4e0d;&#x600e;&#x4e48;&#x8bf4;&#x8bdd;&#x7684;&#x4e60;&#x60ef;&#xff0c;&#x4e5f;&#x4e0d;&#x662f;&#x4e0d;&#x4f1a;&#xff0c;&#x53ea;&#x662f;&#x6ca1;&#x4ec0;&#x4e48;&#x5fc5;&#x8981;&#x3002;" ID="ID_358509535" CREATED="1466830203360" MODIFIED="1466835983622">
+<attribute NAME="nextId" VALUE="ID_12186246"/>
+<node TEXT="&#x4e3a;&#x4e86;&#x7814;&#x7a76;&#x9b54;&#x6cd5;&#x800c;&#x5403;&#xff0c;&#x4e3a;&#x4e86;&#x9b54;&#x6cd5;&#x800c;&#x8865;&#x5145;&#x7761;&#x7720;&#xff0c;&#xa;&#x4e3a;&#x4e86;&#x9b54;&#x6cd5;&#x800c;&#x6d3b;&#xff0c;&#x4ed4;&#x7ec6;&#x60f3;&#x60f3;&#x7684;&#x8bdd;&#xff0c;&#x8fd9;&#x5bf9;&#x4e00;&#x4e2a;18&#xa;&#x5c81;&#x7684;&#x5c11;&#x5973;&#x800c;&#x8a00;&#xff0c;&#x4e5f;&#x592a;&#x4e0d;&#x9752;&#x6625;&#x4e86;&#x3002;&#x3002;" ID="ID_12186246" CREATED="1466830229360" MODIFIED="1466835977149">
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_258680723"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x4f3c;&#x4e4e;&#x5f88;&#x4eab;&#x53d7;&#x8fd9;&#x6837;&#x7684;&#x751f;&#x6d3b;&#xff0c;&#xa;&#x76f8;&#x53cd;&#x7684;&#x5e08;&#x5085;&#x5374;&#x5bf9;&#x8299;&#x84c9;&#x62c9;&#x7684;&#x6001;&#x5ea6;&#x4e0d;&#x600e;&#x4e48;&#x4e50;&#x89c2;&#x3002;" ID="ID_258680723" CREATED="1466830243312" MODIFIED="1466835974093">
+<attribute NAME="nextId" VALUE="ID_662179198"/>
+<node TEXT="&#x56e0;&#x4e3a;&#x628a;&#x4ed6;&#x53d8;&#x6210;&#x8fd9;&#x6837;&#x5c31;&#x662f;&#x81ea;&#x5df1;&#xff0c;&#x7b49;&#x4ed6;&#x53d1;&#x73b0;&#x65f6;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x5df2;&#x7ecf;&#x53d8;&#x6210;&#x8fd9;&#x6837;&#x4e86;&#xff0c;&#xa;&#x6bcf;&#x5f53;&#x60f3;&#x5230;&#x4ed6;&#x6ca1;&#x7ed9;&#x5230;&#x8299;&#x84c9;&#x62c9;&#x5e94;&#x6709;&#x7684;&#x4eba;&#x751f;&#xff0c;&#x4ed6;&#x7684;&#x7f6a;&#x6076;&#x611f;&#x8fde;&#x65e5;&#x4e0d;&#x65ad;&#x5730;&#x7d2f;&#x8ba1;&#x3002;" ID="ID_662179198" CREATED="1466830256856" MODIFIED="1466835971022">
+<attribute NAME="nextId" VALUE="ID_1373355113"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x54df;&#xff0c;&#x4e0d;&#x5982;&#x3002;&#x3002;&#x3002;&#x6211;&#x4eec;&#x4e0b;&#x5c71;&#x8d70;&#x8d70;&#x5982;&#x4f55;&#xff1f;&#xa;&#x53ef;&#x4ee5;&#x770b;&#x5230;&#x5f88;&#x7f8e;&#x7684;&#x5927;&#x57ce;&#x5e02;&#x54e6;" ID="ID_1373355113" CREATED="1466830272952" MODIFIED="1466835965743">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1437360995"/>
+<node TEXT="(&#x4e0b;&#x5c71;&#x597d;&#x9ebb;&#x70e6;&#xff0c;&#x7b97;&#x4e86;&#xff0c;&#x53ef;&#x662f;&#x5f88;&#x7f8e;&#x7684;&#x5927;&#x57ce;&#x5e02;&#x662f;&#x4ec0;&#x4e48;&#x6837;&#x7684;&#x5462;&#xff1f;&#xa;&#x561b;&#x3002;&#x3002;&#x3002;&#x53cd;&#x6b63;&#x6211;&#x6709;&#x9b54;&#x6cd5;&#x5c31;&#x884c;&#x4e86;&#xff01;&#x6240;&#x4ee5;&#x6ca1;&#x5fc5;&#x8981;)" ID="ID_1437360995" CREATED="1466830279463" MODIFIED="1466835963438">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1563823286"/>
+<node TEXT="&#x6ca1;&#x5fc5;&#x8981;&#xff08;&#x554a;&#xff0c;&#x6211;&#x53c8;&#x53ea;&#x8bf4;&#x4e86;&#x4e00;&#x90e8;&#x5206;&#x7684;&#x8bdd;&#xff0c;&#xa;&#x660e;&#x660e;&#x60f3;&#x8bf4;&#x51fa;&#x8ddf;&#x591a;&#x7684;&#x8bf4;&#x3002;&#x3002;&#x3002;&#x7b97;&#x4e86;&#xff0c;&#x8fd8;&#x662f;&#xa;&#x7ee7;&#x7eed;&#x7814;&#x7a76;&#x9b54;&#x6cd5;&#x5427;&#xff01;&#xff09;" ID="ID_1563823286" CREATED="1466830306480" MODIFIED="1466835962381">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1210096242"/>
+<node TEXT="&#x53ef;&#x662f;&#x3002;&#x3002;&#x3002;&#x4f60;&#x770b;&#xff01;&#x6211;&#x89c9;&#x5f97;&#x89c1;&#x8bc6;&#x4e00;&#x4e0b;&#x672a;&#x77e5;&#x7684;&#x5730;&#x65b9;&#x53ef;&#x80fd;&#xa;&#x53ef;&#x4ee5;&#x6fc0;&#x53d1;&#x9b54;&#x6cd5;&#x7684;&#x7075;&#x611f;&#x4e5f;&#x8bf4;&#x4e0d;&#x5b9a;&#x54e6;&#xff01;&#x6240;&#x4ee5;&#xff0c;&#x4e00;&#x8d77;&#x4e0b;&#x5c71;&#x5427;&#xff01;" ID="ID_1210096242" CREATED="1466830322951" MODIFIED="1466835957205">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_614981625"/>
+<node TEXT="&#xff08;&#x6ca1;&#x5fc5;&#x8981;&#xff0c;&#x4ed4;&#x7ec6;&#x60f3;&#x60f3;&#xff0c;&#x5982;&#x679c;&#x80fd;&#x6fc0;&#x53d1;&#x521b;&#x9020;&#x7075;&#x611f;&#x7684;&#x8bdd;&#xff0c;&#xa;&#x5e08;&#x5085;&#x5c31;&#x4e0d;&#x4f1a;&#x6210;&#x5929;&#x5446;&#x5728;&#x8fd9;&#x79cd;&#x9e1f;&#x4e0d;&#x62c9;&#x5c4e;&#x7684;&#x6df1;&#x5c71;&#x91cc;&#x4e86;&#xff0c;&#x6211;&#xa;&#x624d;&#x4e0d;&#x4f1a;&#x88ab;&#x9a97;&#x5462;&#xff01;&#xff09;" ID="ID_614981625" CREATED="1466830332951" MODIFIED="1466835954357">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_433388123"/>
+<node TEXT="&#x6ca1;&#x5fc5;&#x8981;&#xff08;&#x554a;&#x3002;&#x3002;&#x3002;&#x53c8;&#x6ca1;&#x628a;&#x8bdd;&#x8bf4;&#x5b8c;&#x3002;&#x3002;&#x3002;&#xff09;" ID="ID_433388123" CREATED="1466830339895" MODIFIED="1466835947118">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_54350504"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;&#x662f;&#x5417;&#x3002;&#x3002;&#x3002;&#x597d;&#x5427;&#x3002;&#x3002;&#x3002;&#x6211;&#x4e0d;&#x52c9;&#x5f3a;&#x4f60;&#x4e86;&#x3002;&#x3002;&#x3002;" ID="ID_54350504" CREATED="1466830357264" MODIFIED="1466835944341">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1994081025"/>
+<node TEXT="&#x5e08;&#x5085;&#x5bf9;&#x8299;&#x84c9;&#x62c9;&#x7684;&#x529d;&#x8bf4;&#x7ed3;&#x679c;&#x611f;&#x5230;&#x65e0;&#x529b;&#xff0c;&#x53ea;&#x80fd;&#xa;&#x602a;&#x81ea;&#x5df1;&#x6ca1;&#x7ba1;&#x6559;&#x597d;&#xff0c;&#x660e;&#x660e;&#x5c0f;&#x5b69;&#x5e94;&#x8be5;&#x7ec6;&#x5fc3;&#x7684;&#x6559;&#x80b2;&#x7684;&#x8bf4;&#x3002;" ID="ID_1994081025" CREATED="1466830383168" MODIFIED="1466835941613">
+<attribute NAME="nextId" VALUE="ID_1319685621"/>
+<node TEXT="&#x7b97;&#x4e86;&#xff0c;&#x6211;&#x6709;&#x9b54;&#x6cd5;&#x5c31;&#x884c;&#x4e86;&#xff0c;&#x4e0e;&#x5176;&#x60f3;&#x6709;&#x7684;&#x6ca1;&#x5f97;&#xff0c;&#x8fd8;&#x662f;&#x4e13;&#x7814;&#x9b54;&#x6cd5;&#x5427;&#xff0c;&#xa;&#x5e08;&#x5085;&#x6851;&#x4e00;&#x8fb9;&#x8fd9;&#x6837;&#x5fc3;&#x60f3;&#x4e00;&#x8fb9;&#x5f00;&#x59cb;&#x9b54;&#x6cd5;&#x9635;&#x7684;&#x7ed8;&#x5236;&#x3002;&#x8299;&#x84c9;&#x62c9;&#x7684;&#x5e08;&#x5085;&#x5fc3;&#xa;&#x8840;&#x6765;&#x6f6e;&#x628a;&#x5f88;&#x4e45;&#x6ca1;&#x53eb;&#x8fc7;&#x7684;&#x4f7f;&#x9b54;&#x53ec;&#x5524;&#x4e86;&#x51fa;&#x6765;&#x3002;" ID="ID_1319685621" CREATED="1466830394039" MODIFIED="1466835937839">
+<attribute NAME="nextId" VALUE="ID_1155155069"/>
+<node TEXT="&#x4f60;&#x8fd9;&#x8001;&#x4e1c;&#x897f;&#x7ec8;&#x4e8e;&#x53ec;&#x5524;&#x6211;&#x4e86;&#xff01;&#x6211;&#x6709;&#x5f88;&#x591a;&#x91cd;&#x8981;&#x7684;&#x60c5;&#x62a5;&#x8981;&#x544a;&#x8bc9;&#x4f60;&#x554a;&#xff01;&#xa;&#x54ea;&#x6709;&#x4e00;&#x5e74;&#x4e0d;&#x53ec;&#x5524;&#x4f7f;&#x9b54;&#x7684;&#x767d;&#x75f4;&#x554a;&#xff01;" ID="ID_1155155069" CREATED="1466830407920" MODIFIED="1466835934326">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_922434309"/>
+<node TEXT="&#x51b7;&#x9759;&#x70b9;&#xff0c;&#x51b7;&#x9759;&#x70b9;&#xff0c;&#x6bd4;&#x745f;&#xff0c;&#x8fd9;&#x662f;&#x6709;&#x539f;&#x56e0;&#x7684;" ID="ID_922434309" CREATED="1466830418408" MODIFIED="1466835927388">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_900152000"/>
+<node TEXT="&#x7b97;&#x4e86;&#xff01;&#x53cd;&#x6b63;&#x80af;&#x5b9a;&#x662f;&#x5fd8;&#x4e86;&#x6211;&#x7684;&#x5b58;&#x5728;&#xff0c;&#xa;&#x6bd4;&#x8d77;&#x8fd9;&#x4e2a;&#xff01;&#x7d22;&#x96c5;&#x53d1;&#x751f;&#x5927;&#x4e8b;&#x4e86;&#x5566;&#xff01;" ID="ID_900152000" CREATED="1466830431648" MODIFIED="1466835925416">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_127208164"/>
+<node TEXT="&#x88ab;&#x79f0;&#x4e3a;&#x201c;&#x6bd4;&#x745f;&#x201d;&#x7684;&#x9e66;&#x9e49;&#x578b;&#x4f7f;&#x9b54;&#x4e00;&#x51fa;&#x6765;&#x5c31;&#x558b;&#x558b;&#xa;&#x4e0d;&#x4f11;&#x7684;&#x8bf4;&#x4e86;&#x4e00;&#x5927;&#x5806;&#x57cb;&#x6028;&#x8bdd;&#xff0c;&#x800c;&#x5e08;&#x5085;&#x4e5f;&#x5f00;&#x59cb;&#x6577;&#x884d;&#x5b83;&#x3002;" ID="ID_127208164" CREATED="1466830439728" MODIFIED="1466835922885">
+<attribute NAME="nextId" VALUE="ID_208095752"/>
+<node TEXT="&#x6bd4;&#x745f;&#x5c06;&#x4e00;&#x4e2a;&#x6708;&#x5185;&#x6240;&#x53d1;&#x751f;&#x5728;&#x4e16;&#x754c;&#x5404;&#x5730;&#x7684;&#x4e8b;&#x544a;&#x8bc9;&#x4e86;&#x5e08;&#x5085;&#x548c;&#x8299;&#x84c9;&#x62c9;&#x3002;" ID="ID_208095752" CREATED="1466830454064" MODIFIED="1466835920309">
+<attribute NAME="nextId" VALUE="ID_1742390145"/>
+<node TEXT="&#x5e08;&#x5f92;&#x4fe9;&#x4e00;&#x542c;&#xff0c;&#x53cd;&#x5e94;&#x5404;&#x4e0d;&#x540c;&#xff1a;&#xa;&#xa;&#x5e08;&#x5085;&#x60f3;&#xff1a;&#x201c;&#x7ec8;&#x4e8e;&#x6709;&#x501f;&#x53e3;&#x8ba9;&#x8299;&#x84c9;&#x62c9;&#x4e0b;&#x5c71;&#x4e86;&#xff01;&#x9b54;&#x738b;&#xff0c;&#x592a;&#x68d2;&#x5566;,&#x6211;&#x7ed9;&#x4f60;&#x4e2a;&#x8d5e;&#xff01;&#x201d;&#xa;&#x800c;&#x8299;&#x84c9;&#x62c9;&#x5219;&#x60f3;&#xff1a;&#x201c;&#x543c;~&#x5916;&#x9762;&#x771f;&#x662f;&#x9669;&#x6076;&#xff0c;&#x5e78;&#x597d;&#x6ca1;&#x88ab;&#x5e08;&#x5085;&#x9a97;&#x4e0b;&#x5c71;&#x201d;" ID="ID_1742390145" CREATED="1466830457112" MODIFIED="1466835914976">
+<attribute NAME="nextId" VALUE="ID_987924908"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x54df;&#xff0c;&#x770b;&#x6765;&#x4e16;&#x754c;&#x73b0;&#x5728;&#x975e;&#x5e38;&#x7684;&#x6df7;&#x6c8c;" ID="ID_987924908" CREATED="1466830481143" MODIFIED="1466835911341">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1928132129"/>
+<node TEXT="&#x55ef;&#xff08;&#x6240;&#x4ee5;&#x5462;&#xff1f;&#x4f60;&#x60f3;&#x8bf4;&#x4ec0;&#x4e48;&#xff1f;&#xa;&#x53ef;&#x4ee5;&#x4e0d;&#x8981;&#x62d6;&#x6ce5;&#x5e26;&#x6c34;&#x4e86;&#x5417;&#xff1f;&#x6211;&#x5f88;&#x5fd9;&#x7684;&#xff09;" ID="ID_1928132129" CREATED="1466830483544" MODIFIED="1466835910726">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1171802654"/>
+<node TEXT="&#x6240;&#x4ee5;&#x554a;&#x8299;&#x84c9;&#x62c9;&#xff0c;&#x770b;&#x6765;&#x4ed6;&#x4eec;&#xa;&#x9700;&#x8981;&#x5f3a;&#x5927;&#x7684;&#x9b54;&#x6cd5;&#x5e08;&#x7684;&#x529b;&#x91cf;" ID="ID_1171802654" CREATED="1466830499504" MODIFIED="1466835907503">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1092123382"/>
+<node TEXT="&#x55ef;&#xff08;&#x6211;&#x6709;&#x79cd;&#x4e0d;&#x7965;&#x7684;&#x9884;&#x611f;&#xff09;" ID="ID_1092123382" CREATED="1466830544727" MODIFIED="1466835901501">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_782738589"/>
+<node TEXT="&#x6240;&#x4ee5;&#x4e3a;&#x5e08;&#x547d;&#x4ee4;&#x4f60;&#x53bb;&#x3002;&#x3002;&#x3002;" ID="ID_782738589" CREATED="1466830555160" MODIFIED="1466835898965">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_46053079"/>
+<node TEXT="&#x4e0d;&#x53bb;&#xff08;&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#x6211;&#x624d;&#x4e0d;&#x53bb;&#x505a;&#x767d;&#x5de5;&#xff01;&#xff09;" ID="ID_46053079" CREATED="1466830568032" MODIFIED="1466835895861">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1125039621"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;&#x6bd4;&#x745f;&#xff0c;&#x4f60;&#x966a;&#x8299;&#x84c9;&#x62c9;&#x4e00;&#x8d77;&#x53bb;&#x62ef;&#x3002;&#x3002;&#x3002;" ID="ID_1125039621" CREATED="1466830573239" MODIFIED="1466835881965">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_750248628"/>
+<node TEXT="&#x4e0d;&#x8981;&#xff08;&#x81ed;&#x8001;&#x5934;&#xff01;&#x6211;&#x90fd;&#x8bf4;&#x4e86;&#x6211;&#x4e0d;&#x53bb;&#xff01;&#xa;&#x4e0d;&#x8981;&#x64c5;&#x81ea;&#x628a;&#x8bdd;&#x9898;&#x7ee7;&#x7eed;&#x4e0b;&#x53bb;&#xff01;&#x4e0d;&#x8981;&#x903c;&#xa;&#x6211;&#xff01;&#x6211;&#x53ea;&#x60f3;&#x8981;&#x7814;&#x7a76;&#x9b54;&#x6cd5;&#xff01;&#xff09;" ID="ID_750248628" CREATED="1466830588408" MODIFIED="1466835878152">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_466580283"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;&#x4f60;&#x6ca1;&#x5f97;&#x9009;&#x62e9;&#xff0c;&#x53bb;&#xff01;&#x7ba1;&#x4f60;&#x7814;&#x7a76;&#x9b54;&#x6cd5;&#x4e5f;&#x597d;&#xff01;&#xa;&#x62ef;&#x6551;&#x4e16;&#x754c;&#x4e5f;&#x7f62;&#xff01;&#x603b;&#x4e4b;&#x4f60;&#x7ed9;&#x6211;&#x4e0b;&#x5c71;&#xff01;&#x4f60;&#x8fd9;&#x9b54;&#x6cd5;&#x5b85;&#xff01;" ID="ID_466580283" CREATED="1466830607496" MODIFIED="1466835876863">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5deb;&#x5e08;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_390784358"/>
+<node TEXT="&#x8bdd;&#x8fd8;&#x6ca1;&#x8bf4;&#x5b8c;&#xff0c;&#x5e08;&#x5085;&#x5c31;&#x7528;&#x9b54;&#x6cd5;&#x628a;&#x8299;&#x84c9;&#x62c9;&#x548c;&#x6bd4;&#x745f;&#x9001;&#x51fa;&#x4e86;&#x5c71;&#x5916;&#x3002;" ID="ID_390784358" CREATED="1466830634609" MODIFIED="1466835862685">
+<attribute NAME="nextId" VALUE="ID_1719405473"/>
+<node TEXT="&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;&#xff01;" ID="ID_1719405473" CREATED="1466830651768" MODIFIED="1466835859541">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_845544482"/>
+<node TEXT="&#x4e34;&#x88ab;&#x4f20;&#x9001;&#x524d;&#xff0c;&#x5e08;&#x5085;&#x56e0;&#x4e3a;&#x542c;&#x5230;&#x4e86;&#x8299;&#x84c9;&#x62c9;&#x51fa;&#x751f;&#x4ee5;&#x6765;&#x6700;&#x4e3a;&#xa;&#x7cbe;&#x795e;&#x548c;&#x5145;&#x6ee1;&#x4eba;&#x6027;&#x7684;&#x53eb;&#x58f0;&#x800c;&#x6d41;&#x4e0b;&#x4e86;&#x9ad8;&#x5174;&#x7684;&#x773c;&#x6cea;&#x3002;" ID="ID_845544482" CREATED="1466830657528" MODIFIED="1466835852512">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branch" VALUE="option1,option2"/>
+<attribute NAME="nextId" VALUE="ID_19430426,ID_1529735871"/>
+<node TEXT="&#x53ef;&#x6076;&#xff08;&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#x90a3;&#x4e2a;&#x81ed;&#x8001;&#x5934;&#xff01;&#xff09;" ID="ID_19430426" CREATED="1466831142398" MODIFIED="1466835836461">
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="branch" VALUE="option1"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_760957907"/>
+<node TEXT="&#x53ef;&#x6076;&#xff08;&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#x90a3;&#x4e2a;&#x81ed;&#x8001;&#x5934;&#xff01;&#xff09;" ID="ID_760957907" CREATED="1466830676064" MODIFIED="1466835820183" VSHIFT="-3">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_814350192"/>
+<node TEXT="&#x7ecf;&#x8fc7;&#x4e86;&#x51e0;&#x5c0f;&#x65f6;&#x7684;&#x5c1d;&#x8bd5;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x8fd8;&#x662f;&#x6253;&#x4e0d;&#x7834;&#x5e08;&#x5085;&#x7528;&#x7684;&#x7ed3;&#x754c;&#xa;&#xff0c;&#x53ea;&#x597d;&#x4e0b;&#x5c71;&#x524d;&#x5f80;&#x6700;&#x8fd1;&#x7684;&#x57ce;&#x9547;&#x3002;" ID="ID_814350192" CREATED="1466830739320" MODIFIED="1466835818663">
+<attribute NAME="nextId" VALUE="ID_925980619"/>
+<node TEXT="&#x4f60;&#x8fd8;&#x662f;&#x653e;&#x5f03;&#x5427;&#xff0c;&#x8d76;&#x5feb;&#x62ef;&#x6551;&#x4e16;&#x754c;&#xff0c;&#x5c31;&#x80fd;&#x56de;&#x53bb;&#x4e86;" ID="ID_925980619" CREATED="1466830749792" MODIFIED="1466835797798">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_710173783"/>
+<node TEXT="&#x4e0d;&#xff08;&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#x6211;&#x624d;&#x4e0d;&#x4f1a;&#x8ba9;&#x8001;&#x5934;&#x79f0;&#x5fc3;&#x5982;&#x610f;&#x5462;&#xff01;&#xa;&#x6211;&#x7684;&#x9b54;&#x6cd5;&#x8bba;&#x6587;&#x8fd8;&#x7559;&#x5728;&#x4e0a;&#x9762;&#x6ca1;&#x5199;&#x5b8c;&#x554a;&#xff01;&#x6211;&#x7edd;&#x5bf9;&#x4f1a;&#x5c3d;&#xa;&#x5feb;&#x56de;&#x53bb;&#x7684;&#xff01;&#xff09;" ID="ID_710173783" CREATED="1466830757288" MODIFIED="1466835789671">
+<attribute_layout NAME_WIDTH="71" VALUE_WIDTH="71"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_247806006"/>
+<node TEXT="&#x7528;&#x9b54;&#x6cd5;&#x4e0d;&#x65ad;&#x5f80;&#x89c6;&#x7ebf;&#x6700;&#x8fdc;&#x7684;&#x5730;&#x65b9;&#x8f6c;&#x79fb;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x5f88;&#x5feb;&#x5c31;&#x6765;&#x5230;&#x4e86;&#x57ce;&#x5e02;&#x3002;&#xa;&#x8299;&#x84c9;&#x62c9;&#x4e0e;&#x6bd4;&#x745f;&#x4e00;&#x8fdb;&#x57ce;&#x5c31;&#x53d1;&#x73b0;&#x4e0d;&#x5bf9;&#x52b2;&#x3002;" ID="ID_247806006" CREATED="1466830883792" MODIFIED="1466835777221">
+<attribute NAME="nextId" VALUE="ID_1160367572"/>
+<node TEXT="&#x6551;&#x547d;&#x554a;&#xff01;&#xff01;&#xff01;" ID="ID_1160367572" CREATED="1466830897360" MODIFIED="1466835772053">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5e02;&#x6c11;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_786466240"/>
+<node TEXT="&#x5c0f;&#x9b3c;&#xff0c;&#x5feb;!&#x8fd9;&#x91cc;&#x88ab;&#x9b54;&#x517d;&#x4eec;&#x653b;&#x6253;&#x7740;&#xff01;" ID="ID_786466240" CREATED="1466830906848" MODIFIED="1466835768389">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1155831095"/>
+<node TEXT="&#x4e86;&#x89e3;" ID="ID_1155831095" CREATED="1466830915056" MODIFIED="1466835758927">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1291818096"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x53d1;&#x52a8;&#x4e86;&#x9b54;&#x6cd5;&#xff0c;&#x5e76;&#x5feb;&#x6b65;&#x8df3;&#x8dc3;&#x3002;" ID="ID_1291818096" CREATED="1466830921128" MODIFIED="1466835753949">
+<attribute NAME="nextId" VALUE="ID_1557399023"/>
+<node TEXT="&#x7b49;&#x7b49;&#x7b49;&#xff01;&#xff01;&#xff01;&#xff01;&#x5c0f;&#x9b3c;&#xff01;&#x90a3;&#x662f;&#x53cd;&#x65b9;&#x5411;&#x554a;&#xff01;&#xff01;&#xff01;" ID="ID_1557399023" CREATED="1466830930631" MODIFIED="1466835753102">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_435372862"/>
+<node TEXT="&#x6211;&#x660e;&#x767d;&#xff08;&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#x6211;&#x624d;&#x4e0d;&#x7406;&#x9ebb;&#x70e6;&#x4e8b;&#x5462;&#xff01;)" ID="ID_435372862" CREATED="1466830938184" MODIFIED="1466835742607">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_516724271"/>
+<node TEXT="&#x4e0d;&#x4e0d;&#x4e0d;&#x4e0d;&#x4e0d;&#xff01;&#xff01;&#x4f60;&#x6839;&#x672c;&#x4e0d;&#x660e;&#x767d;&#x554a;&#xff01;" ID="ID_516724271" CREATED="1466830949344" MODIFIED="1466835730182">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1320191697"/>
+<node TEXT="&#x53ef;&#x60dc;&#xff0c;&#x5929;&#x610f;&#x5f04;&#x4eba;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x8fd8;&#x662f;&#x88ab;&#x9b54;&#x517d;&#x4eec;&#x56e2;&#x56e2;&#x5305;&#x56f4;&#x3002;" ID="ID_1320191697" CREATED="1466830963487" MODIFIED="1466835716086">
+<attribute NAME="nextId" VALUE="ID_479444046"/>
+<node TEXT="&#x5207;&#xff01;" ID="ID_479444046" CREATED="1466830965488" MODIFIED="1466835713190">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1985075227"/>
+<node TEXT="Battle Start" ID="ID_1985075227" CREATED="1466830973730" MODIFIED="1466835710230">
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_1924011819"/>
+<node TEXT="&#x554a;~&#xff01;&#x795e;&#x554a;&#xff01;&#x4f60;&#x7ec8;&#x4e8e;&#x6d3e;&#x4e0b;&#x4e86;&#x4f7f;&#x5f92;&#x6765;&#x62ef;&#x6551;&#x6211;&#x4eec;&#x5417;&#xff1f;&#xff01;" ID="ID_1924011819" CREATED="1466830991656" MODIFIED="1466835695607">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5e02;&#x6c11;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1483055251"/>
+<node TEXT="&#x86e4;&#xff1f;&#xff08;&#x7b49;&#x7b49;&#x7b49;&#xff01;&#x4ec0;&#x4e48;&#x610f;&#x601d;&#xff0c;&#x4f60;&#x4eec;&#x4e0d;&#x8981;&#x8dea;&#x62dc;&#x6211;&#x554a;&#xff01;&#x602a;&#x6076;&#x5fc3;&#x7684;&#xff01;&#xff09;" ID="ID_1483055251" CREATED="1466831003519" MODIFIED="1466835688454">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_15727117"/>
+<node TEXT="&#x6218;&#x6597;&#x7ed3;&#x675f;&#x540e;&#xff0c;&#x6240;&#x6709;&#x7684;&#x9b54;&#x517d;&#x88ab;&#x8299;&#x84c9;&#x62c9;&#x7684;&#x9b54;&#x6cd5;&#x4e00;&#x626b;&#x800c;&#x7a7a;&#xff0c;&#x5c31;&#x5e38;&#x4eba;&#x770b;&#x6765;&#xff0c;&#x90a3;&#x5b9b;&#x5982;&#x5929;&#x7f5a;&#x822c;&#x5427;&#x9b54;&#x6cd5;&#xff0c;&#x6839;&#x672c;&#x5c31;&#x662f;&#x795e;&#x7684;&#x9b54;&#x6cd5;&#xff0c;&#x800c;&#x80fd;&#x591f;&#x7528;&#x90a3;&#x9b54;&#x6cd5;&#x7684;&#x4eba;&#x7c7b;&#x9664;&#x4e86;&#x662f;&#x795e;&#x7684;&#x4f7f;&#x5f92;&#x4e86;&#x4ee5;&#x5916;&#xff0c;&#x6839;&#x672c;&#x60f3;&#x4e0d;&#x5230;&#x522b;&#x4eba;&#x3002;" ID="ID_15727117" CREATED="1466831010872" MODIFIED="1466835670485">
+<attribute NAME="nextId" VALUE="ID_1807379437"/>
+<node TEXT="&#x989d;&#x3002;&#x3002;&#x3002;&#xff08;&#x611f;&#x89c9;&#x4e8b;&#x60c5;&#x53d8;&#x5f97;&#x9ebb;&#x70e6;&#x4e86;&#x3002;&#x3002;&#x3002;&#xff09;" ID="ID_1807379437" CREATED="1466831041600" MODIFIED="1466835661254">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1320764311"/>
+<node TEXT="&#x5317;&#x90e8;&#x7fa4;&#x5c71;&#x5904;&#x2014;&#x201c;&#x5362;&#x65af;&#x4e39;&#x7fa4;&#x5c71;&#x201d;&#x2014;&#x2014;&#x8299;&#x84c9;&#x62c9;&#x89c6;&#x70b9;&#x2014;&#x2014;&#x5b8c;" ID="ID_1320764311" CREATED="1466831048976" MODIFIED="1466835643854">
+<attribute NAME="nextId" VALUE="ID_156232861"/>
+<node TEXT="&#x8fd9;&#x91cc;&#x662f;&#x7d22;&#x96c5;&#x5927;&#x9646;&#xff0c;&#x8fd9;&#x662f;&#x4e00;&#x7247;&#x4eba;&#x7c7b;&#x5c45;&#x4f4f;&#x7684;&#x4e16;&#x754c;&#xff0c;&#x8fd9;&#x91cc;&#x662f;&#x4e00;&#x7247;&#x5251;&#x4e0e;&#x9b54;&#x6cd5;&#x7684;&#x5927;&#x5730;&#xff0c;&#x5728;&#x8fd9;&#x7247;&#x5927;&#x5730;&#x4e0a;&#xff0c;&#x4eba;&#x4eec;&#x8fc7;&#x7684;&#x5f88;&#x5e78;&#x798f;&#xff0c;&#x4e0d;&#x8fc7;&#x90a3;&#x4e2a;&#x548c;&#x5e73;&#x5df2;&#x662f;&#x51e0;&#x4e2a;&#x6708;&#x524d;&#x7684;&#x4e8b;&#x4e86;&#xff0c;" ID="ID_156232861" CREATED="1466831980001" MODIFIED="1466835633718">
+<attribute NAME="nextId" VALUE="ID_462919936"/>
+<node TEXT="&#x73b0;&#x5728;&#x7684;&#x7d22;&#x96c5;&#x975e;&#x5e38;&#x5730;&#x6df7;&#x6c8c;&#xff0c;&#x4e0d;&#x8fc7;&#x82f1;&#x96c4;&#x4eec;&#x5d1b;&#x8d77;&#x4e86;&#xff0c;&#x4ed6;&#x4eec;&#x5230;&#x5e95;&#x4f1a;&#x63cf;&#x7ed8;&#x51fa;&#x4ec0;&#x4e48;&#x6545;&#x4e8b;&#x5462;&#xff1f;&#x4ed6;&#x4eec;&#x662f;&#x5426;&#x80fd;&#x52c7;&#x6562;&#x5730;&#x5728;&#x4ea4;&#x9519;&#x7684;&#x547d;&#x8fd0;&#x4e4b;&#x6d77;&#x4e2d;&#x5212;&#x51fa;&#x7f8e;&#x4e3d;&#x7684;&#x822a;&#x9053;&#x5462;?" ID="ID_462919936" CREATED="1466832013159" MODIFIED="1466835616481">
+<attribute NAME="nextId" VALUE="ID_84306279"/>
+<node TEXT="&#x8ddd;&#x79bb;&#x4eba;&#x4eec;&#x91cd;&#x65b0;&#x6b22;&#x7b11;&#x7684;&#x4e00;&#x5929;&#xff0c;&#x6307;&#x65e5;&#x53ef;&#x5f85;&#x3002;&#xa;&#xa;&#x52c7;&#x6562;&#x4ea4;&#x9519;&#x7ebf;&#x2014;&#x6b63;&#x5f0f;&#x62c9;&#x5f00;&#x5e8f;&#x5e55;&#x3002;" ID="ID_84306279" CREATED="1466832031224" MODIFIED="1466835557503">
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="&#x54c8;&#x3002;&#x3002;&#x3002;&#x7b97;&#x4e86;(&#x5e72;&#x561b;&#x90a3;&#x4e48;&#x751f;&#x6c14;&#x5417;&#x3002;&#x3002;&#x3002;)" ID="ID_1529735871" CREATED="1466830723407" MODIFIED="1466835831373" VSHIFT="20">
+<attribute NAME="branch" VALUE="option2"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_1364585013"/>
+<node TEXT="&#x54c8;&#x3002;&#x3002;&#x3002;&#x7b97;&#x4e86;(&#x5e72;&#x561b;&#x90a3;&#x4e48;&#x751f;&#x6c14;&#x5417;&#x3002;&#x3002;&#x3002;)" ID="ID_1364585013" CREATED="1466831118719" MODIFIED="1466835827054">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_755599752"/>
+<node TEXT="&#x8c01;&#x53eb;&#x4f60;&#x4e00;&#x76f4;&#x8e72;&#x5728;&#x5bb6;&#x91cc;&#x4e0d;&#x51fa;&#x95e8;" ID="ID_755599752" CREATED="1466831203407" MODIFIED="1466835824773">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_504051457"/>
+<node TEXT="&#x54c8;&#x3002;&#x3002;&#x3002;&#xff08;&#x5c31;&#x7b97;&#x5982;&#x6b64;&#x554a;&#x3002;&#x3002;&#x3002;&#xff09;" ID="ID_504051457" CREATED="1466831205488" MODIFIED="1466835812669">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_42041555"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x548c;&#x6bd4;&#x745f;&#x5728;&#x804a;&#x5929;&#x7684;&#x540c;&#x65f6;&#x7528;&#x9b54;&#x6cd5;&#x98de;&#x79bb;&#x7fa4;&#x5c71;&#x3002;" ID="ID_42041555" CREATED="1466831215240" MODIFIED="1466835794533">
+<attribute NAME="nextId" VALUE="ID_1316947379"/>
+<node TEXT="&#x5c0f;&#x9b3c;&#xff0c;&#x5230;&#x4e86;&#x54e6;&#xff0c;&#x8fd9;&#x5e94;&#x8be5;&#x662f;&#x4f60;&#x7b2c;&#x4e00;&#x6b21;&#x770b;&#x89c1;&#x8001;&#x5934;&#x4ee5;&#x5916;&#x7684;&#x4eba;&#x7c7b;&#x5427;" ID="ID_1316947379" CREATED="1466831238919" MODIFIED="1466835786343">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1942249018"/>
+<node TEXT="&#x55ef;&#x3002;&#x3002;(&#x6bd4;&#x8d77;&#x4eba;&#x7c7b;&#x4ec0;&#x4e48;&#x7684;&#xff0c;&#xa;&#x5fc5;&#x987b;&#x627e;&#x5230;&#x5730;&#x65b9;&#x8ba9;&#x6211;&#x7814;&#x7a76;&#x9b54;&#x6cd5;&#x554a;&#xff01;)" ID="ID_1942249018" CREATED="1466831248312" MODIFIED="1466835780390">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1579448918"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x5728;&#x57ce;&#x95e8;&#x9644;&#x8fd1;&#x89e3;&#x9664;&#x9b54;&#x6cd5;&#x7136;&#x540e;&#x6162;&#x6b65;&#x9760;&#x8fd1;&#x57ce;&#x95e8;&#x3002;" ID="ID_1579448918" CREATED="1466831263328" MODIFIED="1466835764910">
+<attribute NAME="nextId" VALUE="ID_1548720469"/>
+<node TEXT="&#x7b49;&#x7b49;&#xff01;&#x90a3;&#x8fb9;&#x7684;&#x5c0f;&#x59d0;" ID="ID_1548720469" CREATED="1466831274320" MODIFIED="1466835764287">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5927;&#x53d4;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1887479359"/>
+<node TEXT="&#x8d70;&#x8fdb;&#x57ce;&#x5e02;&#x6ca1;&#x591a;&#x4e45;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x88ab;&#x4e00;&#x540d;&#x4e70;&#x852c;&#x679c;&#x7684;&#x7537;&#x4eba;&#x642d;&#x8bdd;&#x4e86;&#x3002;" ID="ID_1887479359" CREATED="1466831280328" MODIFIED="1466835746258">
+<attribute NAME="nextId" VALUE="ID_1711722726"/>
+<node TEXT="&#x4ec0;&#x4e48;&#xff1f;&#xff08;&#x4e70;&#x852c;&#x679c;&#x7684;&#x5927;&#x53d4;=&#x7537;&#x4eba;=&#x8ddf;&#x5e08;&#x5085;&#x540c;&#x6027;=&#x8ddf;&#x5e08;&#x5085;&#x4e00;&#x6837;=&#x963b;&#x6b62;&#x81ea;&#x5df1;&#x7814;&#x7a76;&#x9b54;&#x6cd5;=&#x654c;&#x4eba;&#xff09;" ID="ID_1711722726" CREATED="1466831288144" MODIFIED="1466835737350">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1656635565"/>
+<node TEXT="&#x770b;&#x770b;&#x8fd9;&#x82f9;&#x679c;&#xff01;&#x8fd9;&#x53ef;&#x662f;&#x4ece;&#x9886;&#x56fd;&#x8d2d;&#x5165;&#x7684;&#x82f9;&#x679c;&#xff0c;&#xa;&#x751c;&#x7f8e;&#x591a;&#x6c41;&#xff0c;&#x517b;&#x989c;&#x4fdd;&#x7f8e;&#x7684;&#x54e6;&#xff01;&#x4e0d;&#x4e70;&#x51e0;&#x4e2a;&#x561b;&#xff01;" ID="ID_1656635565" CREATED="1466831301127" MODIFIED="1466835735142">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5927;&#x53d4;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1729532626"/>
+<node TEXT="&#x70e6;&#xff0c;&#x6eda;&#xff0c;&#x654c;&#x4eba;&#xff08;&#x624d;&#x4e0d;&#x4f1a;&#x4e0a;&#x5f53;&#x5462;!&#xa;&#x53cd;&#x6b63;&#x4f60;&#x4e5f;&#x60f3;&#x963b;&#x6b62;&#x6211;&#x7814;&#x7a76;&#x9b54;&#x6cd5;&#xff01;&#xff09;" ID="ID_1729532626" CREATED="1466831312503" MODIFIED="1466835706182">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1784858860"/>
+<node TEXT="&#x989d;&#xff01;&#xff1f;&#xff1f;" ID="ID_1784858860" CREATED="1466831324975" MODIFIED="1466835704973">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x5927;&#x53d4;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1360302703"/>
+<node TEXT="&#x7559;&#x4e0b;&#x88ab;&#x5999;&#x9f84;&#x5973;&#x5b50;&#x7684;&#x8a00;&#x8bed;&#x653b;&#x51fb;&#x6253;&#x6c89;&#x7684;&#x5927;&#x53d4;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x7ee7;&#x7eed;&#x5728;&#x57ce;&#x5e02;&#x91cc;&#x95f2;&#x901b;&#x3002;&#xa;&#x8299;&#x84c9;&#x62c9;&#x7ecf;&#x8fc7;&#x7684;&#x5730;&#x65b9;&#x4e0d;&#x65ad;&#x51fa;&#x73b0;&#x5fc3;&#x7075;&#x88ab;&#x6253;&#x51fb;&#x4e4b;&#x4eba;(&#x4e3b;&#x8981;&#x662f;&#x7537;&#x6027;)&#x3002;" ID="ID_1360302703" CREATED="1466831333167" MODIFIED="1466835699839">
+<attribute NAME="nextId" VALUE="ID_91044673"/>
+<node TEXT="&#x7ecf;&#x8fc7;&#x6570;&#x4e2a;&#x5c0f;&#x65f6;&#x7684;&#x95f2;&#x901b;&#xff0c;&#x8b66;&#x949f;&#x7a81;&#x7136;&#x54cd;&#x8d77;&#x3002;" ID="ID_91044673" CREATED="1466831341719" MODIFIED="1466835683615">
+<attribute NAME="nextId" VALUE="ID_766322804"/>
+<node TEXT="&#x5c0f;&#x9b3c;&#xff0c;&#x6211;&#x611f;&#x77e5;&#x5230;&#x4e86;&#x57ce;&#x5916;&#x6709;&#x6279;&#x5927;&#x519b;&#xff0c;&#x662f;&#x654c;&#x4eba;&#xff0c;&#x6211;&#x4eec;&#x5feb;&#x70b9;&#x53bb;&#x5427;&#xff01;" ID="ID_766322804" CREATED="1466831368683" MODIFIED="1466835677374">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1020493060"/>
+<node TEXT="&#x4e0d;&#x8981;&#xff08;&#x611f;&#x89c9;&#x597d;&#x9ebb;&#x70e6;&#xff0c;&#x53c8;&#x6ca1;&#x597d;&#x5904;&#x3002;&#x3002;&#x3002;&#xff09;" ID="ID_1020493060" CREATED="1466831377937" MODIFIED="1466835676023">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_482673444"/>
+<node TEXT="&#x3002;&#x3002;&#x3002;&#x62ff;&#x4ed6;&#x4eec;&#x505a;&#x9b54;&#x6cd5;&#x5b9e;&#x9a8c;&#x7684;&#x8bdd;&#x6ca1;&#x4eba;&#x4f1a;&#x963b;&#x6b62;&#x54e6;" ID="ID_482673444" CREATED="1466831412743" MODIFIED="1466835666869">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1023892101"/>
+<node TEXT="&#x7a81;&#x7136;&#xff0c;&#x6bd4;&#x745f;&#x7684;&#x89c6;&#x89d2;&#x4ece;&#x8857;&#x9053;&#x4e00;&#x77ac;&#x95f4;&#x6362;&#x6210;&#x4e86;&#x57ce;&#x5899;&#x5916;&#x7684;&#x8349;&#x539f;&#x3002;" ID="ID_1023892101" CREATED="1466831422574" MODIFIED="1466835654038">
+<attribute NAME="nextId" VALUE="ID_414121484"/>
+<node TEXT="&#x708e;&#x67f1;&#xff01;" ID="ID_414121484" CREATED="1466831433907" MODIFIED="1466835648605">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_468404851"/>
+<node TEXT="&#x8299;&#x84c9;&#x62c9;&#x4ee5;&#x65e0;&#x548f;&#x5531;&#x7684;&#x65b9;&#x5f0f;&#x653e;&#x51fa;&#x4e86;&#x9ad8;&#x7ea7;&#x706b;&#x5c5e;&#x6027;&#x9b54;&#x6cd5;&#xff0c;&#xa;&#x536b;&#x5e73;&#x7684;&#x6ce8;&#x610f;&#x529b;&#x96c6;&#x4e2d;&#x5728;&#x4e86;&#x7a81;&#x7136;&#x51fa;&#x73b0;&#x5728;&#x7a7a;&#x4e2d;&#x7684;&#x8299;&#x84c9;&#x62c9;&#x7684;&#x8eab;&#x4e0a;&#x3002;" ID="ID_468404851" CREATED="1466831440747" MODIFIED="1466835638958">
+<attribute NAME="nextId" VALUE="ID_489221009"/>
+<node TEXT="&#x6765;&#x5427;&#xff01;&#x9b54;&#x6cd5;&#x8bd5;&#x9a8c;&#x53f0;&#x4eec;&#xff01;" ID="ID_489221009" CREATED="1466831453467" MODIFIED="1466835629822">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_279065576"/>
+<node TEXT="&#x5c45;&#x7136;&#x771f;&#x7684;&#x4e0a;&#x94a9;&#x4e86;&#xff0c;&#x8fd9;&#x5c0f;&#x9b3c;&#x4e5f;&#x672a;&#x514d;&#x592a;&#x50cf;&#x4ed6;&#x5e08;&#x5085;&#x4e86;&#x5427;&#x3002;&#x3002;&#x3002;" ID="ID_279065576" CREATED="1466831463308" MODIFIED="1466835620840">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1130303283"/>
+<node TEXT="Battle Start" ID="ID_1130303283" CREATED="1466835019108" MODIFIED="1466835623590">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_454850825"/>
+<node TEXT="&#x5c0f;&#x9b3c;&#xff0c;&#x4f60;&#x5e72;&#x7684;&#x592a;&#x8fc7;&#x706b;&#x4e86;&#x3002;&#x3002;&#x3002;" ID="ID_454850825" CREATED="1466831472685" MODIFIED="1466835612119">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x6bd4;&#x745f;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_564465687"/>
+<node TEXT="&#x55ef; (&#x5b8c;&#x4e86;&#xff1f;&#x9b54;&#x6cd5;&#x8fd8;&#x6ca1;&#x8bd5;&#x5b8c;&#x554a;&#xff01;&#xff01;)" ID="ID_564465687" CREATED="1466831480602" MODIFIED="1466835605014">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_147744605"/>
+<node TEXT="&#x5c45;&#x7136;&#x628a;&#x90a3;&#x6279;&#x9b54;&#x517d;&#x5927;&#x519b;&#x7ed9;&#x3002;&#x3002;&#x3002;&#x800c;&#x4e14;&#x8fd8;&#x600e;&#x4e48;&#x8f7b;&#x6613;&#x5730;&#x3002;&#x3002;&#x3002;" ID="ID_147744605" CREATED="1466831495445" MODIFIED="1466835600462">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x58eb;&#x5175;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1959844626"/>
+<node TEXT="&#x9644;&#x8fd1;&#x7684;&#x4eba;&#x4eec;&#x7eb7;&#x7eb7;&#x4e0d;&#x6562;&#x76f8;&#x4fe1;&#x81ea;&#x5df1;&#x7684;&#x773c;&#x775b;&#xff0c;&#x6ca1;&#x770b;&#x8fc7;&#x7684;&#x9b54;&#x6cd5;&#x628a;&#x5927;&#x6279;&#x654c;&#x4eba;&#x6253;&#x5230;&#xff0c;&#xa;&#x6beb;&#x53d1;&#x65e0;&#x4f24;&#x7684;&#x8299;&#x84c9;&#x62c9;&#x5b9b;&#x5982;&#x795e;&#x4e00;&#x822c;&#x7684;&#x51b7;&#x6de1;&#x5a01;&#x4e25;&#x3002;" ID="ID_1959844626" CREATED="1466831519044" MODIFIED="1466835596239">
+<attribute NAME="nextId" VALUE="ID_1908461216"/>
+<node TEXT="&#x8d70;&#x4e86; (&#x5feb;&#x79bb;&#x5f00;&#x5427;&#xff0c;&#x8fd9;&#x91cc;&#x65c5;&#x9986;&#x6682;&#x65f6;&#x662f;&#x4e0d;&#x4f1a;&#x5f00;&#x4e86;&#x5427;)" ID="ID_1908461216" CREATED="1466831526059" MODIFIED="1466835591389">
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1773944959"/>
+<node TEXT="&#x8bf4;&#x5b8c;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x548c;&#x6bd4;&#x745f;&#x5c31;&#x7528;&#x8f6c;&#x79fb;&#x9b54;&#x6cd5;&#x79bb;&#x5f00;&#x4e86;&#x3002;&#x7559;&#x4e0b;&#x6765;&#x7684;&#x4eba;&#x4eec;&#x3002;&#x3002;&#x3002;" ID="ID_1773944959" CREATED="1466831533931" MODIFIED="1466835588175">
+<attribute NAME="nextId" VALUE="ID_824382348"/>
+<node TEXT="&#x554a;&#x554a;&#x554a;&#x554a;&#xff01;&#x5c45;&#x7136;&#x6d88;&#x5931;&#x4e86;&#xff01;&#x679c;&#x7136;&#x662f;&#x795e;&#x6d3e;&#x4e0b;&#x6765;&#x7684;&#x4f7f;&#x8005;&#x5417;&#xff01;" ID="ID_824382348" CREATED="1466831544228" MODIFIED="1466835583622">
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="&#x58eb;&#x5175;"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_344081350"/>
+<node TEXT="&#x5c31;&#x8fd9;&#x6837;&#xff0c;&#x8299;&#x84c9;&#x62c9;&#x7684;&#x8f68;&#x8ff9;&#x5728;&#x6c11;&#x95f4;&#x5f00;&#x59cb;&#x6d41;&#x4f20;&#x3002;" ID="ID_344081350" CREATED="1466831550627" MODIFIED="1466835579805">
+<attribute NAME="nextId" VALUE="ID_1388348542"/>
+<node TEXT="&#x5317;&#x90e8;&#x7fa4;&#x5c71;&#x5904;&#x2014;&#x201c;&#x5362;&#x65af;&#x4e39;&#x7fa4;&#x5c71;&#x201d;&#x2014;&#x2014;&#x8299;&#x84c9;&#x62c9;&#x89c6;&#x70b9;&#x2014;&#x2014;&#x5b8c;" ID="ID_1388348542" CREATED="1466831550627" MODIFIED="1466835574904">
+<attribute NAME="nextId" VALUE="ID_1160360758"/>
+<node TEXT="&#x8fd9;&#x91cc;&#x662f;&#x7d22;&#x96c5;&#x5927;&#x9646;&#xff0c;&#x8fd9;&#x662f;&#x4e00;&#x7247;&#x4eba;&#x7c7b;&#x5c45;&#x4f4f;&#x7684;&#x4e16;&#x754c;&#xff0c;&#x8fd9;&#x91cc;&#x662f;&#x4e00;&#x7247;&#x5251;&#x4e0e;&#x9b54;&#x6cd5;&#x7684;&#x5927;&#x5730;&#xff0c;&#x5728;&#x8fd9;&#x7247;&#x5927;&#x5730;&#x4e0a;&#xff0c;&#x4eba;&#x4eec;&#x8fc7;&#x7684;&#x5f88;&#x5e78;&#x798f;&#xff0c;&#x4e0d;&#x8fc7;&#x90a3;&#x4e2a;&#x548c;&#x5e73;&#x5df2;&#x662f;&#x51e0;&#x4e2a;&#x6708;&#x524d;&#x7684;&#x4e8b;&#x4e86;&#xff0c;" ID="ID_1160360758" CREATED="1466831980001" MODIFIED="1466835571000">
+<attribute NAME="nextId" VALUE="ID_1645518504"/>
+<node TEXT="&#x73b0;&#x5728;&#x7684;&#x7d22;&#x96c5;&#x975e;&#x5e38;&#x5730;&#x6df7;&#x6c8c;&#xff0c;&#x4e0d;&#x8fc7;&#x82f1;&#x96c4;&#x4eec;&#x5d1b;&#x8d77;&#x4e86;&#xff0c;&#x4ed6;&#x4eec;&#x5230;&#x5e95;&#x4f1a;&#x63cf;&#x7ed8;&#x51fa;&#x4ec0;&#x4e48;&#x6545;&#x4e8b;&#x5462;&#xff1f;&#x4ed6;&#x4eec;&#x662f;&#x5426;&#x80fd;&#x52c7;&#x6562;&#x5730;&#x5728;&#x4ea4;&#x9519;&#x7684;&#x547d;&#x8fd0;&#x4e4b;&#x6d77;&#x4e2d;&#x5212;&#x51fa;&#x7f8e;&#x4e3d;&#x7684;&#x822a;&#x9053;&#x5462;?" ID="ID_1645518504" CREATED="1466832013159" MODIFIED="1466835569073">
+<attribute NAME="nextId" VALUE="ID_91338572"/>
+<node TEXT="&#x8ddd;&#x79bb;&#x4eba;&#x4eec;&#x91cd;&#x65b0;&#x6b22;&#x7b11;&#x7684;&#x4e00;&#x5929;&#xff0c;&#x6307;&#x65e5;&#x53ef;&#x5f85;&#x3002;&#xa;&#xa;&#x52c7;&#x6562;&#x4ea4;&#x9519;&#x7ebf;&#x2014;&#x6b63;&#x5f0f;&#x62c9;&#x5f00;&#x5e8f;&#x5e55;&#x3002;" ID="ID_91338572" CREATED="1466832031224" MODIFIED="1466835555628">
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
 </node>
 </node>
 </node>

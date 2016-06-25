@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><map version="freeplane 1.3.0">
+<?xml version="1.0" encoding="UTF-8"?><map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="        英雄交错线&#10;序章-英雄们的前奏曲" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1466570613168">
 <edge STYLE="bezier" COLOR="#808080" WIDTH="thin"/>
@@ -81,21 +81,21 @@
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="2"/>
 <attribute NAME="nextId" VALUE="ID_421027007"/>
-<node TEXT="索雅大陆，这是一片人类居住的&#10;世界，被多个国家所区分，这里是一&#10;片剑与魔&#10;法的大地。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" POSITION="right" ID="ID_421027007" CREATED="1466570436172" MODIFIED="1466570682040">
+<node TEXT="索雅大陆，这是一片人类居住的世界，&#10;被多个国家所区分，这里是一片剑与魔&#10;法的大地。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" POSITION="right" ID="ID_421027007" CREATED="1466570436172" MODIFIED="1466570682040">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1618409521"/>
-<node TEXT="在这片大地上，人&#10;们时而一同欢笑，时而战乱&#10;不断，时而互相帮助，时而互相背板。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1618409521" CREATED="1466570556044" MODIFIED="1466570693506">
+<node TEXT="在这片大地上，人们时而一同欢笑，&#10;时而战乱不断，时而互相帮助，时而&#10;互相背板。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1618409521" CREATED="1466570556044" MODIFIED="1466570693506">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1354500379"/>
-<node TEXT="不过最接近现代的战乱已是几百年前&#10;的事了，现在的索雅非常地和平。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466686278495">
+<node TEXT="不过最接近现代的战乱已是几百年前&#10;的事了，现在的索雅非常地和平。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466836018256">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="40" VALUE_WIDTH="271"/>
-<attribute NAME="branch" VALUE="knight,acher,theif,caster"/>
-<attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440"/>
-<node TEXT="南部大国“亚罗”克劳德视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466603825366" VSHIFT="-80">
+<attribute_layout NAME_WIDTH="40" VALUE_WIDTH="364"/>
+<attribute NAME="branch" VALUE="knight,archer,thief,caster"/>
+<attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440,ID_1244564882"/>
+<node TEXT="南部大国“亚罗”克劳德视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466832083820" HGAP="33" VSHIFT="171">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="char" VALUE="knightM"/>
@@ -387,7 +387,7 @@
 <attribute NAME="name" VALUE="？？？"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_135290484"/>
-<node TEXT="这沉稳的声音马上让克劳德发现对方是谁，&#10;他就是克劳德的剑术师傅——风刃的“吉斯”。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_135290484" CREATED="1466763801761" MODIFIED="1466764961953">
+<node TEXT="这沉稳的声音马上让克劳德发现对方是谁，&#10;他就是克劳德的剑术师傅——风刃的“吉斯”。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_135290484" CREATED="1466763801761" MODIFIED="1466827501050">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1435928569"/>
@@ -738,7 +738,7 @@
 </node>
 </node>
 </node>
-<node TEXT="西部“柯西斯大平原”娜娜利视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1466766944066" HGAP="40" VSHIFT="-10">
+<node TEXT="西部“柯西斯大平原”娜娜利视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1466832065669" HGAP="43" VSHIFT="214">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="char" VALUE="archer"/>
@@ -1224,34 +1224,1080 @@
 </node>
 </node>
 </node>
-<node TEXT="东部贸易大国—“巴布罗王国”鲁迪视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1466603494989" VSHIFT="70">
+<node TEXT="东部贸易大国—“巴布罗王国”鲁迪视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1466832072884" HGAP="39" VSHIFT="-9">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute NAME="char" VALUE="theif"/>
+<attribute NAME="char" VALUE="thief"/>
 <attribute NAME="nextId" VALUE="ID_416213409"/>
-<node TEXT="索雅历310年4月15日" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_416213409" CREATED="1466571123478" MODIFIED="1466571744924">
+<node TEXT="索雅历310年4月15日" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_416213409" CREATED="1466571123478" MODIFIED="1466571744924">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_6714052"/>
-<node TEXT="鲁迪是咬着“银汤匙”出生的人，&#10;鲁迪.巴布罗身为东部的贸易大国&#10;“巴布罗王国”的第7位皇位继承人。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_6714052" CREATED="1466571128053" MODIFIED="1466571741063">
+<node TEXT="鲁迪是咬着“银汤匙”出生的人，&#10;鲁迪.巴布罗身为东部的贸易大国&#10;“巴布罗王国”的第7位皇位继承人。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_6714052" CREATED="1466571128053" MODIFIED="1466571741063">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1118751300"/>
-<node TEXT="虽然鲁迪从小就开始接受正统的皇族教育，&#10;但他认为现在的贵族和皇家已腐烂到极点，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_1118751300" CREATED="1466571163597" MODIFIED="1466571737871">
+<node TEXT="虽然鲁迪从小就开始接受正统的皇族教育，&#10;但他认为现在的贵族和皇家已腐烂到极点，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1118751300" CREATED="1466571163597" MODIFIED="1466571737871">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1497056206"/>
-<node TEXT="吃着的，睡着的，都是百姓的辛劳，&#10;而自己却只会指手画脚，纸上谈兵，&#10;然后做享其成。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_1497056206" CREATED="1466571188446" MODIFIED="1466571732983">
+<node TEXT="吃着的，睡着的，都是百姓的辛劳，&#10;而自己却只会指手画脚，纸上谈兵，&#10;然后做享其成。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1497056206" CREATED="1466571188446" MODIFIED="1466571732983">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1598202106"/>
-<node TEXT="这样的想法让鲁迪的言行举止与其他皇族不同，&#10;使得有人认为鲁迪跟皇太子的立场应该对调，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" FOLDED="true" ID="ID_1598202106" CREATED="1466571203270" MODIFIED="1466571728382">
+<node TEXT="这样的想法让鲁迪的言行举止与其他皇族不同，&#10;使得有人认为鲁迪跟皇太子的立场应该对调，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1598202106" CREATED="1466571203270" MODIFIED="1466571728382">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_385650992"/>
-<node TEXT="当然继承皇位这件事对只拥有第7继承权的鲁迪来说，除非上演一场戏剧性的皇族大惨案，根本就连想都不用想" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_385650992" CREATED="1466571217654" MODIFIED="1466571239194">
+<node TEXT="当然继承皇位这件事对只拥有第7继承权的&#10;鲁迪来说，除非上演一场戏剧性的皇族大&#10;惨案，根本就连想都不用想" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_385650992" CREATED="1466571217654" MODIFIED="1466829985927">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1132880712"/>
+<node TEXT="抱歉啊，总是让你冒险。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1132880712" CREATED="1466827568936" MODIFIED="1466829981214">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_417490387"/>
+<node TEXT="没事没事，殿下难得任性一回吗，&#10;连这都做不到的话，妈。。。女仆&#10;长会责怪我的！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_417490387" CREATED="1466827580880" MODIFIED="1466829976191">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="凯乐"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_537058095"/>
+<node TEXT="谢谢你,明明如果在偷运铠甲和武器被抓到的话，&#10;会毫无狡辩之际直接被判为企图叛变之罪。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_537058095" CREATED="1466827589048" MODIFIED="1466829972478">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1674450687"/>
+<node TEXT="鲁迪向自己的专属书童——“凯乐”珍重的举了个躬以表谢意，&#10;鲁迪认为他亏欠凯乐太多了，毕竟城堡内是不准许近卫队以外&#10;的人员携带武器的，所以只好拜托凯乐偷偷买回来了。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1674450687" CREATED="1466827626609" MODIFIED="1466829968728">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_678955546"/>
+<node TEXT="请不要这样殿下！我根本没做什么！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_678955546" CREATED="1466827668472" MODIFIED="1466829961937">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="凯乐"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_167687077"/>
+<node TEXT="你就是这样老是谦虚才会只挡我这个连皇座都没机会碰的第7顺位的书童，&#10;若你在大胆点，在宫廷里得到一官半职根本就没问题的" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_167687077" CREATED="1466827677128" MODIFIED="1466829958702">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1710259586"/>
+<node TEXT="又说那样的话。。。不过为什么殿下想要这些东西啊？&#10;虽然理解殿下一直统景拥有一套武装，但这盔甲又轻又&#10;薄，武器虽然多但都又短又小的。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1710259586" CREATED="1466827686848" MODIFIED="1466829953311">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="凯乐"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_207381647"/>
+<node TEXT="虽然哥哥们的武装都很帅，但不适合我&#10;，我比较喜欢轻便灵活的呢，呵呵~" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_207381647" CREATED="1466827713856" MODIFIED="1466829951967">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_544733497"/>
+<node TEXT="看着一边试穿铠甲一边哼着小歌的鲁迪，凯乐不经嘴角上扬，&#10;他知道鲁迪从小就想成为真正的骑士，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_544733497" CREATED="1466827729040" MODIFIED="1466829946615">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1233075522"/>
+<node TEXT="斩奸除恶，替天行道，成为人民的盾，&#10;人民的矛，甚至想带领人民反抗皇家世袭体系。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1233075522" CREATED="1466827746624" MODIFIED="1466829942055">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_766211612"/>
+<node TEXT="明明自己也是皇族，却说反抗皇家世袭什么的，&#10;鲁迪也时不时帮助城内的佣人，大概跟我一样城&#10;内的佣人都对鲁迪没办法成皇帝这件事感到惋惜。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_766211612" CREATED="1466827746851" MODIFIED="1466829937799">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1492485331"/>
+<node TEXT="那么我先去忙了，小心不要伤到自己啊" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1492485331" CREATED="1466827782825" MODIFIED="1466829934038">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="凯乐"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_419382619"/>
+<node TEXT="蛤？你说什么？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_419382619" CREATED="1466827790880" MODIFIED="1466829927254">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_56669584"/>
+<node TEXT="我去工作了" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_56669584" CREATED="1466827797096" MODIFIED="1466829923438">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="凯乐"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_501057366"/>
+<node TEXT="哦哦，好的好的，去吧去吧" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_501057366" CREATED="1466827805224" MODIFIED="1466829920158">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_430581123"/>
+<node TEXT="凯乐很清楚，一旦进入这个性情的鲁迪要&#10;很久才会恢复为可以正常对话的阶段，所以便离开了。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_430581123" CREATED="1466827812704" MODIFIED="1466829917103">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1423941296"/>
+<node TEXT="不知不觉黄昏了，凯乐真是的，怎么都不说声就走啊&#10;。。。。嗯？好想有说什么来着。。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1423941296" CREATED="1466827828328" MODIFIED="1466829912207">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_930801826"/>
+<node TEXT="一面回想数个小时前的事，鲁迪来到了城堡的最高处，&#10;眺望首都全景是每日行程，是鲁迪用来告诫自己，我该&#10;守护的对象就在这里。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_930801826" CREATED="1466827843816" MODIFIED="1466829909128">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_244855429"/>
+<node TEXT="嗯？那是什么？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_244855429" CREATED="1466827894960" MODIFIED="1466829904126">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_799299369"/>
+<node TEXT="鲁迪望向城墙外面，看到了城门方向有一群不明的黑色影子。&#10;叮!叮!叮!" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_799299369" CREATED="1466827932672" MODIFIED="1466829900575">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_801958270"/>
+<node TEXT="警钟响起，虽然老旧但依然发出清脆的钟声，&#10;可是鲁迪根本没那闲情聆听，他只知道，敌人&#10;来袭了。鲁迪急忙地冲向了广场一探究竟。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_801958270" CREATED="1466827940720" MODIFIED="1466829897359">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_236219106"/>
+<node TEXT="不久后，鲁迪带着认真懊恼的表情回到了城堡。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_236219106" CREATED="1466827957416" MODIFIED="1466829891846">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_493129904"/>
+<node TEXT="鲁迪到底发生了什么事？！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_493129904" CREATED="1466827964257" MODIFIED="1466829886111">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="皇帝"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1065246559"/>
+<node TEXT="父皇，请您冷静点，就算您知道了又能怎么样？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1065246559" CREATED="1466827971872" MODIFIED="1466829882102">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1266069809"/>
+<node TEXT="。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1266069809" CREATED="1466827978545" MODIFIED="1466829877169">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="皇帝"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1957433042"/>
+<node TEXT="也罢，敌人是一群绿色的人，&#10;和长有翅膀会飞的人" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1957433042" CREATED="1466827984832" MODIFIED="1466829873294">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1840102622"/>
+<node TEXT="？？？蛤？那是什么啊？然后呢，都一个小时了，战况如何？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1840102622" CREATED="1466828000072" MODIFIED="1466829869990">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="皇帝"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_464221365"/>
+<node TEXT="。。。这里沦陷的可能性很高，敌人的&#10;每个各体都有一定的强度，就连数量也&#10;是压倒性的" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_464221365" CREATED="1466828005456" MODIFIED="1466829865575">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1877020202"/>
+<node TEXT="什么！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1877020202" CREATED="1466828037881" MODIFIED="1466829862613">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="皇帝"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1618062926"/>
+<node TEXT="还没等鲁迪说完，皇帝就离去了，&#10;鲁迪也放弃抱怨皇帝为了自保而舍&#10;弃了人民不管。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1618062926" CREATED="1466828046825" MODIFIED="1466829858425">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1690514325"/>
+<node TEXT="回到房间，穿上今天刚到手的轻铠甲，&#10;带上短刀和苦无，前往与车房截然相反&#10;的方向。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1690514325" CREATED="1466828058441" MODIFIED="1466829852327">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1640587588"/>
+<node TEXT="到达了所谓的最后防线，简直掺不忍睹，&#10;死伤无数，士兵们士气低落，个个类似等&#10;死般的神情。发现了鲁迪的人们，都投以&#10;奇怪的视线。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1640587588" CREATED="1466828069328" MODIFIED="1466829848033">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1481055434"/>
+<node TEXT="除了我以外的皇族们都逃了" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1481055434" CREATED="1466828103336" MODIFIED="1466829843998">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1959339592"/>
+<node TEXT="听到了这句话的人们不感到惊讶但都露出了果然会这样的表情。&#10;然后感觉到了彻底放弃的气氛开始散开。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1959339592" CREATED="1466828113577" MODIFIED="1466829839139">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_530399943"/>
+<node TEXT="就连敌人来了也不准备抵抗，他们宛如待宰的羔羊，&#10;鲁迪不理会他们，默默拔出短剑。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_530399943" CREATED="1466828135128" MODIFIED="1466829833039">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_581916653"/>
+<node TEXT="Battle Start" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_581916653" CREATED="1466828156985" MODIFIED="1466829827350">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branch" VALUE="option1,option2"/>
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_730774924,ID_1641700190"/>
+<node TEXT="不要放弃！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_730774924" CREATED="1466828198720" MODIFIED="1466829808462" VSHIFT="-43">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="branch" VALUE="option1"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_1728113379"/>
+<node TEXT="不要放弃！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1728113379" CREATED="1466828235201" MODIFIED="1466829812582">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_156295430"/>
+<node TEXT="战斗完了的鲁迪把短剑指向夕阳，人们纷纷看向他&#10;，有一部分人早已被他那战姿所吸引。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_156295430" CREATED="1466828244121" MODIFIED="1466829796975">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_321111259"/>
+<node TEXT="皇族什么的打从一开始就不值得指望！&#10;我们要靠的才不是那些腐烂的家伙们！&#10;我们应该依靠的是我们的剑和身旁的战友！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_321111259" CREATED="1466828256920" MODIFIED="1466829787326">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1891025287"/>
+<node TEXT="鲁迪深深地吸了一口气并大声叫道" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1891025287" CREATED="1466828269648" MODIFIED="1466829778046">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1116139479"/>
+<node TEXT="战斗吧！为了我们！&#10;为了所爱之人！为了明天！&#10;为了胜利！把力量借给我吧！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1116139479" CREATED="1466828277913" MODIFIED="1466829764329">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1883785546"/>
+<node TEXT="噢噢噢噢噢噢噢噢噢噢噢噢噢噢&#10;噢噢哦哦哦！！！！！！！！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1883785546" CREATED="1466828299488" MODIFIED="1466829762624">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="士兵们"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_500864941"/>
+<node TEXT="众人被鲁迪那身姿所吸引纷纷拿起了武器展开了最后的死战，&#10;然后这场战投将被世人称为“巴布罗首都防御战”而闻名，不过&#10;这又是另外一个故事了。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_500864941" CREATED="1466828318688" MODIFIED="1466829750742">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_82665508"/>
+<node TEXT="东部贸易大国—“巴布罗王国”——鲁迪视点——完" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_82665508" CREATED="1466828587281" MODIFIED="1466829703847">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1641700190" CREATED="1466828230400" MODIFIED="1466829805049" VSHIFT="28">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="branch" VALUE="option2"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_72756078"/>
+<node TEXT="。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_72756078" CREATED="1466828369080" MODIFIED="1466829802423">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1617511374"/>
+<node TEXT="看着神情恍然的士兵们，鲁迪离开了他们前往城门。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1617511374" CREATED="1466828379305" MODIFIED="1466829792046">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1629944247"/>
+<node TEXT="要想办法阻止更多的敌人入侵，希望城门还能关上啊" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1629944247" CREATED="1466828391288" MODIFIED="1466829782239">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_955272597"/>
+<node TEXT="不断击倒敌人的鲁迪到达了城门后&#10;发现门外有些敌军部队去往了奇怪的方向。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_955272597" CREATED="1466828401544" MODIFIED="1466829770951">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_627087041"/>
+<node TEXT="哪里是。。。前往第二首都的方向。。。&#10;！！他们的目标是父皇！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_627087041" CREATED="1466828411113" MODIFIED="1466829756119">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_225710327"/>
+<node TEXT="灵光一闪的鲁迪飞速地追想敌人。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_225710327" CREATED="1466828515016" MODIFIED="1466829236488">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE=""/>
+<node TEXT="太迟了吗！？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1134183844" CREATED="1466828525985" MODIFIED="1466829746703">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="thief"/>
+<attribute NAME="name" VALUE="鲁迪"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1391762352"/>
+<node TEXT="鲁迪赶到之时，护卫和敌人们已经开始战斗了。&#10;鲁迪以灵巧的动作闯入战圈。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1391762352" CREATED="1466828532216" MODIFIED="1466829738903">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1529835482"/>
+<node TEXT="Battle Start" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1529835482" CREATED="1466828540969" MODIFIED="1466829734703">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_1435992738"/>
+<node TEXT="鲁迪哟！做得好！不愧是我的。。。&#10;额？你去哪？回来啊！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1435992738" CREATED="1466828553424" MODIFIED="1466829715023">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="皇帝"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1030478401"/>
+<node TEXT="不理会父皇，鲁迪再次回到首都，漫长的战事还在持续中。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1030478401" CREATED="1466828566272" MODIFIED="1466829709566">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1716258721"/>
+<node TEXT="东部贸易大国—“巴布罗王国”——鲁迪视点——完" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1716258721" CREATED="1466828570560" MODIFIED="1466829701944">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="北部群山处—“卢斯丹群山”——芙蓉拉视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1244564882" CREATED="1466830124458" MODIFIED="1466835992430" HGAP="10">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="nextId" VALUE="ID_1256597100"/>
+<node TEXT="索雅历310年5月9日" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1256597100" CREATED="1466830171688" MODIFIED="1466835987812">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1213290782"/>
+<node TEXT="芙蓉拉是巫师的徒弟，自小便被巫师收养，&#10;师徒俩在深山里不分早晚地专研魔法的深渊，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1213290782" CREATED="1466830187208" MODIFIED="1466835984574">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_358509535"/>
+<node TEXT="由于芙蓉拉跟他的师傅能够连续几个月不说一句话只埋头专研魔法，&#10;芙蓉拉养成了不怎么说话的习惯，也不是不会，只是没什么必要。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_358509535" CREATED="1466830203360" MODIFIED="1466835983622">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_12186246"/>
+<node TEXT="为了研究魔法而吃，为了魔法而补充睡眠，&#10;为了魔法而活，仔细想想的话，这对一个18&#10;岁的少女而言，也太不青春了。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_12186246" CREATED="1466830229360" MODIFIED="1466835977149">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_258680723"/>
+<node TEXT="芙蓉拉似乎很享受这样的生活，&#10;相反的师傅却对芙蓉拉的态度不怎么乐观。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_258680723" CREATED="1466830243312" MODIFIED="1466835974093">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_662179198"/>
+<node TEXT="因为把他变成这样就是自己，等他发现时，芙蓉拉已经变成这样了，&#10;每当想到他没给到芙蓉拉应有的人生，他的罪恶感连日不断地累计。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_662179198" CREATED="1466830256856" MODIFIED="1466835971022">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1373355113"/>
+<node TEXT="芙蓉拉哟，不如。。。我们下山走走如何？&#10;可以看到很美的大城市哦" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1373355113" CREATED="1466830272952" MODIFIED="1466835965743">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1437360995"/>
+<node TEXT="(下山好麻烦，算了，可是很美的大城市是什么样的呢？&#10;嘛。。。反正我有魔法就行了！所以没必要)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1437360995" CREATED="1466830279463" MODIFIED="1466835963438">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1563823286"/>
+<node TEXT="没必要（啊，我又只说了一部分的话，&#10;明明想说出跟多的说。。。算了，还是&#10;继续研究魔法吧！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1563823286" CREATED="1466830306480" MODIFIED="1466835962381">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1210096242"/>
+<node TEXT="可是。。。你看！我觉得见识一下未知的地方可能&#10;可以激发魔法的灵感也说不定哦！所以，一起下山吧！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1210096242" CREATED="1466830322951" MODIFIED="1466835957205">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_614981625"/>
+<node TEXT="（没必要，仔细想想，如果能激发创造灵感的话，&#10;师傅就不会成天呆在这种鸟不拉屎的深山里了，我&#10;才不会被骗呢！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_614981625" CREATED="1466830332951" MODIFIED="1466835954357">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_433388123"/>
+<node TEXT="没必要（啊。。。又没把话说完。。。）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_433388123" CREATED="1466830339895" MODIFIED="1466835947118">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_54350504"/>
+<node TEXT="。。。是吗。。。好吧。。。我不勉强你了。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_54350504" CREATED="1466830357264" MODIFIED="1466835944341">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1994081025"/>
+<node TEXT="师傅对芙蓉拉的劝说结果感到无力，只能&#10;怪自己没管教好，明明小孩应该细心的教育的说。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1994081025" CREATED="1466830383168" MODIFIED="1466835941613">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1319685621"/>
+<node TEXT="算了，我有魔法就行了，与其想有的没得，还是专研魔法吧，&#10;师傅桑一边这样心想一边开始魔法阵的绘制。芙蓉拉的师傅心&#10;血来潮把很久没叫过的使魔召唤了出来。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1319685621" CREATED="1466830394039" MODIFIED="1466835937839">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1155155069"/>
+<node TEXT="你这老东西终于召唤我了！我有很多重要的情报要告诉你啊！&#10;哪有一年不召唤使魔的白痴啊！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1155155069" CREATED="1466830407920" MODIFIED="1466835934326">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_922434309"/>
+<node TEXT="冷静点，冷静点，比瑟，这是有原因的" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_922434309" CREATED="1466830418408" MODIFIED="1466835927388">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_900152000"/>
+<node TEXT="算了！反正肯定是忘了我的存在，&#10;比起这个！索雅发生大事了啦！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_900152000" CREATED="1466830431648" MODIFIED="1466835925416">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_127208164"/>
+<node TEXT="被称为“比瑟”的鹦鹉型使魔一出来就喋喋&#10;不休的说了一大堆埋怨话，而师傅也开始敷衍它。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_127208164" CREATED="1466830439728" MODIFIED="1466835922885">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_208095752"/>
+<node TEXT="比瑟将一个月内所发生在世界各地的事告诉了师傅和芙蓉拉。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_208095752" CREATED="1466830454064" MODIFIED="1466835920309">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1742390145"/>
+<node TEXT="师徒俩一听，反应各不同：&#10;&#10;师傅想：“终于有借口让芙蓉拉下山了！魔王，太棒啦,我给你个赞！”&#10;而芙蓉拉则想：“吼~外面真是险恶，幸好没被师傅骗下山”" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1742390145" CREATED="1466830457112" MODIFIED="1466835914976">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_987924908"/>
+<node TEXT="芙蓉拉哟，看来世界现在非常的混沌" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_987924908" CREATED="1466830481143" MODIFIED="1466835911341">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1928132129"/>
+<node TEXT="嗯（所以呢？你想说什么？&#10;可以不要拖泥带水了吗？我很忙的）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1928132129" CREATED="1466830483544" MODIFIED="1466835910726">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1171802654"/>
+<node TEXT="所以啊芙蓉拉，看来他们&#10;需要强大的魔法师的力量" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1171802654" CREATED="1466830499504" MODIFIED="1466835907503">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1092123382"/>
+<node TEXT="嗯（我有种不祥的预感）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1092123382" CREATED="1466830544727" MODIFIED="1466835901501">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_782738589"/>
+<node TEXT="所以为师命令你去。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_782738589" CREATED="1466830555160" MODIFIED="1466835898965">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_46053079"/>
+<node TEXT="不去（开什么玩笑！我才不去做白工！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_46053079" CREATED="1466830568032" MODIFIED="1466835895861">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1125039621"/>
+<node TEXT="。。。。。。比瑟，你陪芙蓉拉一起去拯。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1125039621" CREATED="1466830573239" MODIFIED="1466835881965">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_750248628"/>
+<node TEXT="不要（臭老头！我都说了我不去！&#10;不要擅自把话题继续下去！不要逼&#10;我！我只想要研究魔法！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_750248628" CREATED="1466830588408" MODIFIED="1466835878152">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_466580283"/>
+<node TEXT="。。。你没得选择，去！管你研究魔法也好！&#10;拯救世界也罢！总之你给我下山！你这魔法宅！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_466580283" CREATED="1466830607496" MODIFIED="1466835876863">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="巫师"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_390784358"/>
+<node TEXT="话还没说完，师傅就用魔法把芙蓉拉和比瑟送出了山外。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_390784358" CREATED="1466830634609" MODIFIED="1466835862685">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1719405473"/>
+<node TEXT="开什么玩笑！！！！！！！！！！！！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1719405473" CREATED="1466830651768" MODIFIED="1466835859541">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_845544482"/>
+<node TEXT="临被传送前，师傅因为听到了芙蓉拉出生以来最为&#10;精神和充满人性的叫声而流下了高兴的眼泪。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_845544482" CREATED="1466830657528" MODIFIED="1466835852512">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branch" VALUE="option1,option2"/>
+<attribute NAME="nextId" VALUE="ID_19430426,ID_1529735871"/>
+<node TEXT="可恶（开什么玩笑！那个臭老头！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_19430426" CREATED="1466831142398" MODIFIED="1466835836461">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="branch" VALUE="option1"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_760957907"/>
+<node TEXT="可恶（开什么玩笑！那个臭老头！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_760957907" CREATED="1466830676064" MODIFIED="1466835820183" VSHIFT="-3">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_814350192"/>
+<node TEXT="经过了几小时的尝试，芙蓉拉还是打不破师傅用的结界&#10;，只好下山前往最近的城镇。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_814350192" CREATED="1466830739320" MODIFIED="1466835818663">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_925980619"/>
+<node TEXT="你还是放弃吧，赶快拯救世界，就能回去了" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_925980619" CREATED="1466830749792" MODIFIED="1466835797798">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_710173783"/>
+<node TEXT="不（开什么玩笑！我才不会让老头称心如意呢！&#10;我的魔法论文还留在上面没写完啊！我绝对会尽&#10;快回去的！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_710173783" CREATED="1466830757288" MODIFIED="1466835789671">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="71" VALUE_WIDTH="71"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_247806006"/>
+<node TEXT="用魔法不断往视线最远的地方转移，芙蓉拉很快就来到了城市。&#10;芙蓉拉与比瑟一进城就发现不对劲。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_247806006" CREATED="1466830883792" MODIFIED="1466835777221">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1160367572"/>
+<node TEXT="救命啊！！！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1160367572" CREATED="1466830897360" MODIFIED="1466835772053">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="市民"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_786466240"/>
+<node TEXT="小鬼，快!这里被魔兽们攻打着！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_786466240" CREATED="1466830906848" MODIFIED="1466835768389">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1155831095"/>
+<node TEXT="了解" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1155831095" CREATED="1466830915056" MODIFIED="1466835758927">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1291818096"/>
+<node TEXT="芙蓉拉发动了魔法，并快步跳跃。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1291818096" CREATED="1466830921128" MODIFIED="1466835753949">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1557399023"/>
+<node TEXT="等等等！！！！小鬼！那是反方向啊！！！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1557399023" CREATED="1466830930631" MODIFIED="1466835753102">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_435372862"/>
+<node TEXT="我明白（开什么玩笑！我才不理麻烦事呢！)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_435372862" CREATED="1466830938184" MODIFIED="1466835742607">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_516724271"/>
+<node TEXT="不不不不不！！你根本不明白啊！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_516724271" CREATED="1466830949344" MODIFIED="1466835730182">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1320191697"/>
+<node TEXT="可惜，天意弄人，芙蓉拉还是被魔兽们团团包围。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1320191697" CREATED="1466830963487" MODIFIED="1466835716086">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_479444046"/>
+<node TEXT="切！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_479444046" CREATED="1466830965488" MODIFIED="1466835713190">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1985075227"/>
+<node TEXT="Battle Start" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1985075227" CREATED="1466830973730" MODIFIED="1466835710230">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_1924011819"/>
+<node TEXT="啊~！神啊！你终于派下了使徒来拯救我们吗？！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1924011819" CREATED="1466830991656" MODIFIED="1466835695607">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="市民"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1483055251"/>
+<node TEXT="蛤？（等等等！什么意思，你们不要跪拜我啊！怪恶心的！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1483055251" CREATED="1466831003519" MODIFIED="1466835688454">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_15727117"/>
+<node TEXT="战斗结束后，所有的魔兽被芙蓉拉的魔法一扫而空，就常人看来，那宛如天罚般吧魔法，根本就是神的魔法，而能够用那魔法的人类除了是神的使徒了以外，根本想不到别人。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_15727117" CREATED="1466831010872" MODIFIED="1466835670485">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1807379437"/>
+<node TEXT="额。。。（感觉事情变得麻烦了。。。）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1807379437" CREATED="1466831041600" MODIFIED="1466835661254">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1320764311"/>
+<node TEXT="北部群山处—“卢斯丹群山”——芙蓉拉视点——完" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1320764311" CREATED="1466831048976" MODIFIED="1466835643854">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_156232861"/>
+<node TEXT="这里是索雅大陆，这是一片人类居住的世界，这里是一片剑与魔法的大地，在这片大地上，人们过的很幸福，不过那个和平已是几个月前的事了，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_156232861" CREATED="1466831980001" MODIFIED="1466835633718">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_462919936"/>
+<node TEXT="现在的索雅非常地混沌，不过英雄们崛起了，他们到底会描绘出什么故事呢？他们是否能勇敢地在交错的命运之海中划出美丽的航道呢?" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_462919936" CREATED="1466832013159" MODIFIED="1466835616481">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_84306279"/>
+<node TEXT="距离人们重新欢笑的一天，指日可待。&#10;&#10;勇敢交错线—正式拉开序幕。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_84306279" CREATED="1466832031224" MODIFIED="1466835557503">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="哈。。。算了(干嘛那么生气吗。。。)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1529735871" CREATED="1466830723407" MODIFIED="1466835831373" VSHIFT="20">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="branch" VALUE="option2"/>
+<attribute NAME="isKey" VALUE="true"/>
+<attribute NAME="nextId" VALUE="ID_1364585013"/>
+<node TEXT="哈。。。算了(干嘛那么生气吗。。。)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1364585013" CREATED="1466831118719" MODIFIED="1466835827054">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_755599752"/>
+<node TEXT="谁叫你一直蹲在家里不出门" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_755599752" CREATED="1466831203407" MODIFIED="1466835824773">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_504051457"/>
+<node TEXT="哈。。。（就算如此啊。。。）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_504051457" CREATED="1466831205488" MODIFIED="1466835812669">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_42041555"/>
+<node TEXT="芙蓉拉和比瑟在聊天的同时用魔法飞离群山。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_42041555" CREATED="1466831215240" MODIFIED="1466835794533">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1316947379"/>
+<node TEXT="小鬼，到了哦，这应该是你第一次看见老头以外的人类吧" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1316947379" CREATED="1466831238919" MODIFIED="1466835786343">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1942249018"/>
+<node TEXT="嗯。。(比起人类什么的，&#10;必须找到地方让我研究魔法啊！)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1942249018" CREATED="1466831248312" MODIFIED="1466835780390">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1579448918"/>
+<node TEXT="芙蓉拉在城门附近解除魔法然后慢步靠近城门。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1579448918" CREATED="1466831263328" MODIFIED="1466835764910">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1548720469"/>
+<node TEXT="等等！那边的小姐" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1548720469" CREATED="1466831274320" MODIFIED="1466835764287">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="大叔"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1887479359"/>
+<node TEXT="走进城市没多久，芙蓉拉被一名买蔬果的男人搭话了。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1887479359" CREATED="1466831280328" MODIFIED="1466835746258">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1711722726"/>
+<node TEXT="什么？（买蔬果的大叔=男人=跟师傅同性=跟师傅一样=阻止自己研究魔法=敌人）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1711722726" CREATED="1466831288144" MODIFIED="1466835737350">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1656635565"/>
+<node TEXT="看看这苹果！这可是从领国购入的苹果，&#10;甜美多汁，养颜保美的哦！不买几个嘛！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1656635565" CREATED="1466831301127" MODIFIED="1466835735142">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="大叔"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1729532626"/>
+<node TEXT="烦，滚，敌人（才不会上当呢!&#10;反正你也想阻止我研究魔法！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1729532626" CREATED="1466831312503" MODIFIED="1466835706182">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1784858860"/>
+<node TEXT="额！？？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1784858860" CREATED="1466831324975" MODIFIED="1466835704973">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="大叔"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1360302703"/>
+<node TEXT="留下被妙龄女子的言语攻击打沉的大叔，芙蓉拉继续在城市里闲逛。&#10;芙蓉拉经过的地方不断出现心灵被打击之人(主要是男性)。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1360302703" CREATED="1466831333167" MODIFIED="1466835699839">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_91044673"/>
+<node TEXT="经过数个小时的闲逛，警钟突然响起。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_91044673" CREATED="1466831341719" MODIFIED="1466835683615">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_766322804"/>
+<node TEXT="小鬼，我感知到了城外有批大军，是敌人，我们快点去吧！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_766322804" CREATED="1466831368683" MODIFIED="1466835677374">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1020493060"/>
+<node TEXT="不要（感觉好麻烦，又没好处。。。）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1020493060" CREATED="1466831377937" MODIFIED="1466835676023">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_482673444"/>
+<node TEXT="。。。拿他们做魔法实验的话没人会阻止哦" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_482673444" CREATED="1466831412743" MODIFIED="1466835666869">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1023892101"/>
+<node TEXT="突然，比瑟的视角从街道一瞬间换成了城墙外的草原。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1023892101" CREATED="1466831422574" MODIFIED="1466835654038">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_414121484"/>
+<node TEXT="炎柱！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_414121484" CREATED="1466831433907" MODIFIED="1466835648605">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_468404851"/>
+<node TEXT="芙蓉拉以无咏唱的方式放出了高级火属性魔法，&#10;卫平的注意力集中在了突然出现在空中的芙蓉拉的身上。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_468404851" CREATED="1466831440747" MODIFIED="1466835638958">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_489221009"/>
+<node TEXT="来吧！魔法试验台们！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_489221009" CREATED="1466831453467" MODIFIED="1466835629822">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_279065576"/>
+<node TEXT="居然真的上钩了，这小鬼也未免太像他师傅了吧。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_279065576" CREATED="1466831463308" MODIFIED="1466835620840">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1130303283"/>
+<node TEXT="Battle Start" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1130303283" CREATED="1466835019108" MODIFIED="1466835623590">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_454850825"/>
+<node TEXT="小鬼，你干的太过火了。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_454850825" CREATED="1466831472685" MODIFIED="1466835612119">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="比瑟"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_564465687"/>
+<node TEXT="嗯 (完了？魔法还没试完啊！！)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_564465687" CREATED="1466831480602" MODIFIED="1466835605014">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_147744605"/>
+<node TEXT="居然把那批魔兽大军给。。。而且还怎么轻易地。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_147744605" CREATED="1466831495445" MODIFIED="1466835600462">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="士兵"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1959844626"/>
+<node TEXT="附近的人们纷纷不敢相信自己的眼睛，没看过的魔法把大批敌人打到，&#10;毫发无伤的芙蓉拉宛如神一般的冷淡威严。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1959844626" CREATED="1466831519044" MODIFIED="1466835596239">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1908461216"/>
+<node TEXT="走了 (快离开吧，这里旅馆暂时是不会开了吧)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1908461216" CREATED="1466831526059" MODIFIED="1466835591389">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="caster"/>
+<attribute NAME="name" VALUE="芙蓉拉"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_1773944959"/>
+<node TEXT="说完，芙蓉拉和比瑟就用转移魔法离开了。留下来的人们。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1773944959" CREATED="1466831533931" MODIFIED="1466835588175">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_824382348"/>
+<node TEXT="啊啊啊啊！居然消失了！果然是神派下来的使者吗！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_824382348" CREATED="1466831544228" MODIFIED="1466835583622">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="char" VALUE="others"/>
+<attribute NAME="name" VALUE="士兵"/>
+<attribute NAME="textType" VALUE="dialog"/>
+<attribute NAME="nextId" VALUE="ID_344081350"/>
+<node TEXT="就这样，芙蓉拉的轨迹在民间开始流传。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_344081350" CREATED="1466831550627" MODIFIED="1466835579805">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1388348542"/>
+<node TEXT="北部群山处—“卢斯丹群山”——芙蓉拉视点——完" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1388348542" CREATED="1466831550627" MODIFIED="1466835574904">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1160360758"/>
+<node TEXT="这里是索雅大陆，这是一片人类居住的世界，这里是一片剑与魔法的大地，在这片大地上，人们过的很幸福，不过那个和平已是几个月前的事了，" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1160360758" CREATED="1466831980001" MODIFIED="1466835571000">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1645518504"/>
+<node TEXT="现在的索雅非常地混沌，不过英雄们崛起了，他们到底会描绘出什么故事呢？他们是否能勇敢地在交错的命运之海中划出美丽的航道呢?" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1645518504" CREATED="1466832013159" MODIFIED="1466835569073">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_91338572"/>
+<node TEXT="距离人们重新欢笑的一天，指日可待。&#10;&#10;勇敢交错线—正式拉开序幕。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_91338572" CREATED="1466832031224" MODIFIED="1466835555628">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="nextId" VALUE="ID_1354500379"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
 </node>
 </node>
 </node>
