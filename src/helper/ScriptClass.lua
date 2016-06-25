@@ -21,6 +21,7 @@ local boxNum = 3
 local currId = nil
 local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, nil, "", 1, false, 5, 5, 5
 local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
+local canContinueScript = true
 TextList = {}
 
 function ScriptClass.setup()
@@ -28,16 +29,18 @@ function ScriptClass.setup()
 	stage:addEventListener(Event.TOUCHES_END, ScriptClass.onTouchesEnd)
 end
 
-function ScriptClass.onTouchesEnd(event)	
-	if toUpdateText == true then
-		skipFrameNum = 1	
-	else
-		skipFrameNum = skipFrameNumOld
-		
-		if currNode.nextId ~= nil then
-			ScriptClass.continueScript()
+function ScriptClass.onTouchesEnd(event)
+	if canContinueScript == true then
+		if toUpdateText == true then
+			skipFrameNum = 1	
+		else
+			skipFrameNum = skipFrameNumOld
+			
+			if currNode.nextId ~= nil then
+				ScriptClass.continueScript()
+			end
 		end
-	end	
+	end		
 end
 
 function ScriptClass.refreshText()
@@ -108,6 +111,7 @@ end
 function ScriptClass.continueScript()
 	if NodeList[currId].branch ~= nil then
 		SceneClass.chooseChars()
+		canContinueScript = false
 	elseif NodeList[currId].branch == nil then
 		if boxNum == 1 then	
 			boxNum = 2

@@ -8,6 +8,7 @@ local SlimeClass = require("src/enemy/SlimeClass")
 
 local Misc = require("src/helper/MiscClass")
 local ScriptClass = require("src/helper/ScriptClass")
+local SceneClass = require("src/helper/SceneClass")
 
 local BattleEngineClass = require("src/core/BattleEngineClass")
 
@@ -91,15 +92,17 @@ function update(event)
 	Misc.bringToFront(slime.textHp)
 	Misc.bringToFront(BgFade)
 	--Misc.bringToFront(TextFade)
+	
 	for i = 1, #TextList do
 		if TextList[i] ~= nil then
 			Misc.bringToFront(TextList[i])
 		end
 	end
 	
-	if SKnight ~= nil then
-		print("bring")
-		Misc.bringToFront(SKnight)
+	for i = 1, #SHeroes do
+		if SHeroes[i] ~= nil then			
+			Misc.bringToFront(SHeroes[i])
+		end
 	end
 end
 
