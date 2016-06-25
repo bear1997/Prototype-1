@@ -1,15 +1,26 @@
 local SceneClass = {}
 
-local sKnight, sArcher, sThief, sCaster = nil, nil, nil, nil
+SKnight, SArcher, SThief, SCaster = nil, nil, nil, nil
 
 function SceneClass.chooseChars()
-	sKnight = Shape.new()
-	sKnight:setFillStyle(Shape.SOLID, 0xff0000, 1)
-	sKnight:beginPath()
-	sKnight:moveTo(0, 192)
-	sKnight:lineTo(360, 64)
-	sKnight:endPath()
-	stage:addChild(sKnight)
+	SKnight = Shape.new()
+	SKnight:setFillStyle(Shape.SOLID, 0xff0000, 1)
+	SKnight:beginPath()
+	SKnight:moveTo(0,0)
+	SKnight:lineTo(100, 0)
+	SKnight:lineTo(100, 100)
+	SKnight:lineTo(0, 100)
+	SKnight:lineTo(0, 0)
+	SKnight:endPath()
+	SKnight:setPosition(0, 150)
+	stage:addChild(SKnight)
+	--[[
+	SKnight = Shape.new()
+	SKnight:setFillStyle(Shape.SOLID, 0xff0000, 1)
+	SKnight:beginPath()
+	SKnight:moveTo(0, 192)
+	SKnight:lineTo(360, 64)
+	SKnight:endPath()]]
 end
 
 return SceneClass

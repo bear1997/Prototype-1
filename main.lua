@@ -96,6 +96,11 @@ function update(event)
 			Misc.bringToFront(TextList[i])
 		end
 	end
+	
+	if SKnight ~= nil then
+		print("bring")
+		Misc.bringToFront(SKnight)
+	end
 end
 
 stage:addEventListener(Event.ENTER_FRAME, update)

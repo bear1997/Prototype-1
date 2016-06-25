@@ -2,8 +2,9 @@ local Slaxml = require "lib/slaxml/slaxml"
 require "lib/luautf8/utf8"
 --package.loadlib("lib/luautf8/lua-utf8.dll", "len")
 
-local MiscClass = require "src/helper/MiscClass"
 local CONST = require "src/helper/constants"
+local MiscClass = require "src/helper/MiscClass"
+local SceneClass = require "src/helper/SceneClass"
 
 local ScriptClass = {}
 
@@ -94,7 +95,7 @@ function ScriptClass.updateText()
 			currIndex = currIndex + 1
 			currLen = 1
 			currText = ""
-			toUpdateText = false			
+			toUpdateText = false
 		end
 		skipFrame = skipFrame - 1
 		
@@ -105,19 +106,23 @@ function ScriptClass.updateText()
 end
 
 function ScriptClass.continueScript()
-	if boxNum == 1 then	
-		boxNum = 2
-	elseif boxNum == 2 then
-		boxNum = 1
-	end
-	
-	if boxNum == 3 then
-		currId = NodeList[currId].nextId[1]
-		currBox = TextFade
-		currNode = NodeList[currId]
-		--currText[currIndex] = currNode.text
-		toUpdateText = true
-	end
+	if NodeList[currId].branch ~= nil then
+		SceneClass.chooseChars()
+	elseif NodeList[currId].branch == nil then
+		if boxNum == 1 then	
+			boxNum = 2
+		elseif boxNum == 2 then
+			boxNum = 1
+		end
+		
+		if boxNum == 3 then
+			currId = NodeList[currId].nextId[1]
+			currBox = TextFade
+			currNode = NodeList[currId]
+			--currText[currIndex] = currNode.text
+			toUpdateText = true
+		end
+	end	
 end
 
 function ScriptClass.testTable(obj)
@@ -154,12 +159,16 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 	elseif name == "NAME" then
 		if value == "nextId" then
 			currName = value
+		elseif value == "branch" then
+			currName = value
 		end
 	elseif name == "VALUE" then
 		if currName == "nextId" then
-			tempTable.nextId = MiscClass.split(value, ",")
-			currName = ""
+			tempTable.nextId = MiscClass.split(value, ",")			
+		elseif currName == "branch" then
+			tempTable.branch = MiscClass.split(value, ",")			
 		end
+		--currName = ""
 	end
 end
 
