@@ -5,11 +5,13 @@ local SceneClass = {}
 SHeroes = {}
 
 function SceneClass.chooseChars()
+	local faceMatrix = Matrix.new(1, 0, 0, 1, 0, -100)
 	SHeroes = {}
 	
+	--faceMatrix:setPosition(180, 128)
 	SHeroes[1] = Shape.new()
 	--SHeroes[1]:setFillStyle(Shape.SOLID, CONST.COLOR_RED, 1)
-	SHeroes[1]:setFillStyle(Shape.TEXTURE, Texture.new("graphics/enemy/slime.png"))
+	SHeroes[1]:setFillStyle(Shape.TEXTURE, Texture.new("graphics/char/magician/female/face/magigirl_face_normal_300.png"), faceMatrix)
 	SHeroes[1]:beginPath()
 	SHeroes[1]:moveTo(0, 0)
 	SHeroes[1]:lineTo(360, 0)

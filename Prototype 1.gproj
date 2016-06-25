@@ -1,5 +1,5 @@
 <project>
- <properties packageName="com.yourdomain.yourapp" architecture="7" autorotation="0" osx_bundle="com.yourdomain." ios_bundle="com.yourdomain." logicalWidth="360" osx_org="GiderosMobile" html5_host="" winrt_org="GiderosMobile" winrt_package="com.yourdomain.yourapp" mouseTouchOrder="0" version="1.0" mouseToTouch="1" iosDevice="0" fps="60" windowHeight="0" logicalHeight="640" app_icon_noexport="0" orientation="0" win_domain="giderosmobile.com" scaleMode="3" assetsOnly="0" windowWidth="0" html5_mem="256" retinaDisplay="0" encryptCode="0" win_org="GiderosMobile" version_code="1" encryptAssets="0" osx_domain="giderosmobile.com" app_icon="" android_template="0" touchToMouse="1" osx_category="5">
+ <properties mouseToTouch="1" html5_host="" win_domain="giderosmobile.com" orientation="0" scaleMode="3" encryptAssets="0" winrt_package="com.yourdomain.yourapp" architecture="7" packageName="com.yourdomain.yourapp" autorotation="0" osx_org="GiderosMobile" version="1.0" logicalHeight="640" ios_bundle="com.yourdomain." winrt_org="GiderosMobile" html5_mem="256" version_code="1" fps="60" android_template="0" windowWidth="0" osx_domain="giderosmobile.com" retinaDisplay="0" logicalWidth="360" windowHeight="0" iosDevice="0" app_icon_noexport="0" touchToMouse="1" mouseTouchOrder="0" osx_bundle="com.yourdomain." win_org="GiderosMobile" encryptCode="0" app_icon="" osx_category="5" assetsOnly="0">
   <imageScales/>
   <plugins/>
   <exports>
@@ -94,6 +94,7 @@
     </folder>
     <folder name="female">
      <folder name="face">
+      <file source="graphics/char/magician/female/face/magigirl_face_normal_300.png"/>
       <file source="graphics/char/magician/female/face/magigirl_face_normal.png"/>
      </folder>
      <folder name="bubble">

@@ -21,7 +21,7 @@ local boxNum = 3
 local currId = nil
 local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, nil, "", 1, false, 5, 5, 5
 local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
-local canContinueScript = true
+local canContinueScript, currSceneState, currChoseChar = true, 1, 0
 TextList = {}
 
 function ScriptClass.setup()
@@ -30,6 +30,40 @@ function ScriptClass.setup()
 end
 
 function ScriptClass.onTouchesEnd(event)
+	if currSceneState == CONST.SCENE_CHOOSE_CHARS then
+		local x, y = event.touch.x, event.touch.y
+		local vertx, verty = {}, {}
+		--[[
+		for i = 1,4 do			
+			if SHeroes[i]:hitTestPoint(event.touch.x, event.touch.y) then
+				currChoseChar = i				
+			end
+		end]]
+		vertx = { 0, 360, 360, 0 }
+		verty = { 0, 0, 64, 192 }
+		if MiscClass.checkPointInShape(4, vertx, verty, x, y) then
+			currChoseChar = 1
+		end
+		
+		vertx = { 0, 360, 360, 0 }
+		verty = { 192, 64, 256, 380 }
+		if MiscClass.checkPointInShape(4, vertx, verty, x, y) then
+			currChoseChar = 2
+		end
+		
+		vertx = { 0, 360, 360, 0 }
+		verty = { 380, 256, 444, 576 }
+		if MiscClass.checkPointInShape(4, vertx, verty, x, y) then
+			currChoseChar = 3
+		end
+		
+		vertx = { 0, 360, 360, 0 }
+		verty = { 576, 444, 640, 640 }
+		if MiscClass.checkPointInShape(4, vertx, verty, x, y) then
+			currChoseChar = 4
+		end
+	end
+	print("---")
 	if canContinueScript == true then
 		if toUpdateText == true then
 			skipFrameNum = 1	
@@ -112,6 +146,7 @@ function ScriptClass.continueScript()
 	if NodeList[currId].branch ~= nil then
 		SceneClass.chooseChars()
 		canContinueScript = false
+		currSceneState = CONST.SCENE_CHOOSE_CHARS
 	elseif NodeList[currId].branch == nil then
 		if boxNum == 1 then	
 			boxNum = 2
@@ -125,6 +160,7 @@ function ScriptClass.continueScript()
 			currNode = NodeList[currId]
 			--currText[currIndex] = currNode.text
 			toUpdateText = true
+			currSceneState = CONST.SCENE_DIALOG_BG
 		end
 	end	
 end
