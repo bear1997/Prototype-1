@@ -1,6 +1,6 @@
 local MagicianFBubbleClass = {}
 
-local pack = TexturePack.new("graphics/char/magician/female/bubble/bubble.txt", "graphics/char/magician/female/bubble/bubble.png")
+local pack = TexturePack.new("graphics/char/caster/female/bubble/bubble.txt", "graphics/char/caster/female/bubble/bubble.png")
 
 function MagicianFBubbleClass.new()
 	return BasePlayerClass.new(pack, 5)

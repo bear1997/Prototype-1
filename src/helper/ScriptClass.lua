@@ -3,6 +3,7 @@ require "lib/luautf8/utf8"
 --package.loadlib("lib/luautf8/lua-utf8.dll", "len")
 
 local CONST = require "src/helper/constants"
+local TEX = require "src/res/textures"
 local MiscClass = require "src/helper/MiscClass"
 local SceneClass = require "src/helper/SceneClass"
 
@@ -13,16 +14,17 @@ ScriptClass.xml, ScriptClass.parser, ScriptClass.doc = nil, nil, nil
 NodeList = {}
 local tempTable, currName = {}, ""
 
-BgFade, TextFade = nil, nil
-local textField, textField2 = nil, nil
-local box, face, box2, face2 = nil, nil, nil, nil
-local boxNum = 3
+BgFade, TextList = nil, {}
+Text1, Text2 = nil, nil
+Box1, Face1, Box2, Face2 = nil, nil, nil, nil
+CurrText, CurrBox, CurrFace = nil, nil, nil
+local boxNum = 1
 
 local currId = nil
-local currLen, currBox, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, nil, "", 1, false, 5, 5, 5
+local currLen, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, "", 1, false, 5, 5, 5
 local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
-local canContinueScript, currSceneState, currChoseChar = true, 1, 0
-TextList = {}
+local canContinueScript, currChoseChar = true, 0
+CurrSceneState = 0
 
 function ScriptClass.setup()
 	skipFrameNumOld = skipFrameNum
@@ -30,7 +32,7 @@ function ScriptClass.setup()
 end
 
 function ScriptClass.onTouchesEnd(event)
-	if currSceneState == CONST.SCENE_CHOOSE_CHARS then
+	if CurrSceneState == CONST.SCENE_CHOOSE_CHARS then
 		local x, y = event.touch.x, event.touch.y
 		local vertx, verty = {}, {}
 		--[[
@@ -62,11 +64,16 @@ function ScriptClass.onTouchesEnd(event)
 		if MiscClass.checkPointInShape(4, vertx, verty, x, y) then
 			currChoseChar = 4
 		end
+		print("currChoseChar: "..currChoseChar)
+		if currChoseChar ~= 0 then
+			canContinueScript = true
+			ScriptClass.continueScript()
+		end
 	end
-	print("---")
+	
 	if canContinueScript == true then
 		if toUpdateText == true then
-			skipFrameNum = 1	
+			skipFrameNum = 1
 		else
 			skipFrameNum = skipFrameNumOld
 			
@@ -78,90 +85,163 @@ function ScriptClass.onTouchesEnd(event)
 end
 
 function ScriptClass.refreshText()
-	for i = 1, #TextList do
-		if TextList[i] ~= nil then
-			TextList[i]:setText("")
+	if CurrSceneState == CONST.SCENE_DIALOG_BG then
+		for i = 1, #TextList do
+			if TextList[i] ~= nil then
+				TextList[i]:setText("")
+			end
 		end
-	end
-	totalHeight = 40
-	isRefresh = false
-	textIndex = 1
-	toUpdateText = true
+		totalHeight = 40
+		isRefresh = false
+		textIndex = 1
+		toUpdateText = true
+	elseif CurrSceneState == CONST.SCENE_DIALOG_CHAR then
+	end	
 end
 
 function ScriptClass.updateText()
 	if toUpdateText == true	then
-		if TextList[textIndex] ~= nil then
+		if CurrSceneState == CONST.SCENE_DIALOG_BG then
+			if TextList[textIndex] ~= nil then
 			
-		end		
+			end		
 		
-		if TextList[textIndex] == nil then
-			TextList[textIndex] = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
+			if TextList[textIndex] == nil then
+				TextList[textIndex] = TextWrap.new("", 320, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 			
-			if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
-				isRefresh = true				
-			else
-				currText = currNode.text
+				if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
+					isRefresh = true				
+				else
+					currText = currNode.text
 				
-				TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
-				TextList[textIndex]:setPosition(20, totalHeight)
+					TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
+					TextList[textIndex]:setPosition(20, totalHeight)
 				
-				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+					totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+				end
+			elseif currText == "" then
+				if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
+					isRefresh = true
+				else
+					currText = currNode.text
+				
+					TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
+					TextList[textIndex]:setPosition(20, totalHeight)
+			
+					totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+				end
 			end
-		elseif currText == "" then
-			if totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20 > 640 then
-				isRefresh = true
-			else
-				currText = currNode.text
-				
-				TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
-				TextList[textIndex]:setPosition(20, totalHeight)
-			
-				totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
+		
+			if isRefresh == false and skipFrame <= 0 then
+				TextList[textIndex]:setText(currNode.text:utf8sub(1, currLen))
+				currLen = currLen + 1
+				skipFrame = skipFrameNum
 			end
-		end
 		
-		if isRefresh == false and skipFrame <= 0 then
-			TextList[textIndex]:setText(currNode.text:utf8sub(1, currLen))
-			currLen = currLen + 1
-			skipFrame = skipFrameNum
-		end
+			if currLen >= currNode.text:utf8len() + 1 then
+				textIndex = textIndex + 1
+				currIndex = currIndex + 1
+				currLen = 1
+				currText = ""
+				toUpdateText = false
+			end
+			skipFrame = skipFrame - 1
 		
-		if currLen >= currNode.text:utf8len() + 1 then
-			textIndex = textIndex + 1
-			currIndex = currIndex + 1
-			currLen = 1
-			currText = ""
-			toUpdateText = false
-		end
-		skipFrame = skipFrame - 1
+			if isRefresh == true then
+				ScriptClass.refreshText()
+			end
+		elseif CurrSceneState == CONST.SCENE_DIALOG_CHAR then
+			if currLen == 1 then
+				if boxNum == 1 then
+					CurrText = Text1
+					if currNode.char == "others" then
+						Face1:setAlpha(0)
+					elseif currNode.char == "knightM" then
+						Face1 = Bitmap.new(TEX.KNIGHT_M_FACE_NORMAL_100)
+					end
+				else
+					CurrText = Text2
+					if currNode.char == "others" then
+						Face2:setAlpha(0)
+					elseif currNode.char == "knightM" then
+						Face2 = Bitmap.new(TEX.KNIGHT_M_FACE_NORMAL_100)
+					end
+				end
+			end
+			
+			if skipFrame <= 0 then
+				CurrText:setText(currNode.text:utf8sub(1, currLen))
+				currLen = currLen + 1
+				skipFrame = skipFrameNum
+			end
 		
-		if isRefresh == true then
-			ScriptClass.refreshText()
+			if currLen >= currNode.text:utf8len() + 1 then
+				--textIndex = textIndex + 1
+				--currIndex = currIndex + 1
+				currLen = 1
+				toUpdateText = false
+				
+				if boxNum == 1 then
+					boxNum = 2
+				else
+					boxNum = 1
+				end
+			end
+			skipFrame = skipFrame - 1
 		end
 	end
 end
 
 function ScriptClass.continueScript()
 	if NodeList[currId].branch ~= nil then
-		SceneClass.chooseChars()
-		canContinueScript = false
-		currSceneState = CONST.SCENE_CHOOSE_CHARS
-	elseif NodeList[currId].branch == nil then
-		if boxNum == 1 then	
-			boxNum = 2
-		elseif boxNum == 2 then
-			boxNum = 1
+		if currChoseChar == 0 then			
+			SceneClass:hideDialogChar()
+			SceneClass:hideDialogBg()
+			ScriptClass:refreshText()			
+			SceneClass.chooseChars()
+			
+			canContinueScript = false
+			CurrSceneState = CONST.SCENE_CHOOSE_CHARS
+		else			
+			SceneClass:hideChooseChars()
+			
+			currId = NodeList[currId].nextId[currChoseChar]
+			currNode = NodeList[currId]
+			toUpdateText = true
+			
+			if currNode.name == nil then
+				print("go into dialog bg sp")
+				SceneClass:showDialogBg()
+				CurrSceneState = CONST.SCENE_DIALOG_BG
+			else
+				print("go into dialog char sp")
+				SceneClass:showDialogChar()
+				CurrSceneState = CONST.SCENE_DIALOG_CHAR
+			end
 		end
+	elseif NodeList[currId].branch == nil then
+		currId = NodeList[currId].nextId[1]
+		currNode = NodeList[currId]
+		toUpdateText = true
 		
+		if currNode.name == nil then
+			print("go into dialog bg")
+			SceneClass:hideDialogChar()
+			SceneClass:showDialogBg()
+			CurrSceneState = CONST.SCENE_DIALOG_BG
+		else
+			print("go into dialog char")
+			SceneClass:hideDialogBg()
+			SceneClass:showDialogChar()
+			CurrSceneState = CONST.SCENE_DIALOG_CHAR
+		end
+		--[[
 		if boxNum == 3 then
 			currId = NodeList[currId].nextId[1]
-			currBox = TextFade
 			currNode = NodeList[currId]
-			--currText[currIndex] = currNode.text
 			toUpdateText = true
-			currSceneState = CONST.SCENE_DIALOG_BG
-		end
+			CurrSceneState = CONST.SCENE_DIALOG_BG
+		end]]
 	end	
 end
 
@@ -201,12 +281,20 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			currName = value
 		elseif value == "branch" then
 			currName = value
+		elseif value == "name" then
+			currName = value
+		elseif value == "char" then
+			currName = value
 		end
 	elseif name == "VALUE" then
 		if currName == "nextId" then
 			tempTable.nextId = MiscClass.split(value, ",")			
 		elseif currName == "branch" then
 			tempTable.branch = MiscClass.split(value, ",")			
+		elseif currName == "name" then
+			tempTable.name = value
+		elseif currName == "char" then
+			tempTable.char = value
 		end
 		--currName = ""
 	end
@@ -223,39 +311,31 @@ function ScriptClass.closeElement(name, nsURI)
 end
 
 function ScriptClass.readFile(path)
-	--[[
-	box = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
-	box:setPosition(132, 340)
-	MiscClass.bringToFront(box)
+	Box1 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
+	Box1:setPosition(132, 340)
 	
-	face = Bitmap.new(Texture.new("graphics/char/magician/female/face/magigirl_face_normal.png"))
-	face:setPosition(20, 350)
-	MiscClass.bringToFront(face)
+	Face1 = Bitmap.new(TEX.CASTER_F_FACE_NORMAL_100)
+	Face1:setPosition(20, 350)
 	
-	textField = TextWrap.new("我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我\n我我我我我我我我我我我", 400, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19))
-	textField:setScale(1)
-	textField:setTextColor(0xff0000)
-	textField:setPosition(138, 365)
-	MiscClass.bringToFront(textField)
+	Text1 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
+	Text1:setScale(1)
+	Text1:setTextColor(0xff0000)
+	Text1:setPosition(138, 365)
 	
-	box2 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
-	box2:setScaleX(-1)
-	box2:setPosition(230, 490)
-	MiscClass.bringToFront(box2)
+	Box2 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
+	Box2:setScaleX(-1)
+	Box2:setPosition(230, 490)
 	
-	face2 = Bitmap.new(Texture.new("graphics/char/magician/female/face/magigirl_face_normal.png"))	
-	face2:setScaleX(-1)
-	face2:setPosition(340, 500)
-	MiscClass.bringToFront(face2)
+	Face2 = Bitmap.new(TEX.CASTER_F_FACE_NORMAL_100)	
+	Face2:setScaleX(-1)
+	Face2:setPosition(340, 500)
 	
-	textField = TextWrap.new("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19))
-	textField:setScale(1)
-	textField:setTextColor(0xff0000)
-	textField:setPosition(13, 515)
-	MiscClass.bringToFront(textField)]]
+	Text2 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
+	Text2:setScale(1)
+	Text2:setTextColor(0xff0000)
+	Text2:setPosition(13, 515)
 	
 	BgFade = Bitmap.new(Texture.new("graphics/background/bg_fade.png"))
-	MiscClass.bringToFront(BgFade)
 	
 	ScriptClass.xml = io.open(path):read("*all")
 	SakuOrb:hideAllOrb()

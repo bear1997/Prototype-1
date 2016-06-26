@@ -1,6 +1,6 @@
 local MagicianFClass = {}
 
-local pack = TexturePack.new("graphics/char/magician/female/walking/walking.txt", "graphics/char/magician/female/walking/walking.png")
+local pack = TexturePack.new("graphics/char/caster/female/walking/walking.txt", "graphics/char/caster/female/walking/walking.png")
 
 function MagicianFClass.new()
 	local stats = { 

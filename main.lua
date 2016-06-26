@@ -6,7 +6,8 @@ local MagicianFBookClass = require("src/char/magician/female/MagicianFBookClass"
 
 local SlimeClass = require("src/enemy/SlimeClass")
 
-local Misc = require("src/helper/MiscClass")
+local CONST = require "src/helper/constants"
+local MiscClass = require("src/helper/MiscClass")
 local ScriptClass = require("src/helper/ScriptClass")
 local SceneClass = require("src/helper/SceneClass")
 
@@ -84,25 +85,34 @@ stage:addEventListener("REMOVE_CHILD", cleanUp)
 -- Grass and cloud spawn end
 
 function update(event)
-	Misc.bringToFront(magician)	
-	--Misc.bringToFront(magicianBook)
-	--Misc.bringToFront(magicianBubble)
-	Misc.bringToFront(slime)
-	Misc.bringToFront(magician.textHp)
-	Misc.bringToFront(slime.textHp)
-	Misc.bringToFront(BgFade)
-	--Misc.bringToFront(TextFade)
+	if CurrSceneState == CONST.SCENE_DIALOG_BG then
+		MiscClass.bringToFront(BgFade)
 	
-	for i = 1, #TextList do
-		if TextList[i] ~= nil then
-			Misc.bringToFront(TextList[i])
+		for i = 1, #TextList do
+			if TextList[i] ~= nil then
+				MiscClass.bringToFront(TextList[i])
+			end
 		end
-	end
-	
-	for i = 1, #SHeroes do
-		if SHeroes[i] ~= nil then			
-			Misc.bringToFront(SHeroes[i])
+	elseif CurrSceneState == CONST.SCENE_DIALOG_CHAR then	
+		MiscClass.bringToFront(Box1)
+		MiscClass.bringToFront(Box2)
+		MiscClass.bringToFront(Face1)
+		MiscClass.bringToFront(Face2)
+		MiscClass.bringToFront(Text1)
+		MiscClass.bringToFront(Text2)
+	elseif CurrSceneState == CONST.SCENE_CHOOSE_CHARS then
+		for i = 1, #SHeroes do
+			if SHeroes[i] ~= nil then			
+				MiscClass.bringToFront(SHeroes[i])
+			end
 		end
+	elseif CurrSceneState == CONST.SCENE_BATTLE then
+		MiscClass.bringToFront(magician)	
+		--MiscClass.bringToFront(magicianBook)
+		--MiscClass.bringToFront(magicianBubble)
+		MiscClass.bringToFront(slime)
+		MiscClass.bringToFront(magician.textHp)
+		MiscClass.bringToFront(slime.textHp)
 	end
 end
 

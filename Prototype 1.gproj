@@ -1,5 +1,5 @@
 <project>
- <properties mouseToTouch="1" html5_host="" win_domain="giderosmobile.com" orientation="0" scaleMode="3" encryptAssets="0" winrt_package="com.yourdomain.yourapp" architecture="7" packageName="com.yourdomain.yourapp" autorotation="0" osx_org="GiderosMobile" version="1.0" logicalHeight="640" ios_bundle="com.yourdomain." winrt_org="GiderosMobile" html5_mem="256" version_code="1" fps="60" android_template="0" windowWidth="0" osx_domain="giderosmobile.com" retinaDisplay="0" logicalWidth="360" windowHeight="0" iosDevice="0" app_icon_noexport="0" touchToMouse="1" mouseTouchOrder="0" osx_bundle="com.yourdomain." win_org="GiderosMobile" encryptCode="0" app_icon="" osx_category="5" assetsOnly="0">
+ <properties logicalHeight="640" osx_org="GiderosMobile" winrt_org="GiderosMobile" assetsOnly="0" ios_bundle="com.yourdomain." fps="60" html5_host="" logicalWidth="360" winrt_package="com.yourdomain.yourapp" html5_mem="256" retinaDisplay="0" mouseToTouch="1" windowHeight="0" android_template="0" app_icon="" osx_domain="giderosmobile.com" encryptCode="0" touchToMouse="1" version="1.0" app_icon_noexport="0" architecture="7" win_org="GiderosMobile" osx_category="5" win_domain="giderosmobile.com" version_code="1" packageName="com.yourdomain.yourapp" encryptAssets="0" scaleMode="3" autorotation="0" orientation="0" iosDevice="0" osx_bundle="com.yourdomain." mouseTouchOrder="0" windowWidth="0">
   <imageScales/>
   <plugins/>
   <exports>
@@ -41,6 +41,9 @@
   </folder>
  </folder>
  <folder name="src">
+  <folder name="res">
+   <file source="src/res/textures.lua"/>
+  </folder>
   <folder name="core">
    <file source="src/core/LevelClass.lua"/>
    <file source="src/core/BattleEngineClass.lua"/>
@@ -87,27 +90,43 @@
    </folder>
   </folder>
   <folder name="char">
-   <folder name="magician">
+   <folder name="archer">
+    <folder name="female">
+     <folder name="face">
+      <file source="graphics/char/archer/female/face/archer_female_face_normal_100.png"/>
+      <file source="graphics/char/archer/female/face/archer_female_face_normal_300.png"/>
+     </folder>
+    </folder>
+   </folder>
+   <folder name="knight">
+    <folder name="male">
+     <folder name="face">
+      <file source="graphics/char/knight/male/knight_male_face_normal_100.png"/>
+      <file source="graphics/char/knight/male/knight_male_face_normal_300.png"/>
+     </folder>
+    </folder>
+   </folder>
+   <folder name="caster">
     <folder name="effect">
-     <file source="graphics/char/magician/effect/wave1/wave.txt"/>
-     <file source="graphics/char/magician/effect/wave1/wave.png"/>
+     <file source="graphics/char/caster/effect/wave1/wave.txt"/>
+     <file source="graphics/char/caster/effect/wave1/wave.png"/>
     </folder>
     <folder name="female">
      <folder name="face">
-      <file source="graphics/char/magician/female/face/magigirl_face_normal_300.png"/>
-      <file source="graphics/char/magician/female/face/magigirl_face_normal.png"/>
+      <file source="graphics/char/caster/female/face/caster_female_face_normal_100.png"/>
+      <file source="graphics/char/caster/female/face/caster_female_face_normal_300.png"/>
      </folder>
      <folder name="bubble">
-      <file source="graphics/char/magician/female/bubble/bubble.txt"/>
-      <file source="graphics/char/magician/female/bubble/bubble.png"/>
+      <file source="graphics/char/caster/female/bubble/bubble.txt"/>
+      <file source="graphics/char/caster/female/bubble/bubble.png"/>
      </folder>
      <folder name="book">
-      <file source="graphics/char/magician/female/book/book.txt"/>
-      <file source="graphics/char/magician/female/book/book.png"/>
+      <file source="graphics/char/caster/female/book/book.txt"/>
+      <file source="graphics/char/caster/female/book/book.png"/>
      </folder>
      <folder name="walking">
-      <file source="graphics/char/magician/female/walking/walking.txt"/>
-      <file source="graphics/char/magician/female/walking/walking.png"/>
+      <file source="graphics/char/caster/female/walking/walking.txt"/>
+      <file source="graphics/char/caster/female/walking/walking.png"/>
      </folder>
     </folder>
    </folder>
