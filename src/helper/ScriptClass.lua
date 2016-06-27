@@ -152,20 +152,33 @@ function ScriptClass.updateText()
 			end
 		elseif CurrSceneState == CONST.SCENE_DIALOG_CHAR then
 			if currLen == 1 then
+				print("times")
 				if boxNum == 1 then
 					CurrText = Text1
+					CurrFace = Face1
+					--[[
 					if currNode.char == "others" then
 						Face1:setAlpha(0)
 					elseif currNode.char == "knightM" then
 						Face1 = Bitmap.new(TEX.KNIGHT_M_FACE_NORMAL_100)
-					end
+					end]]
 				else
 					CurrText = Text2
+					CurrFace = Face2
+					--[[
 					if currNode.char == "others" then
 						Face2:setAlpha(0)
 					elseif currNode.char == "knightM" then
 						Face2 = Bitmap.new(TEX.KNIGHT_M_FACE_NORMAL_100)
-					end
+					end]]
+				end
+				
+				if currNode.char == "others" then
+					--CurrFace:setAlpha(0)
+					SceneClass.hide(CurrFace)
+				elseif currNode.char == "knightM" then
+					CurrFace:setTexture(TEX.KNIGHT_M_FACE_NORMAL_100)
+					SceneClass.show(CurrFace)
 				end
 			end
 			
@@ -210,29 +223,39 @@ function ScriptClass.continueScript()
 			toUpdateText = true
 			
 			if currNode.name == nil then
-				print("go into dialog bg sp")
+				--print("go into dialog bg sp")
 				SceneClass:showDialogBg()
 				CurrSceneState = CONST.SCENE_DIALOG_BG
 			else
-				print("go into dialog char sp")
+				--print("go into dialog char sp")
 				SceneClass:showDialogChar()
 				CurrSceneState = CONST.SCENE_DIALOG_CHAR
 			end
 		end
 	elseif NodeList[currId].branch == nil then
+		if NodeList[currId].name == nil and NodeList[NodeList[currId].nextId[1]].name ~= nil then
+			--print("go into char")
+			SceneClass.hideDialogBg()
+			SceneClass.showDialogChar()
+		elseif NodeList[currId].name ~= nil and NodeList[NodeList[currId].nextId[1]].name == nil then
+			--print("go into bg")
+			SceneClass.hideDialogChar()
+			SceneClass.showDialogBg()
+		end
+		
 		currId = NodeList[currId].nextId[1]
 		currNode = NodeList[currId]
 		toUpdateText = true
 		
 		if currNode.name == nil then
-			print("go into dialog bg")
-			SceneClass:hideDialogChar()
-			SceneClass:showDialogBg()
+			--print("go into dialog bg")
+			--SceneClass:hideDialogChar()
+			--SceneClass:showDialogBg()
 			CurrSceneState = CONST.SCENE_DIALOG_BG
 		else
-			print("go into dialog char")
-			SceneClass:hideDialogBg()
-			SceneClass:showDialogChar()
+			--print("go into dialog char")
+			--SceneClass:hideDialogBg()
+			--SceneClass:showDialogChar()
 			CurrSceneState = CONST.SCENE_DIALOG_CHAR
 		end
 		--[[
@@ -306,6 +329,7 @@ function ScriptClass.closeElement(name, nsURI)
 		
 		stage:addEventListener(Event.ENTER_FRAME, ScriptClass.updateText)
 		
+		currId = "ID_1723255651"
 		ScriptClass.continueScript()
 	end
 end
