@@ -1,6 +1,6 @@
-local LevelClass = require("src/core/LevelClass")
+local LevelClass = require "src/core/LevelClass"
 
-local BattleEngineClass = require("src/core/BattleEngineClass")
+local BattleEngineClass = require "src/core/BattleEngineClass"
 
 BasePlayerClass = Core.class(Sprite)
 

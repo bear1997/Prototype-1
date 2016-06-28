@@ -1,9 +1,11 @@
+local TEX = require "src/res/textures"
+local Misc = require "src/helper/MiscClass"
+
 OrbClass = Core.class(Sprite)
 
-local Misc = require("src/helper/MiscClass")
-
 function OrbClass:init(color, row, col)
-	self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. tostring(color) .. ".png")))
+	--self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. tostring(color) .. ".png")))
+	self:addChild(Bitmap.new(TEX["ORB_"..color]))
 	
 	self.color = color
 	self.row = row
@@ -16,10 +18,11 @@ function OrbClass:init(color, row, col)
 end
 
 function OrbClass:changeColor()
-	self:removeChildAt(1)
+	--self:removeChildAt(1)
 	
 	self.color = math.random(4)
-	self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. self.color .. ".png")))
+	--self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. self.color .. ".png")))
+	self:getChildAt(1):setTexture(TEX["ORB_"..color])
 end
 
 function OrbClass:onMoveOrb(event)

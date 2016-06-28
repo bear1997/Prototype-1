@@ -1,9 +1,11 @@
+local TEX = require "src/res/textures"
+local Misc = require "src/helper/MiscClass"
+
 CloudClass = Core.class(Sprite)
 
-local Misc = require("src/helper/MiscClass")
-
 function CloudClass:init()	
-	self:addChild(Bitmap.new(Texture.new("graphics/background/cloud" .. tostring(math.random(3)) .. ".png")))
+	--self:addChild(Bitmap.new(Texture.new("graphics/background/cloud" .. tostring(math.random(3)) .. ".png")))
+	self:addChild(Bitmap.new(TEX["CLOUD_"..math.random(3)]))
 	self:setY(math.random(10, 320 - self:getHeight()))
 	self:setX(360)
 	self.isCleaned = false

@@ -2,7 +2,7 @@ local Slaxml = require "lib/slaxml/slaxml"
 require "lib/luautf8/utf8"
 --package.loadlib("lib/luautf8/lua-utf8.dll", "len")
 
-local CONST = require "src/helper/constants"
+local CONST = require "src/res/constants"
 local TEX = require "src/res/textures"
 local MiscClass = require "src/helper/MiscClass"
 local SceneClass = require "src/helper/SceneClass"
@@ -314,6 +314,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			currName = value
 		elseif value == "textType" then
 			currName = value
+		elseif value == "isKey" then
+			currName = value
 		end
 	elseif name == "VALUE" then
 		if currName == "nextId" then
@@ -326,6 +328,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			tempTable.char = value
 		elseif currName == "textType" then
 			tempTable.textType = value
+		elseif currName == "isKey" then
+			tempTable.isKey = value
 		end
 		--currName = ""
 	end
@@ -351,7 +355,7 @@ function ScriptClass.readFile(path)
 	
 	Text1 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 	Text1:setScale(1)
-	Text1:setTextColor(0xff0000)
+	Text1:setTextColor(CONST.COLOR_BLACK)
 	Text1:setPosition(147, 365)
 	
 	Name1 = TextField.new(TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), "")
@@ -368,14 +372,13 @@ function ScriptClass.readFile(path)
 	
 	Text2 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 	Text2:setScale(1)
-	Text2:setTextColor(0xff0000)
+	Text2:setTextColor(CONST.COLOR_BLACK)
 	Text2:setPosition(22, 515)
-	
 	Name2 = TextField.new(TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), "")
 	Name2:setTextColor(CONST.COLOR_WHITE)
 	Name2:setPosition(260, 515)
 	
-	BgFade = Bitmap.new(Texture.new("graphics/background/bg_fade.png"))
+	BgFade = Bitmap.new(TEX.BG_FADE)
 	
 	ScriptClass.xml = io.open(path):read("*all")
 	SakuOrb:hideAllOrb()

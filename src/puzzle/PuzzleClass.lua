@@ -1,9 +1,9 @@
 PuzzleClass = Core.class(Sprite)
 
-local Misc = require("src/helper/MiscClass")
-local CONST = require("src/helper/constants")
+local Misc = require "src/helper/MiscClass"
+local CONST = require "src/res/constants"
 
-local BattleEngineClass = require("src/core/BattleEngineClass")
+local BattleEngineClass = require "src/core/BattleEngineClass"
 
 local orbLayer = {}
 local orbTable = {}

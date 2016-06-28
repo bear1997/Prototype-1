@@ -1,5 +1,5 @@
 <project>
- <properties logicalHeight="640" osx_org="GiderosMobile" winrt_org="GiderosMobile" assetsOnly="0" ios_bundle="com.yourdomain." fps="60" html5_host="" logicalWidth="360" winrt_package="com.yourdomain.yourapp" html5_mem="256" retinaDisplay="0" mouseToTouch="1" windowHeight="0" android_template="0" app_icon="" osx_domain="giderosmobile.com" encryptCode="0" touchToMouse="1" version="1.0" app_icon_noexport="0" architecture="7" win_org="GiderosMobile" osx_category="5" win_domain="giderosmobile.com" version_code="1" packageName="com.yourdomain.yourapp" encryptAssets="0" scaleMode="3" autorotation="0" orientation="0" iosDevice="0" osx_bundle="com.yourdomain." mouseTouchOrder="0" windowWidth="0">
+ <properties logicalWidth="360" html5_mem="256" ios_bundle="com.yourdomain." fps="60" encryptCode="0" touchToMouse="1" architecture="7" logicalHeight="640" win_domain="giderosmobile.com" windowHeight="0" autorotation="0" osx_bundle="com.yourdomain." version_code="1" mouseToTouch="1" osx_category="5" windowWidth="0" osx_domain="giderosmobile.com" html5_host="" osx_org="GiderosMobile" version="1.0" winrt_org="GiderosMobile" app_icon="" app_icon_noexport="0" packageName="com.yourdomain.yourapp" winrt_package="com.yourdomain.yourapp" android_template="0" iosDevice="0" retinaDisplay="0" win_org="GiderosMobile" mouseTouchOrder="0" scaleMode="3" assetsOnly="0" encryptAssets="0" orientation="0">
   <imageScales/>
   <plugins/>
   <exports>
@@ -42,6 +42,7 @@
  </folder>
  <folder name="src">
   <folder name="res">
+   <file source="src/res/constants.lua"/>
    <file source="src/res/textures.lua"/>
   </folder>
   <folder name="core">
@@ -74,7 +75,6 @@
   <folder name="helper">
    <file source="src/helper/SceneClass.lua"/>
    <file source="src/helper/ScriptClass.lua"/>
-   <file source="src/helper/constants.lua"/>
    <file source="src/helper/MiscClass.lua"/>
   </folder>
   <file source="main.lua"/>

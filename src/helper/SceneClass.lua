@@ -1,4 +1,4 @@
-local CONST = require "src/helper/constants"
+local CONST = require "src/res/constants"
 
 local SceneClass = {}
 

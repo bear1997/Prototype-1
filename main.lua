@@ -1,19 +1,20 @@
-local DirtClass = require("src/background/DirtClass")
+local DirtClass = require "src/background/DirtClass"
 
-local MagicianFClass = require("src/char/magician/female/MagicianFClass")
-local MagicianFBubbleClass = require("src/char/magician/female/MagicianFBubbleClass")
-local MagicianFBookClass = require("src/char/magician/female/MagicianFBookClass")
+local MagicianFClass = require "src/char/magician/female/MagicianFClass"
+local MagicianFBubbleClass = require "src/char/magician/female/MagicianFBubbleClass"
+local MagicianFBookClass = require "src/char/magician/female/MagicianFBookClass"
 
-local SlimeClass = require("src/enemy/SlimeClass")
+local SlimeClass = require "src/enemy/SlimeClass"
 
-local CONST = require "src/helper/constants"
-local MiscClass = require("src/helper/MiscClass")
-local ScriptClass = require("src/helper/ScriptClass")
-local SceneClass = require("src/helper/SceneClass")
+local CONST = require "src/res/constants"
+local TEX = require "src/res/textures"
+local MiscClass = require "src/helper/MiscClass"
+local ScriptClass = require "src/helper/ScriptClass"
+local SceneClass = require "src/helper/SceneClass"
 
 local BattleEngineClass = require("src/core/BattleEngineClass")
 
-local background = Bitmap.new(Texture.new("graphics/background/bg_grass.png"))
+local background = Bitmap.new(TEX.BG_GRASS)
 stage:addChild(background)
 
 DirtClass.createDirt()
