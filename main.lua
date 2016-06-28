@@ -100,6 +100,8 @@ function update(event)
 		MiscClass.bringToFront(Face2)
 		MiscClass.bringToFront(Text1)
 		MiscClass.bringToFront(Text2)
+		MiscClass.bringToFront(Name1)
+		MiscClass.bringToFront(Name2)
 	elseif CurrSceneState == CONST.SCENE_CHOOSE_CHARS then
 		for i = 1, #SHeroes do
 			if SHeroes[i] ~= nil then			

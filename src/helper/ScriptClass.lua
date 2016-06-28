@@ -15,9 +15,9 @@ NodeList = {}
 local tempTable, currName = {}, ""
 
 BgFade, TextList = nil, {}
-Text1, Text2 = nil, nil
+Text1, Text2, Name1, Name2 = nil, nil, nil, nil
 Box1, Face1, Box2, Face2 = nil, nil, nil, nil
-CurrText, CurrBox, CurrFace = nil, nil, nil
+CurrText, CurrName, CurrBox, CurrFace = nil, nil, nil
 local boxNum = 1
 
 local currId = nil
@@ -81,7 +81,7 @@ function ScriptClass.onTouchesEnd(event)
 				ScriptClass.continueScript()
 			end
 		end
-	end		
+	end
 end
 
 function ScriptClass.refreshText()
@@ -115,7 +115,7 @@ function ScriptClass.updateText()
 					currText = currNode.text
 				
 					TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
-					TextList[textIndex]:setPosition(20, totalHeight)
+					TextList[textIndex]:setPosition(26, totalHeight)
 				
 					totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
 				end
@@ -126,7 +126,7 @@ function ScriptClass.updateText()
 					currText = currNode.text
 				
 					TextList[textIndex]:setTextColor(CONST.COLOR_WHITE)
-					TextList[textIndex]:setPosition(20, totalHeight)
+					TextList[textIndex]:setPosition(26, totalHeight)
 			
 					totalHeight = totalHeight + TextList[textIndex]:getHeight(currNode.text) + 20
 				end
@@ -154,8 +154,9 @@ function ScriptClass.updateText()
 			if currLen == 1 then
 				print("times")
 				if boxNum == 1 then
-					CurrText = Text1
+					CurrText = Text1					
 					CurrFace = Face1
+					CurrName = Name1
 					--[[
 					if currNode.char == "others" then
 						Face1:setAlpha(0)
@@ -165,6 +166,7 @@ function ScriptClass.updateText()
 				else
 					CurrText = Text2
 					CurrFace = Face2
+					CurrName = Name2
 					--[[
 					if currNode.char == "others" then
 						Face2:setAlpha(0)
@@ -180,6 +182,8 @@ function ScriptClass.updateText()
 					CurrFace:setTexture(TEX.KNIGHT_M_FACE_NORMAL_100)
 					SceneClass.show(CurrFace)
 				end
+				
+				CurrName:setText(currNode.name)
 			end
 			
 			if skipFrame <= 0 then
@@ -308,6 +312,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			currName = value
 		elseif value == "char" then
 			currName = value
+		elseif value == "textType" then
+			currName = value
 		end
 	elseif name == "VALUE" then
 		if currName == "nextId" then
@@ -318,6 +324,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			tempTable.name = value
 		elseif currName == "char" then
 			tempTable.char = value
+		elseif currName == "textType" then
+			tempTable.textType = value
 		end
 		--currName = ""
 	end
@@ -344,7 +352,11 @@ function ScriptClass.readFile(path)
 	Text1 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 	Text1:setScale(1)
 	Text1:setTextColor(0xff0000)
-	Text1:setPosition(138, 365)
+	Text1:setPosition(147, 365)
+	
+	Name1 = TextField.new(TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), "")
+	Name1:setTextColor(CONST.COLOR_WHITE)
+	Name1:setPosition(47, 365)
 	
 	Box2 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
 	Box2:setScaleX(-1)
@@ -357,7 +369,11 @@ function ScriptClass.readFile(path)
 	Text2 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 	Text2:setScale(1)
 	Text2:setTextColor(0xff0000)
-	Text2:setPosition(13, 515)
+	Text2:setPosition(22, 515)
+	
+	Name2 = TextField.new(TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), "")
+	Name2:setTextColor(CONST.COLOR_WHITE)
+	Name2:setPosition(260, 515)
 	
 	BgFade = Bitmap.new(Texture.new("graphics/background/bg_fade.png"))
 	

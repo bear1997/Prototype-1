@@ -90,6 +90,8 @@ function SceneClass.showDialogChar()
 	GTween.new(Text1, 0.5, {alpha = 1}, { ease = easing.inBack })
 	GTween.new(Face1, 0.5, {alpha = 1}, { ease = easing.inBack })
 	GTween.new(Face2, 0.5, {alpha = 1}, { ease = easing.inBack })
+	GTween.new(Name1, 0.5, {alpha = 1}, { ease = easing.inBack })
+	GTween.new(Name2, 0.5, {alpha = 1}, { ease = easing.inBack })
 end
 
 function SceneClass.hideDialogChar()
@@ -100,6 +102,8 @@ function SceneClass.hideDialogChar()
 	GTween.new(Text1, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Face1, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Face2, 0.5, {alpha = 0}, { ease = easing.inBack })
+	GTween.new(Name1, 0.5, {alpha = 0}, { ease = easing.inBack })
+	GTween.new(Name2, 0.5, {alpha = 0}, { ease = easing.inBack })
 end
 
 function SceneClass.showDialogBg()
