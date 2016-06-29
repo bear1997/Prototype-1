@@ -1,3 +1,5 @@
+-- Class for magician female book
+
 local MagicianFBookClass = {}
 
 local pack = TexturePack.new("graphics/char/caster/female/book/book.txt", "graphics/char/caster/female/book/book.png")

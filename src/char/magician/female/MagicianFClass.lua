@@ -1,3 +1,5 @@
+-- Class for magician female
+
 local MagicianFClass = {}
 
 local pack = TexturePack.new("graphics/char/caster/female/walking/walking.txt", "graphics/char/caster/female/walking/walking.png")

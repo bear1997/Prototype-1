@@ -1,3 +1,5 @@
+-- Mainly for manage scene state switching, and animation optionally
+
 local CONST = require "src/res/constants"
 
 local SceneClass = {}

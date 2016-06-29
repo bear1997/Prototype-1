@@ -1,3 +1,5 @@
+-- The orb class
+
 local TEX = require "src/res/textures"
 local Misc = require "src/helper/MiscClass"
 

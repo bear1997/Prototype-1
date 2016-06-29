@@ -1,3 +1,5 @@
+-- One of the core class, manage the overall story path
+
 local Slaxml = require "lib/slaxml/slaxml"
 require "lib/luautf8/utf8"
 --package.loadlib("lib/luautf8/lua-utf8.dll", "len")
@@ -26,11 +28,13 @@ local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
 local canContinueScript, currChoseChar = true, 0
 CurrSceneState = 0
 
+-- Call this first before use the ScriptClass
 function ScriptClass.setup()
 	skipFrameNumOld = skipFrameNum
 	stage:addEventListener(Event.TOUCHES_END, ScriptClass.onTouchesEnd)
 end
 
+-- Detect the input to switch between lines
 function ScriptClass.onTouchesEnd(event)
 	if CurrSceneState == CONST.SCENE_CHOOSE_CHARS then
 		local x, y = event.touch.x, event.touch.y
@@ -84,6 +88,7 @@ function ScriptClass.onTouchesEnd(event)
 	end
 end
 
+-- Reset all the background texts to empty string
 function ScriptClass.refreshText()
 	if CurrSceneState == CONST.SCENE_DIALOG_BG then
 		for i = 1, #TextList do
@@ -99,6 +104,7 @@ function ScriptClass.refreshText()
 	end	
 end
 
+-- Update both the text of characters dialog and background dialog, showing the text frame by frame
 function ScriptClass.updateText()
 	if toUpdateText == true	then
 		if CurrSceneState == CONST.SCENE_DIALOG_BG then
@@ -209,6 +215,7 @@ function ScriptClass.updateText()
 	end
 end
 
+-- Core method to continue the overall game story
 function ScriptClass.continueScript()
 	if NodeList[currId].branch ~= nil then
 		if currChoseChar == 0 then			
@@ -239,6 +246,7 @@ function ScriptClass.continueScript()
 	elseif NodeList[currId].branch == nil then
 		if NodeList[currId].name == nil and NodeList[NodeList[currId].nextId[1]].name ~= nil then
 			--print("go into char")
+			ScriptClass.refreshText()
 			SceneClass.hideDialogBg()
 			SceneClass.showDialogChar()
 		elseif NodeList[currId].name ~= nil and NodeList[NodeList[currId].nextId[1]].name == nil then
@@ -284,11 +292,13 @@ function ScriptClass.testTable(obj)
 	end]]
 end
 
+-- Add current node to the current table
 function ScriptClass.addNode(obj)
 	--print(obj.text)
 	NodeList[obj.id] = obj
 end
 
+-- Parse the corresponding attribute to be appended to current node
 function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 	if name == "TEXT" then		
 		if tempTable.id ~= nil then
@@ -335,6 +345,7 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 	end
 end
 
+-- Call the continueScript method by end of the xml file, a.k.a entry point
 function ScriptClass.closeElement(name, nsURI)
 	if name == "map" then
 		ScriptClass.addNode(tempTable)
@@ -346,6 +357,7 @@ function ScriptClass.closeElement(name, nsURI)
 	end
 end
 
+-- Perform the actual read process of xml file
 function ScriptClass.readFile(path)
 	Box1 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
 	Box1:setPosition(132, 340)

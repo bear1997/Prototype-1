@@ -1,3 +1,5 @@
+-- Constants list
+
 local CONST = {}
 
 CONST.ORB_RED = 1

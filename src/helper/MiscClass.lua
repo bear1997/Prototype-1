@@ -1,3 +1,5 @@
+-- Miscellaneous methods and utitlies can be found here
+
 local MiscClass = {}
 
 function MiscClass.isOverbound(obj)

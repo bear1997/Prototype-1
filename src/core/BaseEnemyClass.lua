@@ -1,3 +1,5 @@
+-- Base class to derive for enemies
+
 local LevelClass = require "src/core/LevelClass"
 
 local BattleEngineClass = require "src/core/BattleEngineClass"

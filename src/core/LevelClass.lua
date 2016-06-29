@@ -1,3 +1,5 @@
+-- Manage the level stuff, such as stats, attribut, etc
+
 local LevelClass = {}
 
 function LevelClass.setStats(to, from)

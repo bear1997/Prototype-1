@@ -12,6 +12,8 @@ local orbColor = {}
 
 local colmax = 7
 -------------------------------------------------------------------------------------------
+
+-- Setup everything at the start
 function PuzzleClass:init(event)
 	local initialX = 230
 	local initialY = 320
@@ -53,6 +55,7 @@ local removeTimer = Timer.new(510, 1)
 local lastRow, lastCol, isEnded, isMoving, moveCounter, diffRow, diffCol = 0, 0, false, false, 0, 0, 0
 local orbStack = {}
 
+-- Remove the linked value from all orbs
 function PuzzleClass:resetLink()
 	for row = 1,5,1 do
 		for col = 1,colmax,1 do
@@ -62,10 +65,12 @@ function PuzzleClass:resetLink()
 	orbColor = 0
 end
 
+-- Convenient method to set the moving flag to false
 function PuzzleClass:setMoving()
 	isMoving = false
 end
 
+-- Fill the empty gap by pushing newly placed orbs to the gap, may loop multiple times if necessary
 function PuzzleClass:fillSlot()
 	local moveOrbEvent = Event.new("MOVE_ORB")
 	local isFilled = false
@@ -102,6 +107,7 @@ function PuzzleClass:fillSlot()
 	movedTimer:start()
 end
 
+-- Place the hidden linked orbs to their new places, respectively
 function PuzzleClass:supplyOrb()
 	local r_row, r_col = 0, 0
 	for row = 1,5 do
@@ -133,6 +139,7 @@ function PuzzleClass:supplyOrb()
 	PuzzleClass:fillSlot()
 end
 
+-- Hide all orbs
 function PuzzleClass:hideAllOrb()
 	for row = 1,5 do
 		for col = 1,colmax do			
@@ -141,6 +148,7 @@ function PuzzleClass:hideAllOrb()
 	end
 end
 
+-- Hide the linked orbs only
 function PuzzleClass:hideOrb()
 	for row = 1,5 do
 		for col = 1,colmax do
@@ -153,6 +161,7 @@ function PuzzleClass:hideOrb()
 	removeTimer:start()
 end
 
+-- Detect the orbs that receive input, and set the orbs to become linked
 function PuzzleClass:onMove(event)
 	if isMoving == false then
 		for row = 1,5 do
@@ -215,6 +224,7 @@ function PuzzleClass:onMove(event)
 	end
 end
 
+-- Detect the end of input event, and also process the linking process of orbs
 function PuzzleClass:onMoveEnd()
 	if isMoving == false then
 		if isEnded == false then
@@ -235,6 +245,7 @@ function PuzzleClass:onMoveEnd()
 	isEnded = false
 end
 
+-- Decide the current action of player to be performed, depending on the orbs color
 function PuzzleClass:setColorAction()
 	if orbColor == CONST.ORB_RED then
 		BattleEngineClass.attackEnemy(BattleEngineClass.player, moveCounter)

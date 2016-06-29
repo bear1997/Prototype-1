@@ -1,3 +1,5 @@
+-- Enemy: Slime
+
 local SlimeClass = {}
 
 function SlimeClass.new()

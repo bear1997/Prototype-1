@@ -1,3 +1,5 @@
+-- Calculate the battle damage
+
 local BattleEngineClass = {}
 
 BattleEngineClass.player, BattleEngineClass.enemy = nil, nil

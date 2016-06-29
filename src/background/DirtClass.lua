@@ -1,3 +1,5 @@
+-- Class for dirt in background
+
 local TEX = require "src/res/textures"
 
 local DirtClass = {}

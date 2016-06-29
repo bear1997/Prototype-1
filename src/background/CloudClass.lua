@@ -1,3 +1,5 @@
+-- Class for cloud in background
+
 local TEX = require "src/res/textures"
 local Misc = require "src/helper/MiscClass"
 

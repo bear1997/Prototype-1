@@ -1,3 +1,5 @@
+-- Base class to derive for player and other ally characters
+
 local LevelClass = require "src/core/LevelClass"
 
 local BattleEngineClass = require "src/core/BattleEngineClass"
