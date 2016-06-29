@@ -32,6 +32,9 @@ function BaseEnemyClass:init(img, stats)
 	self.attackTimer:addEventListener(Event.TIMER, BaseEnemyClass.attack, self)
 	self.attackTimer:start()
 	
+	self:setVisible(false)
+	self.textHp:setVisible(false)
+	
 	return self
 end
 --[[

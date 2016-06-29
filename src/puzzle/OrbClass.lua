@@ -16,6 +16,8 @@ function OrbClass:init(color, row, col)
 	self.nextX = 0
 	self.nextY = 0
 	
+	self:setVisible(false)
+	
 	stage:addEventListener("MOVE_ORB", self.onMoveOrb, self)
 end
 

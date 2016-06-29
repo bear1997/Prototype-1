@@ -140,16 +140,26 @@ function PuzzleClass:supplyOrb()
 end
 
 -- Hide all orbs
-function PuzzleClass:hideAllOrb()
+function PuzzleClass:showAllOrbs()
 	for row = 1,5 do
 		for col = 1,colmax do			
+				GTween.new(orbLayer[row][col], 0.5, {alpha = 100}, { ease = easing.inBack })
+		end
+	end
+end
+
+-- Hide all orbs
+function PuzzleClass:hideAllOrbs()
+	for row = 1,5 do
+		for col = 1,colmax do
+				orbLayer[row][col]:setVisible(true)
 				GTween.new(orbLayer[row][col], 0.5, {alpha = 0}, { ease = easing.inBack })
 		end
 	end
 end
 
 -- Hide the linked orbs only
-function PuzzleClass:hideOrb()
+function PuzzleClass:hideOrbs()
 	for row = 1,5 do
 		for col = 1,colmax do
 			if orbLayer[row][col].isLinked == true then

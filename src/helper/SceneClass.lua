@@ -6,6 +6,27 @@ local SceneClass = {}
 
 SHeroes = {}
 
+function SceneClass.showBattleMode()
+	Player:setVisible(true)
+	Player.textHp:setVisible(true)
+	Enemy:setVisible(true)
+	Enemy.textHp:setVisible(true)
+	
+	SakuOrb:showAllOrbs()
+	GTween.new(Player, 0.5, {alpha = 100}, { ease = easing.inBack })
+	GTween.new(Player.textHp, 0.5, {alpha = 100}, { ease = easing.inBack })
+	GTween.new(Enemy, 0.5, {alpha = 100}, { ease = easing.inBack })
+	GTween.new(Enemy.textHp, 0.5, {alpha = 100}, { ease = easing.inBack })
+end
+
+function SceneClass.hideBattleMode()
+	SakuOrb:hideAllOrbs()
+	GTween.new(Player, 0.5, {alpha = 0}, { ease = easing.inBack })
+	GTween.new(Player.textHp, 0.5, {alpha = 0}, { ease = easing.inBack })
+	GTween.new(Enemy, 0.5, {alpha = 0}, { ease = easing.inBack })
+	GTween.new(Enemy.textHp, 0.5, {alpha = 0}, { ease = easing.inBack })
+end
+
 function SceneClass.hideChooseChars()
 	print("hideChooseChars")
 	for i = 1, #SHeroes do
@@ -72,6 +93,7 @@ end
 
 function SceneClass.show(sprite, len)
 	print("show")
+	sprite:setVisible(true)
 	if len == nil then len = 0.5 end
 	
 	GTween.new(sprite, len, {alpha = 1}, { ease = easing.inBack })

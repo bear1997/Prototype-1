@@ -51,7 +51,6 @@ stage:addChild(SakuOrb)
 BattleEngineClass.init(magician, slime)
 
 ScriptClass.setup()
-ScriptClass.readFile("lang/zh_CN/prologue.xml")
 
 -----------------------------------------------------------------------------------------------------------------
 
