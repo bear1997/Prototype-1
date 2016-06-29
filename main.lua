@@ -1,3 +1,5 @@
+-- The entry point of game where this is the origin of everything
+
 local DirtClass = require "src/background/DirtClass"
 
 local MagicianFClass = require "src/char/magician/female/MagicianFClass"
