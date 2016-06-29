@@ -57,11 +57,13 @@
 <attribute NAME="nextId" VALUE="ID_1618409521"/>
 <node TEXT="&#x5728;&#x8fd9;&#x7247;&#x5927;&#x5730;&#x4e0a;&#xff0c;&#x4eba;&#x4eec;&#x65f6;&#x800c;&#x4e00;&#x540c;&#x6b22;&#x7b11;&#xff0c;&#xa;&#x65f6;&#x800c;&#x6218;&#x4e71;&#x4e0d;&#x65ad;&#xff0c;&#x65f6;&#x800c;&#x4e92;&#x76f8;&#x5e2e;&#x52a9;&#xff0c;&#x65f6;&#x800c;&#xa;&#x4e92;&#x76f8;&#x80cc;&#x677f;&#x3002;" ID="ID_1618409521" CREATED="1466570556044" MODIFIED="1466570693506">
 <attribute NAME="nextId" VALUE="ID_1354500379"/>
-<node TEXT="&#x4e0d;&#x8fc7;&#x6700;&#x63a5;&#x8fd1;&#x73b0;&#x4ee3;&#x7684;&#x6218;&#x4e71;&#x5df2;&#x662f;&#x51e0;&#x767e;&#x5e74;&#x524d;&#xa;&#x7684;&#x4e8b;&#x4e86;&#xff0c;&#x73b0;&#x5728;&#x7684;&#x7d22;&#x96c5;&#x975e;&#x5e38;&#x5730;&#x548c;&#x5e73;&#x3002;" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466836018256">
-<attribute_layout NAME_WIDTH="40" VALUE_WIDTH="364"/>
+<node TEXT="&#x4e0d;&#x8fc7;&#x6700;&#x63a5;&#x8fd1;&#x73b0;&#x4ee3;&#x7684;&#x6218;&#x4e71;&#x5df2;&#x662f;&#x51e0;&#x767e;&#x5e74;&#x524d;&#xa;&#x7684;&#x4e8b;&#x4e86;&#xff0c;&#x73b0;&#x5728;&#x7684;&#x7d22;&#x96c5;&#x975e;&#x5e38;&#x5730;&#x548c;&#x5e73;&#x3002;" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1467199404394">
+<attribute_layout NAME_WIDTH="65" VALUE_WIDTH="364"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="branch" VALUE="knight,archer,thief,caster"/>
 <attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440,ID_1244564882"/>
-<node TEXT="&#x5357;&#x90e8;&#x5927;&#x56fd;&#x201c;&#x4e9a;&#x7f57;&#x201d;&#x514b;&#x52b3;&#x5fb7;&#x89c6;&#x70b9;" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466832083820" HGAP="33" VSHIFT="171">
+<node TEXT="&#x5357;&#x90e8;&#x5927;&#x56fd;&#x201c;&#x4e9a;&#x7f57;&#x201d;&#x514b;&#x52b3;&#x5fb7;&#x89c6;&#x70b9;" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1467199421253" HGAP="33" VSHIFT="171">
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="knightM"/>
 <attribute NAME="nextId" VALUE="ID_182252182"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;4&#x6708;13&#x65e5;&#xff08;&#x5f02;&#x53d8;&#x4e4b;&#x65e5;&#xff09;" ID="ID_182252182" CREATED="1466570857020" MODIFIED="1466571598212">
@@ -74,7 +76,7 @@
 <attribute NAME="name" VALUE="&#x7236;&#x4eb2;"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_238899088"/>
-<node TEXT="&#x53ef;&#x662f;&#x7236;&#x4eb2;&#xff01;&#x867d;&#x7136;&#x6211;&#x4e00;&#x9879;&#x5f88;&#x5c0a;&#x656c;&#x60a8;&#x4f46;&#x552f;&#x72ec;&#xa;&#x4e0d;&#x8ba4;&#x540c;&#x7236;&#x4eb2;&#x8fd9;&#x53e5;&#x8bdd;&#xff0c;&#x53ea;&#x662f;&#x5427;&#x804c;&#x573a;&#x4ece;&#x6218;&#x4e89;&#xa;&#x6362;&#x6210;&#x7ef4;&#x6301;&#x6cbb;&#x5b89;&#x800c;&#x5df2;&#xff0c;&#x6211;&#x4eec;&#x51ed;&#x4ec0;&#x4e48;&#x8981;&#x6536;&#x5230;&#xa;&#x4ed6;&#x4eba;&#x7684;&#x767d;&#x773c;&#xff1f;" ID="ID_238899088" CREATED="1466602816942" MODIFIED="1466604005960">
+<node TEXT="&#x53ef;&#x662f;&#x7236;&#x4eb2;&#xff01;&#x867d;&#x7136;&#x6211;&#x4e00;&#x5411;&#x5f88;&#x5c0a;&#x656c;&#x60a8;&#x4f46;&#x552f;&#x72ec;&#xa;&#x4e0d;&#x8ba4;&#x540c;&#x7236;&#x4eb2;&#x8fd9;&#x53e5;&#x8bdd;&#xff0c;&#x53ea;&#x662f;&#x5427;&#x804c;&#x573a;&#x4ece;&#x6218;&#x4e89;&#xa;&#x6362;&#x6210;&#x7ef4;&#x6301;&#x6cbb;&#x5b89;&#x800c;&#x5df2;&#xff0c;&#x6211;&#x4eec;&#x51ed;&#x4ec0;&#x4e48;&#x8981;&#x6536;&#x5230;&#xa;&#x4ed6;&#x4eba;&#x7684;&#x767d;&#x773c;&#xff1f;" ID="ID_238899088" CREATED="1466602816942" MODIFIED="1467199457085">
 <attribute_layout NAME_WIDTH="54" VALUE_WIDTH="92"/>
 <attribute NAME="char" VALUE="knightM"/>
 <attribute NAME="name" VALUE="&#x514b;&#x52b3;&#x5fb7;"/>
@@ -152,12 +154,14 @@
 <attribute NAME="nextId" VALUE="ID_1723223729"/>
 <node TEXT="&#x4e00;&#x65b9;&#x9762;&#x514b;&#x52b3;&#x5fb7;&#x975e;&#x5e38;&#x7684;&#x5174;&#x594b;&#xff0c;&#xa;&#x56e0;&#x4e3a;&#x6539;&#x53d8;&#x5bb6;&#x65cf;&#x7acb;&#x573a;&#x7684;&#x4e1c;&#x897f;&#xff0c;&#xa;&#x201c;&#x6218;&#x6597;&#x201d;&#x6765;&#x4e86;" ID="ID_1723223729" CREATED="1466662015255" MODIFIED="1466662126927">
 <attribute NAME="nextId" VALUE="ID_1438436310"/>
-<node TEXT="&#x514b;&#x52b3;&#x5fb7;&#xff0c;&#x4f60;&#x7559;&#x4e0b;&#x6765;&#x966a;&#x7740;&#x4f60;&#x7684;&#x6bcd;&#x4eb2;" ID="ID_1438436310" CREATED="1466662113647" MODIFIED="1466662284693">
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<node TEXT="&#x514b;&#x52b3;&#x5fb7;&#xff0c;&#x4f60;&#x7559;&#x4e0b;&#x6765;&#x966a;&#x7740;&#x4f60;&#x7684;&#x6bcd;&#x4eb2;" ID="ID_1438436310" CREATED="1466662113647" MODIFIED="1467200072508">
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_715629516,ID_669068579"/>
-<node TEXT="&#x4ec0;&#x4e48;&#xff01;&#xff1f;&#x6211;&#x4e5f;&#x8981;&#x53bb;&#xff01;&#xff08;&#x6211;&#x8981;&#x7acb;&#x529f;&#xff0c;&#x6539;&#x53d8;&#x5bb6;&#x65cf;&#x5730;&#x4f4d;&#x554a;&#xff01;&#xff09;" ID="ID_715629516" CREATED="1466662147206" MODIFIED="1466766301151" VSHIFT="-60">
-<attribute_layout NAME_WIDTH="71" VALUE_WIDTH="71"/>
+<node TEXT="&#x4e0d;&#x7559;&#x4e0b;" ID="ID_715629516" CREATED="1466662147206" MODIFIED="1467199753228" VSHIFT="-60">
+<attribute_layout NAME_WIDTH="70" VALUE_WIDTH="70"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1201196096"/>
@@ -337,8 +341,9 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x597d;&#x7684;&#x6211;&#x660e;&#x767d;&#x4e86;&#x3002;" ID="ID_669068579" CREATED="1466662148711" MODIFIED="1466766899718" VSHIFT="9">
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<node TEXT="&#x7559;&#x4e0b;" ID="ID_669068579" CREATED="1466662148711" MODIFIED="1467199759724" VSHIFT="9">
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_214079975"/>
@@ -524,7 +529,9 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x897f;&#x90e8;&#x201c;&#x67ef;&#x897f;&#x65af;&#x5927;&#x5e73;&#x539f;&#x201d;&#x5a1c;&#x5a1c;&#x5229;&#x89c6;&#x70b9;" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1466832065669" HGAP="43" VSHIFT="214">
+<node TEXT="&#x897f;&#x90e8;&#x201c;&#x67ef;&#x897f;&#x65af;&#x5927;&#x5e73;&#x539f;&#x201d;&#x5a1c;&#x5a1c;&#x5229;&#x89c6;&#x70b9;" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1467199412013" HGAP="43" VSHIFT="214">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="archer"/>
 <attribute NAME="nextId" VALUE="ID_1681982774"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;4&#x6708;15&#x65e5;" ID="ID_1681982774" CREATED="1466570943180" MODIFIED="1466571713140">
@@ -623,12 +630,14 @@
 <attribute NAME="name" VALUE="&#x5e93;&#x52b3;&#x8fea;&#x554a;"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_322521225"/>
-<node TEXT="&#x8bdd;&#x8fd8;&#x6ca1;&#x8bf4;&#x5b8c;&#xff0c;&#x5e93;&#x52b3;&#x8fea;&#x554a;&#x5c31;&#x5feb;&#x9a6c;&#x52a0;&#x97ad;&#xff0c;&#x5f80;&#x65cf;&#x7fa4;&#x7684;&#x65b9;&#x5411;&#x53bb;&#x4e86;&#x3002;&#xa;&#x4e00;&#x65f6;&#x6ca1;&#x53cd;&#x5e94;&#x8fc7;&#x6765;&#x7684;&#x5a1c;&#x5a1c;&#x5229;&#x88ab;&#x5e93;&#x52b3;&#x8fea;&#x554a;&#x7559;&#x5728;&#x539f;&#x5730;&#x3002;" ID="ID_322521225" CREATED="1466768932400" MODIFIED="1466770388799">
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<node TEXT="&#x8bdd;&#x8fd8;&#x6ca1;&#x8bf4;&#x5b8c;&#xff0c;&#x5e93;&#x52b3;&#x8fea;&#x554a;&#x5c31;&#x5feb;&#x9a6c;&#x52a0;&#x97ad;&#xff0c;&#x5f80;&#x65cf;&#x7fa4;&#x7684;&#x65b9;&#x5411;&#x53bb;&#x4e86;&#x3002;&#xa;&#x4e00;&#x65f6;&#x6ca1;&#x53cd;&#x5e94;&#x8fc7;&#x6765;&#x7684;&#x5a1c;&#x5a1c;&#x5229;&#x88ab;&#x5e93;&#x52b3;&#x8fea;&#x554a;&#x7559;&#x5728;&#x539f;&#x5730;&#x3002;" ID="ID_322521225" CREATED="1466768932400" MODIFIED="1467200063421">
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_19170777,ID_1239168755"/>
-<node TEXT="&#x771f;&#x662f;&#x7684;&#xff0c;&#x8fd8;&#x662f;&#x8001;&#x6837;&#x5b50;&#x6211;&#x884c;&#x6211;&#x7d20;&#x554a;&#x5e93;&#x52b3;&#x59d0;&#x3002;&#x3002;&#x3002;" ID="ID_19170777" CREATED="1466768952409" MODIFIED="1466770880717" VSHIFT="-46">
+<node TEXT="&#x7559;&#x5728;&#x539f;&#x5730;" ID="ID_19170777" CREATED="1466768952409" MODIFIED="1467199710756" VSHIFT="-46">
 <attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1444937306"/>
@@ -737,8 +746,9 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x554a;&#xff01;&#x7b49;&#x7b49;&#x6211;&#x554a;&#xff01;" ID="ID_1239168755" CREATED="1466770107581" MODIFIED="1466771131349">
-<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<node TEXT="&#x6025;&#x5fd9;&#x8ffd;&#x4e0a;" ID="ID_1239168755" CREATED="1466770107581" MODIFIED="1467199721098">
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1847999819"/>
@@ -868,7 +878,9 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x4e1c;&#x90e8;&#x8d38;&#x6613;&#x5927;&#x56fd;&#x2014;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x738b;&#x56fd;&#x201d;&#x9c81;&#x8fea;&#x89c6;&#x70b9;" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1466832072884" HGAP="39" VSHIFT="-9">
+<node TEXT="&#x4e1c;&#x90e8;&#x8d38;&#x6613;&#x5927;&#x56fd;&#x2014;&#x201c;&#x5df4;&#x5e03;&#x7f57;&#x738b;&#x56fd;&#x201d;&#x9c81;&#x8fea;&#x89c6;&#x70b9;" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1467199427469" HGAP="39" VSHIFT="-9">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="thief"/>
 <attribute NAME="nextId" VALUE="ID_416213409"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;4&#x6708;15&#x65e5;" ID="ID_416213409" CREATED="1466571123478" MODIFIED="1466571744924">
@@ -1016,14 +1028,18 @@
 <attribute NAME="nextId" VALUE="ID_1959339592"/>
 <node TEXT="&#x542c;&#x5230;&#x4e86;&#x8fd9;&#x53e5;&#x8bdd;&#x7684;&#x4eba;&#x4eec;&#x4e0d;&#x611f;&#x5230;&#x60ca;&#x8bb6;&#x4f46;&#x90fd;&#x9732;&#x51fa;&#x4e86;&#x679c;&#x7136;&#x4f1a;&#x8fd9;&#x6837;&#x7684;&#x8868;&#x60c5;&#x3002;&#xa;&#x7136;&#x540e;&#x611f;&#x89c9;&#x5230;&#x4e86;&#x5f7b;&#x5e95;&#x653e;&#x5f03;&#x7684;&#x6c14;&#x6c1b;&#x5f00;&#x59cb;&#x6563;&#x5f00;&#x3002;" ID="ID_1959339592" CREATED="1466828113577" MODIFIED="1466829839139">
 <attribute NAME="nextId" VALUE="ID_530399943"/>
-<node TEXT="&#x5c31;&#x8fde;&#x654c;&#x4eba;&#x6765;&#x4e86;&#x4e5f;&#x4e0d;&#x51c6;&#x5907;&#x62b5;&#x6297;&#xff0c;&#x4ed6;&#x4eec;&#x5b9b;&#x5982;&#x5f85;&#x5bb0;&#x7684;&#x7f94;&#x7f8a;&#xff0c;&#xa;&#x9c81;&#x8fea;&#x4e0d;&#x7406;&#x4f1a;&#x4ed6;&#x4eec;&#xff0c;&#x9ed8;&#x9ed8;&#x62d4;&#x51fa;&#x77ed;&#x5251;&#x3002;" ID="ID_530399943" CREATED="1466828135128" MODIFIED="1466829833039">
-<attribute NAME="nextId" VALUE="ID_581916653"/>
-<node TEXT="Battle Start" ID="ID_581916653" CREATED="1466828156985" MODIFIED="1466829827350">
-<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
-<attribute NAME="branch" VALUE="option1,option2"/>
+<node TEXT="&#x5c31;&#x8fde;&#x654c;&#x4eba;&#x6765;&#x4e86;&#x4e5f;&#x4e0d;&#x51c6;&#x5907;&#x62b5;&#x6297;&#xff0c;&#x4ed6;&#x4eec;&#x5b9b;&#x5982;&#x5f85;&#x5bb0;&#x7684;&#x7f94;&#x7f8a;&#xff0c;&#xa;&#x9c81;&#x8fea;&#x4e0d;&#x7406;&#x4f1a;&#x4ed6;&#x4eec;&#xff0c;&#x9ed8;&#x9ed8;&#x62d4;&#x51fa;&#x77ed;&#x5251;&#x3002;" ID="ID_530399943" CREATED="1466828135128" MODIFIED="1467199921720">
+<attribute NAME="nextId" VALUE="ID_606710252"/>
+<node TEXT="Battle Start" ID="ID_606710252" CREATED="1467199864027" MODIFIED="1467199988108">
 <attribute NAME="battle" VALUE="normal"/>
+<attribute NAME="nextId" VALUE="ID_581916653"/>
+<node TEXT="&#x6218;&#x6597;&#x7ed3;&#x675f;&#x540e;&#xff0c;&#x9c81;&#x8fea;&#x770b;&#x5411;&#x58eb;&#x5175;&#x4eec;" ID="ID_581916653" CREATED="1466828156985" MODIFIED="1467200023139">
+<attribute_layout NAME_WIDTH="70" VALUE_WIDTH="70"/>
+<attribute NAME="branchtype" VALUE="option"/>
+<attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_730774924,ID_1641700190"/>
-<node TEXT="&#x4e0d;&#x8981;&#x653e;&#x5f03;&#xff01;" ID="ID_730774924" CREATED="1466828198720" MODIFIED="1466829808462" VSHIFT="-43">
+<node TEXT="&#x9f13;&#x821e;&#x58eb;&#x6c14;" ID="ID_730774924" CREATED="1466828198720" MODIFIED="1467199544740" VSHIFT="-43">
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1728113379"/>
@@ -1064,7 +1080,9 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x3002;&#x3002;&#x3002;" ID="ID_1641700190" CREATED="1466828230400" MODIFIED="1466829805049" VSHIFT="28">
+<node TEXT="&#x6c89;&#x9ed8;&#x79bb;&#x5f00;" ID="ID_1641700190" CREATED="1466828230400" MODIFIED="1467199566582" VSHIFT="28">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_72756078"/>
@@ -1164,8 +1182,10 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x5317;&#x90e8;&#x7fa4;&#x5c71;&#x5904;&#x2014;&#x201c;&#x5362;&#x65af;&#x4e39;&#x7fa4;&#x5c71;&#x201d;&#x2014;&#x2014;&#x8299;&#x84c9;&#x62c9;&#x89c6;&#x70b9;" ID="ID_1244564882" CREATED="1466830124458" MODIFIED="1466835992430" HGAP="10">
+</node>
+<node TEXT="&#x5317;&#x90e8;&#x7fa4;&#x5c71;&#x5904;&#x2014;&#x201c;&#x5362;&#x65af;&#x4e39;&#x7fa4;&#x5c71;&#x201d;&#x2014;&#x2014;&#x8299;&#x84c9;&#x62c9;&#x89c6;&#x70b9;" ID="ID_1244564882" CREATED="1466830124458" MODIFIED="1467199435669" HGAP="10">
 <attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="caster"/>
 <attribute NAME="nextId" VALUE="ID_1256597100"/>
 <node TEXT="&#x7d22;&#x96c5;&#x5386;310&#x5e74;5&#x6708;9&#x65e5;" ID="ID_1256597100" CREATED="1466830171688" MODIFIED="1466835987812">
@@ -1296,12 +1316,14 @@
 <attribute NAME="name" VALUE="&#x8299;&#x84c9;&#x62c9;"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_845544482"/>
-<node TEXT="&#x4e34;&#x88ab;&#x4f20;&#x9001;&#x524d;&#xff0c;&#x5e08;&#x5085;&#x56e0;&#x4e3a;&#x542c;&#x5230;&#x4e86;&#x8299;&#x84c9;&#x62c9;&#x51fa;&#x751f;&#x4ee5;&#x6765;&#x6700;&#x4e3a;&#xa;&#x7cbe;&#x795e;&#x548c;&#x5145;&#x6ee1;&#x4eba;&#x6027;&#x7684;&#x53eb;&#x58f0;&#x800c;&#x6d41;&#x4e0b;&#x4e86;&#x9ad8;&#x5174;&#x7684;&#x773c;&#x6cea;&#x3002;" ID="ID_845544482" CREATED="1466830657528" MODIFIED="1466835852512">
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<node TEXT="&#x4e34;&#x88ab;&#x4f20;&#x9001;&#x524d;&#xff0c;&#x5e08;&#x5085;&#x56e0;&#x4e3a;&#x542c;&#x5230;&#x4e86;&#x8299;&#x84c9;&#x62c9;&#x51fa;&#x751f;&#x4ee5;&#x6765;&#x6700;&#x4e3a;&#xa;&#x7cbe;&#x795e;&#x548c;&#x5145;&#x6ee1;&#x4eba;&#x6027;&#x7684;&#x53eb;&#x58f0;&#x800c;&#x6d41;&#x4e0b;&#x4e86;&#x9ad8;&#x5174;&#x7684;&#x773c;&#x6cea;&#x3002;" ID="ID_845544482" CREATED="1466830657528" MODIFIED="1467200038127">
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_19430426,ID_1529735871"/>
-<node TEXT="&#x53ef;&#x6076;&#xff08;&#x5f00;&#x4ec0;&#x4e48;&#x73a9;&#x7b11;&#xff01;&#x90a3;&#x4e2a;&#x81ed;&#x8001;&#x5934;&#xff01;&#xff09;" ID="ID_19430426" CREATED="1466831142398" MODIFIED="1466835836461">
-<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<node TEXT="&#x611f;&#x5230;&#x6124;&#x6012;" ID="ID_19430426" CREATED="1466831142398" MODIFIED="1467199671916">
+<attribute_layout NAME_WIDTH="71" VALUE_WIDTH="71"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_760957907"/>
@@ -1416,7 +1438,9 @@
 </node>
 </node>
 </node>
-<node TEXT="&#x54c8;&#x3002;&#x3002;&#x3002;&#x7b97;&#x4e86;(&#x5e72;&#x561b;&#x90a3;&#x4e48;&#x751f;&#x6c14;&#x5417;&#x3002;&#x3002;&#x3002;)" ID="ID_1529735871" CREATED="1466830723407" MODIFIED="1466835831373" VSHIFT="20">
+<node TEXT="&#x611f;&#x5230;&#x65e0;&#x5948;" ID="ID_1529735871" CREATED="1466830723407" MODIFIED="1467199677460" VSHIFT="20">
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1364585013"/>

@@ -89,15 +89,17 @@
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1354500379"/>
-<node TEXT="不过最接近现代的战乱已是几百年前&#10;的事了，现在的索雅非常地和平。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1466836018256">
+<node TEXT="不过最接近现代的战乱已是几百年前&#10;的事了，现在的索雅非常地和平。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1354500379" CREATED="1466570590556" MODIFIED="1467199404394">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="40" VALUE_WIDTH="364"/>
+<attribute_layout NAME_WIDTH="65" VALUE_WIDTH="364"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="branch" VALUE="knight,archer,thief,caster"/>
 <attribute NAME="nextId" VALUE="ID_295482963,ID_1873482944,ID_1042948440,ID_1244564882"/>
-<node TEXT="南部大国“亚罗”克劳德视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1466832083820" HGAP="33" VSHIFT="171">
+<node TEXT="南部大国“亚罗”克劳德视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_295482963" CREATED="1466570695876" MODIFIED="1467199421253" HGAP="33" VSHIFT="171">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="knightM"/>
 <attribute NAME="nextId" VALUE="ID_182252182"/>
 <node TEXT="索雅历310年4月13日（异变之日）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_182252182" CREATED="1466570857020" MODIFIED="1466571598212">
@@ -116,7 +118,7 @@
 <attribute NAME="name" VALUE="父亲"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_238899088"/>
-<node TEXT="可是父亲！虽然我一项很尊敬您但唯独&#10;不认同父亲这句话，只是吧职场从战争&#10;换成维持治安而已，我们凭什么要收到&#10;他人的白眼？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_238899088" CREATED="1466602816942" MODIFIED="1466604005960">
+<node TEXT="可是父亲！虽然我一向很尊敬您但唯独&#10;不认同父亲这句话，只是吧职场从战争&#10;换成维持治安而已，我们凭什么要收到&#10;他人的白眼？" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_238899088" CREATED="1466602816942" MODIFIED="1467199457085">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute_layout NAME_WIDTH="54" VALUE_WIDTH="92"/>
@@ -230,16 +232,18 @@
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_1438436310"/>
-<node TEXT="克劳德，你留下来陪着你的母亲" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1438436310" CREATED="1466662113647" MODIFIED="1466662284693">
+<node TEXT="克劳德，你留下来陪着你的母亲" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1438436310" CREATED="1466662113647" MODIFIED="1467200072508">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_715629516,ID_669068579"/>
-<node TEXT="什么！？我也要去！（我要立功，改变家族地位啊！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_715629516" CREATED="1466662147206" MODIFIED="1466766301151" VSHIFT="-60">
+<node TEXT="不留下" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_715629516" CREATED="1466662147206" MODIFIED="1467199753228" VSHIFT="-60">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="71" VALUE_WIDTH="71"/>
+<attribute_layout NAME_WIDTH="70" VALUE_WIDTH="70"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1201196096"/>
@@ -487,10 +491,11 @@
 </node>
 </node>
 </node>
-<node TEXT="好的我明白了。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_669068579" CREATED="1466662148711" MODIFIED="1466766899718" VSHIFT="9">
+<node TEXT="留下" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_669068579" CREATED="1466662148711" MODIFIED="1467199759724" VSHIFT="9">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_214079975"/>
@@ -738,9 +743,11 @@
 </node>
 </node>
 </node>
-<node TEXT="西部“柯西斯大平原”娜娜利视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1466832065669" HGAP="43" VSHIFT="214">
+<node TEXT="西部“柯西斯大平原”娜娜利视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1873482944" CREATED="1466570700116" MODIFIED="1467199412013" HGAP="43" VSHIFT="214">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="archer"/>
 <attribute NAME="nextId" VALUE="ID_1681982774"/>
 <node TEXT="索雅历310年4月15日" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1681982774" CREATED="1466570943180" MODIFIED="1466571713140">
@@ -887,16 +894,18 @@
 <attribute NAME="name" VALUE="库劳迪啊"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_322521225"/>
-<node TEXT="话还没说完，库劳迪啊就快马加鞭，往族群的方向去了。&#10;一时没反应过来的娜娜利被库劳迪啊留在原地。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_322521225" CREATED="1466768932400" MODIFIED="1466770388799">
+<node TEXT="话还没说完，库劳迪啊就快马加鞭，往族群的方向去了。&#10;一时没反应过来的娜娜利被库劳迪啊留在原地。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_322521225" CREATED="1466768932400" MODIFIED="1467200063421">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_19170777,ID_1239168755"/>
-<node TEXT="真是的，还是老样子我行我素啊库劳姐。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_19170777" CREATED="1466768952409" MODIFIED="1466770880717" VSHIFT="-46">
+<node TEXT="留在原地" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_19170777" CREATED="1466768952409" MODIFIED="1467199710756" VSHIFT="-46">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1444937306"/>
@@ -1053,10 +1062,11 @@
 </node>
 </node>
 </node>
-<node TEXT="啊！等等我啊！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1239168755" CREATED="1466770107581" MODIFIED="1466771131349">
+<node TEXT="急忙追上" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1239168755" CREATED="1466770107581" MODIFIED="1467199721098">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1847999819"/>
@@ -1224,9 +1234,11 @@
 </node>
 </node>
 </node>
-<node TEXT="东部贸易大国—“巴布罗王国”鲁迪视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1466832072884" HGAP="39" VSHIFT="-9">
+<node TEXT="东部贸易大国—“巴布罗王国”鲁迪视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1042948440" CREATED="1466570786004" MODIFIED="1467199427469" HGAP="39" VSHIFT="-9">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="thief"/>
 <attribute NAME="nextId" VALUE="ID_416213409"/>
 <node TEXT="索雅历310年4月15日" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_416213409" CREATED="1466571123478" MODIFIED="1466571744924">
@@ -1454,20 +1466,26 @@
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute NAME="nextId" VALUE="ID_530399943"/>
-<node TEXT="就连敌人来了也不准备抵抗，他们宛如待宰的羔羊，&#10;鲁迪不理会他们，默默拔出短剑。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_530399943" CREATED="1466828135128" MODIFIED="1466829833039">
+<node TEXT="就连敌人来了也不准备抵抗，他们宛如待宰的羔羊，&#10;鲁迪不理会他们，默默拔出短剑。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_530399943" CREATED="1466828135128" MODIFIED="1467199921720">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute NAME="nextId" VALUE="ID_581916653"/>
-<node TEXT="Battle Start" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_581916653" CREATED="1466828156985" MODIFIED="1466829827350">
+<attribute NAME="nextId" VALUE="ID_606710252"/>
+<node TEXT="Battle Start" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_606710252" CREATED="1467199864027" MODIFIED="1467199988108">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
-<attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="battle" VALUE="normal"/>
-<attribute NAME="nextId" VALUE="ID_730774924,ID_1641700190"/>
-<node TEXT="不要放弃！" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_730774924" CREATED="1466828198720" MODIFIED="1466829808462" VSHIFT="-43">
+<attribute NAME="nextId" VALUE="ID_581916653"/>
+<node TEXT="战斗结束后，鲁迪看向士兵们" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_581916653" CREATED="1466828156985" MODIFIED="1467200023139">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="70" VALUE_WIDTH="70"/>
+<attribute NAME="branchtype" VALUE="option"/>
+<attribute NAME="branch" VALUE="option1,option2"/>
+<attribute NAME="nextId" VALUE="ID_730774924,ID_1641700190"/>
+<node TEXT="鼓舞士气" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_730774924" CREATED="1466828198720" MODIFIED="1467199544740" VSHIFT="-43">
+<edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1728113379"/>
@@ -1524,9 +1542,11 @@
 </node>
 </node>
 </node>
-<node TEXT="。。。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1641700190" CREATED="1466828230400" MODIFIED="1466829805049" VSHIFT="28">
+<node TEXT="沉默离开" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1641700190" CREATED="1466828230400" MODIFIED="1467199566582" VSHIFT="28">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_72756078"/>
@@ -1650,10 +1670,12 @@
 </node>
 </node>
 </node>
-<node TEXT="北部群山处—“卢斯丹群山”——芙蓉拉视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1244564882" CREATED="1466830124458" MODIFIED="1466835992430" HGAP="10">
+</node>
+<node TEXT="北部群山处—“卢斯丹群山”——芙蓉拉视点" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1244564882" CREATED="1466830124458" MODIFIED="1467199435669" HGAP="10">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
 <attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="char"/>
 <attribute NAME="char" VALUE="caster"/>
 <attribute NAME="nextId" VALUE="ID_1256597100"/>
 <node TEXT="索雅历310年5月9日" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1256597100" CREATED="1466830171688" MODIFIED="1466835987812">
@@ -1848,16 +1870,18 @@
 <attribute NAME="name" VALUE="芙蓉拉"/>
 <attribute NAME="textType" VALUE="dialog"/>
 <attribute NAME="nextId" VALUE="ID_845544482"/>
-<node TEXT="临被传送前，师傅因为听到了芙蓉拉出生以来最为&#10;精神和充满人性的叫声而流下了高兴的眼泪。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_845544482" CREATED="1466830657528" MODIFIED="1466835852512">
+<node TEXT="临被传送前，师傅因为听到了芙蓉拉出生以来最为&#10;精神和充满人性的叫声而流下了高兴的眼泪。" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_845544482" CREATED="1466830657528" MODIFIED="1467200038127">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1,option2"/>
 <attribute NAME="nextId" VALUE="ID_19430426,ID_1529735871"/>
-<node TEXT="可恶（开什么玩笑！那个臭老头！）" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_19430426" CREATED="1466831142398" MODIFIED="1466835836461">
+<node TEXT="感到愤怒" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_19430426" CREATED="1466831142398" MODIFIED="1467199671916">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
+<attribute_layout NAME_WIDTH="71" VALUE_WIDTH="71"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option1"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_760957907"/>
@@ -2018,9 +2042,11 @@
 </node>
 </node>
 </node>
-<node TEXT="哈。。。算了(干嘛那么生气吗。。。)" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1529735871" CREATED="1466830723407" MODIFIED="1466835831373" VSHIFT="20">
+<node TEXT="感到无奈" COLOR="#000000" STYLE="as_parent" MAX_WIDTH="600" MIN_WIDTH="1" ID="ID_1529735871" CREATED="1466830723407" MODIFIED="1467199677460" VSHIFT="20">
 <edge STYLE="bezier" COLOR="#0000ff" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
+<attribute NAME="branchtype" VALUE="option"/>
 <attribute NAME="branch" VALUE="option2"/>
 <attribute NAME="isKey" VALUE="true"/>
 <attribute NAME="nextId" VALUE="ID_1364585013"/>
