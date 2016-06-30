@@ -23,7 +23,7 @@ CurrText, CurrName, CurrBox, CurrFace = nil, nil, nil
 local boxNum = 1
 
 local currId = nil
-local currLen, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, "", 1, false, 5, 5, 5
+local currLen, currNode, prevNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, nil, "", 1, false, 5, 5, 5
 local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
 local canContinueScript, currChoseChar = true, 0
 CurrSceneState = 0
@@ -32,9 +32,15 @@ CurrSceneState = 0
 function ScriptClass.setup()
 	skipFrameNumOld = skipFrameNum
 	stage:addEventListener(Event.TOUCHES_END, ScriptClass.onTouchesEnd)
+	stage:addEventListener("BATTLE_RESULT", 
+	function(event)
+		print("get battle result")
+		ScriptClass.continueScript()
+	end)
 	
 	ScriptClass.readFile("lang/zh_CN/prologue.xml")
 	ScriptClass.initDialogAssets()
+	SceneClass.hideBattleMode()
 end
 
 -- Detect the input to switch between lines
@@ -226,6 +232,7 @@ function ScriptClass.continueScript()
 		else			
 			SceneClass:hideChooseChars()
 			
+			prevNode = NodeList[currId]
 			currId = NodeList[currId].nextId[currChoseChar]
 			currNode = NodeList[currId]
 			toUpdateText = true
@@ -242,14 +249,58 @@ function ScriptClass.continueScript()
 		end
 	elseif NodeList[currId].branch == nil then
 		if NodeList[currId].battle ~= nil then
-			SceneClass.hideDialogChar()
-			SceneClass.hideDialogBg()
-			ScriptClass.refreshText()
+			if IsWon == nil then
+				print("battle start")
+				SceneClass.hideDialogChar()
+				SceneClass.hideDialogBg()
+				ScriptClass.refreshText()
 			
-			SceneClass.showBattleMode()
+				SceneClass.showBattleMode()
 			
-			canContinueScript = false
-			CurrSceneState = CONST.SCENE_BATTLE
+				canContinueScript = false
+				CurrSceneState = CONST.SCENE_BATTLE
+			elseif IsWon == true then
+				print("battle won")
+				SceneClass.hideBattleMode()
+				
+				prevNode = NodeList[currId]
+				currId = NodeList[currId].nextId[1]
+				currNode = NodeList[currId]
+				toUpdateText = true
+				canContinueScript = true
+				IsWon = nil
+				
+				if currNode.name == nil then
+					--print("go into dialog bg sp")
+					SceneClass:showDialogBg()
+					CurrSceneState = CONST.SCENE_DIALOG_BG
+				else
+					--print("go into dialog char sp")
+					SceneClass:showDialogChar()
+					CurrSceneState = CONST.SCENE_DIALOG_CHAR
+				end
+			elseif IsWon == false then
+				print("battle lost")				
+				SceneClass.hideBattleMode()
+				
+				--currId = prevNode.id
+				--currNode = prevNode				
+				--print(currNode.text)				
+				
+				toUpdateText = true
+				canContinueScript = true
+				IsWon = nil
+				
+				if currNode.name == nil then
+					--print("go into dialog bg sp")
+					SceneClass:showDialogBg()
+					CurrSceneState = CONST.SCENE_DIALOG_BG
+				else
+					--print("go into dialog char sp")
+					SceneClass:showDialogChar()
+					CurrSceneState = CONST.SCENE_DIALOG_CHAR
+				end
+			end
 		elseif NodeList[currId].battle == nil then
 			if NodeList[currId].name == nil and NodeList[NodeList[currId].nextId[1]].name ~= nil then
 				--print("go into char")
@@ -262,7 +313,8 @@ function ScriptClass.continueScript()
 				SceneClass.hideDialogChar()
 				SceneClass.showDialogBg()
 			end
-		
+			
+			prevNode = NodeList[currId]
 			currId = NodeList[currId].nextId[1]
 			currNode = NodeList[currId]
 			toUpdateText = true
@@ -358,7 +410,8 @@ function ScriptClass.closeElement(name, nsURI)
 		
 		stage:addEventListener(Event.ENTER_FRAME, ScriptClass.updateText)
 		
-		currId = "ID_1723255651"
+		currId = "ID_1723255651" -- Prologue first node
+		--currId = "ID_518829857" -- Node before training start
 		ScriptClass.continueScript()
 	end
 end

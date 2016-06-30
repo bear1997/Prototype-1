@@ -26,8 +26,8 @@ function BasePlayerClass:init(pack, len, stats)
 	self.textHp:setScale(3)
 	stage:addChild(self.textHp)
 	
-	self:setVisible(false)
-	self.textHp:setVisible(false)
+	--self:setVisible(false)
+	--self.textHp:setVisible(false)
 	
 	return self
 end

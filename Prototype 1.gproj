@@ -1,18 +1,18 @@
 <project>
- <properties logicalWidth="360" html5_mem="256" ios_bundle="com.yourdomain." fps="60" encryptCode="0" touchToMouse="1" architecture="7" logicalHeight="640" win_domain="giderosmobile.com" windowHeight="0" autorotation="0" osx_bundle="com.yourdomain." version_code="1" mouseToTouch="1" osx_category="5" windowWidth="0" osx_domain="giderosmobile.com" html5_host="" osx_org="GiderosMobile" version="1.0" winrt_org="GiderosMobile" app_icon="" app_icon_noexport="0" packageName="com.yourdomain.yourapp" winrt_package="com.yourdomain.yourapp" android_template="0" iosDevice="0" retinaDisplay="0" win_org="GiderosMobile" mouseTouchOrder="0" scaleMode="3" assetsOnly="0" encryptAssets="0" orientation="0">
+ <properties encryptCode="0" retinaDisplay="0" logicalWidth="360" windowHeight="0" app_icon_noexport="0" version="1.0" packageName="com.yourdomain.yourapp" html5_mem="256" autorotation="0" version_code="1" mouseTouchOrder="0" assetsOnly="0" osx_category="5" winrt_org="GiderosMobile" winrt_package="com.yourdomain.yourapp" app_icon="" osx_bundle="com.yourdomain." logicalHeight="640" mouseToTouch="1" osx_domain="giderosmobile.com" iosDevice="0" win_domain="giderosmobile.com" osx_org="GiderosMobile" orientation="0" scaleMode="3" html5_host="" windowWidth="0" fps="60" encryptAssets="0" touchToMouse="1" android_template="0" win_org="GiderosMobile" architecture="7" ios_bundle="com.yourdomain.">
   <imageScales/>
   <plugins/>
   <exports>
    <export name="APK">
-    <property name="androidPath" value=""/>
-    <property name="androidTarget" value="19"/>
-    <property name="antPath" value=""/>
-    <property name="javaPath" value=""/>
-    <property name="keyAlias" value=""/>
-    <property name="keyAliasPass" value=""/>
-    <property name="keyStore" value=""/>
-    <property name="keyStorePass" value=""/>
-    <property name="packageName" value="com.yourdomain.yourapp"/>
+    <property value="" name="androidPath"/>
+    <property value="19" name="androidTarget"/>
+    <property value="" name="antPath"/>
+    <property value="" name="javaPath"/>
+    <property value="" name="keyAlias"/>
+    <property value="" name="keyAliasPass"/>
+    <property value="" name="keyStore"/>
+    <property value="" name="keyStorePass"/>
+    <property value="com.yourdomain.yourapp" name="packageName"/>
    </export>
   </exports>
  </properties>
@@ -42,6 +42,7 @@
  </folder>
  <folder name="src">
   <folder name="res">
+   <file source="src/res/enemies.lua"/>
    <file source="src/res/constants.lua"/>
    <file source="src/res/textures.lua"/>
   </folder>

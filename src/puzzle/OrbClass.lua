@@ -16,7 +16,8 @@ function OrbClass:init(color, row, col)
 	self.nextX = 0
 	self.nextY = 0
 	
-	self:setVisible(false)
+	--self:setVisible(false)
+	--self:setAlpha(0)
 	
 	stage:addEventListener("MOVE_ORB", self.onMoveOrb, self)
 end
@@ -26,7 +27,7 @@ function OrbClass:changeColor()
 	
 	self.color = math.random(4)
 	--self:addChild(Bitmap.new(Texture.new("graphics/sakuOrb/" .. self.color .. ".png")))
-	self:getChildAt(1):setTexture(TEX["ORB_"..color])
+	self:getChildAt(1):setTexture(TEX["ORB_"..self.color])
 end
 
 function OrbClass:onMoveOrb(event)

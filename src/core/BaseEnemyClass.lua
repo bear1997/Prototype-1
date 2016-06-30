@@ -32,8 +32,8 @@ function BaseEnemyClass:init(img, stats)
 	self.attackTimer:addEventListener(Event.TIMER, BaseEnemyClass.attack, self)
 	self.attackTimer:start()
 	
-	self:setVisible(false)
-	self.textHp:setVisible(false)
+	--self:setVisible(false)
+	--self.textHp:setVisible(false)
 	
 	return self
 end
@@ -68,4 +68,12 @@ end
 
 function BaseEnemyClass:attack()
 	BattleEngineClass.attackPlayer(self)
+end
+
+function BaseEnemyClass:stopAttack()
+	self.attackTimer:stop()
+end
+
+function BaseEnemyClass:startAttack()
+	self.attackTimer:start()
 end
