@@ -23,10 +23,10 @@ DirtClass.createDirt()
 
 stage:setOrientation(Stage.PORTRAIT)
 
-local magician = MagicianFClass.new()
-magician:setY(320 - magician:getHeight())
-magician:updateHUD()
-stage:addChild(magician)
+Magician = MagicianFClass.new()
+Magician:setY(320 - Magician:getHeight())
+Magician:updateHUD()
+stage:addChild(Magician)
 
 --[[
 local magicianBook = MagicianFBookClass.new()
@@ -39,16 +39,16 @@ magicianBubble:setX(magician:getX())
 magicianBubble:setY(magician:getY())
 stage:addChild(magicianBubble)]]
 
-local slime = SlimeClass.new()
-slime:setX(360 - (slime:getWidth() * 2))
-slime:setY(320 - slime:getHeight())
-slime:updateHUD()
-stage:addChild(slime)
+Slime = SlimeClass.new()
+Slime:setX(360 - (Slime:getWidth() * 2))
+Slime:setY(320 - Slime:getHeight())
+Slime:updateHUD()
+stage:addChild(Slime)
 
 SakuOrb = PuzzleClass.new()
 stage:addChild(SakuOrb)
 
-BattleEngineClass.init(magician, slime)
+--BattleEngineClass.init(magician, slime)
 
 ScriptClass.setup()
 
@@ -111,12 +111,12 @@ function update(event)
 			end
 		end
 	elseif CurrSceneState == CONST.SCENE_BATTLE then
-		MiscClass.bringToFront(magician)	
+		MiscClass.bringToFront(Magician)	
 		--MiscClass.bringToFront(magicianBook)
 		--MiscClass.bringToFront(magicianBubble)
-		MiscClass.bringToFront(slime)
-		MiscClass.bringToFront(magician.textHp)
-		MiscClass.bringToFront(slime.textHp)
+		MiscClass.bringToFront(Slime)
+		MiscClass.bringToFront(Magician.textHp)
+		MiscClass.bringToFront(Slime.textHp)
 	end
 end
 

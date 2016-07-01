@@ -13,6 +13,12 @@ function SceneClass.restartBattleMode()
 end
 
 function SceneClass.showBattleMode()
+	if isBattleInit == false then
+		IsBattleInit = true
+					
+		BattleEngineClass.init(Magician, Slime)
+	end
+	
 	BattleEngineClass.startBattle()
 	print("show "..Player.stats.hp)
 	--Player:setVisible(true)

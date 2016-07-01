@@ -9,6 +9,8 @@ local TEX = require "src/res/textures"
 local MiscClass = require "src/helper/MiscClass"
 local SceneClass = require "src/helper/SceneClass"
 
+local BattleEngineClass = require "src/core/BattleEngineClass"
+
 local ScriptClass = {}
 
 ScriptClass.xml, ScriptClass.parser, ScriptClass.doc = nil, nil, nil
@@ -28,6 +30,8 @@ local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
 local canContinueScript, currChoseChar = true, 0
 CurrSceneState = 0
 
+IsBattleInit = false
+
 -- Call this first before use the ScriptClass
 function ScriptClass.setup()
 	skipFrameNumOld = skipFrameNum
@@ -41,6 +45,8 @@ function ScriptClass.setup()
 	
 	ScriptClass.readFile("lang/zh_CN/prologue.xml")
 	ScriptClass.initDialogAssets()
+	
+	BattleEngineClass.init(Magician, Slime)
 	SceneClass.hideBattleMode()
 end
 
@@ -263,6 +269,8 @@ function ScriptClass.continueScript()
 			elseif IsWon == true then
 				print("battle won")
 				SceneClass.hideBattleMode()
+				
+				IsBattleInit = false
 				
 				prevNode = NodeList[currId]
 				currId = NodeList[currId].nextId[1]
