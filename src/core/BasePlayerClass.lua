@@ -19,12 +19,15 @@ function BasePlayerClass:init(pack, len, stats)
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)
 	
 	self.stats = {}
-	LevelClass.setStats(self.stats, stats)	
+	LevelClass.setStats(self.stats, stats)
 	
 	self.textHp = TextField.new(nil, self.stats.hp)
 	self.textHp:setTextColor(0xff0000)
 	self.textHp:setScale(3)
 	stage:addChild(self.textHp)
+	
+	--self:setVisible(false)
+	--self.textHp:setVisible(false)
 	
 	return self
 end

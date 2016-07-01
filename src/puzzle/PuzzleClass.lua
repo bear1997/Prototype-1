@@ -140,16 +140,28 @@ function PuzzleClass:supplyOrb()
 end
 
 -- Hide all orbs
-function PuzzleClass:hideAllOrb()
+function PuzzleClass:showAllOrbs()
 	for row = 1,5 do
 		for col = 1,colmax do			
-				GTween.new(orbLayer[row][col], 0.5, {alpha = 0}, { ease = easing.inBack })
+				--GTween.new(orbLayer[row][col], 0.5, {alpha = 100}, { ease = easing.inBack })
+				orbLayer[row][col]:setAlpha(1)
+		end
+	end
+end
+
+-- Hide all orbs
+function PuzzleClass:hideAllOrbs()
+	for row = 1,5 do
+		for col = 1,colmax do
+				--orbLayer[row][col]:setVisible(true)
+				--GTween.new(orbLayer[row][col], 0.5, {alpha = 0}, { ease = easing.inBack })
+				orbLayer[row][col]:setAlpha(0)
 		end
 	end
 end
 
 -- Hide the linked orbs only
-function PuzzleClass:hideOrb()
+function PuzzleClass:hideOrbs()
 	for row = 1,5 do
 		for col = 1,colmax do
 			if orbLayer[row][col].isLinked == true then
@@ -188,13 +200,13 @@ function PuzzleClass:onMove(event)
 							isEnded = true
 							isMoving = true
 							moveCounter = 0
-							self:hideOrb()			
+							self:hideOrbs()			
 						elseif orbLayer[lastRow][lastCol].color ~= orbLayer[row][col].color then
 							print("color end")
 							isEnded = true
 							if moveCounter > 1 then
 								isMoving = true
-								self:hideOrb()
+								self:hideOrbs()
 							else
 								self:resetLink()
 							end
@@ -232,7 +244,7 @@ function PuzzleClass:onMoveEnd()
 				print("manual end")
 				lastRow, lastCol = 0, 0
 				isMoving = true				
-				self:hideOrb()
+				self:hideOrbs()
 				moveCounter = 0
 			else
 				lastRow, lastCol = 0, 0
@@ -248,7 +260,7 @@ end
 -- Decide the current action of player to be performed, depending on the orbs color
 function PuzzleClass:setColorAction()
 	if orbColor == CONST.ORB_RED then
-		BattleEngineClass.attackEnemy(BattleEngineClass.player, moveCounter)
+		BattleEngineClass.attackEnemy(Player, moveCounter)
 	end
 end
 

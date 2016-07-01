@@ -9,6 +9,8 @@ local TEX = require "src/res/textures"
 local MiscClass = require "src/helper/MiscClass"
 local SceneClass = require "src/helper/SceneClass"
 
+local BattleEngineClass = require "src/core/BattleEngineClass"
+
 local ScriptClass = {}
 
 ScriptClass.xml, ScriptClass.parser, ScriptClass.doc = nil, nil, nil
@@ -23,15 +25,29 @@ CurrText, CurrName, CurrBox, CurrFace = nil, nil, nil
 local boxNum = 1
 
 local currId = nil
-local currLen, currNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, "", 1, false, 5, 5, 5
+local currLen, currNode, prevNode, currText, currIndex, toUpdateText, skipFrame, skipFrameNum, skipFrameNumOld = 1, nil, nil, "", 1, false, 5, 5, 5
 local textIndex, totalHeight, isRefresh, isTouched = 1, 40, false, false
 local canContinueScript, currChoseChar = true, 0
 CurrSceneState = 0
+
+IsBattleInit = false
 
 -- Call this first before use the ScriptClass
 function ScriptClass.setup()
 	skipFrameNumOld = skipFrameNum
 	stage:addEventListener(Event.TOUCHES_END, ScriptClass.onTouchesEnd)
+	stage:addEventListener("BATTLE_RESULT", 
+	function(event)
+		print("get battle result")
+		print("IsWon: "..tostring(IsWon))
+		ScriptClass.continueScript()
+	end)
+	
+	ScriptClass.readFile("lang/zh_CN/prologue.xml")
+	ScriptClass.initDialogAssets()
+	
+	BattleEngineClass.init(Magician, Slime)
+	SceneClass.hideBattleMode()
 end
 
 -- Detect the input to switch between lines
@@ -101,6 +117,8 @@ function ScriptClass.refreshText()
 		textIndex = 1
 		toUpdateText = true
 	elseif CurrSceneState == CONST.SCENE_DIALOG_CHAR then
+		Text1:setText("")
+		Text2:setText("")
 	end	
 end
 
@@ -163,22 +181,12 @@ function ScriptClass.updateText()
 					CurrText = Text1					
 					CurrFace = Face1
 					CurrName = Name1
-					--[[
-					if currNode.char == "others" then
-						Face1:setAlpha(0)
-					elseif currNode.char == "knightM" then
-						Face1 = Bitmap.new(TEX.KNIGHT_M_FACE_NORMAL_100)
-					end]]
+					CurrBox = Box1
 				else
 					CurrText = Text2
 					CurrFace = Face2
 					CurrName = Name2
-					--[[
-					if currNode.char == "others" then
-						Face2:setAlpha(0)
-					elseif currNode.char == "knightM" then
-						Face2 = Bitmap.new(TEX.KNIGHT_M_FACE_NORMAL_100)
-					end]]
+					CurrBox = Box2
 				end
 				
 				if currNode.char == "others" then
@@ -189,6 +197,7 @@ function ScriptClass.updateText()
 					SceneClass.show(CurrFace)
 				end
 				
+				SceneClass.show(CurrBox)
 				CurrName:setText(currNode.name)
 			end
 			
@@ -218,10 +227,11 @@ end
 -- Core method to continue the overall game story
 function ScriptClass.continueScript()
 	if NodeList[currId].branch ~= nil then
-		if currChoseChar == 0 then			
-			SceneClass:hideDialogChar()
-			SceneClass:hideDialogBg()
-			ScriptClass:refreshText()			
+		if currChoseChar == 0 then
+			SceneClass.hideDialogChar()
+			SceneClass.hideDialogBg()
+			ScriptClass.refreshText()
+			
 			SceneClass.chooseChars()
 			
 			canContinueScript = false
@@ -229,6 +239,7 @@ function ScriptClass.continueScript()
 		else			
 			SceneClass:hideChooseChars()
 			
+			prevNode = NodeList[currId]
 			currId = NodeList[currId].nextId[currChoseChar]
 			currNode = NodeList[currId]
 			toUpdateText = true
@@ -244,40 +255,92 @@ function ScriptClass.continueScript()
 			end
 		end
 	elseif NodeList[currId].branch == nil then
-		if NodeList[currId].name == nil and NodeList[NodeList[currId].nextId[1]].name ~= nil then
-			--print("go into char")
-			ScriptClass.refreshText()
-			SceneClass.hideDialogBg()
-			SceneClass.showDialogChar()
-		elseif NodeList[currId].name ~= nil and NodeList[NodeList[currId].nextId[1]].name == nil then
-			--print("go into bg")
-			SceneClass.hideDialogChar()
-			SceneClass.showDialogBg()
-		end
-		
-		currId = NodeList[currId].nextId[1]
-		currNode = NodeList[currId]
-		toUpdateText = true
-		
-		if currNode.name == nil then
-			--print("go into dialog bg")
-			--SceneClass:hideDialogChar()
-			--SceneClass:showDialogBg()
-			CurrSceneState = CONST.SCENE_DIALOG_BG
-		else
-			--print("go into dialog char")
-			--SceneClass:hideDialogBg()
-			--SceneClass:showDialogChar()
-			CurrSceneState = CONST.SCENE_DIALOG_CHAR
-		end
-		--[[
-		if boxNum == 3 then
+		if NodeList[currId].battle ~= nil then
+			if IsWon == nil then
+				print("battle start")
+				SceneClass.hideDialogChar()
+				SceneClass.hideDialogBg()
+				ScriptClass.refreshText()
+			
+				SceneClass.showBattleMode()
+			
+				canContinueScript = false
+				CurrSceneState = CONST.SCENE_BATTLE
+			elseif IsWon == true then
+				print("battle won")
+				SceneClass.hideBattleMode()
+				
+				IsBattleInit = false
+				
+				prevNode = NodeList[currId]
+				currId = NodeList[currId].nextId[1]
+				currNode = NodeList[currId]
+				toUpdateText = true
+				canContinueScript = true
+				IsWon = nil
+				
+				if currNode.name == nil then
+					--print("go into dialog bg sp")
+					SceneClass:showDialogBg()
+					CurrSceneState = CONST.SCENE_DIALOG_BG
+				else
+					--print("go into dialog char sp")
+					SceneClass:showDialogChar()
+					CurrSceneState = CONST.SCENE_DIALOG_CHAR
+				end
+			elseif IsWon == false then
+				print("battle lost")				
+				SceneClass.hideBattleMode()
+				
+				--currId = prevNode.id
+				--currNode = prevNode				
+				--print(currNode.text)				
+				
+				toUpdateText = true
+				canContinueScript = true
+				IsWon = nil
+				
+				if currNode.name == nil then
+					--print("go into dialog bg sp")
+					SceneClass:showDialogBg()
+					CurrSceneState = CONST.SCENE_DIALOG_BG
+				else
+					--print("go into dialog char sp")
+					SceneClass:showDialogChar()
+					CurrSceneState = CONST.SCENE_DIALOG_CHAR
+				end
+			end
+		elseif NodeList[currId].battle == nil then
+			if NodeList[currId].name == nil and NodeList[NodeList[currId].nextId[1]].name ~= nil then
+				--print("go into char")
+				ScriptClass.refreshText()
+				SceneClass.hideDialogBg()
+				SceneClass.showDialogChar()
+			elseif NodeList[currId].name ~= nil and NodeList[NodeList[currId].nextId[1]].name == nil then
+				--print("go into bg")
+				ScriptClass.refreshText()
+				SceneClass.hideDialogChar()
+				SceneClass.showDialogBg()
+			end
+			
+			prevNode = NodeList[currId]
 			currId = NodeList[currId].nextId[1]
 			currNode = NodeList[currId]
 			toUpdateText = true
-			CurrSceneState = CONST.SCENE_DIALOG_BG
-		end]]
-	end	
+		
+			if currNode.name == nil then
+				--print("go into dialog bg")
+				--SceneClass:hideDialogChar()
+				--SceneClass:showDialogBg()
+				CurrSceneState = CONST.SCENE_DIALOG_BG
+			else
+				--print("go into dialog char")
+				--SceneClass:hideDialogBg()
+				--SceneClass:showDialogChar()
+				CurrSceneState = CONST.SCENE_DIALOG_CHAR
+			end
+		end
+	end
 end
 
 function ScriptClass.testTable(obj)
@@ -326,6 +389,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			currName = value
 		elseif value == "isKey" then
 			currName = value
+		elseif value == "battle" then
+			currName = value
 		end
 	elseif name == "VALUE" then
 		if currName == "nextId" then
@@ -340,6 +405,8 @@ function ScriptClass.attribute(name, value, nsURI, nsPrefix)
 			tempTable.textType = value
 		elseif currName == "isKey" then
 			tempTable.isKey = value
+		elseif currName == "battle" then
+			tempTable.battle = value
 		end
 		--currName = ""
 	end
@@ -352,18 +419,32 @@ function ScriptClass.closeElement(name, nsURI)
 		
 		stage:addEventListener(Event.ENTER_FRAME, ScriptClass.updateText)
 		
-		currId = "ID_1723255651"
+		--currId = "ID_1723255651" -- Prologue first node
+		currId = "ID_518829857" -- Node before training start
 		ScriptClass.continueScript()
 	end
 end
 
 -- Perform the actual read process of xml file
 function ScriptClass.readFile(path)
+	ScriptClass.xml = io.open(path):read("*all")
+
+	ScriptClass.parser = Slaxml:parser {
+		attribute = ScriptClass.attribute,
+		closeElement = ScriptClass.closeElement
+	}
+	
+	ScriptClass.parser:parse(ScriptClass.xml)
+end
+
+function ScriptClass.initDialogAssets()
 	Box1 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
 	Box1:setPosition(132, 340)
+	Box1:setVisible(false)
 	
 	Face1 = Bitmap.new(TEX.CASTER_F_FACE_NORMAL_100)
 	Face1:setPosition(20, 350)
+	Face1:setVisible(false)
 	
 	Text1 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 	Text1:setScale(1)
@@ -377,29 +458,23 @@ function ScriptClass.readFile(path)
 	Box2 = Bitmap.new(Texture.new("graphics/ui/dialogue/paper-dialog_test.png"))
 	Box2:setScaleX(-1)
 	Box2:setPosition(230, 490)
+	Box2:setVisible(false)
 	
 	Face2 = Bitmap.new(TEX.CASTER_F_FACE_NORMAL_100)	
 	Face2:setScaleX(-1)
 	Face2:setPosition(340, 500)
+	Face2:setVisible(false)
 	
 	Text2 = TextWrap.new("", 200, nil, nil, TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), 19)
 	Text2:setScale(1)
 	Text2:setTextColor(CONST.COLOR_BLACK)
 	Text2:setPosition(22, 515)
+	
 	Name2 = TextField.new(TTFont.new("fonts/Kai_Ti_GB2312.ttf", 19), "")
 	Name2:setTextColor(CONST.COLOR_WHITE)
 	Name2:setPosition(260, 515)
 	
 	BgFade = Bitmap.new(TEX.BG_FADE)
-	
-	ScriptClass.xml = io.open(path):read("*all")
-	SakuOrb:hideAllOrb()
-	ScriptClass.parser = Slaxml:parser {
-		attribute = ScriptClass.attribute,
-		closeElement = ScriptClass.closeElement
-	}
-	
-	ScriptClass.parser:parse(ScriptClass.xml)
 end
 
 return ScriptClass
