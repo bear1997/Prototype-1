@@ -419,8 +419,8 @@ function ScriptClass.closeElement(name, nsURI)
 		
 		stage:addEventListener(Event.ENTER_FRAME, ScriptClass.updateText)
 		
-		--currId = "ID_1723255651" -- Prologue first node
-		currId = "ID_518829857" -- Node before training start
+		currId = "ID_1723255651" -- Prologue first node
+		--currId = "ID_518829857" -- Node before training start
 		ScriptClass.continueScript()
 	end
 end
