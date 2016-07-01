@@ -14,7 +14,7 @@ end
 
 function SceneClass.showBattleMode()
 	BattleEngineClass.startBattle()
-	print(Player.stats.hp)
+	print("show "..Player.stats.hp)
 	--Player:setVisible(true)
 	--Player.textHp:setVisible(true)
 	--Enemy:setVisible(true)
@@ -44,11 +44,11 @@ function SceneClass.hideBattleMode()
 	GTween.new(Enemy, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Enemy.textHp, 0.5, {alpha = 0}, { ease = easing.inBack })]]
 	BattleEngineClass.resetStats()
-	print(Player.stats.hp)
+	print("hide "..Player.stats.hp)
 end
 
 function SceneClass.hideChooseChars()
-	print("hideChooseChars")
+	--print("hideChooseChars")
 	for i = 1, #SHeroes do
 		if SHeroes[i] ~= nil then
 			--SHeroes[i]:setAlpha(0)
@@ -58,7 +58,7 @@ function SceneClass.hideChooseChars()
 end
 
 function SceneClass.chooseChars()
-	print("chooseChars")
+	--print("chooseChars")
 	--local faceMatrix = Matrix.new(1, 0, 0, 1, 0, 0)
 	--SHeroes = {}
 	
@@ -112,7 +112,7 @@ function SceneClass.chooseChars()
 end
 
 function SceneClass.show(sprite, len)
-	print("show")
+	--print("show")
 	sprite:setVisible(true)
 	if len == nil then len = 0.5 end
 	
@@ -120,14 +120,14 @@ function SceneClass.show(sprite, len)
 end
 
 function SceneClass.hide(sprite, len)
-	print("hide")
+	--print("hide")
 	if len == nil then len = 0.5 end
 	
 	GTween.new(sprite, len, {alpha = 0}, { ease = easing.inBack })
 end
 
 function SceneClass.showDialogChar()
-	print("showDialogChar")
+	--print("showDialogChar")
 	GTween.new(Box1, 0.5, {alpha = 1}, { ease = easing.inBack })
 	GTween.new(Box2, 0.5, {alpha = 1}, { ease = easing.inBack })
 	GTween.new(Text1, 0.5, {alpha = 1}, { ease = easing.inBack })
@@ -139,7 +139,7 @@ function SceneClass.showDialogChar()
 end
 
 function SceneClass.hideDialogChar()
-	print("hideDialogChar")
+	--print("hideDialogChar")
 	GTween.new(Box1, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Box2, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Text1, 0.5, {alpha = 0}, { ease = easing.inBack })
@@ -151,7 +151,7 @@ function SceneClass.hideDialogChar()
 end
 
 function SceneClass.showDialogBg()
-	print("showDialogBg")
+	--print("showDialogBg")
 	GTween.new(BgFade, 0.5, {alpha = 1}, { ease = easing.inBack })
 	for i = 1, #TextList do
 		if TextList[i] ~= nil then
@@ -161,7 +161,7 @@ function SceneClass.showDialogBg()
 end
 
 function SceneClass.hideDialogBg()
-	print("hideDialogBg")
+	--print("hideDialogBg")
 	GTween.new(BgFade, 0.5, {alpha = 0}, { ease = easing.inBack })
 	for i = 1, #TextList do
 		if TextList[i] ~= nil then

@@ -21,6 +21,10 @@ function BattleEngineClass.init(obj1, obj2)
 	--BattleEngineClass.enemy = obj2
 	Player = obj1
 	Enemy = obj2
+	
+	LevelClass.saveStats(Player.stats)	
+	
+	BattleEngineClass.stopBattle()
 end
 
 function BattleEngineClass.attackPlayer(obj)
@@ -102,16 +106,18 @@ function BattleEngineClass.attackEnemy(obj, orbNum)
 end
 
 function BattleEngineClass.stopBattle()
+	print("stop battle")
 	Enemy:stopAttack()
 end
 
 function BattleEngineClass.startBattle()
 	print("start battle")
-	LevelClass.saveStats(Player.stats)
-	Enemy:startAttack()
+	--LevelClass.saveStats(Player.stats)	
 	
 	Player.textHp:setText(Player.stats.hp)
 	Enemy.textHp:setText(Enemy.stats.hp)
+	
+	Enemy:startAttack()
 end
 
 function BattleEngineClass.resetStats()
