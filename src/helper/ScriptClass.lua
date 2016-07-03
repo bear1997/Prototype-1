@@ -46,8 +46,8 @@ function ScriptClass.setup()
 	ScriptClass.readFile("lang/zh_CN/prologue.xml")
 	ScriptClass.initDialogAssets()
 	
-	BattleEngineClass.init(Magician, Slime)
-	SceneClass.hideBattleMode()
+	BattleEngine:setup(Magician, Slime)
+	Scene:hideBattleMode()
 end
 
 -- Detect the input to switch between lines
@@ -123,7 +123,7 @@ function ScriptClass.refreshText()
 end
 
 -- Update both the text of characters dialog and background dialog, showing the text frame by frame
-function ScriptClass.updateText()
+function ScriptClass:updateText()
 	if toUpdateText == true	then
 		if CurrSceneState == CONST.SCENE_DIALOG_BG then
 			if TextList[textIndex] ~= nil then
@@ -191,13 +191,13 @@ function ScriptClass.updateText()
 				
 				if currNode.char == "others" then
 					--CurrFace:setAlpha(0)
-					SceneClass.hide(CurrFace)
+					Scene:hide(CurrFace)
 				elseif currNode.char == "knightM" then
 					CurrFace:setTexture(TEX.KNIGHT_M_FACE_NORMAL_100)
-					SceneClass.show(CurrFace)
+					Scene:show(CurrFace)
 				end
 				
-				SceneClass.show(CurrBox)
+				Scene:show(CurrBox)
 				CurrName:setText(currNode.name)
 			end
 			
@@ -228,16 +228,16 @@ end
 function ScriptClass.continueScript()
 	if NodeList[currId].branch ~= nil then
 		if currChoseChar == 0 then
-			SceneClass.hideDialogChar()
-			SceneClass.hideDialogBg()
+			Scene:hideDialogChar()
+			Scene:hideDialogBg()
 			ScriptClass.refreshText()
 			
-			SceneClass.chooseChars()
+			Scene:chooseChars()
 			
 			canContinueScript = false
 			CurrSceneState = CONST.SCENE_CHOOSE_CHARS
 		else			
-			SceneClass:hideChooseChars()
+			Scene:hideChooseChars()
 			
 			prevNode = NodeList[currId]
 			currId = NodeList[currId].nextId[currChoseChar]
@@ -246,11 +246,11 @@ function ScriptClass.continueScript()
 			
 			if currNode.name == nil then
 				--print("go into dialog bg sp")
-				SceneClass:showDialogBg()
+				Scene:showDialogBg()
 				CurrSceneState = CONST.SCENE_DIALOG_BG
 			else
 				--print("go into dialog char sp")
-				SceneClass:showDialogChar()
+				Scene:showDialogChar()
 				CurrSceneState = CONST.SCENE_DIALOG_CHAR
 			end
 		end
@@ -258,17 +258,17 @@ function ScriptClass.continueScript()
 		if NodeList[currId].battle ~= nil then
 			if IsWon == nil then
 				print("battle start")
-				SceneClass.hideDialogChar()
-				SceneClass.hideDialogBg()
+				Scene.hideDialogChar()
+				Scene.hideDialogBg()
 				ScriptClass.refreshText()
 			
-				SceneClass.showBattleMode()
+				Scene:showBattleMode()
 			
 				canContinueScript = false
 				CurrSceneState = CONST.SCENE_BATTLE
 			elseif IsWon == true then
 				print("battle won")
-				SceneClass.hideBattleMode()
+				Scene:hideBattleMode()
 				
 				IsBattleInit = false
 				
@@ -281,16 +281,16 @@ function ScriptClass.continueScript()
 				
 				if currNode.name == nil then
 					--print("go into dialog bg sp")
-					SceneClass:showDialogBg()
+					Scene:showDialogBg()
 					CurrSceneState = CONST.SCENE_DIALOG_BG
 				else
 					--print("go into dialog char sp")
-					SceneClass:showDialogChar()
+					Scene:showDialogChar()
 					CurrSceneState = CONST.SCENE_DIALOG_CHAR
 				end
 			elseif IsWon == false then
 				print("battle lost")				
-				SceneClass.hideBattleMode()
+				Scene:hideBattleMode()
 				
 				--currId = prevNode.id
 				--currNode = prevNode				
@@ -302,11 +302,11 @@ function ScriptClass.continueScript()
 				
 				if currNode.name == nil then
 					--print("go into dialog bg sp")
-					SceneClass:showDialogBg()
+					Scene:showDialogBg()
 					CurrSceneState = CONST.SCENE_DIALOG_BG
 				else
 					--print("go into dialog char sp")
-					SceneClass:showDialogChar()
+					Scene:showDialogChar()
 					CurrSceneState = CONST.SCENE_DIALOG_CHAR
 				end
 			end
@@ -314,13 +314,13 @@ function ScriptClass.continueScript()
 			if NodeList[currId].name == nil and NodeList[NodeList[currId].nextId[1]].name ~= nil then
 				--print("go into char")
 				ScriptClass.refreshText()
-				SceneClass.hideDialogBg()
-				SceneClass.showDialogChar()
+				Scene:hideDialogBg()
+				Scene:showDialogChar()
 			elseif NodeList[currId].name ~= nil and NodeList[NodeList[currId].nextId[1]].name == nil then
 				--print("go into bg")
 				ScriptClass.refreshText()
-				SceneClass.hideDialogChar()
-				SceneClass.showDialogBg()
+				Scene:hideDialogChar()
+				Scene:showDialogBg()
 			end
 			
 			prevNode = NodeList[currId]
@@ -421,6 +421,8 @@ function ScriptClass.closeElement(name, nsURI)
 		
 		currId = "ID_1723255651" -- Prologue first node
 		--currId = "ID_518829857" -- Node before training start
+		
+		print(NodeList[currId].text)
 		ScriptClass.continueScript()
 	end
 end

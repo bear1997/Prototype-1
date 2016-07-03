@@ -13,6 +13,7 @@ local TEX = require "src/res/textures"
 local MiscClass = require "src/helper/MiscClass"
 local ScriptClass = require "src/helper/ScriptClass"
 local SceneClass = require "src/helper/SceneClass"
+local LevelClass = require "src/core/LevelClass"
 
 local BattleEngineClass = require("src/core/BattleEngineClass")
 
@@ -22,6 +23,9 @@ stage:addChild(background)
 DirtClass.createDirt()
 
 stage:setOrientation(Stage.PORTRAIT)
+
+Level = LevelClass.new()
+Scene = SceneClass.new()
 
 Magician = MagicianFClass.new()
 Magician:setY(320 - Magician:getHeight())
@@ -48,9 +52,13 @@ stage:addChild(Slime)
 SakuOrb = PuzzleClass.new()
 stage:addChild(SakuOrb)
 
---BattleEngineClass.init(magician, slime)
+BattleEngine = BattleEngineClass.new()
 
-ScriptClass.setup()
+--Level = LevelClass.new()
+
+--Scene = SceneClass.new()
+
+ScriptClass:setup()
 
 -----------------------------------------------------------------------------------------------------------------
 

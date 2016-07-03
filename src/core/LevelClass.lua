@@ -1,10 +1,15 @@
 -- Manage the level stuff, such as stats, attribut, etc
 
 local LevelClass = {}
+local self = LevelClass
 
 local oriHp, oriAtk, oriDef, oriMAtk, oriMDef, oriSpd, oriLuck = 0, 0, 0, 0, 0, 0, 0
 
-function LevelClass.setStats(to, from)
+function LevelClass.new()
+	return self
+end
+
+function LevelClass:setStats(to, from)
 	to.hp = from.hp
 	to.atk = from.atk
 	to.def = from.def
@@ -14,7 +19,7 @@ function LevelClass.setStats(to, from)
 	to.luck = from.luck
 end
 
-function LevelClass.saveStats(obj)
+function LevelClass:saveStats(obj)
 	oriHp = obj.hp
 	oriAtk = obj.atk
 	oriDef = obj.def
@@ -24,7 +29,7 @@ function LevelClass.saveStats(obj)
 	oriLuck = obj.luck
 end
 
-function LevelClass.loadStats(obj)
+function LevelClass:loadStats(obj)
 	if oriHp ~= 0 then
 		obj.hp = oriHp
 		obj.atk = oriAtk

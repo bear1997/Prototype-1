@@ -5,21 +5,26 @@ local CONST = require "src/res/constants"
 local BattleEngineClass = require "src/core/BattleEngineClass"
 
 local SceneClass = {}
+local self = SceneClass
 
 SHeroes = {}
 
-function SceneClass.restartBattleMode()
-	SceneClass.hideBattleMode()
+function SceneClass.new()
+	return self
 end
 
-function SceneClass.showBattleMode()
+function SceneClass:restartBattleMode()
+	self:hideBattleMode()
+end
+
+function SceneClass:showBattleMode()
 	if isBattleInit == false then
 		IsBattleInit = true
 					
-		BattleEngineClass.init(Magician, Slime)
+		BattleEngine:setup(Magician, Slime)
 	end
 	
-	BattleEngineClass.startBattle()
+	BattleEngine:startBattle()
 	print("show "..Player.stats.hp)
 	--Player:setVisible(true)
 	--Player.textHp:setVisible(true)
@@ -49,11 +54,11 @@ function SceneClass.hideBattleMode()
 	GTween.new(Player.textHp, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Enemy, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Enemy.textHp, 0.5, {alpha = 0}, { ease = easing.inBack })]]
-	BattleEngineClass.resetStats()
+	BattleEngine:resetStats()
 	print("hide "..Player.stats.hp)
 end
 
-function SceneClass.hideChooseChars()
+function SceneClass:hideChooseChars()
 	--print("hideChooseChars")
 	for i = 1, #SHeroes do
 		if SHeroes[i] ~= nil then
@@ -63,7 +68,7 @@ function SceneClass.hideChooseChars()
 	end
 end
 
-function SceneClass.chooseChars()
+function SceneClass:chooseChars()
 	--print("chooseChars")
 	--local faceMatrix = Matrix.new(1, 0, 0, 1, 0, 0)
 	--SHeroes = {}
@@ -117,7 +122,7 @@ function SceneClass.chooseChars()
 	SHeroes[4]:setPosition(0, 0)
 end
 
-function SceneClass.show(sprite, len)
+function SceneClass:show(sprite, len)
 	--print("show")
 	sprite:setVisible(true)
 	if len == nil then len = 0.5 end
@@ -125,14 +130,14 @@ function SceneClass.show(sprite, len)
 	GTween.new(sprite, len, {alpha = 1}, { ease = easing.inBack })
 end
 
-function SceneClass.hide(sprite, len)
+function SceneClass:hide(sprite, len)
 	--print("hide")
 	if len == nil then len = 0.5 end
 	
 	GTween.new(sprite, len, {alpha = 0}, { ease = easing.inBack })
 end
 
-function SceneClass.showDialogChar()
+function SceneClass:showDialogChar()
 	--print("showDialogChar")
 	GTween.new(Box1, 0.5, {alpha = 1}, { ease = easing.inBack })
 	GTween.new(Box2, 0.5, {alpha = 1}, { ease = easing.inBack })
@@ -144,7 +149,7 @@ function SceneClass.showDialogChar()
 	GTween.new(Name2, 0.5, {alpha = 1}, { ease = easing.inBack })
 end
 
-function SceneClass.hideDialogChar()
+function SceneClass:hideDialogChar()
 	--print("hideDialogChar")
 	GTween.new(Box1, 0.5, {alpha = 0}, { ease = easing.inBack })
 	GTween.new(Box2, 0.5, {alpha = 0}, { ease = easing.inBack })
@@ -156,7 +161,7 @@ function SceneClass.hideDialogChar()
 	GTween.new(Name2, 0.5, {alpha = 0}, { ease = easing.inBack })
 end
 
-function SceneClass.showDialogBg()
+function SceneClass:showDialogBg()
 	--print("showDialogBg")
 	GTween.new(BgFade, 0.5, {alpha = 1}, { ease = easing.inBack })
 	for i = 1, #TextList do
@@ -166,7 +171,7 @@ function SceneClass.showDialogBg()
 	end
 end
 
-function SceneClass.hideDialogBg()
+function SceneClass:hideDialogBg()
 	--print("hideDialogBg")
 	GTween.new(BgFade, 0.5, {alpha = 0}, { ease = easing.inBack })
 	for i = 1, #TextList do

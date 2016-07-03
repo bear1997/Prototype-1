@@ -21,7 +21,7 @@ function BaseEnemyClass:init(img, stats)
 	self:addEventListener(Event.ENTER_FRAME, self.onEnterFrame, self)]]
 	
 	self.stats = {}
-	LevelClass.setStats(self.stats, stats)
+	Level:setStats(self.stats, stats)
 	
 	self.textHp = TextField.new(nil, self.stats.hp)
 	self.textHp:setTextColor(0xff0000)

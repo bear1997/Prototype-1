@@ -6,6 +6,7 @@ local LevelClass = require "src/core/LevelClass"
 --local ScriptClass = require "src/helper/ScriptClass"
 
 local BattleEngineClass = {}
+local self = BattleEngineClass
 
 --BattleEngineClass.player, BattleEngineClass.enemy = nil, nil
 Player, Enemy = nil, nil
@@ -16,18 +17,20 @@ IsWon = nil
 local dmg, miss, digit = 0, 0, 0
 --local player, enemy = nil, nil
 
-function BattleEngineClass.init(obj1, obj2)
-	--BattleEngineClass.player = obj1
-	--BattleEngineClass.enemy = obj2
+function BattleEngineClass.new()
+	return self
+end
+
+function BattleEngineClass:setup(obj1, obj2)
 	Player = obj1
 	Enemy = obj2
 	
-	LevelClass.saveStats(Player.stats)	
+	Level:saveStats(Player.stats)	
 	
-	BattleEngineClass.stopBattle()
+	self:stopBattle()
 end
 
-function BattleEngineClass.attackPlayer(obj)
+function BattleEngineClass:attackPlayer(obj)
 	--dmg = obj.stats.atk - BattleEngineClass.player.stats.def
 	dmg = obj.stats.atk - Player.stats.def
 	if dmg < 0 then dmg = 0 end
@@ -61,13 +64,13 @@ function BattleEngineClass.attackPlayer(obj)
 	Player.textHp:setText(Player.stats.hp)
 	
 	if Player.stats.hp <= 0 then	
-		BattleEngineClass.stopBattle()
-		BattleEngineClass.sendResult()
+		self:stopBattle()
+		self:sendResult()
 		--ScriptClass.continueScript()
 	end
 end
 
-function BattleEngineClass.attackEnemy(obj, orbNum)
+function BattleEngineClass:attackEnemy(obj, orbNum)
 	--dmg = obj.stats.atk - BattleEngineClass.enemy.stats.def
 	dmg = obj.stats.atk - Enemy.stats.def
 	if dmg < 0 then dmg = 0 end
@@ -99,18 +102,18 @@ function BattleEngineClass.attackEnemy(obj, orbNum)
 	Enemy.textHp:setText(Enemy.stats.hp)
 	
 	if Enemy.stats.hp <= 0 then		
-		BattleEngineClass.stopBattle()
-		BattleEngineClass.sendResult()
+		self:stopBattle()
+		self:sendResult()
 		--ScriptClass.continueScript()
 	end
 end
 
-function BattleEngineClass.stopBattle()
+function BattleEngineClass:stopBattle()
 	print("stop battle")
 	Enemy:stopAttack()
 end
 
-function BattleEngineClass.startBattle()
+function BattleEngineClass:startBattle()
 	print("start battle")
 	--LevelClass.saveStats(Player.stats)	
 	
@@ -120,16 +123,16 @@ function BattleEngineClass.startBattle()
 	Enemy:startAttack()
 end
 
-function BattleEngineClass.resetStats()
+function BattleEngineClass:resetStats()
 	print("reset stats")
-	LevelClass.setStats(Enemy.stats, ENEMY.SLIME)
-	LevelClass.loadStats(Player.stats)
+	Level:setStats(Enemy.stats, ENEMY.SLIME)
+	Level:loadStats(Player.stats)
 	
 	Player.textHp:setText(Player.stats.hp)
 	Enemy.textHp:setText(Enemy.stats.hp)
 end
 
-function BattleEngineClass.sendResult()
+function BattleEngineClass:sendResult()
 	local resultEvent = Event.new("BATTLE_RESULT")
 	stage:dispatchEvent(resultEvent)
 end
