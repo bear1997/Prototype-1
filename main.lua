@@ -13,8 +13,8 @@ local TEX = require "src/res/textures"
 local MiscClass = require "src/helper/MiscClass"
 local ScriptClass = require "src/helper/ScriptClass"
 local SceneClass = require "src/helper/SceneClass"
-local LevelClass = require "src/core/LevelClass"
 
+local LevelClass = require "src/core/LevelClass"
 local BattleEngineClass = require("src/core/BattleEngineClass")
 
 local background = Bitmap.new(TEX.BG_GRASS)
@@ -53,10 +53,6 @@ SakuOrb = PuzzleClass.new()
 stage:addChild(SakuOrb)
 
 BattleEngine = BattleEngineClass.new()
-
---Level = LevelClass.new()
-
---Scene = SceneClass.new()
 
 ScriptClass:setup()
 
